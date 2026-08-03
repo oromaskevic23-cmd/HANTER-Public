@@ -3868,3 +3868,83 @@ Future architectural publications should integrate naturally into the existing d
 The long-term objective of the Enterprise Architecture Reference Guide is to provide a stable navigation framework for the HANTER public engineering documentation.
 
 By organizing architectural knowledge into a structured reference system, the repository supports developers, enterprise architects, researchers and organizations seeking to understand the long-term engineering direction of HANTER while preserving compatibility with the canonical architecture of IMPERIAL Core.
+# HANTER Public Enterprise Architecture Practices
+
+**Document ID:** IC-HANTER-PUBLIC-EAP-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC ENTERPRISE ARCHITECTURE PRACTICES  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the Enterprise Architecture Practices that support the long-term engineering development of HANTER within the IMPERIAL Core ecosystem.
+
+Its objective is to describe the architectural practices that promote engineering consistency, governance discipline, documentation quality and sustainable enterprise evolution while preserving the Public/Private Boundary.
+
+The practices presented in this document describe engineering guidance rather than implementation-specific procedures.
+
+---
+
+# Practice Philosophy
+
+Enterprise architecture becomes sustainable when architectural principles are consistently reflected in everyday engineering practices.
+
+Practices transform architectural vision into repeatable engineering behavior through structured documentation, responsible governance and disciplined architectural decision-making.
+
+The objective is to ensure that engineering activities remain aligned with the long-term architectural direction of HANTER.
+
+---
+
+# Core Enterprise Practices
+
+The public Enterprise Architecture Practices include:
+
+- maintaining architectural consistency;
+- documenting significant engineering decisions;
+- preserving terminology stability;
+- strengthening engineering documentation;
+- supporting transparent governance;
+- encouraging responsible architectural review;
+- improving engineering quality;
+- promoting sustainable architectural evolution;
+- preserving enterprise knowledge;
+- continuously refining architectural guidance.
+
+These practices contribute to a mature enterprise engineering environment.
+
+---
+
+# Engineering Discipline
+
+Enterprise engineering practices encourage:
+
+- structured architectural thinking;
+- disciplined documentation;
+- evidence-based engineering;
+- governance awareness;
+- long-term maintainability;
+- engineering transparency;
+- continuous architectural improvement.
+
+Engineering discipline supports architectural stability throughout the evolution of HANTER.
+
+---
+
+# Continuous Improvement
+
+Architectural practices are expected to improve continuously as engineering knowledge expands.
+
+Future revisions may introduce additional engineering practices while preserving compatibility with the canonical architecture of IMPERIAL Core.
+
+Continuous refinement is considered an essential characteristic of professional enterprise engineering.
+
+---
+
+# Long-Term Enterprise Practice
+
+The long-term objective of the Enterprise Architecture Practices is to establish a repeatable engineering culture capable of supporting decades of architectural excellence, responsible governance and sustainable enterprise AI development.
+
+These practices provide a stable engineering foundation that complements the architectural principles, governance framework and engineering standards published throughout the HANTER public documentation.
