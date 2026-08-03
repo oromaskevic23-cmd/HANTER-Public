@@ -298,3 +298,14 @@ The repository emphasizes that responsible AI engineering requires more than sof
 HANTER-Public serves as the official public engineering repository describing the architectural direction, engineering philosophy and governance principles that shape the long-term evolution of HANTER within the IMPERIAL Core ecosystem.
 
 This commit further strengthens the repository as a reliable public reference for developers, enterprise architects, researchers and organizations interested in understanding the engineering methodology behind HANTER while preserving the confidentiality of protected implementation details and operational infrastructure.
+Document the architectural culture and reinforce the engineering values of HANTER
+
+Continue strengthening the public engineering documentation by defining the architectural culture that supports the long-term evolution of HANTER.
+
+This update describes HANTER as an engineering initiative built on disciplined architecture, technical responsibility and continuous improvement. The project promotes a culture where every architectural decision is evaluated according to its long-term impact on maintainability, scalability, governance and system integrity.
+
+The repository emphasizes that engineering excellence is achieved through careful planning, structured documentation, transparent architectural communication and measurable technical quality. Public documentation is maintained as an evolving engineering asset that reflects verified architectural knowledge while preserving the separation between public information and protected implementation.
+
+HANTER-Public is intended to become a durable public reference demonstrating how enterprise AI systems can be designed with clear governance, sustainable engineering practices and responsible architectural leadership. Every published document contributes to the long-term consistency and maturity of the project.
+
+This commit further strengthens the engineering culture of HANTER and reinforces the repository as the official public source describing its architectural philosophy, governance model and commitment to enterprise-quality engineering.
