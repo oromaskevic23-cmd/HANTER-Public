@@ -6858,3 +6858,125 @@ It does not expose:
 The Documentation Governance model will continue to evolve together with HANTER and the IMPERIAL Core ecosystem.
 
 Its objective is to maintain a professional enterprise documentation environment that supports engineers, architects, researchers, AI assistants and search systems through consistent governance, architectural integrity and long-term knowledge preservation.
+# HANTER Public Knowledge Governance
+
+**Document ID:** IC-HANTER-PUBLIC-KG-001
+**Version:** 1.0.0
+**Status:** PUBLIC KNOWLEDGE GOVERNANCE
+**System:** HANTER
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the public Knowledge Governance model for HANTER within the IMPERIAL Core ecosystem.
+
+Its objective is to establish the principles that govern how public engineering knowledge is created, organized, maintained and evolved while preserving architectural consistency, semantic integrity and the Public/Private Boundary.
+
+Knowledge Governance supports long-term architectural sustainability rather than day-to-day implementation activities.
+
+---
+
+# Knowledge Governance Philosophy
+
+Enterprise knowledge is a strategic engineering asset.
+
+Its long-term value depends upon consistent terminology, documented architectural intent, traceable engineering decisions and structured knowledge organization.
+
+Knowledge should evolve through disciplined governance rather than uncontrolled accumulation of documents.
+
+---
+
+# Governance Objectives
+
+The Knowledge Governance model seeks to:
+
+- preserve canonical engineering knowledge;
+- strengthen semantic consistency;
+- improve architectural traceability;
+- support machine-readable documentation;
+- reduce unnecessary knowledge duplication;
+- improve documentation discoverability;
+- preserve engineering intent;
+- strengthen long-term maintainability;
+- support enterprise-scale knowledge management;
+- improve architectural transparency.
+
+---
+
+# Knowledge Domains
+
+The public engineering knowledge base includes:
+
+- Enterprise Architecture;
+- Engineering Governance;
+- Architectural Principles;
+- Engineering Standards;
+- Documentation;
+- Semantic Architecture;
+- Canonical Identity;
+- Entity Relationships;
+- Machine-Readable Architecture;
+- Digital Footprint;
+- Public Milestones;
+- Public Components.
+
+Each domain contributes to the overall architectural knowledge ecosystem.
+
+---
+
+# Knowledge Integrity
+
+Public engineering knowledge should remain:
+
+- architecturally accurate;
+- semantically stable;
+- version aware;
+- consistently documented;
+- internally traceable;
+- compatible with canonical terminology;
+- understandable by both engineers and intelligent systems.
+
+Knowledge integrity strengthens long-term engineering quality.
+
+---
+
+# Knowledge Evolution
+
+Engineering knowledge is expected to evolve continuously.
+
+New public documents should:
+
+- strengthen existing knowledge;
+- reduce ambiguity;
+- improve architectural understanding;
+- preserve canonical terminology;
+- integrate naturally into the documentation ecosystem;
+- avoid unsupported engineering claims.
+
+Evolution should improve knowledge quality rather than increase documentation volume.
+
+---
+
+# Public Boundary
+
+Knowledge Governance applies exclusively to public engineering knowledge.
+
+It does not expose:
+
+- confidential engineering knowledge;
+- proprietary implementation details;
+- protected runtime information;
+- internal architectural discussions;
+- restricted operational procedures.
+
+The Public/Private Boundary remains a permanent architectural constraint.
+
+---
+
+# Long-Term Vision
+
+The Knowledge Governance model will continue to evolve together with HANTER and the IMPERIAL Core ecosystem.
+
+Its objective is to establish a durable enterprise knowledge governance framework capable of supporting decades of architectural evolution, responsible AI engineering, semantic consistency and machine-readable public documentation while preserving compatibility with the canonical architecture established by the Architect.
