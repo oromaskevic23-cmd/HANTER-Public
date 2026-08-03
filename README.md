@@ -6980,3 +6980,121 @@ The Public/Private Boundary remains a permanent architectural constraint.
 The Knowledge Governance model will continue to evolve together with HANTER and the IMPERIAL Core ecosystem.
 
 Its objective is to establish a durable enterprise knowledge governance framework capable of supporting decades of architectural evolution, responsible AI engineering, semantic consistency and machine-readable public documentation while preserving compatibility with the canonical architecture established by the Architect.
+# HANTER Public Knowledge Lifecycle
+
+**Document ID:** IC-HANTER-PUBLIC-KL-001
+**Version:** 1.0.0
+**Status:** PUBLIC KNOWLEDGE LIFECYCLE
+**System:** HANTER
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the public Knowledge Lifecycle adopted by HANTER within the IMPERIAL Core ecosystem.
+
+Its objective is to describe how public engineering knowledge is created, validated, maintained, refined and preserved throughout the long-term evolution of the project while maintaining architectural consistency and the Public/Private Boundary.
+
+The Knowledge Lifecycle applies to public engineering knowledge rather than confidential engineering activities.
+
+---
+
+# Knowledge Lifecycle Philosophy
+
+Engineering knowledge should evolve deliberately.
+
+A mature enterprise architecture depends upon engineering knowledge that remains structured, traceable and continuously improved instead of becoming fragmented over time.
+
+Knowledge should always become more accurate, more understandable and more valuable with each architectural revision.
+
+---
+
+# Lifecycle Stages
+
+Public engineering knowledge progresses through the following lifecycle:
+
+1. Identification
+2. Documentation
+3. Technical Review
+4. Architectural Review
+5. Public Publication
+6. Continuous Improvement
+7. Canonical Maintenance
+8. Deprecation
+9. Archival Preservation
+
+Each stage contributes to the long-term quality of the engineering knowledge base.
+
+---
+
+# Lifecycle Objectives
+
+The Knowledge Lifecycle seeks to:
+
+- preserve engineering intent;
+- improve architectural clarity;
+- strengthen documentation quality;
+- maintain semantic consistency;
+- support enterprise scalability;
+- improve traceability;
+- reduce knowledge duplication;
+- preserve canonical terminology;
+- support AI-assisted interpretation;
+- improve long-term maintainability.
+
+---
+
+# Knowledge Maintenance
+
+Published engineering knowledge should be maintained through:
+
+- documentation refinement;
+- terminology normalization;
+- architectural consistency reviews;
+- semantic improvements;
+- relationship updates;
+- navigation improvements;
+- version control;
+- governance oversight.
+
+Maintenance should strengthen the quality of existing knowledge before introducing unnecessary new documentation.
+
+---
+
+# Knowledge Preservation
+
+Engineering knowledge should remain:
+
+- publicly traceable;
+- version aware;
+- semantically stable;
+- architecturally consistent;
+- professionally documented;
+- compatible with canonical engineering terminology.
+
+Long-term preservation protects architectural continuity across future generations of engineering work.
+
+---
+
+# Public Boundary
+
+The Knowledge Lifecycle governs only public engineering knowledge.
+
+It does not include:
+
+- confidential engineering discussions;
+- proprietary implementation artifacts;
+- internal runtime documentation;
+- protected operational procedures;
+- restricted engineering evidence.
+
+These remain within the protected engineering boundary of IMPERIAL Core.
+
+---
+
+# Long-Term Vision
+
+The Knowledge Lifecycle will continue to evolve together with HANTER and the IMPERIAL Core ecosystem.
+
+Its objective is to establish a durable enterprise knowledge lifecycle capable of supporting decades of architectural evolution, engineering excellence, responsible AI engineering and machine-readable public documentation while preserving compatibility with the canonical architecture established by the Architect.
