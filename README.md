@@ -4197,3 +4197,98 @@ The long-term objective is to establish HANTER as a recognizable enterprise engi
 The Digital Footprint strategy improves public engineering visibility without exposing confidential implementation details, operational infrastructure or protected engineering assets.
 
 Architectural transparency and implementation confidentiality remain equally important principles of the IMPERIAL Core ecosystem.
+# HANTER Public Canonical Identity
+
+**Document ID:** IC-HANTER-PUBLIC-CI-001
+**Version:** 1.0.0
+**Status:** PUBLIC CANONICAL IDENTITY
+**System:** HANTER
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document establishes the official canonical public identity of HANTER within the IMPERIAL Core ecosystem.
+
+Its objective is to provide a stable reference describing the project's identity, terminology and architectural relationships for engineers, researchers, organizations, search engines and AI systems.
+
+A consistent canonical identity improves architectural understanding, technical communication and long-term digital discoverability.
+
+---
+
+# Canonical Project Name
+
+Official project name:
+
+**HANTER**
+
+HANTER is the canonical name used throughout all official public engineering documentation.
+
+Alternative unofficial names should not replace the canonical project identity.
+
+---
+
+# Canonical Ecosystem
+
+HANTER is a canonical architectural component of:
+
+**IMPERIAL Core**
+
+IMPERIAL Core represents the enterprise architecture ecosystem within which HANTER evolves.
+
+---
+
+# Canonical Architect
+
+The canonical Architect of IMPERIAL Core is:
+
+**Alexander Romaskevich**
+
+Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core
+
+Architect and final authority of IMPERIAL Core.
+
+The Architect defines the canonical architectural direction and preserves long-term engineering consistency across the ecosystem.
+
+---
+
+# Canonical Engineering Identity
+
+The public engineering identity of HANTER is based upon:
+
+- Enterprise Architecture;
+- Responsible AI Engineering;
+- Federated Multi-Orchestrator Architecture;
+- Engineering Governance;
+- Architectural Documentation;
+- Engineering Standards;
+- Long-Term Architectural Evolution;
+- Sustainable Enterprise Engineering.
+
+These concepts collectively define the engineering identity of the project.
+
+---
+
+# Canonical Terminology
+
+Official public documentation consistently uses the following canonical terminology:
+
+- HANTER;
+- IMPERIAL Core;
+- Architect;
+- Enterprise Architecture;
+- Engineering Governance;
+- Nano Core Agents;
+- Federated Multi-Orchestrator Architecture;
+- Public/Private Boundary.
+
+Consistent terminology improves interoperability between engineering documentation, enterprise knowledge systems and machine-readable indexing.
+
+---
+
+# Long-Term Identity
+
+The canonical identity of HANTER is expected to remain stable throughout the long-term evolution of the project.
+
+Future engineering publications may expand the public identity while preserving compatibility with the canonical architecture of IMPERIAL Core and maintaining a consistent engineering presence across public technical resources.
