@@ -4643,3 +4643,91 @@ The Machine-Readable Architecture will continue to evolve together with HANTER.
 Future engineering publications may improve semantic structure, document relationships and knowledge representation while preserving compatibility with the canonical architecture established by the Architect.
 
 The long-term objective is to establish HANTER-Public as a highly interpretable enterprise engineering knowledge base for both human readers and intelligent information systems.
+# HANTER Public Document Relationships
+
+**Document ID:** IC-HANTER-PUBLIC-DR-001
+**Version:** 1.0.0
+**Status:** PUBLIC DOCUMENT RELATIONSHIPS
+**System:** HANTER
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the relationships between the public engineering documents published within the HANTER repository.
+
+Its objective is to establish a clear architectural map showing how documentation is interconnected, how engineering knowledge flows across the repository and how individual documents contribute to the overall enterprise architecture.
+
+The document supports human understanding, machine-readable indexing and long-term documentation consistency.
+
+---
+
+# Documentation Philosophy
+
+Enterprise engineering documentation should function as an integrated knowledge system rather than an isolated collection of files.
+
+Each document contributes a specific architectural perspective while reinforcing the broader engineering narrative of HANTER and the IMPERIAL Core ecosystem.
+
+Understanding these relationships improves architectural traceability and documentation quality.
+
+---
+
+# Document Relationship Model
+
+The public engineering documentation is organized through the following relationships:
+
+- Architectural Vision → defines → Enterprise Architecture
+- Enterprise Architecture → guides → Governance
+- Governance → supports → Engineering Standards
+- Engineering Standards → influence → Design Principles
+- Design Principles → improve → Engineering Quality
+- Engineering Documentation → preserves → Architectural Knowledge
+- Architectural Knowledge → strengthens → Enterprise Architecture
+- Semantic Architecture → organizes → Engineering Concepts
+- Entity Model → defines → Canonical Entities
+- Machine-Readable Architecture → improves → AI Interpretation
+- Digital Footprint → improves → Public Discoverability
+
+These relationships describe the public engineering knowledge structure of HANTER.
+
+---
+
+# Documentation Dependencies
+
+Many engineering documents complement one another.
+
+For example:
+
+- Architectural Principles support Engineering Standards.
+- Engineering Standards strengthen Quality Standards.
+- Governance reinforces Enterprise Architecture.
+- Documentation preserves Engineering Knowledge.
+- Architectural Decision Records improve long-term traceability.
+
+These dependencies improve consistency throughout the documentation ecosystem.
+
+---
+
+# Engineering Traceability
+
+Maintaining explicit relationships between documents enables:
+
+- architectural traceability;
+- documentation consistency;
+- enterprise knowledge management;
+- semantic interpretation;
+- AI-assisted understanding;
+- long-term maintainability.
+
+Traceability is considered a strategic engineering capability.
+
+---
+
+# Long-Term Documentation Ecosystem
+
+The Document Relationships model will continue to evolve as additional engineering documentation becomes available.
+
+Future documents should integrate naturally into the existing documentation ecosystem while preserving compatibility with the canonical architecture of IMPERIAL Core.
+
+The long-term objective is to establish a fully interconnected enterprise engineering knowledge base capable of supporting developers, architects, researchers, search engines and AI systems for many years to come.
