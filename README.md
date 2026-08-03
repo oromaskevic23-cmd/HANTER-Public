@@ -2565,3 +2565,80 @@ The architectural evolution strategy will continue to mature together with HANTE
 Future revisions may introduce additional architectural guidance, governance practices and engineering methodologies while preserving the long-term architectural vision established by the Architect.
 
 The objective is to maintain a durable enterprise architecture capable of evolving through disciplined engineering, transparent documentation and responsible governance for many years to come.
+# HANTER Public Architectural Foundations
+
+**Document ID:** IC-HANTER-PUBLIC-FOUNDATIONS-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC ARCHITECTURAL FOUNDATIONS  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the architectural foundations upon which HANTER is designed and continuously developed.
+
+Its objective is to describe the enduring engineering concepts that provide stability, consistency and direction for the long-term evolution of HANTER within the IMPERIAL Core ecosystem while preserving the Public/Private Boundary.
+
+Architectural foundations are intended to remain significantly more stable than individual implementation details.
+
+---
+
+# Foundation Philosophy
+
+Enterprise architecture should be built upon stable engineering foundations capable of supporting continuous evolution without requiring repeated structural redesign.
+
+The architectural foundations of HANTER establish the engineering identity of the project and provide a common reference for future architectural decisions, documentation and governance.
+
+---
+
+# Core Foundations
+
+The public architectural foundations of HANTER include:
+
+- long-term architectural thinking;
+- Architecture Before Implementation;
+- explicit governance;
+- Federated Multi-Orchestrator Architecture;
+- engineering transparency;
+- responsible AI engineering;
+- evidence-based engineering;
+- documentation-driven architecture;
+- enterprise scalability;
+- sustainable system evolution.
+
+Together these foundations establish a coherent engineering framework for the HANTER project.
+
+---
+
+# Engineering Foundation
+
+Engineering activities should reinforce these foundations through:
+
+- consistent architectural documentation;
+- stable engineering terminology;
+- disciplined architectural reviews;
+- transparent governance;
+- long-term maintainability;
+- continuous architectural refinement.
+
+Engineering practices are expected to strengthen the architecture rather than redefine it.
+
+---
+
+# Enterprise Foundation
+
+The architectural foundations are intended to support future growth across multiple organizational structures, professional engineering disciplines and evolving AI coordination models.
+
+The enterprise architecture should remain understandable, maintainable and extensible throughout its lifetime.
+
+---
+
+# Long-Term Stability
+
+The architectural foundations described in this document are intended to remain durable throughout the evolution of HANTER.
+
+Future revisions may extend these foundations while preserving compatibility with the canonical architecture of IMPERIAL Core.
+
+The long-term objective is to provide a stable architectural platform capable of supporting decades of responsible engineering, transparent governance and sustainable enterprise-scale development.
