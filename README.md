@@ -2006,3 +2006,95 @@ HANTER is intended to evolve as a durable enterprise architecture supporting man
 Future public documentation will continue to expand the enterprise architectural knowledge base while maintaining compatibility with the canonical architecture of IMPERIAL Core.
 
 The long-term objective is to establish HANTER-Public as a professional enterprise architecture reference demonstrating disciplined engineering, responsible governance and sustainable architectural evolution.
+# HANTER Public Architectural Goals
+
+**Document ID:** IC-HANTER-PUBLIC-GOALS-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC ARCHITECTURAL GOALS  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the long-term architectural goals that guide the development and evolution of HANTER within the IMPERIAL Core ecosystem.
+
+Its purpose is to provide a stable strategic reference describing the engineering objectives that influence architectural planning, governance decisions and documentation while preserving the Public/Private Boundary.
+
+The goals described here represent architectural direction rather than implementation status.
+
+---
+
+# Long-Term Architectural Objectives
+
+The architecture of HANTER is developed to achieve the following long-term objectives:
+
+- preserve architectural consistency across the ecosystem;
+- support governed AI coordination;
+- enable sustainable enterprise growth;
+- maintain explicit governance boundaries;
+- improve engineering transparency;
+- strengthen documentation quality;
+- support scalable architectural evolution;
+- encourage responsible engineering practices;
+- preserve long-term maintainability;
+- establish a durable engineering knowledge base.
+
+These objectives provide strategic direction for future architectural decisions.
+
+---
+
+# Engineering Objectives
+
+Engineering activities within HANTER are intended to:
+
+- improve architectural quality;
+- reduce unnecessary complexity;
+- preserve stable responsibility boundaries;
+- maintain consistent engineering terminology;
+- encourage reusable architectural concepts;
+- support transparent technical communication;
+- strengthen engineering governance.
+
+Engineering work is expected to reinforce the architecture rather than redefine it.
+
+---
+
+# Governance Objectives
+
+Governance supports the long-term stability of HANTER by ensuring that:
+
+- authority remains explicitly defined;
+- responsibilities remain clearly separated;
+- architectural evolution remains controlled;
+- engineering documentation remains consistent;
+- public knowledge remains accurate;
+- protected implementation remains confidential.
+
+Governance exists to protect the integrity of the architecture throughout its lifecycle.
+
+---
+
+# Documentation Objectives
+
+Public engineering documentation is intended to:
+
+- explain architectural concepts;
+- preserve engineering knowledge;
+- improve technical understanding;
+- establish consistent terminology;
+- support architectural traceability;
+- communicate long-term engineering direction.
+
+Documentation is considered a strategic engineering asset rather than supplementary material.
+
+---
+
+# Strategic Outlook
+
+The architectural goals of HANTER will continue to evolve together with the IMPERIAL Core ecosystem.
+
+Future revisions may introduce additional strategic objectives while preserving compatibility with the canonical architecture established by the Architect.
+
+The long-term objective is to maintain a sustainable enterprise architecture capable of supporting future engineering innovation through disciplined governance, professional documentation and continuous architectural improvement.
