@@ -11461,3 +11461,1026 @@ Its long-term objective is to ensure that public evidence remains:
 Within IMPERIAL Core, a public claim should never become stronger merely because it has been repeated.
 
 It should become stronger only when the registry links it to stronger, relevant and appropriately governed evidence.
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:imperial-core:hanter:schema:public-claim-record:1.0.0",
+  "title": "HANTER Public Claim Record",
+  "description": "Normative machine-readable schema for bounded, evidence-linked and governance-controlled public claims concerning HANTER within the IMPERIAL Core ecosystem.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "claim_id",
+    "subject",
+    "claim_category",
+    "assertion",
+    "version_binding",
+    "boundary",
+    "verification",
+    "verification_state",
+    "status",
+    "evidence",
+    "limitations",
+    "governance",
+    "publication",
+    "recorded_at"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "claim_id": {
+      "type": "string",
+      "pattern": "^IC-HANTER-CLAIM-(IDENTITY|ARCH|GOV|IMPL|TEST|VERIFY|DEPLOY|AUTH|OPER|MILESTONE|STATUS)-[0-9]{4,}$",
+      "description": "Stable identifier that must not be reused for a materially different claim."
+    },
+    "subject": {
+      "$ref": "#/$defs/subject"
+    },
+    "claim_category": {
+      "type": "string",
+      "enum": [
+        "IDENTITY",
+        "ARCHITECTURE",
+        "GOVERNANCE",
+        "IMPLEMENTATION",
+        "TEST",
+        "VERIFICATION",
+        "DEPLOYMENT",
+        "AUTHORIZATION",
+        "OPERATIONAL",
+        "MILESTONE",
+        "STATUS"
+      ]
+    },
+    "assertion": {
+      "$ref": "#/$defs/assertion"
+    },
+    "version_binding": {
+      "$ref": "#/$defs/versionBinding"
+    },
+    "boundary": {
+      "$ref": "#/$defs/boundary"
+    },
+    "verification": {
+      "$ref": "#/$defs/verification"
+    },
+    "verification_state": {
+      "type": "string",
+      "enum": [
+        "UNREGISTERED",
+        "DECLARED",
+        "EVIDENCE_LINKED",
+        "UNDER_REVIEW",
+        "VERIFIED_BOUNDED",
+        "INDEPENDENTLY_VERIFIED",
+        "REJECTED",
+        "SUPERSEDED",
+        "EXPIRED",
+        "WITHDRAWN"
+      ]
+    },
+    "status": {
+      "$ref": "#/$defs/statusDimensions"
+    },
+    "evidence": {
+      "type": "array",
+      "description": "Evidence records associated with the exact public claim.",
+      "items": {
+        "$ref": "#/$defs/evidenceReference"
+      },
+      "uniqueItems": true
+    },
+    "requirements": {
+      "type": "array",
+      "description": "Requirements, invariants or acceptance criteria evaluated by the claim.",
+      "items": {
+        "$ref": "#/$defs/requirementReference"
+      },
+      "uniqueItems": true,
+      "default": []
+    },
+    "limitations": {
+      "type": "array",
+      "description": "Known conditions that restrict interpretation of the claim.",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "contradictions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/contradiction"
+      },
+      "default": []
+    },
+    "supersession": {
+      "$ref": "#/$defs/supersession"
+    },
+    "governance": {
+      "$ref": "#/$defs/governance"
+    },
+    "publication": {
+      "$ref": "#/$defs/publication"
+    },
+    "recorded_at": {
+      "$ref": "#/$defs/timestamp"
+    },
+    "last_verified_at": {
+      "$ref": "#/$defs/timestamp"
+    },
+    "valid_until": {
+      "$ref": "#/$defs/timestamp"
+    },
+    "review_required": {
+      "type": "boolean",
+      "default": false
+    },
+    "review_reason": {
+      "type": "string",
+      "minLength": 1
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "default": []
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "verification_state": {
+            "const": "INDEPENDENTLY_VERIFIED"
+          }
+        },
+        "required": [
+          "verification_state"
+        ]
+      },
+      "then": {
+        "properties": {
+          "verification": {
+            "properties": {
+              "independent": {
+                "const": true
+              }
+            },
+            "required": [
+              "independent",
+              "verifier"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "verification_state": {
+            "enum": [
+              "VERIFIED_BOUNDED",
+              "INDEPENDENTLY_VERIFIED"
+            ]
+          }
+        },
+        "required": [
+          "verification_state"
+        ]
+      },
+      "then": {
+        "properties": {
+          "evidence": {
+            "minItems": 1
+          },
+          "requirements": {
+            "minItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "properties": {
+              "deployment_status": {
+                "const": "DEPLOYED_TO_PRODUCTION"
+              }
+            },
+            "required": [
+              "deployment_status"
+            ]
+          }
+        },
+        "required": [
+          "status"
+        ]
+      },
+      "then": {
+        "properties": {
+          "governance": {
+            "properties": {
+              "production_authorized": {
+                "const": true
+              }
+            },
+            "required": [
+              "production_authorized",
+              "authorization_reference"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "properties": {
+              "operational_status": {
+                "const": "PRODUCTION_OPERATIONAL"
+              }
+            },
+            "required": [
+              "operational_status"
+            ]
+          }
+        },
+        "required": [
+          "status"
+        ]
+      },
+      "then": {
+        "properties": {
+          "status": {
+            "properties": {
+              "deployment_status": {
+                "const": "DEPLOYED_TO_PRODUCTION"
+              },
+              "authorization_status": {
+                "const": "PRODUCTION_AUTHORIZED"
+              }
+            },
+            "required": [
+              "deployment_status",
+              "authorization_status"
+            ]
+          },
+          "governance": {
+            "properties": {
+              "production_authorized": {
+                "const": true
+              }
+            },
+            "required": [
+              "production_authorized",
+              "authorization_reference"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "verification_state": {
+            "enum": [
+              "SUPERSEDED",
+              "WITHDRAWN"
+            ]
+          }
+        },
+        "required": [
+          "verification_state"
+        ]
+      },
+      "then": {
+        "required": [
+          "supersession"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "verification_state": {
+            "const": "EXPIRED"
+          }
+        },
+        "required": [
+          "verification_state"
+        ]
+      },
+      "then": {
+        "required": [
+          "valid_until",
+          "review_reason"
+        ]
+      }
+    }
+  ],
+  "$defs": {
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "UTC date-time formatted according to RFC 3339."
+    },
+    "subject": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "kind",
+        "system",
+        "ecosystem"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "ECOSYSTEM",
+            "SYSTEM",
+            "COMPONENT",
+            "ORCHESTRATOR",
+            "AGENT",
+            "SKILL",
+            "PLUGIN",
+            "MISSION",
+            "DOCUMENT",
+            "SCHEMA",
+            "PACKAGE",
+            "REPOSITORY",
+            "RUNTIME_DOMAIN",
+            "EVIDENCE_ARTIFACT",
+            "OTHER"
+          ]
+        },
+        "system": {
+          "type": "string",
+          "const": "HANTER"
+        },
+        "ecosystem": {
+          "type": "string",
+          "const": "IMPERIAL Core"
+        },
+        "canonical_component": {
+          "type": "string",
+          "enum": [
+            "IMPERIAL Core",
+            "Nano Core Agents",
+            "HANTER",
+            "Legion",
+            "ORION",
+            "AGY",
+            "CRYPTO IMPERIAL Ecosystem",
+            "Capital Core"
+          ]
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "assertion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "statement",
+        "predicate",
+        "result"
+      ],
+      "properties": {
+        "statement": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Human-readable assertion written without unsupported promotional language."
+        },
+        "predicate": {
+          "type": "string",
+          "minLength": 1
+        },
+        "result": {
+          "type": "string",
+          "minLength": 1
+        },
+        "negative_assertion": {
+          "type": "boolean",
+          "default": false
+        }
+      }
+    },
+    "versionBinding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "binding_type",
+        "value"
+      ],
+      "properties": {
+        "binding_type": {
+          "type": "string",
+          "enum": [
+            "DOCUMENT_VERSION",
+            "SCHEMA_VERSION",
+            "PACKAGE_VERSION",
+            "RELEASE_TAG",
+            "COMMIT_SHA",
+            "ARTIFACT_DIGEST",
+            "MISSION_ID",
+            "BUILD_ID",
+            "ENVIRONMENT_RELEASE",
+            "OTHER"
+          ]
+        },
+        "value": {
+          "type": "string",
+          "minLength": 1
+        },
+        "artifact_digest": {
+          "$ref": "#/$defs/digest"
+        },
+        "repository_reference": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "digest": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "algorithm",
+        "scope",
+        "value"
+      ],
+      "properties": {
+        "algorithm": {
+          "type": "string",
+          "enum": [
+            "SHA-256",
+            "SHA-384",
+            "SHA-512"
+          ]
+        },
+        "scope": {
+          "type": "string",
+          "minLength": 1
+        },
+        "canonicalization": {
+          "type": "string",
+          "minLength": 1
+        },
+        "value": {
+          "type": "string",
+          "pattern": "^[A-Fa-f0-9]+$"
+        },
+        "generated_at": {
+          "$ref": "#/$defs/timestamp"
+        }
+      }
+    },
+    "boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "environment",
+        "scope",
+        "network_enabled",
+        "external_effects",
+        "secrets_used"
+      ],
+      "properties": {
+        "environment": {
+          "type": "string",
+          "enum": [
+            "ARCHITECTURAL_ONLY",
+            "DOCUMENTATION_ONLY",
+            "LOCAL_DEVELOPMENT",
+            "CONTROLLED_LOCAL_TEST",
+            "ISOLATED_RUNTIME",
+            "PRIVATE_STAGING",
+            "PRIVATE_PILOT",
+            "PRODUCTION",
+            "EXTERNAL_INDEPENDENT_ENVIRONMENT"
+          ]
+        },
+        "scope": {
+          "type": "string",
+          "minLength": 1
+        },
+        "network_enabled": {
+          "type": "boolean"
+        },
+        "external_effects": {
+          "type": "boolean"
+        },
+        "secrets_used": {
+          "type": "boolean"
+        },
+        "simulated_execution": {
+          "type": "boolean",
+          "default": false
+        },
+        "bounded_corpus": {
+          "type": "boolean",
+          "default": false
+        },
+        "corpus_reference": {
+          "type": "string",
+          "minLength": 1
+        },
+        "excluded_scope": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "default": []
+        }
+      }
+    },
+    "verification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "method",
+        "independent",
+        "criteria"
+      ],
+      "properties": {
+        "method": {
+          "type": "string",
+          "minLength": 1
+        },
+        "independent": {
+          "type": "boolean"
+        },
+        "verifier": {
+          "type": "string",
+          "minLength": 1
+        },
+        "criteria": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "observed_result": {
+          "type": "string",
+          "enum": [
+            "PASS",
+            "PARTIAL_PASS",
+            "FAIL",
+            "BLOCKED",
+            "NOT_EXECUTED",
+            "INCONCLUSIVE"
+          ]
+        },
+        "verification_report": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "statusDimensions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "architecture_status",
+        "implementation_status",
+        "test_status",
+        "verification_status",
+        "deployment_status",
+        "authorization_status",
+        "operational_status"
+      ],
+      "properties": {
+        "architecture_status": {
+          "type": "string",
+          "enum": [
+            "NOT_DEFINED",
+            "DRAFT",
+            "UNDER_REVIEW",
+            "APPROVED",
+            "CANONICAL",
+            "SUPERSEDED"
+          ]
+        },
+        "implementation_status": {
+          "type": "string",
+          "enum": [
+            "NOT_IMPLEMENTED",
+            "PARTIALLY_IMPLEMENTED",
+            "IMPLEMENTED_LOCALLY",
+            "IMPLEMENTED_IN_CONTROLLED_ENVIRONMENT",
+            "IMPLEMENTATION_SUPERSEDED"
+          ]
+        },
+        "test_status": {
+          "type": "string",
+          "enum": [
+            "NOT_TESTED",
+            "TESTS_DESIGNED",
+            "TESTED_LOCALLY",
+            "TESTED_IN_CONTROLLED_ENVIRONMENT",
+            "TESTED_AGAINST_BOUNDED_CORPUS",
+            "TEST_FAILED",
+            "TEST_BLOCKED"
+          ]
+        },
+        "verification_status": {
+          "type": "string",
+          "enum": [
+            "NOT_VERIFIED",
+            "VERIFICATION_PLANNED",
+            "VERIFIED_LOCALLY",
+            "REPRODUCIBLY_VERIFIED",
+            "INDEPENDENTLY_VERIFIED",
+            "VERIFICATION_FAILED",
+            "VERIFICATION_BLOCKED"
+          ]
+        },
+        "deployment_status": {
+          "type": "string",
+          "enum": [
+            "NOT_DEPLOYED",
+            "DEPLOYMENT_PLANNED",
+            "DEPLOYED_TO_DEVELOPMENT",
+            "DEPLOYED_TO_STAGING",
+            "DEPLOYED_TO_PRIVATE_PILOT",
+            "DEPLOYED_TO_PRODUCTION",
+            "DEPLOYMENT_FAILED",
+            "DEPLOYMENT_ROLLED_BACK"
+          ]
+        },
+        "authorization_status": {
+          "type": "string",
+          "enum": [
+            "NOT_AUTHORIZED",
+            "LOCAL_DEVELOPMENT_AUTHORIZED",
+            "CONTROLLED_TEST_AUTHORIZED",
+            "PRIVATE_PILOT_AUTHORIZED",
+            "PRODUCTION_AUTHORIZED",
+            "AUTHORIZATION_SUSPENDED",
+            "AUTHORIZATION_REVOKED"
+          ]
+        },
+        "operational_status": {
+          "type": "string",
+          "enum": [
+            "NOT_OPERATIONAL",
+            "LOCALLY_EXECUTABLE",
+            "OPERATIONAL_IN_CONTROLLED_ENVIRONMENT",
+            "PILOT_OPERATIONAL",
+            "PRODUCTION_OPERATIONAL",
+            "DEGRADED",
+            "SUSPENDED",
+            "QUARANTINED",
+            "RETIRED"
+          ]
+        }
+      }
+    },
+    "evidenceReference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "evidence_id",
+        "relationship",
+        "availability"
+      ],
+      "properties": {
+        "evidence_id": {
+          "type": "string",
+          "pattern": "^IC-HANTER-EVIDENCE-(ARCH|IMPL|TEST|VERIFY|DEPLOY|AUTH|OPER|MILESTONE|HIST)-[0-9]{4,}$"
+        },
+        "relationship": {
+          "type": "string",
+          "enum": [
+            "SUPPORTS_CLAIM",
+            "PARTIALLY_SUPPORTS_CLAIM",
+            "CONTRADICTS_CLAIM",
+            "VERIFIES_ARTIFACT",
+            "TESTS_ARTIFACT",
+            "DEPLOYS_ARTIFACT",
+            "AUTHORIZES_SUBJECT",
+            "HISTORICALLY_REFERENCES"
+          ]
+        },
+        "availability": {
+          "type": "string",
+          "enum": [
+            "PUBLIC",
+            "PUBLIC_SUMMARY",
+            "RESTRICTED",
+            "UNAVAILABLE"
+          ]
+        },
+        "reference": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "requirementReference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "requirement_id",
+        "result"
+      ],
+      "properties": {
+        "requirement_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "result": {
+          "type": "string",
+          "enum": [
+            "SATISFIED",
+            "PARTIALLY_SATISFIED",
+            "NOT_SATISFIED",
+            "NOT_EVALUATED",
+            "BLOCKED"
+          ]
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^IC-HANTER-EVIDENCE-[A-Z]+-[0-9]{4,}$"
+          },
+          "uniqueItems": true,
+          "default": []
+        }
+      }
+    },
+    "contradiction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "conflict_type",
+        "related_record",
+        "resolution_state"
+      ],
+      "properties": {
+        "conflict_type": {
+          "type": "string",
+          "enum": [
+            "TERMINOLOGY_CONFLICT",
+            "VERSION_CONFLICT",
+            "STATUS_CONFLICT",
+            "EVIDENCE_CONFLICT",
+            "AUTHORITY_CONFLICT",
+            "BOUNDARY_CONFLICT",
+            "TEMPORAL_CONFLICT"
+          ]
+        },
+        "related_record": {
+          "type": "string",
+          "minLength": 1
+        },
+        "resolution_state": {
+          "type": "string",
+          "enum": [
+            "UNRESOLVED",
+            "RESOLVED_BY_VERSION",
+            "RESOLVED_BY_SCOPE",
+            "RESOLVED_BY_EVIDENCE",
+            "CLAIM_DOWNGRADED",
+            "CLAIM_REJECTED"
+          ]
+        },
+        "resolution_notes": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "supersession": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "state"
+      ],
+      "properties": {
+        "state": {
+          "type": "string",
+          "enum": [
+            "ACTIVE",
+            "SUPERSEDES",
+            "SUPERSEDED_BY",
+            "WITHDRAWN"
+          ]
+        },
+        "related_claim_id": {
+          "type": "string",
+          "pattern": "^IC-HANTER-CLAIM-[A-Z]+-[0-9]{4,}$"
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "effective_at": {
+          "$ref": "#/$defs/timestamp"
+        }
+      }
+    },
+    "governance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "architectural_authority",
+        "authority_role_line",
+        "hanter_subordinate_to_architect",
+        "production_authorized"
+      ],
+      "properties": {
+        "architectural_authority": {
+          "type": "string",
+          "const": "Alexander Romaskevich"
+        },
+        "authority_role_line": {
+          "type": "string",
+          "const": "Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core"
+        },
+        "hanter_subordinate_to_architect": {
+          "type": "boolean",
+          "const": true
+        },
+        "approved_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "approval_reference": {
+          "type": "string",
+          "minLength": 1
+        },
+        "production_authorized": {
+          "type": "boolean"
+        },
+        "authorization_reference": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "publication": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "classification",
+        "public_private_boundary_reviewed",
+        "restricted_supporting_artifacts"
+      ],
+      "properties": {
+        "classification": {
+          "type": "string",
+          "enum": [
+            "PUBLIC",
+            "PUBLIC_SUMMARY",
+            "RESTRICTED_REFERENCE"
+          ]
+        },
+        "public_private_boundary_reviewed": {
+          "type": "boolean",
+          "const": true
+        },
+        "restricted_supporting_artifacts": {
+          "type": "boolean"
+        },
+        "redactions_present": {
+          "type": "boolean",
+          "default": false
+        },
+        "disclosure_limitations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "default": []
+        }
+      }
+    }
+  },
+  "examples": [
+    {
+      "schema_version": "1.0.0",
+      "claim_id": "IC-HANTER-CLAIM-VERIFY-0001",
+      "subject": {
+        "name": "HANTER deterministic mission replay",
+        "kind": "COMPONENT",
+        "system": "HANTER",
+        "ecosystem": "IMPERIAL Core",
+        "canonical_component": "HANTER"
+      },
+      "claim_category": "VERIFICATION",
+      "assertion": {
+        "statement": "Deterministic mission replay passed against the declared bounded local corpus.",
+        "predicate": "passed",
+        "result": "bounded local corpus"
+      },
+      "version_binding": {
+        "binding_type": "PACKAGE_VERSION",
+        "value": "1.0.0-local"
+      },
+      "boundary": {
+        "environment": "CONTROLLED_LOCAL_TEST",
+        "scope": "Bounded local deterministic replay corpus",
+        "network_enabled": false,
+        "external_effects": false,
+        "secrets_used": false,
+        "simulated_execution": false,
+        "bounded_corpus": true,
+        "excluded_scope": [
+          "external deployment",
+          "production authorization",
+          "independent infrastructure verification"
+        ]
+      },
+      "verification": {
+        "method": "Deterministic replay comparison against preserved local fixtures",
+        "independent": false,
+        "criteria": [
+          "matching canonical mission inputs",
+          "matching deterministic outputs"
+        ],
+        "observed_result": "PASS"
+      },
+      "verification_state": "VERIFIED_BOUNDED",
+      "status": {
+        "architecture_status": "CANONICAL",
+        "implementation_status": "IMPLEMENTED_LOCALLY",
+        "test_status": "TESTED_AGAINST_BOUNDED_CORPUS",
+        "verification_status": "VERIFIED_LOCALLY",
+        "deployment_status": "NOT_DEPLOYED",
+        "authorization_status": "LOCAL_DEVELOPMENT_AUTHORIZED",
+        "operational_status": "NOT_OPERATIONAL"
+      },
+      "evidence": [
+        {
+          "evidence_id": "IC-HANTER-EVIDENCE-TEST-0001",
+          "relationship": "SUPPORTS_CLAIM",
+          "availability": "PUBLIC_SUMMARY"
+        }
+      ],
+      "requirements": [
+        {
+          "requirement_id": "IC-HANTER-REQ-REPLAY-0001",
+          "description": "Identical canonical inputs produce matching bounded outputs.",
+          "result": "SATISFIED",
+          "evidence_ids": [
+            "IC-HANTER-EVIDENCE-TEST-0001"
+          ]
+        }
+      ],
+      "limitations": [
+        "NOT INDEPENDENTLY VERIFIED",
+        "BOUNDED LOCAL CORPUS",
+        "NOT DEPLOYED",
+        "NOT PRODUCTION AUTHORIZED"
+      ],
+      "contradictions": [],
+      "governance": {
+        "architectural_authority": "Alexander Romaskevich",
+        "authority_role_line": "Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core",
+        "hanter_subordinate_to_architect": true,
+        "production_authorized": false
+      },
+      "publication": {
+        "classification": "PUBLIC_SUMMARY",
+        "public_private_boundary_reviewed": true,
+        "restricted_supporting_artifacts": true,
+        "redactions_present": false,
+        "disclosure_limitations": [
+          "Private implementation artifacts are not published."
+        ]
+      },
+      "recorded_at": "2026-08-03T00:00:00Z",
+      "review_required": false,
+      "notes": []
+    }
+  ]
+}
