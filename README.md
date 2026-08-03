@@ -241,3 +241,16 @@ The repository promotes responsible engineering practices based on documented ar
 The long-term objective of HANTER-Public is to become a trusted architectural reference describing the evolution of HANTER through verified documentation, engineering standards, governance principles and carefully reviewed technical publications.
 
 Every contribution to this repository is expected to strengthen the overall quality, consistency and long-term maintainability of the public engineering knowledge base while respecting the architectural boundaries established by IMPERIAL Core.
+Expand the public architectural foundation and define the engineering knowledge framework
+
+Continue developing HANTER-Public as the official engineering documentation repository by introducing the concept of a structured architectural knowledge framework.
+
+This update reinforces the principle that long-term engineering success depends not only on software implementation but also on consistent architectural documentation, terminology, governance and technical communication.
+
+The repository is intended to evolve into a comprehensive public knowledge base where architectural concepts, engineering standards, governance principles and verified technical information are documented in a clear, structured and maintainable manner.
+
+Every published document contributes to a unified architectural language that improves collaboration between software engineers, enterprise architects, researchers and organizations interested in the public engineering direction of HANTER.
+
+The engineering knowledge framework supports continuous documentation, architectural traceability and long-term consistency while preserving the separation between public engineering information and protected implementation details contained within the private development environment.
+
+This commit strengthens the repository as a durable source of architectural knowledge designed to evolve together with HANTER and the broader IMPERIAL Core ecosystem for many years to come.
