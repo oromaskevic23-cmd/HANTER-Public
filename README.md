@@ -6265,3 +6265,133 @@ Private engineering work, protected infrastructure and confidential implementati
 The Public Status Boundary will remain a permanent governance principle of HANTER.
 
 Its objective is to preserve engineering credibility by ensuring that architectural documentation, implementation status, testing results, deployment information and production authorization remain clearly distinguished throughout the long-term evolution of the IMPERIAL Core ecosystem.
+# HANTER Public Architectural Decision Policy
+
+**Document ID:** IC-HANTER-PUBLIC-ADP-001
+**Version:** 1.0.0
+**Status:** PUBLIC ARCHITECTURAL DECISION POLICY
+**System:** HANTER
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the public policy governing architectural decisions within HANTER and the IMPERIAL Core ecosystem.
+
+Its objective is to explain how significant architectural decisions are evaluated, documented, approved and preserved throughout the long-term evolution of the project while maintaining the Public/Private Boundary.
+
+The policy describes the public architectural decision process rather than confidential engineering workflows.
+
+---
+
+# Architectural Decision Philosophy
+
+Every significant architectural decision should strengthen the long-term quality, consistency and maintainability of the enterprise architecture.
+
+Architectural decisions are expected to be deliberate, documented and traceable.
+
+Temporary implementation convenience must never override long-term architectural integrity.
+
+---
+
+# Decision Principles
+
+Public architectural decisions should be guided by the following principles:
+
+- Architecture Before Implementation;
+- Evidence Before Status;
+- explicit governance;
+- long-term maintainability;
+- architectural consistency;
+- engineering transparency;
+- responsible AI engineering;
+- semantic stability;
+- enterprise scalability;
+- Public/Private Boundary preservation.
+
+These principles provide a stable foundation for architectural evolution.
+
+---
+
+# Decision Authority
+
+The canonical architectural authority is:
+
+**Alexander Romaskevich**
+
+Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core
+
+Architect and final authority of IMPERIAL Core.
+
+The Architect defines the canonical architectural direction and approves significant architectural changes affecting the long-term evolution of the ecosystem.
+
+HANTER supports architectural coordination but does not replace the Architect’s final authority.
+
+---
+
+# Decision Lifecycle
+
+Major architectural decisions generally follow these stages:
+
+1. Architectural analysis.
+2. Identification of alternatives.
+3. Engineering evaluation.
+4. Governance review.
+5. Architectural approval.
+6. Public documentation where appropriate.
+7. Long-term maintenance and refinement.
+
+The lifecycle supports traceability without exposing confidential engineering processes.
+
+---
+
+# Documentation Requirements
+
+Significant public architectural decisions should:
+
+- define the architectural objective;
+- describe the engineering rationale;
+- explain expected long-term benefits;
+- preserve canonical terminology;
+- remain compatible with existing architecture;
+- avoid unsupported implementation claims.
+
+Documentation should emphasize architectural reasoning rather than implementation details.
+
+---
+
+# Decision Integrity
+
+Architectural decisions should remain:
+
+- technically justified;
+- internally consistent;
+- traceable through documentation;
+- compatible with governance;
+- aligned with the canonical architecture;
+- understandable by future engineers.
+
+Decision integrity contributes to sustainable enterprise engineering.
+
+---
+
+# Public Boundary
+
+This document describes the public architectural decision policy only.
+
+It does not disclose:
+
+- confidential design reviews;
+- protected engineering discussions;
+- internal approval workflows;
+- private implementation strategies;
+- proprietary operational procedures.
+
+---
+
+# Long-Term Objective
+
+The Architectural Decision Policy will continue to evolve together with HANTER and the IMPERIAL Core ecosystem.
+
+Its objective is to preserve a disciplined architectural decision process that supports decades of responsible engineering, transparent governance and sustainable enterprise architecture while maintaining compatibility with the canonical architecture established by the Architect.
