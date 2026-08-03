@@ -212,3 +212,13 @@ The repository documents that architectural decisions are evaluated according to
 The governance approach encourages transparent engineering documentation, traceable architectural decisions and continuous refinement of public technical knowledge while preserving the separation between public information and protected implementation.
 
 This commit further establishes HANTER-Public as a professional engineering repository designed to communicate architectural intent, engineering discipline and sustainable system evolution to developers, researchers, organizations and the broader technical community.
+Establish the public identity of HANTER within the IMPERIAL Core ecosystem
+
+Continue expanding the public engineering repository by documenting the identity and architectural position of HANTER within the broader IMPERIAL Core ecosystem.
+
+This update explains that HANTER is designed as the enterprise AI command and coordination layer responsible for supporting governed architectural execution through a federated approach. Its public documentation focuses on architectural concepts, engineering methodology and system evolution while respecting the separation between public knowledge and protected implementation.
+
+The repository emphasizes long-term engineering quality, disciplined documentation and architectural consistency as fundamental principles guiding future development. Public materials are intended to help software engineers, enterprise architects, researchers and organizations understand the architectural direction without exposing confidential technologies or operational infrastructure.
+
+This commit also strengthens the public identity of HANTER by positioning the repository as a durable engineering reference that will continue to evolve together with the IMPERIAL Core ecosystem through transparent documentation and carefully reviewed architectural publications.
+
