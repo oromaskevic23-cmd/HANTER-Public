@@ -6395,3 +6395,118 @@ It does not disclose:
 The Architectural Decision Policy will continue to evolve together with HANTER and the IMPERIAL Core ecosystem.
 
 Its objective is to preserve a disciplined architectural decision process that supports decades of responsible engineering, transparent governance and sustainable enterprise architecture while maintaining compatibility with the canonical architecture established by the Architect.
+# HANTER Public Architectural Evolution Policy
+
+**Document ID:** IC-HANTER-PUBLIC-AEP-001
+**Version:** 1.0.0
+**Status:** PUBLIC ARCHITECTURAL EVOLUTION POLICY
+**System:** HANTER
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the public Architectural Evolution Policy for HANTER within the IMPERIAL Core ecosystem.
+
+Its objective is to establish the principles governing how the public architecture evolves over time while preserving architectural consistency, engineering quality, governance integrity and the Public/Private Boundary.
+
+The policy describes architectural evolution rather than implementation planning.
+
+---
+
+# Evolution Philosophy
+
+Enterprise architecture should evolve deliberately rather than reactively.
+
+Architectural evolution is expected to improve clarity, consistency, maintainability and scalability without introducing unnecessary instability or abandoning established architectural principles.
+
+Long-term architectural integrity takes precedence over short-term implementation convenience.
+
+---
+
+# Evolution Objectives
+
+Architectural evolution is intended to:
+
+- strengthen canonical architecture;
+- improve engineering documentation;
+- preserve semantic consistency;
+- support enterprise scalability;
+- improve architectural governance;
+- reduce unnecessary complexity;
+- improve documentation quality;
+- preserve long-term maintainability;
+- support responsible AI engineering;
+- strengthen engineering knowledge.
+
+These objectives guide sustainable architectural development.
+
+---
+
+# Evolution Principles
+
+The public architectural evolution process follows these principles:
+
+- Architecture Before Implementation;
+- Evidence Before Status;
+- explicit governance;
+- documentation-first engineering;
+- semantic stability;
+- engineering transparency;
+- long-term thinking;
+- responsible architectural stewardship;
+- Public/Private Boundary preservation.
+
+These principles remain applicable throughout every stage of architectural growth.
+
+---
+
+# Controlled Architectural Change
+
+Architectural evolution should be controlled rather than disruptive.
+
+Significant architectural changes are expected to:
+
+- preserve canonical terminology;
+- remain compatible with the established architecture where practical;
+- document engineering rationale;
+- improve architectural quality;
+- reduce ambiguity;
+- strengthen governance consistency.
+
+Public architectural documentation should evolve in a predictable and traceable manner.
+
+---
+
+# Compatibility
+
+Future architectural revisions should strive to maintain compatibility with the established public engineering knowledge base.
+
+Where compatibility cannot be preserved, the affected documentation should clearly explain the reason for the change and provide appropriate cross-references or migration guidance where applicable.
+
+Compatibility contributes to long-term architectural stability.
+
+---
+
+# Public Boundary
+
+This policy governs the evolution of public architectural documentation.
+
+It does not disclose:
+
+- confidential engineering planning;
+- private implementation roadmaps;
+- protected operational procedures;
+- internal architectural reviews;
+- proprietary engineering decisions.
+
+These activities remain within the protected engineering boundary of IMPERIAL Core.
+
+---
+
+# Long-Term Vision
+
+The Architectural Evolution Policy will continue to evolve together with HANTER.
+
+Its objective is to preserve a disciplined, transparent and sustainable architectural evolution process capable of supporting decades of enterprise engineering while maintaining compatibility with the canonical architecture established by the Architect and protecting the Public/Private Boundary.
