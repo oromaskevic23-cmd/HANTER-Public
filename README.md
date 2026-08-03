@@ -2889,3 +2889,89 @@ The engineering governance model will continue to evolve together with HANTER an
 Future revisions may introduce additional engineering standards, governance practices and architectural guidance while preserving compatibility with the canonical architecture established by the Architect.
 
 The long-term objective is to maintain a mature enterprise engineering governance model supporting decades of sustainable architectural evolution, responsible AI engineering and professional technical documentation.
+# HANTER Public Architectural Documentation
+
+**Document ID:** IC-HANTER-PUBLIC-DOCUMENTATION-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC ARCHITECTURAL DOCUMENTATION  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the role of architectural documentation within the HANTER project.
+
+Its objective is to explain how documentation supports architectural governance, engineering quality, long-term maintainability and sustainable enterprise development while preserving the Public/Private Boundary.
+
+Documentation is considered a core engineering asset rather than supplementary project material.
+
+---
+
+# Documentation Philosophy
+
+Architecture can only remain consistent when engineering knowledge is documented, preserved and continuously refined.
+
+Public documentation communicates architectural intent, governance principles and engineering direction while protecting confidential implementation details and operational infrastructure.
+
+Every document contributes to the long-term engineering knowledge base of HANTER.
+
+---
+
+# Documentation Objectives
+
+The architectural documentation of HANTER is intended to:
+
+- preserve architectural knowledge;
+- explain engineering decisions;
+- improve technical transparency;
+- establish consistent terminology;
+- strengthen governance;
+- support future contributors;
+- improve long-term maintainability;
+- communicate enterprise architectural direction.
+
+These objectives guide the evolution of the public documentation ecosystem.
+
+---
+
+# Documentation Structure
+
+The public documentation includes:
+
+- architecture;
+- enterprise architecture;
+- governance;
+- security;
+- engineering standards;
+- design principles;
+- architectural principles;
+- quality standards;
+- roadmap;
+- glossary;
+- architectural diagrams;
+- public component registry;
+- engineering milestones.
+
+Together these documents establish a coherent engineering knowledge system.
+
+---
+
+# Documentation Governance
+
+Architectural documentation evolves together with the engineering architecture.
+
+New documents should strengthen the existing knowledge base, maintain terminology consistency and remain compatible with the canonical architecture of IMPERIAL Core.
+
+Documentation governance helps preserve architectural quality across future generations of engineering work.
+
+---
+
+# Long-Term Documentation Vision
+
+The documentation ecosystem of HANTER will continue expanding as the project evolves.
+
+Future engineering publications, specifications, standards and architectural guidance will extend this knowledge base while preserving architectural integrity, governance consistency and the Public/Private Boundary.
+
+The long-term objective is to establish HANTER-Public as a professional enterprise engineering documentation platform supporting architects, engineers, researchers and organizations around the world.
