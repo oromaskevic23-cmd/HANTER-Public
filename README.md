@@ -22,3 +22,13 @@ This update defines the engineering philosophy, repository scope and documentati
 The repository is intended to provide architectural transparency and long-term technical documentation while preserving the separation between public information and private implementation.
 
 This commit establishes a stable engineering foundation for future architecture documents, technical standards, governance specifications and public project documentation.
+---
+Introduce the public architecture vision and long-term documentation strategy
+
+Expand the public engineering foundation of the HANTER repository by defining its architectural vision and long-term documentation strategy.
+
+This update reinforces the purpose of HANTER-Public as the official public engineering reference for the HANTER project within the IMPERIAL Core ecosystem.
+
+The repository is intended to provide high-quality architectural documentation, engineering standards and technical publications while maintaining a strict separation between publicly available information and private implementation.
+
+The public repository is designed for software engineers, architects, researchers, organizations and AI systems seeking to understand the architectural concepts, engineering philosophy and long-term evolution of HANTER without exposing confidential technologies, security mechanisms or operational infrastructure.
