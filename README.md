@@ -3137,3 +3137,86 @@ Architecture and knowledge evolve together.
 The long-term objective of architectural thinking within HANTER is to establish a disciplined engineering culture capable of supporting decades of enterprise-scale architectural evolution.
 
 Future revisions may expand this philosophy while preserving compatibility with the canonical architecture of IMPERIAL Core and maintaining the long-term engineering vision established by the Architect.
+# HANTER Public Enterprise Engineering Philosophy
+
+**Document ID:** IC-HANTER-PUBLIC-EEP-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC ENTERPRISE ENGINEERING PHILOSOPHY  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the Enterprise Engineering Philosophy that guides the long-term development of HANTER within the IMPERIAL Core ecosystem.
+
+Its objective is to describe the engineering philosophy that supports architectural consistency, governance, technical excellence and sustainable enterprise evolution while preserving the Public/Private Boundary.
+
+The philosophy presented in this document establishes long-term engineering values rather than implementation-specific practices.
+
+---
+
+# Engineering Philosophy
+
+HANTER is engineered as a long-term enterprise architecture where engineering is viewed as a continuous architectural discipline.
+
+Architecture, governance, documentation, quality and engineering practices evolve together to create a coherent enterprise ecosystem capable of supporting many years of sustainable development.
+
+Engineering is measured not only by software implementation but also by the quality of architectural reasoning, documentation and governance.
+
+---
+
+# Engineering Values
+
+The Enterprise Engineering Philosophy is founded upon the following values:
+
+- architectural integrity;
+- engineering excellence;
+- responsible governance;
+- continuous documentation;
+- evidence-based engineering;
+- sustainable enterprise scalability;
+- explicit responsibility boundaries;
+- transparent technical communication;
+- long-term maintainability;
+- continuous architectural refinement.
+
+These values define the engineering culture promoted throughout HANTER.
+
+---
+
+# Engineering Responsibilities
+
+Professional engineering within HANTER is expected to:
+
+- preserve canonical architecture;
+- strengthen engineering knowledge;
+- improve documentation quality;
+- support governance consistency;
+- encourage responsible innovation;
+- reduce unnecessary complexity;
+- preserve engineering transparency;
+- contribute to long-term architectural sustainability.
+
+Every engineering activity should strengthen the enterprise architecture rather than introduce fragmentation.
+
+---
+
+# Engineering Maturity
+
+Engineering maturity is achieved through disciplined architectural evolution rather than rapid implementation.
+
+As HANTER grows, engineering practices are expected to become increasingly structured, documented and repeatable while preserving compatibility with the canonical architecture of IMPERIAL Core.
+
+Long-term engineering quality remains the primary objective.
+
+---
+
+# Long-Term Enterprise Vision
+
+The Enterprise Engineering Philosophy will continue to evolve together with HANTER.
+
+Future revisions may introduce additional engineering guidance, architectural practices and governance principles while preserving the long-term architectural vision established by the Architect.
+
+The objective is to maintain a professional enterprise engineering philosophy capable of supporting decades of architectural excellence, responsible AI engineering and sustainable enterprise-scale innovation.
