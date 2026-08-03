@@ -1142,3 +1142,88 @@ They do not automatically indicate implementation completion, production deploym
 The milestone history will continue to expand as HANTER evolves.
 
 Each milestone is intended to preserve the engineering history of the project through accurate, transparent and verifiable public documentation while maintaining consistency with the canonical architecture of IMPERIAL Core.
+# HANTER Official Resources
+
+**Document ID:** IC-HANTER-PUBLIC-RESOURCES-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC OFFICIAL RESOURCES  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document provides a central reference for the official public resources associated with HANTER and the IMPERIAL Core ecosystem.
+
+Its purpose is to help developers, enterprise architects, researchers, organizations and members of the technical community identify official communication channels and publicly available engineering information.
+
+Only officially maintained public resources should be listed within this document.
+
+---
+
+# Official Repository
+
+## HANTER-Public
+
+The official public engineering repository for HANTER.
+
+This repository documents the architectural vision, governance principles, engineering standards and long-term development direction of HANTER while preserving the Public/Private Boundary.
+
+---
+
+# Official Website
+
+The official public website of HANTER and IMPERIAL Core will be listed here as public resources continue to expand.
+
+Future updates may include architectural publications, engineering articles, documentation portals and additional public technical resources.
+
+---
+
+# Engineering Documentation
+
+The official engineering documentation includes:
+
+- Architecture Overview;
+- Public Architecture Diagram;
+- Governance Documentation;
+- Security Policy;
+- Contribution Guidelines;
+- Public Roadmap;
+- Glossary;
+- Public Component Registry;
+- Public Engineering Milestones.
+
+Together these documents form the official public engineering knowledge base for HANTER.
+
+---
+
+# Community Resources
+
+As the project evolves, this document may include additional public resources such as:
+
+- engineering publications;
+- technical presentations;
+- architecture articles;
+- conference materials;
+- public demonstrations;
+- educational resources;
+- community documentation.
+
+Only officially approved public resources will be referenced.
+
+---
+
+# Authenticity
+
+Official public resources are intended to provide accurate architectural information regarding HANTER and the IMPERIAL Core ecosystem.
+
+Information published through unofficial sources should not be considered authoritative unless confirmed through an official public resource maintained by the project.
+
+---
+
+# Future Expansion
+
+The Official Resources document will continue to evolve together with the public engineering ecosystem.
+
+Its objective is to provide a stable entry point for discovering official architectural documentation, engineering publications and public information related to HANTER.
