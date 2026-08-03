@@ -7328,3 +7328,92 @@ It does not disclose:
 The Architecture Principles Catalog will continue to evolve together with HANTER and the IMPERIAL Core ecosystem.
 
 Its objective is to maintain a stable and authoritative catalog of engineering principles supporting decades of enterprise architecture, responsible AI engineering, semantic consistency and sustainable architectural evolution while preserving compatibility with the canonical architecture established by the Architect.
+# HANTER Public Architecture Quality Model
+
+**Document ID:** IC-HANTER-PUBLIC-AQM-001
+**Version:** 1.0.0
+**Status:** PUBLIC ARCHITECTURE QUALITY MODEL
+**System:** HANTER
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the public Architecture Quality Model for HANTER within the IMPERIAL Core ecosystem.
+
+Its objective is to establish a consistent quality framework for evaluating public architectural documentation, governance, engineering knowledge and semantic consistency while preserving the Public/Private Boundary.
+
+The model evaluates the quality of architectural information rather than implementation performance.
+
+---
+
+# Quality Philosophy
+
+Enterprise architecture should improve through measurable quality rather than increasing documentation volume.
+
+High-quality architecture is characterized by consistency, traceability, clarity, governance alignment and long-term maintainability.
+
+Quality is achieved through continuous refinement rather than one-time publication.
+
+---
+
+# Quality Dimensions
+
+The Architecture Quality Model evaluates the public engineering documentation according to the following dimensions:
+
+- Architectural Consistency
+- Governance Alignment
+- Documentation Quality
+- Semantic Consistency
+- Canonical Terminology
+- Traceability
+- Knowledge Organization
+- Machine Readability
+- Public Discoverability
+- Long-Term Maintainability
+
+Each dimension contributes to the overall quality of the public engineering knowledge base.
+
+---
+
+# Evaluation Principles
+
+Public architectural quality should emphasize:
+
+- factual accuracy;
+- architectural coherence;
+- stable terminology;
+- evidence-aware status language;
+- clear document responsibilities;
+- explicit relationships;
+- consistent engineering vocabulary;
+- responsible public communication.
+
+Quality evaluation should never encourage unsupported claims or weaken the Public/Private Boundary.
+
+---
+
+# Continuous Improvement
+
+The quality model supports continuous architectural refinement.
+
+Future documentation revisions should improve one or more quality dimensions while remaining compatible with the canonical architecture of IMPERIAL Core.
+
+Architectural quality should evolve together with engineering knowledge.
+
+---
+
+# Public Boundary
+
+The Architecture Quality Model evaluates only public engineering documentation.
+
+It does not evaluate confidential implementation quality, private operational systems or protected engineering processes.
+
+---
+
+# Long-Term Vision
+
+The Architecture Quality Model will continue to evolve together with HANTER.
+
+Its objective is to provide a durable engineering framework for evaluating and improving the quality of public architectural knowledge while preserving consistency, transparency and compatibility with the canonical architecture established by the Architect.
