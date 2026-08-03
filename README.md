@@ -1695,3 +1695,79 @@ Engineering responsibility extends beyond implementation and includes documentat
 These architectural principles are intended to remain stable as HANTER evolves.
 
 Future revisions may expand or refine the principles while preserving compatibility with the canonical architecture of IMPERIAL Core and maintaining the long-term engineering vision established by the Architect.
+# HANTER Public System Boundaries
+
+**Document ID:** IC-HANTER-PUBLIC-BOUNDARIES-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC SYSTEM BOUNDARIES  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the public architectural boundaries of HANTER within the IMPERIAL Core ecosystem.
+
+Its objective is to explain where the public engineering documentation begins and where protected implementation, operational infrastructure and confidential engineering assets remain intentionally outside the scope of this repository.
+
+Well-defined boundaries are essential for architectural transparency, responsible governance and long-term maintainability.
+
+---
+
+# Public Engineering Boundary
+
+The HANTER-Public repository exists to communicate the architectural direction of the project through professional engineering documentation.
+
+The public boundary includes:
+
+- architectural documentation;
+- engineering principles;
+- governance concepts;
+- architecture diagrams;
+- terminology;
+- public standards;
+- roadmap information;
+- public engineering publications.
+
+These materials are intended to improve architectural understanding without exposing protected implementation.
+
+---
+
+# Protected Engineering Boundary
+
+The following areas remain outside the scope of this repository:
+
+- private source code;
+- confidential implementation details;
+- deployment infrastructure;
+- runtime configuration;
+- internal engineering tooling;
+- operational procedures;
+- protected security mechanisms;
+- private repositories;
+- proprietary engineering assets.
+
+The exclusion of these elements is intentional and supports the long-term security and integrity of the HANTER project.
+
+---
+
+# Architectural Separation
+
+Public engineering documentation and protected implementation serve different purposes.
+
+Public documentation explains architectural intent, engineering philosophy and governance.
+
+Private implementation contains the operational realization of those concepts.
+
+Maintaining this separation allows the project to remain transparent without compromising security, operational integrity or proprietary engineering work.
+
+---
+
+# Long-Term Boundary Management
+
+As HANTER continues to evolve, the public engineering boundary may expand through additional documentation, architectural publications and educational materials.
+
+However, confidential implementation, operational infrastructure and protected engineering assets will continue to remain outside the public repository.
+
+Maintaining a clear Public/Private Boundary is considered a permanent architectural principle of the IMPERIAL Core ecosystem.
