@@ -8178,3 +8178,174 @@ The repository architecture is designed to maximize public understanding while p
 The Repository Architecture Overview will continue to evolve together with HANTER and the IMPERIAL Core ecosystem.
 
 Its objective is to preserve a coherent, professionally governed and machine-readable public engineering repository capable of supporting engineers, enterprise architects, researchers, AI assistants and search systems for decades while remaining compatible with the canonical architecture established by the Architect.
+# HANTER Public Architecture Manifest
+
+**Document ID:** IC-HANTER-PUBLIC-MANIFEST-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC ARCHITECTURE MANIFEST  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Manifest
+
+This document represents the official public architectural manifesto of HANTER within the IMPERIAL Core ecosystem.
+
+It defines the engineering philosophy, architectural values and long-term commitment that guide the public evolution of HANTER.
+
+This manifesto is intentionally public.
+
+It explains what HANTER stands for without exposing confidential implementation, proprietary engineering assets or protected operational infrastructure.
+
+---
+
+# Our Vision
+
+HANTER is designed as a governed AI command and coordination layer supporting the long-term evolution of the IMPERIAL Core ecosystem.
+
+Its architecture is intended to remain understandable, sustainable and adaptable across future generations of technology.
+
+Architecture is viewed as a long-term discipline rather than a short-term implementation activity.
+
+---
+
+# Our Commitment
+
+The public engineering repository is maintained to promote:
+
+- architectural clarity;
+- engineering integrity;
+- transparent governance;
+- semantic consistency;
+- responsible AI engineering;
+- professional documentation;
+- machine-readable knowledge;
+- sustainable architectural evolution.
+
+Every public document should strengthen understanding rather than create ambiguity.
+
+---
+
+# What We Believe
+
+We believe that durable engineering systems are built upon principles rather than shortcuts.
+
+We believe that governance enables innovation rather than preventing it.
+
+We believe that documentation is an engineering asset.
+
+We believe that architecture should outlive individual implementations.
+
+We believe that long-term consistency is more valuable than rapid fragmentation.
+
+We believe that public transparency and private engineering can coexist through a clearly defined Public/Private Boundary.
+
+---
+
+# Our Engineering Principles
+
+The public architecture of HANTER is guided by the following enduring principles:
+
+- Architecture Before Implementation;
+- Evidence Before Status;
+- Explicit Architectural Authority;
+- Federated Multi-Orchestrator Architecture;
+- Responsible AI Engineering;
+- Enterprise Scalability;
+- Documentation as an Engineering Asset;
+- Canonical Terminology;
+- Semantic Stability;
+- Machine Readability;
+- Long-Term Maintainability;
+- Public/Private Boundary.
+
+These principles define the engineering culture of the project.
+
+---
+
+# Architectural Authority
+
+The canonical architectural authority is:
+
+**Alexander Romaskevich**
+
+**Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core**
+
+**Architect and final authority of IMPERIAL Core**
+
+The Architect defines the canonical architectural direction, preserves long-term engineering consistency and approves significant architectural evolution.
+
+HANTER supports this governance model and does not replace the Architect’s final authority.
+
+---
+
+# Public Engineering Responsibility
+
+The purpose of HANTER-Public is to provide an accurate, professional and trustworthy public engineering reference.
+
+Public documentation should:
+
+- remain factually accurate;
+- distinguish architecture from implementation;
+- distinguish local verification from deployment;
+- preserve semantic consistency;
+- strengthen engineering knowledge;
+- support responsible public communication.
+
+The repository should never overstate implementation status or operational capability.
+
+---
+
+# Public and Private Boundary
+
+The public repository intentionally documents:
+
+- architecture;
+- governance;
+- engineering principles;
+- semantic models;
+- knowledge organization;
+- public engineering documentation.
+
+The repository intentionally does not disclose:
+
+- confidential implementation;
+- protected runtime infrastructure;
+- proprietary engineering knowledge;
+- operational procedures;
+- secrets or credentials;
+- restricted engineering assets.
+
+Transparency must never compromise engineering security.
+
+---
+
+# Long-Term Commitment
+
+The architecture of HANTER is expected to evolve continuously.
+
+Future revisions should strengthen:
+
+- engineering quality;
+- governance;
+- documentation;
+- semantic interoperability;
+- machine readability;
+- enterprise architecture;
+- engineering knowledge;
+- architectural consistency.
+
+Evolution should remain disciplined, traceable and compatible with the canonical architecture established by the Architect.
+
+---
+
+# Closing Statement
+
+HANTER is more than a software project.
+
+It is a long-term enterprise engineering architecture developed within the IMPERIAL Core ecosystem.
+
+Its public repository exists to preserve engineering knowledge, strengthen architectural understanding and support responsible AI engineering for many years to come.
+
+Every future contribution should leave the architecture clearer, stronger and more sustainable than before.
