@@ -2410,3 +2410,84 @@ The Enterprise Governance Framework is intended to remain stable while continuou
 Future revisions may expand governance guidance, engineering practices and architectural documentation while preserving compatibility with the canonical architecture established by the Architect.
 
 The long-term objective is to maintain an enterprise governance framework capable of supporting decades of sustainable architectural growth, professional engineering practice and responsible AI system development.
+# HANTER Public Architectural Consistency
+
+**Document ID:** IC-HANTER-PUBLIC-CONSISTENCY-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC ARCHITECTURAL CONSISTENCY POLICY  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the principles that preserve architectural consistency throughout the long-term evolution of HANTER.
+
+Its objective is to ensure that architecture, governance, engineering documentation and future development remain aligned with the canonical architectural vision of IMPERIAL Core while preserving the Public/Private Boundary.
+
+Architectural consistency is considered one of the fundamental engineering qualities required for sustainable enterprise-scale systems.
+
+---
+
+# Consistency Philosophy
+
+Architecture is expected to evolve continuously without losing its identity.
+
+As HANTER grows, new capabilities should extend the existing architecture instead of replacing or fragmenting it.
+
+Engineering consistency protects the long-term value of architectural knowledge and reduces unnecessary redesign.
+
+---
+
+# Consistency Objectives
+
+The architectural consistency policy seeks to:
+
+- preserve canonical terminology;
+- maintain stable architectural principles;
+- ensure documentation alignment;
+- strengthen engineering governance;
+- reduce architectural fragmentation;
+- encourage reusable architectural concepts;
+- improve long-term maintainability;
+- support sustainable enterprise evolution.
+
+These objectives provide a stable foundation for future engineering work.
+
+---
+
+# Areas of Consistency
+
+Architectural consistency should be maintained across:
+
+- engineering documentation;
+- architectural terminology;
+- governance policies;
+- design principles;
+- engineering standards;
+- enterprise architecture;
+- public architectural publications;
+- long-term engineering strategy.
+
+Every public engineering document should remain compatible with these foundations.
+
+---
+
+# Engineering Alignment
+
+Engineering activities should reinforce the existing architectural model rather than introduce conflicting concepts.
+
+Architectural evolution is expected to occur through disciplined refinement, transparent documentation and responsible engineering practices.
+
+Alignment between architecture and documentation is considered essential for enterprise engineering maturity.
+
+---
+
+# Long-Term Commitment
+
+Architectural consistency is not a one-time objective.
+
+It is a continuous engineering responsibility that supports the long-term sustainability of HANTER and the IMPERIAL Core ecosystem.
+
+Future revisions may expand this policy while preserving compatibility with the canonical architecture established by the Architect and maintaining the long-term engineering vision of the project.
