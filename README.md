@@ -4557,3 +4557,89 @@ The Entity Model will continue to evolve together with HANTER.
 Future public entities and relationships may be introduced while preserving compatibility with the canonical architecture, maintaining semantic consistency and strengthening the public engineering knowledge graph.
 
 The long-term objective is to establish a durable enterprise entity model capable of supporting decades of architectural documentation, responsible engineering and machine-readable knowledge representation.
+# HANTER Public Machine-Readable Architecture
+
+**Document ID:** IC-HANTER-PUBLIC-MRA-001
+**Version:** 1.0.0
+**Status:** PUBLIC MACHINE-READABLE ARCHITECTURE
+**System:** HANTER
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the Machine-Readable Architecture of HANTER within the IMPERIAL Core ecosystem.
+
+Its objective is to improve the ability of search engines, AI assistants, enterprise knowledge systems and automated documentation platforms to interpret the public engineering documentation consistently.
+
+The document describes architectural semantics and documentation organization rather than software implementation.
+
+---
+
+# Machine-Readable Philosophy
+
+Modern engineering documentation is consumed by both humans and machines.
+
+A machine-readable architecture improves semantic interpretation by maintaining stable terminology, explicit architectural relationships and consistent engineering documentation.
+
+The objective is to reduce ambiguity while improving long-term discoverability and interoperability.
+
+---
+
+# Machine-Readable Principles
+
+The public engineering documentation follows these principles:
+
+- stable document identifiers;
+- canonical terminology;
+- explicit architectural relationships;
+- consistent document structure;
+- semantic document hierarchy;
+- versioned engineering publications;
+- long-term terminology stability;
+- enterprise engineering vocabulary;
+- documentation traceability;
+- Public/Private Boundary preservation.
+
+These principles improve automated interpretation across multiple knowledge systems.
+
+---
+
+# Machine-Readable Structure
+
+The public documentation is organized into structured architectural domains including:
+
+- Enterprise Architecture;
+- Engineering Governance;
+- Architectural Principles;
+- Engineering Standards;
+- Documentation;
+- Quality Standards;
+- Security Documentation;
+- Architectural Knowledge;
+- Semantic Architecture;
+- Entity Model;
+- Digital Footprint.
+
+Each document contributes to a coherent engineering knowledge structure.
+
+---
+
+# Semantic Stability
+
+Machine-readable engineering documentation depends upon stable terminology and explicit architectural relationships.
+
+Every public engineering publication should reinforce the canonical vocabulary of HANTER and remain compatible with the long-term architectural direction of IMPERIAL Core.
+
+Consistency enables reliable interpretation by search engines and AI systems.
+
+---
+
+# Long-Term Objective
+
+The Machine-Readable Architecture will continue to evolve together with HANTER.
+
+Future engineering publications may improve semantic structure, document relationships and knowledge representation while preserving compatibility with the canonical architecture established by the Architect.
+
+The long-term objective is to establish HANTER-Public as a highly interpretable enterprise engineering knowledge base for both human readers and intelligent information systems.
