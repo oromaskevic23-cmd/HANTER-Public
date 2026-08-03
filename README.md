@@ -3377,3 +3377,84 @@ The Enterprise Architecture Maturity model will continue to evolve together with
 Future revisions may introduce additional maturity guidance while preserving compatibility with the canonical architecture established by the Architect.
 
 The long-term objective is to develop a resilient enterprise architecture capable of supporting decades of responsible engineering, architectural excellence and sustainable AI system evolution.
+# HANTER Public Enterprise Architecture Strategy
+
+**Document ID:** IC-HANTER-PUBLIC-EAS-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC ENTERPRISE ARCHITECTURE STRATEGY  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the Enterprise Architecture Strategy that guides the long-term evolution of HANTER within the IMPERIAL Core ecosystem.
+
+Its objective is to describe the strategic architectural direction that aligns engineering activities, governance, documentation and enterprise development while preserving the Public/Private Boundary.
+
+The strategy establishes long-term architectural priorities rather than implementation-specific plans.
+
+---
+
+# Strategic Vision
+
+HANTER is developed as a long-term enterprise architecture intended to evolve through disciplined engineering, transparent governance and continuous architectural refinement.
+
+The strategic objective is to establish a stable architectural foundation capable of supporting future organizational growth, evolving AI technologies and sustainable enterprise engineering.
+
+Strategic architecture provides continuity across engineering generations while protecting architectural integrity.
+
+---
+
+# Strategic Objectives
+
+The Enterprise Architecture Strategy pursues the following objectives:
+
+- preserve canonical architectural consistency;
+- strengthen enterprise governance;
+- improve engineering maturity;
+- support sustainable architectural scalability;
+- maintain high-quality engineering documentation;
+- encourage responsible AI engineering;
+- improve architectural transparency;
+- preserve long-term maintainability;
+- strengthen engineering knowledge;
+- support continuous enterprise evolution.
+
+These objectives guide the strategic direction of HANTER.
+
+---
+
+# Strategic Alignment
+
+Enterprise architecture aligns:
+
+- architectural vision;
+- engineering standards;
+- governance policies;
+- documentation strategy;
+- architectural principles;
+- enterprise engineering practices;
+- quality standards;
+- long-term architectural planning.
+
+Alignment ensures that engineering activities reinforce the same long-term architectural direction.
+
+---
+
+# Sustainable Enterprise Development
+
+The strategy promotes sustainable development through disciplined architectural evolution rather than short-term implementation expansion.
+
+Future engineering initiatives should strengthen architectural stability, documentation quality and governance consistency while remaining compatible with the canonical architecture of IMPERIAL Core.
+
+---
+
+# Long-Term Strategy
+
+The Enterprise Architecture Strategy will continue to evolve together with HANTER.
+
+Future revisions may expand strategic guidance while preserving the engineering philosophy, architectural consistency and governance model established by the Architect.
+
+The long-term objective is to maintain a durable enterprise architecture strategy capable of supporting decades of responsible engineering, architectural excellence and sustainable AI system evolution.
