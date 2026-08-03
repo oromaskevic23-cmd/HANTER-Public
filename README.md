@@ -7417,3 +7417,124 @@ It does not evaluate confidential implementation quality, private operational sy
 The Architecture Quality Model will continue to evolve together with HANTER.
 
 Its objective is to provide a durable engineering framework for evaluating and improving the quality of public architectural knowledge while preserving consistency, transparency and compatibility with the canonical architecture established by the Architect.
+# HANTER Public Engineering Knowledge Model
+
+**Document ID:** IC-HANTER-PUBLIC-EKM-001
+**Version:** 1.0.0
+**Status:** PUBLIC ENGINEERING KNOWLEDGE MODEL
+**System:** HANTER
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the public Engineering Knowledge Model for HANTER within the IMPERIAL Core ecosystem.
+
+Its objective is to describe how public engineering knowledge is structured, classified, interconnected and maintained in order to support long-term architectural consistency, semantic interoperability and enterprise-scale knowledge management while preserving the Public/Private Boundary.
+
+The Engineering Knowledge Model provides a conceptual framework for organizing engineering knowledge rather than describing implementation details.
+
+---
+
+# Engineering Knowledge Philosophy
+
+Engineering knowledge represents one of the most valuable long-term assets of an enterprise architecture.
+
+Knowledge should remain structured, traceable, version-aware and semantically consistent throughout the evolution of HANTER.
+
+The objective is to transform documentation into a coherent engineering knowledge system rather than a collection of independent documents.
+
+---
+
+# Knowledge Categories
+
+The public engineering knowledge base is organized into the following categories:
+
+- Enterprise Architecture
+- Architectural Governance
+- Engineering Standards
+- Architectural Principles
+- Documentation
+- Semantic Architecture
+- Canonical Terminology
+- Engineering Knowledge
+- Machine-Readable Documentation
+- Public Components
+- Public Milestones
+- Digital Footprint
+
+Each category contributes a distinct perspective to the overall engineering knowledge ecosystem.
+
+---
+
+# Knowledge Relationships
+
+Engineering knowledge is interconnected through explicit architectural relationships.
+
+Examples include:
+
+- Architecture defines Governance.
+- Governance guides Engineering.
+- Engineering produces Documentation.
+- Documentation preserves Knowledge.
+- Knowledge strengthens Architecture.
+- Semantic Architecture improves Machine Readability.
+- Canonical Terminology improves Semantic Consistency.
+
+Together these relationships create a coherent engineering knowledge model.
+
+---
+
+# Knowledge Quality
+
+Public engineering knowledge should remain:
+
+- architecturally accurate;
+- semantically stable;
+- consistently documented;
+- internally traceable;
+- version controlled;
+- compatible with canonical terminology;
+- understandable by engineers and AI systems.
+
+Knowledge quality is improved through continuous architectural refinement rather than documentation growth alone.
+
+---
+
+# Knowledge Governance
+
+Engineering knowledge evolves under architectural governance.
+
+New documentation should:
+
+- strengthen existing knowledge;
+- preserve canonical terminology;
+- improve semantic consistency;
+- reduce ambiguity;
+- avoid unsupported engineering claims;
+- reinforce architectural integrity.
+
+Governance protects long-term engineering quality.
+
+---
+
+# Public Boundary
+
+The Engineering Knowledge Model applies exclusively to public engineering knowledge.
+
+It does not include:
+
+- confidential implementation knowledge;
+- protected engineering procedures;
+- private runtime information;
+- proprietary operational practices;
+- restricted engineering artifacts.
+
+---
+
+# Long-Term Vision
+
+The Engineering Knowledge Model will continue to evolve together with HANTER and the IMPERIAL Core ecosystem.
+
+Its objective is to establish a durable enterprise engineering knowledge model supporting decades of architectural evolution, responsible AI engineering, semantic consistency, machine-readable documentation and sustainable knowledge management while preserving compatibility with the canonical architecture established by the Architect.
