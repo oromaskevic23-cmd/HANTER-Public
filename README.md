@@ -2975,3 +2975,84 @@ The documentation ecosystem of HANTER will continue expanding as the project evo
 Future engineering publications, specifications, standards and architectural guidance will extend this knowledge base while preserving architectural integrity, governance consistency and the Public/Private Boundary.
 
 The long-term objective is to establish HANTER-Public as a professional enterprise engineering documentation platform supporting architects, engineers, researchers and organizations around the world.
+# HANTER Public Engineering Knowledge
+
+**Document ID:** IC-HANTER-PUBLIC-KNOWLEDGE-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC ENGINEERING KNOWLEDGE  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the role of engineering knowledge within the HANTER project.
+
+Its objective is to describe how architectural knowledge is created, organized, preserved and continuously improved throughout the long-term evolution of HANTER while maintaining the Public/Private Boundary.
+
+Engineering knowledge is considered a strategic architectural asset that supports sustainable enterprise development.
+
+---
+
+# Engineering Knowledge Philosophy
+
+Architecture is more than software implementation.
+
+It also consists of accumulated engineering knowledge, documented architectural decisions, governance principles, terminology, design rationale and technical experience acquired throughout the lifecycle of the project.
+
+Preserving this knowledge strengthens long-term maintainability and reduces architectural fragmentation.
+
+---
+
+# Engineering Knowledge Objectives
+
+The public engineering knowledge base is intended to:
+
+- preserve architectural understanding;
+- document engineering reasoning;
+- strengthen governance transparency;
+- improve technical communication;
+- establish stable terminology;
+- support architectural consistency;
+- encourage continuous learning;
+- provide a durable enterprise knowledge base.
+
+These objectives guide the long-term development of HANTER-Public.
+
+---
+
+# Knowledge Structure
+
+The engineering knowledge ecosystem includes:
+
+- architectural documentation;
+- engineering standards;
+- governance documentation;
+- architectural principles;
+- design principles;
+- terminology;
+- quality standards;
+- architectural diagrams;
+- engineering milestones;
+- enterprise architecture guidance.
+
+Together these documents represent the public engineering knowledge of HANTER.
+
+---
+
+# Knowledge Evolution
+
+Engineering knowledge is expected to evolve continuously.
+
+As HANTER grows, additional documentation, architectural guidance and engineering publications will extend the knowledge base while preserving compatibility with the canonical architecture of IMPERIAL Core.
+
+Knowledge evolves through disciplined engineering rather than isolated documentation efforts.
+
+---
+
+# Long-Term Vision
+
+The long-term objective is to establish HANTER-Public as a durable enterprise engineering knowledge platform.
+
+By preserving architectural knowledge through professional documentation, HANTER supports future architects, engineers, researchers and organizations while maintaining responsible governance, engineering transparency and sustainable architectural evolution.
