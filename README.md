@@ -6628,3 +6628,118 @@ It does not disclose:
 The Architectural Integrity framework will continue to evolve together with HANTER and the IMPERIAL Core ecosystem.
 
 Its objective is to preserve a coherent, trustworthy and sustainable public architecture capable of supporting decades of responsible engineering, transparent governance and enterprise-scale architectural evolution while remaining compatible with the canonical architecture established by the Architect.
+# HANTER Public Architectural Traceability
+
+**Document ID:** IC-HANTER-PUBLIC-AT-001
+**Version:** 1.0.0
+**Status:** PUBLIC ARCHITECTURAL TRACEABILITY
+**System:** HANTER
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the public Architectural Traceability model for HANTER within the IMPERIAL Core ecosystem.
+
+Its objective is to establish a transparent method for relating architectural concepts, engineering principles, governance guidance and public documentation while preserving the Public/Private Boundary.
+
+Architectural traceability improves engineering understanding without exposing protected implementation details.
+
+---
+
+# Traceability Philosophy
+
+Enterprise architecture should be understandable as a connected engineering system rather than a collection of isolated documents.
+
+Every significant architectural concept should be traceable through public documentation, engineering rationale and canonical terminology.
+
+Traceability supports architectural consistency, documentation quality and long-term maintainability.
+
+---
+
+# Traceability Objectives
+
+The Architectural Traceability model is intended to:
+
+- preserve architectural relationships;
+- strengthen documentation consistency;
+- improve engineering transparency;
+- support semantic interpretation;
+- reduce architectural ambiguity;
+- improve long-term maintainability;
+- strengthen enterprise knowledge management;
+- preserve canonical terminology.
+
+These objectives contribute to a durable public engineering knowledge base.
+
+---
+
+# Public Traceability Model
+
+Public architectural traceability connects:
+
+- architectural vision;
+- governance;
+- engineering principles;
+- documentation;
+- architectural standards;
+- semantic architecture;
+- canonical identity;
+- entity relationships;
+- engineering knowledge;
+- public milestones.
+
+Each documented relationship strengthens the coherence of the public architecture.
+
+---
+
+# Traceable Engineering Concepts
+
+Public engineering concepts should remain traceable through:
+
+- stable document identifiers;
+- consistent terminology;
+- explicit architectural relationships;
+- documented engineering intent;
+- internal documentation references;
+- versioned public publications.
+
+Traceability improves both human understanding and machine-readable interpretation.
+
+---
+
+# Engineering Consistency
+
+Architectural traceability supports:
+
+- documentation integrity;
+- governance consistency;
+- engineering quality;
+- semantic stability;
+- knowledge preservation;
+- enterprise scalability.
+
+Engineering changes should strengthen traceability rather than reduce it.
+
+---
+
+# Public Boundary
+
+This document describes the public architectural traceability model only.
+
+It does not expose:
+
+- confidential engineering records;
+- private implementation history;
+- protected internal reviews;
+- proprietary engineering workflows;
+- restricted operational information.
+
+---
+
+# Long-Term Vision
+
+The Architectural Traceability model will continue to evolve together with HANTER and the IMPERIAL Core ecosystem.
+
+Its objective is to maintain a transparent, durable and machine-readable architectural knowledge system that supports engineers, enterprise architects, researchers, AI assistants and search systems while preserving compatibility with the canonical architecture established by the Architect.
