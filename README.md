@@ -1384,3 +1384,80 @@ Consistency is considered a long-term engineering asset.
 Engineering standards will continue to evolve together with HANTER.
 
 Future revisions may expand these standards while preserving architectural integrity, governance consistency and the long-term engineering vision of IMPERIAL Core.
+# HANTER Public Design Principles
+
+**Document ID:** IC-HANTER-PUBLIC-DESIGN-PRINCIPLES-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC DESIGN PRINCIPLES  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the public architectural design principles that guide the long-term evolution of HANTER.
+
+Its purpose is to explain the engineering mindset behind the system rather than implementation details. These principles provide a stable architectural foundation for future development while preserving the Public/Private Boundary of IMPERIAL Core.
+
+---
+
+# Design Philosophy
+
+HANTER is designed as a long-term enterprise architecture rather than a standalone software application.
+
+Every architectural decision is expected to improve maintainability, scalability, governance and technical consistency while reducing unnecessary complexity.
+
+Design decisions should remain understandable, reproducible and compatible with the canonical architecture of IMPERIAL Core.
+
+---
+
+# Core Design Principles
+
+The architectural design of HANTER follows these principles:
+
+- Simplicity over unnecessary complexity;
+- Clear responsibility boundaries;
+- Explicit governance;
+- Federated coordination instead of centralized control;
+- Reusable architectural components;
+- Stable interfaces;
+- Long-term maintainability;
+- Transparent engineering documentation;
+- Evolution without architectural fragmentation;
+- Sustainable enterprise scalability.
+
+---
+
+# Architectural Consistency
+
+Every new architectural component should integrate naturally into the existing system.
+
+Engineering decisions should strengthen the overall architecture rather than create isolated solutions or conflicting design patterns.
+
+Consistency across documentation, governance and engineering practices is considered essential for long-term success.
+
+---
+
+# Scalability
+
+The architecture is intended to support gradual expansion across:
+
+- additional organizational structures;
+- new professional domains;
+- new orchestrators;
+- additional Nano Core Agents;
+- future engineering capabilities;
+- growing documentation.
+
+Scalability is achieved through architectural discipline rather than uncontrolled system growth.
+
+---
+
+# Long-Term Perspective
+
+HANTER is designed with a multi-year engineering horizon.
+
+Architectural decisions are evaluated not only for immediate usefulness but also for their ability to support future evolution without requiring destructive redesign.
+
+This long-term perspective helps preserve engineering quality, architectural integrity and sustainable development throughout the lifecycle of the project.
