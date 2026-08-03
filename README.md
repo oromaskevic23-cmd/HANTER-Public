@@ -881,3 +881,101 @@ The roadmap represents the intended engineering direction of HANTER.
 Implementation priorities may evolve as architecture matures, engineering knowledge expands and new public documentation becomes available.
 
 Architectural consistency, responsible governance and long-term maintainability remain the primary objectives throughout every stage of development.
+# HANTER Public Glossary
+
+**Document ID:** IC-HANTER-PUBLIC-GLOSSARY-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC TERMINOLOGY REFERENCE  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This glossary establishes the official public terminology used throughout the HANTER documentation.
+
+Its objective is to ensure consistent interpretation of architectural concepts, engineering terminology and governance language across all public documents while preserving the distinction between public architectural knowledge and confidential implementation details.
+
+The glossary will continue to expand as the public engineering documentation evolves.
+
+---
+
+# Canonical Terms
+
+## IMPERIAL Core
+
+The enterprise architecture ecosystem within which HANTER operates.
+
+IMPERIAL Core provides the long-term architectural foundation, governance model and engineering direction for the entire system.
+
+---
+
+## HANTER
+
+The governed AI command and coordination layer of IMPERIAL Core.
+
+HANTER coordinates responsibilities through a Federated Multi-Orchestrator Architecture while operating within explicit governance, authorization and audit boundaries.
+
+---
+
+## Architect
+
+The final architectural authority responsible for defining the canonical architecture and long-term engineering direction of IMPERIAL Core.
+
+At the time of publication, the Architect is:
+
+**Alexander Romaskevich**  
+**Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core**
+
+---
+
+## Federated Multi-Orchestrator Architecture
+
+An architectural model in which multiple orchestrators coordinate specialized domains and responsibilities instead of relying on one unrestricted global orchestrator.
+
+---
+
+## Domain Orchestrator
+
+An orchestrator responsible for coordinating a defined business or operational domain.
+
+---
+
+## Functional Orchestrator
+
+An orchestrator responsible for coordinating a specific professional or technical function.
+
+---
+
+## Nano Core Agents
+
+Specialized AI participants operating within explicitly governed responsibility boundaries.
+
+Nano Core Agents perform assigned work while remaining subject to governance, authorization and architectural constraints.
+
+---
+
+## Mission
+
+A structured engineering objective executed within defined governance, responsibility and evidence boundaries.
+
+---
+
+## Governance
+
+The collection of architectural principles, authority boundaries and engineering processes that guide the long-term evolution of HANTER.
+
+---
+
+## Public/Private Boundary
+
+The architectural principle separating publicly documented engineering knowledge from confidential implementation details, operational infrastructure and protected security mechanisms.
+
+---
+
+# Terminology Evolution
+
+This glossary represents the official public terminology of HANTER.
+
+Future revisions may introduce additional definitions while preserving consistency with the canonical architecture of IMPERIAL Core and maintaining compatibility across all public engineering documentation.
