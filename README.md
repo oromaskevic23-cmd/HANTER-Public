@@ -1461,3 +1461,80 @@ HANTER is designed with a multi-year engineering horizon.
 Architectural decisions are evaluated not only for immediate usefulness but also for their ability to support future evolution without requiring destructive redesign.
 
 This long-term perspective helps preserve engineering quality, architectural integrity and sustainable development throughout the lifecycle of the project.
+# HANTER Public Architectural Decision Records
+
+**Document ID:** IC-HANTER-PUBLIC-ADR-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC ARCHITECTURAL DECISION POLICY  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document establishes the public Architectural Decision Record (ADR) policy for HANTER.
+
+Its objective is to describe how significant architectural decisions are documented, reviewed and preserved throughout the long-term evolution of the HANTER project.
+
+Architectural decisions are considered long-lived engineering assets that provide historical context, explain design rationale and improve long-term maintainability.
+
+---
+
+# Why Architectural Decisions Matter
+
+Large engineering systems evolve over many years.
+
+Without documented architectural decisions, important engineering knowledge can be lost, resulting in unnecessary redesign, inconsistent implementation and reduced maintainability.
+
+Architectural Decision Records provide traceability between engineering objectives, architectural principles and future development.
+
+---
+
+# Decision Principles
+
+Every significant architectural decision should clearly describe:
+
+- the engineering problem;
+- architectural context;
+- considered alternatives;
+- selected approach;
+- engineering rationale;
+- expected long-term impact;
+- known limitations;
+- future review considerations.
+
+The objective is not simply to record what was decided, but why the decision was made.
+
+---
+
+# Public Decision Scope
+
+Public Architectural Decision Records may describe:
+
+- architectural philosophy;
+- engineering methodology;
+- governance principles;
+- documentation standards;
+- public architectural concepts;
+- long-term design strategy.
+
+They intentionally exclude confidential implementation details, protected infrastructure, operational procedures and security-sensitive information.
+
+---
+
+# Long-Term Traceability
+
+Architectural decisions should remain understandable many years after they were originally approved.
+
+Every decision should support future architects, engineers and researchers by preserving engineering intent and historical reasoning.
+
+Long-term traceability strengthens architectural consistency and reduces the likelihood of fragmented system evolution.
+
+---
+
+# Continuous Evolution
+
+Architectural Decision Records are expected to evolve together with HANTER.
+
+Future public ADRs may document major architectural milestones while preserving compatibility with the canonical architecture of IMPERIAL Core and maintaining the Public/Private Boundary.
