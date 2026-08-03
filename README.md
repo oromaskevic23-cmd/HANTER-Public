@@ -7983,3 +7983,198 @@ Machine-readable public documentation must preserve the Public/Private Boundary 
 The Machine-Readable Knowledge Model will continue to evolve together with HANTER and the IMPERIAL Core ecosystem.
 
 Its objective is to establish a durable semantic foundation supporting enterprise architecture, engineering governance, AI-assisted interpretation, search discoverability and long-term knowledge preservation while remaining compatible with the canonical architecture established by the Architect.
+# HANTER Public Repository Architecture Overview
+
+**Document ID:** IC-HANTER-PUBLIC-RAO-001
+**Version:** 1.0.0
+**Status:** PUBLIC REPOSITORY ARCHITECTURE OVERVIEW
+**System:** HANTER
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document provides the official architectural overview of the HANTER-Public repository.
+
+Its objective is to explain how the public repository is organized, how its documentation is structured and how individual engineering documents collectively represent the public architectural knowledge of HANTER within the IMPERIAL Core ecosystem.
+
+This document describes the architecture of the repository itself rather than the implementation of HANTER.
+
+---
+
+# Repository Mission
+
+HANTER-Public exists to provide an authoritative, transparent and professionally governed public engineering reference for HANTER.
+
+The repository supports:
+
+- enterprise architecture;
+- engineering governance;
+- architectural principles;
+- semantic consistency;
+- engineering knowledge;
+- machine-readable documentation;
+- long-term architectural evolution.
+
+Its purpose is to improve public understanding while preserving the Public/Private Boundary.
+
+---
+
+# Repository Architecture
+
+The repository is organized into several interconnected architectural domains.
+
+## Identity
+
+Documents describing the canonical identity of HANTER and IMPERIAL Core.
+
+Examples include:
+
+- Canonical Identity
+- Canonical Terminology
+- Public Components
+- Official Resources
+
+---
+
+## Architecture
+
+Documents describing the architectural foundation.
+
+Examples include:
+
+- Architecture
+- Architecture Overview
+- Enterprise Architecture
+- Architecture Principles
+- Architecture Quality Model
+- Architecture Governance Framework
+
+---
+
+## Governance
+
+Documents describing engineering governance and architectural authority.
+
+Examples include:
+
+- Governance
+- Documentation Governance
+- Knowledge Governance
+- Architectural Decision Policy
+- Architectural Evolution Policy
+- Architectural Integrity
+
+---
+
+## Knowledge
+
+Documents describing engineering knowledge and semantic organization.
+
+Examples include:
+
+- Knowledge Model
+- Knowledge Lifecycle
+- Public Knowledge Graph
+- Entity Model
+- Entity Relationships
+- Architectural Traceability
+
+---
+
+## Machine Readability
+
+Documents supporting interpretation by intelligent systems.
+
+Examples include:
+
+- AI Readability
+- Machine-Readable Architecture
+- Machine-Readable Knowledge Model
+- Document Relationships
+- Digital Footprint
+- llms.txt
+- AGENTS.md
+
+---
+
+## Repository Policies
+
+Repository governance documentation includes:
+
+- SECURITY.md
+- CONTRIBUTING.md
+- LICENSE.md
+- Documentation Index
+- Public Status Boundary
+
+These documents define the operational rules of the public repository.
+
+---
+
+# Architectural Relationships
+
+The repository architecture follows a layered engineering knowledge model.
+
+Identity establishes Architecture.
+
+Architecture defines Governance.
+
+Governance supports Engineering.
+
+Engineering produces Documentation.
+
+Documentation preserves Knowledge.
+
+Knowledge improves Semantic Architecture.
+
+Semantic Architecture strengthens Machine Readability.
+
+Machine Readability supports responsible public discoverability.
+
+Together these relationships establish a coherent public engineering ecosystem.
+
+---
+
+# Repository Principles
+
+The public repository is governed by the following principles:
+
+- Architecture Before Implementation;
+- Evidence Before Status;
+- Explicit Architectural Authority;
+- Federated Multi-Orchestrator Architecture;
+- Responsible AI Engineering;
+- Documentation as an Engineering Asset;
+- Semantic Consistency;
+- Machine Readability;
+- Long-Term Maintainability;
+- Public/Private Boundary.
+
+These principles define the architectural foundation of the repository.
+
+---
+
+# Public Boundary
+
+The repository intentionally documents public engineering knowledge.
+
+It does not disclose:
+
+- confidential implementation;
+- proprietary engineering artifacts;
+- protected runtime infrastructure;
+- operational procedures;
+- private engineering repositories;
+- restricted security mechanisms.
+
+The repository architecture is designed to maximize public understanding while preserving confidential engineering assets.
+
+---
+
+# Long-Term Vision
+
+The Repository Architecture Overview will continue to evolve together with HANTER and the IMPERIAL Core ecosystem.
+
+Its objective is to preserve a coherent, professionally governed and machine-readable public engineering repository capable of supporting engineers, enterprise architects, researchers, AI assistants and search systems for decades while remaining compatible with the canonical architecture established by the Architect.
