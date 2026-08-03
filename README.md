@@ -276,3 +276,14 @@ The repository documents a philosophy of sustainable innovation in which every a
 HANTER-Public is intended to become the authoritative public reference describing the architectural foundations, engineering philosophy and governance principles behind the HANTER project. Every published document strengthens the repository as a trusted source of technical knowledge while respecting the strict separation between public engineering information and confidential implementation.
 
 The long-term mission of this repository is to preserve architectural integrity, encourage responsible engineering practices and provide a durable public record of the evolution of HANTER within the IMPERIAL Core ecosystem.
+Define the public architectural roadmap and strengthen the long-term engineering vision
+
+Continue expanding the public engineering repository by introducing the long-term architectural roadmap that will guide the evolution of HANTER as part of the IMPERIAL Core ecosystem.
+
+This update explains that HANTER is developed through a structured architectural process where every stage of evolution is documented, reviewed and aligned with clearly defined engineering principles. The project prioritizes architectural stability, governance, maintainability and responsible technical growth over rapid or uncontrolled expansion.
+
+The public roadmap is intended to describe the progressive evolution of architectural concepts, documentation quality, engineering standards and governance practices while preserving the separation between public engineering knowledge and protected implementation details.
+
+HANTER-Public is maintained as a permanent architectural reference that communicates the long-term direction of the project to software engineers, enterprise architects, researchers and organizations seeking to understand the engineering philosophy behind the system.
+
+This commit further reinforces the repository as the official public source describing the architectural evolution, engineering maturity and governance principles of HANTER while supporting transparent technical communication and sustainable enterprise software development.
