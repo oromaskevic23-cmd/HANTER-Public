@@ -2727,3 +2727,85 @@ HANTER-Public is intended to become the authoritative public engineering referen
 As additional documentation becomes available, this overview will continue to evolve while preserving compatibility with the canonical architecture established by the Architect.
 
 The long-term objective is to maintain a professional enterprise architecture reference supporting developers, enterprise architects, researchers and organizations interested in the engineering direction of HANTER.
+# HANTER Public Architectural Framework
+
+**Document ID:** IC-HANTER-PUBLIC-FRAMEWORK-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC ARCHITECTURAL FRAMEWORK  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the public architectural framework that organizes the engineering knowledge of HANTER into a coherent and sustainable enterprise architecture.
+
+Its purpose is to explain how the architectural documents published within HANTER-Public relate to one another and collectively describe the long-term evolution of the system.
+
+The framework focuses on architectural structure rather than implementation details and preserves the Public/Private Boundary established throughout the IMPERIAL Core ecosystem.
+
+---
+
+# Framework Philosophy
+
+A mature enterprise architecture is built upon an organized framework rather than isolated documents.
+
+Each architectural publication contributes to a broader engineering knowledge system that preserves architectural intent, improves consistency and supports long-term maintainability.
+
+The framework enables documentation, governance, engineering standards and architectural principles to evolve together as one coherent body of knowledge.
+
+---
+
+# Framework Layers
+
+The public architectural framework is organized into the following layers:
+
+- Architectural Vision
+- Enterprise Architecture
+- Governance
+- Architectural Principles
+- Engineering Standards
+- Design Principles
+- Security Principles
+- Documentation Standards
+- Quality Standards
+- Architectural Evolution
+- Public Terminology
+
+Each layer supports the others while maintaining clear engineering responsibilities and architectural consistency.
+
+---
+
+# Engineering Integration
+
+The architectural framework integrates:
+
+- engineering philosophy;
+- governance policies;
+- architectural documentation;
+- engineering standards;
+- public terminology;
+- quality management;
+- enterprise scalability;
+- long-term architectural planning.
+
+Together these elements establish a unified engineering reference for HANTER.
+
+---
+
+# Framework Evolution
+
+The architectural framework is expected to evolve continuously together with HANTER.
+
+Additional documents, standards and public engineering publications may become part of the framework as the project matures.
+
+Every future addition should strengthen the existing architecture while preserving compatibility with the canonical architecture of IMPERIAL Core.
+
+---
+
+# Long-Term Objective
+
+The long-term objective of the Architectural Framework is to establish HANTER-Public as a comprehensive enterprise engineering knowledge base.
+
+By organizing architectural knowledge into a structured framework, the repository supports sustainable engineering, responsible governance and long-term architectural excellence while maintaining a clear distinction between public engineering documentation and protected implementation.
