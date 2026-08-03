@@ -7098,3 +7098,115 @@ These remain within the protected engineering boundary of IMPERIAL Core.
 The Knowledge Lifecycle will continue to evolve together with HANTER and the IMPERIAL Core ecosystem.
 
 Its objective is to establish a durable enterprise knowledge lifecycle capable of supporting decades of architectural evolution, engineering excellence, responsible AI engineering and machine-readable public documentation while preserving compatibility with the canonical architecture established by the Architect.
+# HANTER Public Canonical Terminology
+
+**Document ID:** IC-HANTER-PUBLIC-CT-001
+**Version:** 1.0.0
+**Status:** PUBLIC CANONICAL TERMINOLOGY
+**System:** HANTER
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the canonical terminology used throughout the public engineering documentation of HANTER within the IMPERIAL Core ecosystem.
+
+Its objective is to establish a stable engineering vocabulary that improves architectural consistency, semantic interoperability, machine-readable interpretation and long-term documentation quality while preserving the Public/Private Boundary.
+
+Canonical terminology reduces ambiguity and supports a shared understanding across engineers, enterprise architects, researchers, AI assistants and search systems.
+
+---
+
+# Terminology Philosophy
+
+Enterprise architecture depends upon precise language.
+
+The same engineering concept should always be described using the same canonical term unless an approved architectural revision explicitly introduces a replacement.
+
+Stable terminology improves documentation quality, architectural traceability and long-term maintainability.
+
+---
+
+# Canonical Project Names
+
+The following names are considered canonical within the public engineering documentation:
+
+- IMPERIAL Core
+- HANTER
+- Nano Core Agents
+- Legion
+- ORION
+- AGY
+- Capital Core
+- CRYPTO IMPERIAL Ecosystem
+
+These names should remain unchanged unless an explicit architectural decision authorizes a revision.
+
+---
+
+# Canonical Roles
+
+The canonical architectural authority is:
+
+Alexander Romaskevich
+
+Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core
+
+Architect and final authority of IMPERIAL Core.
+
+Role descriptions should remain consistent across all official public documentation.
+
+---
+
+# Canonical Engineering Terms
+
+The public engineering documentation consistently uses terms including:
+
+- Enterprise Architecture
+- Federated Multi-Orchestrator Architecture
+- Engineering Governance
+- Architectural Principles
+- Engineering Standards
+- Public/Private Boundary
+- AI Passport
+- Guardian Core
+- Approval Gateway
+- Runtime Domain
+- Audit Ledger
+- Zero Trust
+- Evidence Before Status
+- Architecture Before Implementation
+
+Each term has a specific architectural meaning within the public documentation.
+
+---
+
+# Terminology Consistency
+
+Engineering terminology should remain:
+
+- stable;
+- explicit;
+- architecturally defined;
+- semantically consistent;
+- version aware;
+- compatible with canonical documentation.
+
+New terminology should strengthen the existing knowledge base rather than introduce unnecessary variation.
+
+---
+
+# Public Boundary
+
+This terminology document applies exclusively to public engineering documentation.
+
+It does not define confidential implementation names, protected internal identifiers or proprietary engineering terminology used within the private engineering environment.
+
+---
+
+# Long-Term Vision
+
+The Canonical Terminology document will continue to evolve together with HANTER and the IMPERIAL Core ecosystem.
+
+Its objective is to preserve a stable engineering vocabulary that supports decades of architectural evolution, semantic consistency, machine-readable documentation and responsible enterprise engineering while remaining compatible with the canonical architecture established by the Architect.
