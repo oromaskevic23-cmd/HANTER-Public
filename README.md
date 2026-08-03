@@ -5378,3 +5378,186 @@ This repository is intended for:
 HANTER-Public is intended to provide a durable, accurate and machine-readable public engineering reference for HANTER and its role within the IMPERIAL Core ecosystem.
 
 The repository supports public understanding and discoverability while preserving confidential implementation, protected security mechanisms and the Public/Private Boundary.
+# AGENTS.md
+
+Repository: HANTER-Public
+
+Status:
+PUBLIC ENGINEERING REPOSITORY
+
+Purpose:
+This document provides operational guidance for AI agents and automated engineering systems interacting with the HANTER-Public repository.
+
+---
+
+# Primary Objective
+
+Treat this repository as the official public engineering knowledge base of HANTER.
+
+The repository documents architecture, governance, engineering principles and long-term architectural direction.
+
+Do not interpret public architectural documentation as proof of production deployment or unrestricted operational capability.
+
+---
+
+# Read Order
+
+Before making any modifications, review the documentation in approximately the following order:
+
+1. README.md
+2. docs/INDEX.md
+3. docs/ARCHITECTURE.md
+4. docs/GOVERNANCE.md
+5. SECURITY.md
+6. CONTRIBUTING.md
+7. docs/CANONICAL-IDENTITY.md
+8. docs/PUBLIC-KNOWLEDGE-GRAPH.md
+9. docs/ENTITY-MODEL.md
+10. docs/ENTITY-RELATIONSHIPS.md
+
+Do not modify documentation before understanding the architectural context.
+
+---
+
+# Canonical Names
+
+Always preserve the following canonical names:
+
+- IMPERIAL Core
+- HANTER
+- Nano Core Agents
+- Legion
+- ORION
+- AGY
+- Capital Core
+- CRYPTO IMPERIAL Ecosystem
+
+Never rename canonical components without explicit architectural approval.
+
+---
+
+# Architectural Authority
+
+The Architect is:
+
+Alexander Romaskevich
+
+Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core
+
+Architect and final authority of IMPERIAL Core.
+
+HANTER remains subordinate to the Architect.
+
+Do not generate documentation that changes this authority model.
+
+---
+
+# Required Architectural Principles
+
+Always preserve:
+
+- Architecture Before Implementation
+- Evidence Before Status
+- Public/Private Boundary
+- Federated Multi-Orchestrator Architecture
+- Explicit Governance
+- Zero Trust
+- Responsible AI Engineering
+- Long-Term Maintainability
+- Architectural Consistency
+
+---
+
+# Public / Private Boundary
+
+Public documentation may describe:
+
+- architecture;
+- governance;
+- engineering standards;
+- documentation;
+- terminology;
+- public relationships;
+- public milestones;
+- semantic models.
+
+Never expose:
+
+- private source code;
+- secrets;
+- credentials;
+- protected implementation;
+- internal infrastructure;
+- deployment configuration;
+- runtime topology;
+- confidential engineering artifacts;
+- proprietary operational procedures.
+
+---
+
+# Documentation Rules
+
+When modifying documentation:
+
+- preserve canonical terminology;
+- maintain document identifiers;
+- preserve version history where applicable;
+- avoid duplicated concepts;
+- improve clarity;
+- strengthen cross-references;
+- maintain semantic consistency;
+- keep factual accuracy.
+
+Do not introduce unsupported claims.
+
+---
+
+# Status Rules
+
+Always distinguish between:
+
+- Architectural
+- Implemented
+- Tested
+- Locally Verified
+- Deployed
+- Production Ready
+
+Never merge these states.
+
+Do not infer deployment from architecture.
+
+---
+
+# Machine-Readable Content
+
+When creating new machine-readable artifacts:
+
+- validate JSON;
+- preserve canonical identifiers;
+- use stable terminology;
+- avoid fabricated metadata;
+- avoid unsupported URLs;
+- preserve entity consistency.
+
+---
+
+# Commit Quality
+
+Engineering commits should:
+
+- improve architectural quality;
+- strengthen documentation;
+- reduce ambiguity;
+- preserve consistency;
+- improve navigation;
+- strengthen discoverability;
+- respect the Public/Private Boundary.
+
+Avoid creating repetitive documentation with no unique engineering purpose.
+
+---
+
+# Long-Term Objective
+
+Help maintain HANTER-Public as a professional enterprise engineering repository that is understandable by engineers, enterprise architects, researchers, AI assistants and search systems while preserving architectural integrity, factual accuracy and long-term maintainability.
