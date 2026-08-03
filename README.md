@@ -254,3 +254,14 @@ Every published document contributes to a unified architectural language that im
 The engineering knowledge framework supports continuous documentation, architectural traceability and long-term consistency while preserving the separation between public engineering information and protected implementation details contained within the private development environment.
 
 This commit strengthens the repository as a durable source of architectural knowledge designed to evolve together with HANTER and the broader IMPERIAL Core ecosystem for many years to come.
+Strengthen the architectural documentation strategy and establish long-term publication principles
+
+Continue expanding the public engineering foundation of HANTER by defining the principles that guide the creation, maintenance and publication of architectural documentation throughout the lifetime of the project.
+
+This update explains that public documentation is treated as an essential engineering asset rather than supplementary material. Architectural descriptions, terminology, governance concepts and engineering standards are expected to evolve together with the system while preserving technical consistency and long-term traceability.
+
+The repository promotes a documentation-first culture in which architectural knowledge is continuously refined through structured reviews, transparent communication and disciplined engineering practices. Every public contribution is intended to improve clarity, reduce ambiguity and strengthen the overall quality of the engineering knowledge base.
+
+HANTER-Public is developed as a durable architectural reference that supports software engineers, enterprise architects, researchers and organizations seeking to understand the long-term direction of the project. The repository intentionally separates public engineering knowledge from confidential implementation details, protected operational infrastructure and private development resources.
+
+This commit further reinforces the role of HANTER-Public as the official public documentation repository representing the architectural evolution, engineering philosophy and governance approach of the HANTER project within the IMPERIAL Core ecosystem.
