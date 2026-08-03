@@ -179,3 +179,14 @@ The repository emphasizes that architecture precedes implementation, documentati
 The public engineering mission of HANTER is to provide developers, architects, researchers and organizations with a reliable reference that demonstrates engineering discipline, architectural transparency and long-term system thinking without exposing confidential implementation details or protected operational infrastructure.
 
 This commit strengthens the identity of HANTER-Public as the official public engineering reference for the HANTER project and prepares the repository for future architectural specifications, engineering documentation and public technical publications.
+Define the long-term architectural vision and enterprise engineering objectives
+
+Continue expanding the public engineering documentation by defining the long-term architectural vision of HANTER and its role within the IMPERIAL Core ecosystem.
+
+This update explains that HANTER is designed as a governed enterprise coordination platform built around architectural consistency, clear responsibility boundaries and sustainable system evolution. The project is intended to evolve incrementally through documented engineering decisions rather than uncontrolled feature growth.
+
+The repository promotes a disciplined engineering culture where architecture, governance, documentation and implementation develop together throughout the entire lifecycle of the system. Every public document is expected to improve technical understanding, reduce ambiguity and preserve long-term maintainability.
+
+HANTER-Public is maintained as a durable public engineering reference that enables developers, architects, researchers and organizations to understand the architectural direction of the project without exposing confidential technologies, protected operational workflows or internal implementation details.
+
+This commit reinforces the repository as a long-term source of architectural knowledge and establishes a stronger foundation for future public specifications, governance documents, engineering standards, architecture diagrams and technical publications.
