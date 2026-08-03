@@ -201,3 +201,14 @@ The repository recognizes that HANTER is developed under a structured engineerin
 The Architect defines the architectural vision, approves the long-term evolution of the ecosystem and maintains consistency across public documentation, engineering principles and system governance.
 
 This commit also prepares the repository for future public documentation covering the history of the project, architectural milestones, engineering methodology and the evolution of the IMPERIAL Core ecosystem.
+Document the architectural authority, governance model and long-term stewardship of HANTER
+
+Continue strengthening the public engineering documentation by defining the architectural authority and governance structure that guide the evolution of HANTER.
+
+This update explains that HANTER is developed through a disciplined architectural process in which strategic direction, engineering standards and long-term consistency are maintained under a clearly defined governance model.
+
+The repository documents that architectural decisions are evaluated according to long-term maintainability, system integrity, scalability and technical coherence before implementation activities are considered complete.
+
+The governance approach encourages transparent engineering documentation, traceable architectural decisions and continuous refinement of public technical knowledge while preserving the separation between public information and protected implementation.
+
+This commit further establishes HANTER-Public as a professional engineering repository designed to communicate architectural intent, engineering discipline and sustainable system evolution to developers, researchers, organizations and the broader technical community.
