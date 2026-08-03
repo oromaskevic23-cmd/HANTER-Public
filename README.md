@@ -6510,3 +6510,121 @@ These activities remain within the protected engineering boundary of IMPERIAL Co
 The Architectural Evolution Policy will continue to evolve together with HANTER.
 
 Its objective is to preserve a disciplined, transparent and sustainable architectural evolution process capable of supporting decades of enterprise engineering while maintaining compatibility with the canonical architecture established by the Architect and protecting the Public/Private Boundary.
+# HANTER Public Architectural Integrity
+
+**Document ID:** IC-HANTER-PUBLIC-AI-001
+**Version:** 1.0.0
+**Status:** PUBLIC ARCHITECTURAL INTEGRITY
+**System:** HANTER
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the principles that preserve the architectural integrity of HANTER within the IMPERIAL Core ecosystem.
+
+Its objective is to ensure that the public architecture evolves consistently, remains internally coherent and continues to reflect the canonical engineering direction established by the Architect while preserving the Public/Private Boundary.
+
+Architectural integrity is treated as a long-term engineering responsibility rather than a one-time design objective.
+
+---
+
+# Architectural Integrity Philosophy
+
+Enterprise architecture is strengthened when every engineering decision contributes to a coherent and durable architectural system.
+
+Architectural integrity requires consistency across documentation, governance, terminology, engineering principles and architectural relationships.
+
+No individual document should contradict or weaken the canonical architecture.
+
+---
+
+# Integrity Principles
+
+Architectural integrity is supported through the following principles:
+
+- canonical terminology;
+- explicit governance;
+- consistent architectural relationships;
+- documented engineering rationale;
+- evidence-aware status communication;
+- semantic stability;
+- responsible architectural evolution;
+- enterprise scalability;
+- documentation quality;
+- Public/Private Boundary preservation.
+
+These principles provide the foundation for long-term architectural consistency.
+
+---
+
+# Canonical Consistency
+
+All public engineering documentation should remain consistent with the canonical architecture of IMPERIAL Core.
+
+Consistency includes:
+
+- project names;
+- architectural hierarchy;
+- governance terminology;
+- engineering principles;
+- component relationships;
+- public status interpretation.
+
+Architectural consistency reduces ambiguity and improves long-term maintainability.
+
+---
+
+# Integrity Verification
+
+Public architectural integrity should be evaluated through continuous review of:
+
+- documentation consistency;
+- canonical terminology;
+- architectural relationships;
+- engineering standards;
+- governance alignment;
+- semantic structure;
+- machine-readable artifacts;
+- internal cross-references.
+
+Integrity reviews improve the quality and reliability of the public engineering knowledge base.
+
+---
+
+# Protection Against Architectural Drift
+
+Architectural drift occurs when documentation gradually diverges from the canonical engineering model.
+
+To reduce this risk, significant documentation changes should:
+
+- preserve established terminology;
+- maintain compatibility with the canonical architecture;
+- document architectural intent;
+- strengthen internal consistency;
+- avoid unsupported architectural assumptions.
+
+Controlled evolution is preferred over uncontrolled divergence.
+
+---
+
+# Public Boundary
+
+This document describes public architectural integrity principles only.
+
+It does not disclose:
+
+- confidential engineering reviews;
+- internal governance procedures;
+- protected implementation details;
+- private architectural assessments;
+- proprietary engineering practices.
+
+---
+
+# Long-Term Objective
+
+The Architectural Integrity framework will continue to evolve together with HANTER and the IMPERIAL Core ecosystem.
+
+Its objective is to preserve a coherent, trustworthy and sustainable public architecture capable of supporting decades of responsible engineering, transparent governance and enterprise-scale architectural evolution while remaining compatible with the canonical architecture established by the Architect.
