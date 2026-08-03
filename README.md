@@ -3296,3 +3296,84 @@ The Enterprise Architecture Culture will continue to mature together with HANTER
 Future revisions may expand the cultural guidance while preserving compatibility with the canonical architecture established by the Architect.
 
 The long-term objective is to cultivate an engineering culture capable of supporting decades of architectural excellence, responsible AI engineering and sustainable enterprise innovation.
+# HANTER Public Enterprise Architecture Maturity
+
+**Document ID:** IC-HANTER-PUBLIC-EAM-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC ENTERPRISE ARCHITECTURE MATURITY  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document describes the Enterprise Architecture Maturity model adopted by HANTER.
+
+Its objective is to explain how architectural maturity is developed through disciplined engineering, responsible governance, structured documentation and continuous architectural improvement while preserving the Public/Private Boundary.
+
+Architectural maturity represents the progressive evolution of engineering capabilities rather than the completion of implementation milestones.
+
+---
+
+# Maturity Philosophy
+
+Enterprise architecture is expected to mature continuously throughout the lifetime of the project.
+
+Architectural maturity is achieved by improving engineering consistency, governance quality, documentation completeness and architectural reasoning rather than simply increasing technical complexity.
+
+Long-term architectural quality is considered more valuable than rapid implementation growth.
+
+---
+
+# Maturity Characteristics
+
+A mature enterprise architecture demonstrates:
+
+- consistent architectural principles;
+- stable engineering governance;
+- comprehensive documentation;
+- explicit responsibility boundaries;
+- disciplined architectural decision-making;
+- sustainable scalability;
+- engineering transparency;
+- continuous knowledge development;
+- long-term maintainability;
+- responsible architectural evolution.
+
+These characteristics strengthen the long-term resilience of the HANTER ecosystem.
+
+---
+
+# Continuous Improvement
+
+Architectural maturity develops through continuous improvement of:
+
+- engineering documentation;
+- architectural standards;
+- governance practices;
+- terminology consistency;
+- engineering quality;
+- architectural traceability;
+- enterprise engineering knowledge;
+- long-term architectural planning.
+
+Each improvement contributes to a stronger and more sustainable enterprise architecture.
+
+---
+
+# Measuring Maturity
+
+Public architectural maturity is reflected through the quality, consistency and completeness of the engineering knowledge published within HANTER-Public.
+
+Implementation-specific maturity, operational readiness and internal engineering assessments remain outside the scope of this public documentation.
+
+---
+
+# Long-Term Vision
+
+The Enterprise Architecture Maturity model will continue to evolve together with HANTER and the IMPERIAL Core ecosystem.
+
+Future revisions may introduce additional maturity guidance while preserving compatibility with the canonical architecture established by the Architect.
+
+The long-term objective is to develop a resilient enterprise architecture capable of supporting decades of responsible engineering, architectural excellence and sustainable AI system evolution.
