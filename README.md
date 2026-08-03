@@ -3458,3 +3458,84 @@ The Enterprise Architecture Strategy will continue to evolve together with HANTE
 Future revisions may expand strategic guidance while preserving the engineering philosophy, architectural consistency and governance model established by the Architect.
 
 The long-term objective is to maintain a durable enterprise architecture strategy capable of supporting decades of responsible engineering, architectural excellence and sustainable AI system evolution.
+# HANTER Public Enterprise Architecture Lifecycle
+
+**Document ID:** IC-HANTER-PUBLIC-EAL-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC ENTERPRISE ARCHITECTURE LIFECYCLE  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the Enterprise Architecture Lifecycle adopted by HANTER within the IMPERIAL Core ecosystem.
+
+Its objective is to describe how enterprise architecture evolves through structured governance, engineering knowledge, documentation and continuous architectural refinement while preserving the Public/Private Boundary.
+
+The lifecycle represents the continuous evolution of architecture rather than the lifecycle of individual software releases.
+
+---
+
+# Lifecycle Philosophy
+
+Enterprise architecture is never considered complete.
+
+It continuously evolves as engineering knowledge expands, governance matures and architectural understanding improves.
+
+The purpose of the lifecycle is to preserve long-term architectural consistency while enabling sustainable enterprise innovation.
+
+---
+
+# Lifecycle Stages
+
+The public Enterprise Architecture Lifecycle consists of the following stages:
+
+1. Architectural Vision
+2. Strategic Planning
+3. Enterprise Architecture Design
+4. Engineering Standards
+5. Governance Integration
+6. Documentation Development
+7. Engineering Review
+8. Architectural Refinement
+9. Continuous Evolution
+
+Each stage strengthens the long-term engineering maturity of HANTER.
+
+---
+
+# Lifecycle Integration
+
+The lifecycle integrates multiple architectural disciplines, including:
+
+- enterprise architecture;
+- governance;
+- engineering documentation;
+- architectural principles;
+- engineering standards;
+- quality management;
+- terminology management;
+- architectural decision records;
+- continuous architectural improvement.
+
+Together these disciplines establish a coherent enterprise engineering lifecycle.
+
+---
+
+# Continuous Architectural Evolution
+
+The lifecycle encourages continuous architectural improvement through disciplined engineering rather than disruptive redesign.
+
+As HANTER evolves, architectural knowledge, governance practices and engineering standards mature together while preserving compatibility with the canonical architecture of IMPERIAL Core.
+
+---
+
+# Long-Term Enterprise Lifecycle
+
+The Enterprise Architecture Lifecycle will continue to mature together with HANTER.
+
+Future revisions may introduce additional lifecycle guidance while preserving architectural integrity, governance consistency and the engineering philosophy established by the Architect.
+
+The long-term objective is to maintain a durable enterprise lifecycle capable of supporting decades of sustainable architectural evolution, responsible engineering and professional enterprise governance.
