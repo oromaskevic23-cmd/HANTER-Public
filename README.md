@@ -309,3 +309,14 @@ The repository emphasizes that engineering excellence is achieved through carefu
 HANTER-Public is intended to become a durable public reference demonstrating how enterprise AI systems can be designed with clear governance, sustainable engineering practices and responsible architectural leadership. Every published document contributes to the long-term consistency and maturity of the project.
 
 This commit further strengthens the engineering culture of HANTER and reinforces the repository as the official public source describing its architectural philosophy, governance model and commitment to enterprise-quality engineering.
+Establish the long-term public engineering charter for HANTER
+
+Continue expanding the public engineering repository by introducing the long-term engineering charter that defines the purpose, responsibilities and evolution of HANTER-Public.
+
+This update establishes HANTER-Public as the official public architectural reference for documenting the engineering direction, governance principles and architectural evolution of HANTER throughout its lifecycle.
+
+The engineering charter promotes a disciplined approach where architecture, documentation, governance and implementation evolve together through continuous refinement, technical review and evidence-based engineering practices. Long-term maintainability, transparency and architectural consistency remain fundamental objectives for every public publication.
+
+The repository is intended to provide software engineers, enterprise architects, researchers and organizations with a trustworthy architectural reference describing the design philosophy behind HANTER while protecting confidential implementation details, operational procedures and proprietary technologies.
+
+This commit strengthens the long-term mission of HANTER-Public by defining the repository as a continuously evolving engineering knowledge platform dedicated to architectural excellence, responsible AI engineering and sustainable enterprise system development.
