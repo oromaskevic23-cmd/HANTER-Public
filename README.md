@@ -5728,3 +5728,143 @@ Readers should not interpret architectural documentation as evidence of producti
 The Documentation Index will continue to evolve together with HANTER.
 
 Its objective is to provide a stable navigation framework connecting all public engineering documentation into a coherent enterprise knowledge system that remains understandable for both human readers and intelligent information systems.
+# HANTER Public Components Registry
+
+**Document ID:** IC-HANTER-PUBLIC-PCR-001
+**Version:** 1.0.0
+**Status:** PUBLIC COMPONENT REGISTRY
+**System:** HANTER
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the official public registry of the major architectural components that are publicly documented within the IMPERIAL Core ecosystem.
+
+Its objective is to provide a stable reference describing the purpose, architectural role and public relationships of each canonical component while preserving the Public/Private Boundary.
+
+The registry documents public architectural concepts only.
+
+It does not disclose protected implementation details, confidential engineering artifacts or operational infrastructure.
+
+---
+
+# Registry Principles
+
+Every public component should be:
+
+- uniquely identifiable;
+- architecturally defined;
+- consistently named;
+- publicly documented;
+- semantically stable;
+- compatible with the canonical architecture of IMPERIAL Core.
+
+The registry provides architectural clarity rather than implementation specifications.
+
+---
+
+# Canonical Public Components
+
+## IMPERIAL Core
+
+Role:
+
+Enterprise architectural ecosystem.
+
+Purpose:
+
+Provides the long-term architectural foundation, governance model and engineering direction for the public and private components of the ecosystem.
+
+---
+
+## HANTER
+
+Role:
+
+Governed AI command and coordination layer.
+
+Purpose:
+
+Coordinates missions, orchestration, engineering governance and long-term architectural evolution through the Federated Multi-Orchestrator Architecture.
+
+---
+
+## Nano Core Agents
+
+Role:
+
+Distributed execution agents.
+
+Purpose:
+
+Support bounded responsibilities delegated through governed orchestration structures.
+
+---
+
+## Federated Multi-Orchestrator Architecture
+
+Role:
+
+Architectural coordination model.
+
+Purpose:
+
+Distributes responsibilities across multiple governed orchestration layers instead of relying on one unrestricted global orchestrator.
+
+---
+
+## Architect
+
+Role:
+
+Alexander Romaskevich
+
+Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core
+
+Architect and final authority of IMPERIAL Core.
+
+Purpose:
+
+Defines the canonical architectural direction, approves significant architectural changes and preserves long-term consistency throughout the ecosystem.
+
+---
+
+# Public Relationships
+
+The primary public architectural relationships include:
+
+- IMPERIAL Core → includes → HANTER
+- IMPERIAL Core → includes → Nano Core Agents
+- HANTER → coordinates through → Federated Multi-Orchestrator Architecture
+- Federated Multi-Orchestrator Architecture → coordinates → Nano Core Agents
+- Alexander Romaskevich → Architect and final authority of → IMPERIAL Core
+
+These relationships describe architectural governance rather than implementation details.
+
+---
+
+# Public Status Boundary
+
+The components described within this registry represent public architectural concepts.
+
+Their inclusion in this registry does not imply:
+
+- complete implementation;
+- external deployment;
+- production authorization;
+- unrestricted operational capability;
+- public service availability.
+
+Architecture and operational status remain distinct engineering concepts.
+
+---
+
+# Long-Term Evolution
+
+The Public Components Registry will evolve together with the IMPERIAL Core ecosystem.
+
+New public components may be added following architectural approval and public documentation review.
+
+The long-term objective is to maintain a stable, authoritative and machine-readable registry that strengthens architectural understanding, semantic consistency and responsible public documentation.
