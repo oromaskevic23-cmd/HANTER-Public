@@ -5999,3 +5999,138 @@ It does not describe confidential implementation work, protected infrastructure,
 The Verified Public Milestones registry will continue to evolve together with HANTER.
 
 Its objective is to provide a transparent and traceable history of architectural and documentation progress while maintaining factual accuracy, engineering integrity and compatibility with the canonical architecture of IMPERIAL Core.
+# HANTER Official Public Resources
+
+**Document ID:** IC-HANTER-PUBLIC-RESOURCES-001
+**Version:** 1.0.0
+**Status:** PUBLIC OFFICIAL RESOURCES
+**System:** HANTER
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document identifies the official public resources associated with HANTER and the IMPERIAL Core ecosystem.
+
+Its objective is to provide a trusted reference for readers seeking authoritative information while preserving the Public/Private Boundary and avoiding unsupported external claims.
+
+Only officially published resources should be listed in this document.
+
+---
+
+# Official Public Repository
+
+Repository Name:
+
+HANTER-Public
+
+Purpose:
+
+The official public engineering repository describing the architecture, governance, engineering principles and long-term direction of HANTER.
+
+Status:
+
+PUBLIC
+
+---
+
+# Official Documentation
+
+The primary public engineering documentation includes:
+
+- README.md
+- Architecture
+- Governance
+- Security
+- Engineering Standards
+- Roadmap
+- Glossary
+- Public Components Registry
+- Verified Public Milestones
+- Canonical Identity
+- Digital Footprint
+- Semantic Architecture
+- Entity Model
+- Entity Relationships
+- Machine-Readable Architecture
+- AI Readability
+- Documentation Index
+
+These documents collectively represent the official public engineering knowledge base.
+
+---
+
+# Official Architect
+
+Alexander Romaskevich
+
+Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core
+
+Architect and final authority of IMPERIAL Core.
+
+This role defines the canonical architectural direction of the public engineering documentation.
+
+---
+
+# Official Project Identity
+
+System:
+
+HANTER
+
+Ecosystem:
+
+IMPERIAL Core
+
+Architectural Model:
+
+Federated Multi-Orchestrator Architecture
+
+Execution Layer:
+
+Nano Core Agents
+
+These identifiers should remain consistent across official public documentation.
+
+---
+
+# External Resources
+
+Only officially published resources should appear in this section.
+
+If a public resource has not yet been officially published, it should not be listed.
+
+Future examples may include:
+
+- official website;
+- official documentation portal;
+- official public repositories;
+- officially announced technical publications.
+
+Publication status must be independently verifiable.
+
+---
+
+# Public Boundary
+
+This document intentionally excludes:
+
+- private repositories;
+- internal engineering resources;
+- confidential documentation;
+- protected infrastructure;
+- private deployment environments;
+- unpublished services.
+
+The absence of a resource from this document does not imply that it does not exist.
+
+It only indicates that it is not part of the verified public engineering surface.
+
+---
+
+# Long-Term Objective
+
+The Official Public Resources registry will evolve together with HANTER and the IMPERIAL Core ecosystem.
+
+Its objective is to maintain a trustworthy, stable and authoritative catalogue of official public resources while preserving engineering integrity, semantic consistency and the Public/Private Boundary.
