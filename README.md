@@ -2247,3 +2247,84 @@ The decision-making principles described in this document are expected to evolve
 Future revisions may introduce additional guidance while preserving compatibility with the canonical architecture of IMPERIAL Core.
 
 The long-term objective is to establish a disciplined architectural decision process supporting transparent engineering, responsible governance and sustainable enterprise architecture.
+# HANTER Public Architectural Governance Model
+
+**Document ID:** IC-HANTER-PUBLIC-GOVERNANCE-MODEL-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC ARCHITECTURAL GOVERNANCE MODEL  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document describes the public architectural governance model adopted by HANTER within the IMPERIAL Core ecosystem.
+
+Its objective is to explain how architectural governance supports long-term engineering consistency, responsible decision-making and sustainable enterprise evolution while preserving the Public/Private Boundary.
+
+The governance model presented here represents public architectural guidance and does not disclose protected operational procedures or confidential implementation details.
+
+---
+
+# Governance Vision
+
+Architectural governance exists to preserve the integrity of the system throughout its lifetime.
+
+Rather than controlling implementation details, governance provides a stable framework for architectural consistency, engineering quality and responsible evolution.
+
+The objective is to ensure that HANTER continues to grow without compromising its long-term architectural vision.
+
+---
+
+# Governance Objectives
+
+The architectural governance model is intended to:
+
+- preserve canonical architectural consistency;
+- maintain explicit authority boundaries;
+- support responsible engineering decisions;
+- encourage transparent documentation;
+- improve architectural traceability;
+- strengthen engineering discipline;
+- enable sustainable enterprise scalability;
+- protect long-term maintainability.
+
+These objectives remain applicable throughout the evolution of HANTER.
+
+---
+
+# Governance Responsibilities
+
+Architectural governance supports coordination between:
+
+- architectural vision;
+- engineering standards;
+- public documentation;
+- architectural principles;
+- governance policies;
+- engineering reviews;
+- long-term planning;
+- continuous architectural improvement.
+
+Each area contributes to preserving the overall consistency of the enterprise architecture.
+
+---
+
+# Governance Through Documentation
+
+Documentation is a primary governance mechanism within HANTER.
+
+Architectural principles, engineering standards, governance policies and terminology provide a shared understanding that supports consistent engineering decisions across the ecosystem.
+
+Maintaining accurate public documentation strengthens architectural transparency while protecting confidential implementation.
+
+---
+
+# Long-Term Governance Evolution
+
+The governance model will continue to mature together with HANTER and the IMPERIAL Core ecosystem.
+
+Future revisions may introduce additional governance guidance, engineering standards and architectural practices while preserving compatibility with the canonical architecture established by the Architect.
+
+The long-term objective is to maintain a stable governance framework capable of supporting decades of sustainable architectural evolution through disciplined engineering, transparent documentation and responsible enterprise governance.
