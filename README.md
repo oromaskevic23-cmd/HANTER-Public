@@ -2164,3 +2164,86 @@ The architectural constraints described in this document are intended to remain 
 Future revisions may refine or extend these constraints while preserving compatibility with the canonical architecture of IMPERIAL Core and maintaining the Public/Private Boundary.
 
 The objective is to ensure that HANTER continues to evolve as a disciplined enterprise architecture supported by transparent documentation, responsible governance and sustainable engineering practices.
+# HANTER Public Architectural Decision Principles
+
+**Document ID:** IC-HANTER-PUBLIC-DECISION-PRINCIPLES-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC ARCHITECTURAL DECISION PRINCIPLES  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the principles that guide architectural decision-making throughout the long-term evolution of HANTER.
+
+Its objective is to ensure that significant architectural decisions remain consistent, transparent, well-documented and aligned with the canonical architecture of IMPERIAL Core.
+
+Architectural decisions are expected to support long-term engineering sustainability rather than short-term implementation convenience.
+
+---
+
+# Decision-Making Philosophy
+
+Architectural decisions influence the future evolution of the entire engineering ecosystem.
+
+For that reason, important decisions should be based upon architectural reasoning, engineering evidence and long-term maintainability rather than temporary implementation constraints.
+
+The objective is to preserve architectural integrity across many years of continuous development.
+
+---
+
+# Decision Principles
+
+Architectural decisions should:
+
+- support the canonical architecture;
+- improve long-term maintainability;
+- preserve engineering consistency;
+- strengthen governance;
+- remain technically justifiable;
+- minimize architectural complexity;
+- improve documentation quality;
+- encourage reusable architectural concepts;
+- support sustainable enterprise evolution;
+- avoid unnecessary redesign.
+
+Every significant decision should strengthen the architecture as a whole.
+
+---
+
+# Architectural Evaluation
+
+Before a significant architectural decision becomes part of the public architecture it should be evaluated according to:
+
+- engineering rationale;
+- architectural consistency;
+- governance compatibility;
+- long-term impact;
+- scalability;
+- maintainability;
+- documentation requirements;
+- compatibility with existing architectural principles.
+
+Architectural evaluation reduces unnecessary complexity and preserves engineering quality.
+
+---
+
+# Long-Term Perspective
+
+Engineering priorities naturally evolve over time.
+
+However, architectural principles should remain sufficiently stable to support sustainable long-term development.
+
+Architectural decisions should therefore be evaluated not only for immediate value but also for their ability to remain beneficial as the HANTER ecosystem continues to expand.
+
+---
+
+# Continuous Architectural Improvement
+
+The decision-making principles described in this document are expected to evolve together with HANTER.
+
+Future revisions may introduce additional guidance while preserving compatibility with the canonical architecture of IMPERIAL Core.
+
+The long-term objective is to establish a disciplined architectural decision process supporting transparent engineering, responsible governance and sustainable enterprise architecture.
