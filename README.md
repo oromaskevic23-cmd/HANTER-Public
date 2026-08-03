@@ -3705,3 +3705,84 @@ The Enterprise Architecture Reference Model will continue to evolve together wit
 Future revisions may introduce additional architectural domains and engineering guidance while preserving the long-term architectural vision established by the Architect.
 
 The objective is to maintain a durable enterprise reference model capable of supporting decades of responsible engineering, transparent governance and sustainable architectural development.
+# HANTER Public Enterprise Architecture Blueprint
+
+**Document ID:** IC-HANTER-PUBLIC-EAB-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC ENTERPRISE ARCHITECTURE BLUEPRINT  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the public Enterprise Architecture Blueprint for HANTER within the IMPERIAL Core ecosystem.
+
+Its objective is to present the high-level architectural blueprint that connects strategic vision, governance, engineering standards and long-term enterprise architecture while preserving the Public/Private Boundary.
+
+The blueprint describes the architectural structure of the system rather than implementation-specific solutions.
+
+---
+
+# Blueprint Philosophy
+
+A blueprint provides a stable architectural foundation that guides engineering decisions over many years.
+
+Rather than prescribing implementation details, it establishes a coherent architectural structure capable of supporting sustainable enterprise evolution, responsible governance and continuous engineering improvement.
+
+The blueprint serves as a strategic engineering reference for future architectural development.
+
+---
+
+# Blueprint Structure
+
+The public Enterprise Architecture Blueprint consists of the following architectural layers:
+
+- Strategic Vision;
+- Architectural Governance;
+- Enterprise Architecture;
+- Engineering Standards;
+- Architectural Principles;
+- Documentation Framework;
+- Quality Standards;
+- Engineering Knowledge;
+- Continuous Architectural Evolution.
+
+Each layer contributes to a unified enterprise engineering ecosystem.
+
+---
+
+# Architectural Integration
+
+The blueprint integrates architectural disciplines into a coherent engineering model.
+
+Governance supports architecture.
+
+Architecture guides engineering.
+
+Engineering produces documentation.
+
+Documentation preserves knowledge.
+
+Knowledge improves future architectural decisions.
+
+This continuous integration enables sustainable enterprise architecture throughout the lifetime of HANTER.
+
+---
+
+# Blueprint Evolution
+
+The Enterprise Architecture Blueprint is expected to evolve together with the HANTER project.
+
+Future revisions may extend the blueprint with additional architectural domains, governance guidance and engineering practices while preserving compatibility with the canonical architecture of IMPERIAL Core.
+
+Architectural evolution should remain deliberate, documented and consistent.
+
+---
+
+# Long-Term Enterprise Blueprint
+
+The long-term objective of the Enterprise Architecture Blueprint is to provide a durable architectural foundation capable of supporting decades of responsible engineering, transparent governance, enterprise-scale AI coordination and sustainable architectural development.
+
+The blueprint serves as one of the primary public engineering references describing the architectural direction of HANTER within the IMPERIAL Core ecosystem.
