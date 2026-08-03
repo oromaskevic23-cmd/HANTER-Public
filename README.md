@@ -428,3 +428,100 @@ Nano Core Agents
     |
     v
 Governed Execution and Evidence
+# HANTER Public Architecture Diagram
+
+**Document ID:** IC-HANTER-PUBLIC-ARCHITECTURE-DIAGRAM-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC ARCHITECTURE DIAGRAM  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document provides the official public architectural diagram of HANTER.
+
+Its objective is to visualize the high-level structure of the HANTTER architecture without exposing confidential implementation details, protected runtime topology, private security mechanisms or proprietary operational infrastructure.
+
+The diagram is intended to improve architectural understanding while preserving the Public/Private Boundary of IMPERIAL Core.
+
+---
+
+# Public Architecture Diagram
+
+```text
+                           Architect
+                                 │
+                                 │
+                                 ▼
+                           ┌───────────┐
+                           │  HANTER   │
+                           └───────────┘
+                                 │
+     ┌───────────────────────────┼───────────────────────────┐
+     │                           │                           │
+     ▼                           ▼                           ▼
+┌──────────────┐         ┌──────────────┐         ┌──────────────┐
+│    Domain    │         │  Functional  │         │ Organization │
+│ Orchestrators│         │ Orchestrators│         │ Orchestrators│
+└──────────────┘         └──────────────┘         └──────────────┘
+     │                           │                           │
+     └───────────────┬───────────┴───────────────┬───────────┘
+                     │                           │
+                     ▼                           ▼
+              Nano Core Agents          Mission Coordination
+                     │                           │
+                     └──────────────┬────────────┘
+                                    │
+                                    ▼
+                           Governed Execution
+                                    │
+                                    ▼
+                             Runtime Domains
+                                    │
+                                    ▼
+                              Audit & Evidence
+```
+
+---
+
+# Architectural Interpretation
+
+The diagram represents the public architectural structure of HANTER.
+
+The Architect provides the overall architectural direction of IMPERIAL Core.
+
+HANTER coordinates governed AI operations through a Federated Multi-Orchestrator Architecture.
+
+Domain Orchestrators, Functional Orchestrators and Organization Orchestrators coordinate specialized areas of responsibility.
+
+Nano Core Agents execute specialized responsibilities within governed authority boundaries.
+
+Mission Coordination organizes structured execution while Runtime Domains provide controlled execution environments.
+
+Audit and Evidence preserve traceability, accountability and long-term engineering integrity.
+
+---
+
+# Public Boundary
+
+This diagram intentionally omits:
+
+- private source code;
+- internal communication protocols;
+- protected runtime topology;
+- deployment infrastructure;
+- security implementation details;
+- confidential operational procedures;
+- proprietary engineering mechanisms.
+
+Its purpose is to communicate architecture rather than implementation.
+
+---
+
+# Architectural Evolution
+
+This public diagram represents the current architectural direction of HANTER.
+
+It will evolve together with the public documentation while maintaining compatibility with the canonical architecture of IMPERIAL Core and preserving the separation between public engineering knowledge and private implementation.
