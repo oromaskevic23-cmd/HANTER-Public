@@ -1616,3 +1616,82 @@ The engineering lifecycle is designed to support many years of continuous archit
 As HANTER evolves, additional lifecycle stages, engineering practices and documentation standards may be introduced while preserving the canonical engineering philosophy of IMPERIAL Core.
 
 The objective is to maintain a sustainable engineering process capable of supporting long-term architectural excellence.
+# HANTER Public Architectural Principles
+
+**Document ID:** IC-HANTER-PUBLIC-PRINCIPLES-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC ARCHITECTURAL PRINCIPLES  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the fundamental architectural principles that guide the long-term evolution of HANTER within the IMPERIAL Core ecosystem.
+
+Its objective is to establish a stable engineering foundation that supports consistent architectural decision-making, responsible governance and sustainable enterprise-scale development while preserving the Public/Private Boundary.
+
+These principles describe the architectural philosophy of the project rather than implementation-specific behavior.
+
+---
+
+# Architectural Philosophy
+
+HANTER is engineered as a long-term architectural platform rather than a collection of independent software components.
+
+Architecture is considered the primary mechanism for ensuring consistency, scalability, maintainability and engineering quality throughout the lifetime of the project.
+
+Every architectural decision should strengthen the integrity of the overall system.
+
+---
+
+# Core Architectural Principles
+
+The architecture of HANTER is founded upon the following principles:
+
+- Architecture Before Implementation;
+- Explicit Responsibility Boundaries;
+- Federated Multi-Orchestrator Architecture;
+- Long-Term Maintainability;
+- Separation of Governance and Execution;
+- Evidence Before Status;
+- Public/Private Boundary;
+- Responsible AI Engineering;
+- Continuous Architectural Evolution;
+- Enterprise-Scale Design.
+
+These principles provide a consistent engineering framework for future architectural development.
+
+---
+
+# Architectural Stability
+
+Architectural stability is achieved through disciplined evolution rather than frequent structural redesign.
+
+New concepts should integrate into the existing architecture without breaking established responsibility boundaries or creating conflicting engineering models.
+
+Stability enables sustainable long-term growth.
+
+---
+
+# Engineering Responsibility
+
+Architectural decisions should prioritize:
+
+- system clarity;
+- engineering consistency;
+- governance transparency;
+- maintainability;
+- future scalability;
+- technical quality.
+
+Engineering responsibility extends beyond implementation and includes documentation, architectural reasoning and long-term stewardship.
+
+---
+
+# Future Evolution
+
+These architectural principles are intended to remain stable as HANTER evolves.
+
+Future revisions may expand or refine the principles while preserving compatibility with the canonical architecture of IMPERIAL Core and maintaining the long-term engineering vision established by the Architect.
