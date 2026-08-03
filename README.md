@@ -5868,3 +5868,134 @@ The Public Components Registry will evolve together with the IMPERIAL Core ecosy
 New public components may be added following architectural approval and public documentation review.
 
 The long-term objective is to maintain a stable, authoritative and machine-readable registry that strengthens architectural understanding, semantic consistency and responsible public documentation.
+# HANTER Public Verified Milestones
+
+**Document ID:** IC-HANTER-PUBLIC-MILESTONES-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC VERIFIED MILESTONES  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document provides the official public record of significant architectural, engineering and documentation milestones within the HANTER project.
+
+Its objective is to distinguish verified architectural progress from implementation status while preserving transparency, traceability and the Public/Private Boundary.
+
+Only milestones supported by public documentation or explicitly verified engineering evidence should be recorded.
+
+---
+
+# Milestone Classification
+
+Public milestones are classified using the following categories:
+
+- **ARCHITECTURAL** — approved architectural direction or design.
+- **DOCUMENTATION** — publication of official engineering documentation.
+- **LOCAL VERIFIED** — validated within a bounded local engineering environment.
+- **PUBLICATION** — publicly released documentation or repository improvements.
+- **PLANNED** — approved future work that has not yet been completed.
+
+These classifications must not be interpreted as equivalent to deployment or production readiness.
+
+---
+
+# Verified Public Milestones
+
+## Architectural Foundation
+
+**Classification:** ARCHITECTURAL
+
+The canonical public architecture of HANTER has been established, including:
+
+- architectural authority;
+- Federated Multi-Orchestrator Architecture;
+- Public/Private Boundary;
+- engineering governance principles;
+- long-term architectural direction.
+
+---
+
+## Public Engineering Repository
+
+**Classification:** DOCUMENTATION
+
+The HANTER-Public repository has been established as the official public engineering documentation repository describing architecture, governance and engineering concepts.
+
+---
+
+## Enterprise Documentation Expansion
+
+**Classification:** DOCUMENTATION
+
+A structured body of enterprise architecture documentation has been created covering:
+
+- architecture;
+- governance;
+- engineering methodology;
+- semantic architecture;
+- knowledge representation;
+- digital footprint;
+- machine-readable documentation.
+
+---
+
+## Machine-Readable Engineering
+
+**Classification:** DOCUMENTATION
+
+Machine-readable engineering guidance has been introduced through documents describing:
+
+- canonical identity;
+- entity relationships;
+- semantic architecture;
+- AI readability;
+- digital footprint;
+- documentation relationships.
+
+These documents improve semantic consistency but do not guarantee indexing or automated recognition.
+
+---
+
+# Planned Public Milestones
+
+Future public milestones may include:
+
+- expanded architectural diagrams;
+- additional machine-readable artifacts;
+- documentation refinement;
+- enhanced engineering navigation;
+- publicly documented architectural decisions;
+- strengthened knowledge graph integration.
+
+Items listed in this section remain planned until completed and publicly documented.
+
+---
+
+# Verification Policy
+
+Every milestone should clearly indicate its classification.
+
+Architectural completion must not be represented as implementation completion.
+
+Local verification must not be represented as external deployment.
+
+Public documentation must not be interpreted as production authorization.
+
+---
+
+# Public Status Boundary
+
+This document records the evolution of the public engineering knowledge base.
+
+It does not describe confidential implementation work, protected infrastructure, private engineering activities or operational deployment.
+
+---
+
+# Long-Term Objective
+
+The Verified Public Milestones registry will continue to evolve together with HANTER.
+
+Its objective is to provide a transparent and traceable history of architectural and documentation progress while maintaining factual accuracy, engineering integrity and compatibility with the canonical architecture of IMPERIAL Core.
