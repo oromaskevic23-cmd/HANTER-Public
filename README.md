@@ -3539,3 +3539,84 @@ The Enterprise Architecture Lifecycle will continue to mature together with HANT
 Future revisions may introduce additional lifecycle guidance while preserving architectural integrity, governance consistency and the engineering philosophy established by the Architect.
 
 The long-term objective is to maintain a durable enterprise lifecycle capable of supporting decades of sustainable architectural evolution, responsible engineering and professional enterprise governance.
+# HANTER Public Enterprise Architecture Governance Lifecycle
+
+**Document ID:** IC-HANTER-PUBLIC-EAGL-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC ENTERPRISE ARCHITECTURE GOVERNANCE LIFECYCLE  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the Enterprise Architecture Governance Lifecycle that supports the long-term governance of HANTER within the IMPERIAL Core ecosystem.
+
+Its objective is to describe how architectural governance continuously evolves through structured engineering, documented decision-making, governance refinement and long-term architectural stewardship while preserving the Public/Private Boundary.
+
+The governance lifecycle represents an ongoing architectural capability rather than a fixed engineering process.
+
+---
+
+# Governance Lifecycle Philosophy
+
+Enterprise governance is expected to mature continuously throughout the lifetime of HANTER.
+
+Rather than reacting to isolated engineering events, governance provides a stable architectural framework that evolves through disciplined documentation, transparent engineering practices and responsible architectural leadership.
+
+Long-term governance protects architectural integrity while enabling sustainable innovation.
+
+---
+
+# Governance Lifecycle Stages
+
+The public governance lifecycle consists of the following stages:
+
+1. Architectural Vision
+2. Governance Planning
+3. Policy Definition
+4. Engineering Alignment
+5. Documentation Integration
+6. Architectural Review
+7. Governance Refinement
+8. Continuous Improvement
+9. Long-Term Stewardship
+
+Each stage contributes to preserving architectural consistency across the evolving enterprise ecosystem.
+
+---
+
+# Governance Integration
+
+Governance operates across multiple architectural domains, including:
+
+- enterprise architecture;
+- engineering standards;
+- architectural principles;
+- engineering documentation;
+- terminology management;
+- quality standards;
+- architectural decision records;
+- enterprise engineering governance;
+- continuous architectural evolution.
+
+These disciplines collectively establish a coherent governance environment for HANTER.
+
+---
+
+# Continuous Governance
+
+Governance is strengthened through continuous architectural refinement rather than periodic redesign.
+
+As engineering knowledge expands, governance documentation evolves to improve clarity, consistency and long-term maintainability while remaining compatible with the canonical architecture of IMPERIAL Core.
+
+---
+
+# Long-Term Architectural Stewardship
+
+The Enterprise Architecture Governance Lifecycle will continue to evolve together with HANTER.
+
+Future revisions may expand governance guidance, architectural practices and engineering policies while preserving the architectural philosophy established by the Architect.
+
+The long-term objective is to maintain a durable governance lifecycle capable of supporting decades of enterprise architecture, responsible AI engineering, transparent documentation and sustainable engineering excellence.
