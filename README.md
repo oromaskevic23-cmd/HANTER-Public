@@ -2491,3 +2491,77 @@ Architectural consistency is not a one-time objective.
 It is a continuous engineering responsibility that supports the long-term sustainability of HANTER and the IMPERIAL Core ecosystem.
 
 Future revisions may expand this policy while preserving compatibility with the canonical architecture established by the Architect and maintaining the long-term engineering vision of the project.
+# HANTER Public Architectural Evolution
+
+**Document ID:** IC-HANTER-PUBLIC-EVOLUTION-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC ARCHITECTURAL EVOLUTION  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document describes the long-term architectural evolution strategy of HANTER within the IMPERIAL Core ecosystem.
+
+Its objective is to explain how the architecture is expected to mature over time while preserving engineering consistency, governance integrity and the Public/Private Boundary.
+
+Architectural evolution is viewed as a controlled engineering process rather than a sequence of isolated implementation changes.
+
+---
+
+# Evolution Philosophy
+
+HANTER is designed to evolve continuously while preserving its canonical architectural identity.
+
+The architecture should become more capable through refinement, documentation and responsible engineering without introducing unnecessary complexity or architectural fragmentation.
+
+Long-term evolution is guided by architectural vision rather than short-term implementation priorities.
+
+---
+
+# Evolution Principles
+
+The architectural evolution of HANTER is guided by the following principles:
+
+- preserve canonical architecture;
+- evolve through documented engineering decisions;
+- maintain explicit governance boundaries;
+- strengthen engineering documentation;
+- improve architectural clarity;
+- support enterprise scalability;
+- encourage reusable architectural patterns;
+- preserve long-term maintainability;
+- protect engineering consistency;
+- maintain the Public/Private Boundary.
+
+These principles establish a stable foundation for future architectural growth.
+
+---
+
+# Evolution Through Documentation
+
+Documentation is considered one of the primary mechanisms of architectural evolution.
+
+As engineering knowledge expands, public documentation should evolve to improve clarity, consistency and technical understanding without exposing confidential implementation details.
+
+Every significant architectural improvement should be reflected through corresponding engineering documentation whenever appropriate.
+
+---
+
+# Sustainable Enterprise Growth
+
+Architectural evolution should support sustainable enterprise development across future organizational structures, engineering capabilities and AI coordination models.
+
+Growth should remain compatible with the canonical architecture of IMPERIAL Core and should reinforce, rather than replace, established engineering principles.
+
+---
+
+# Future Evolution
+
+The architectural evolution strategy will continue to mature together with HANTER.
+
+Future revisions may introduce additional architectural guidance, governance practices and engineering methodologies while preserving the long-term architectural vision established by the Architect.
+
+The objective is to maintain a durable enterprise architecture capable of evolving through disciplined engineering, transparent documentation and responsible governance for many years to come.
