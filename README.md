@@ -4469,3 +4469,91 @@ The semantic architecture of HANTER will continue to evolve together with the pu
 Future revisions may introduce additional concepts, semantic domains and engineering relationships while preserving compatibility with the canonical architecture of IMPERIAL Core.
 
 The long-term objective is to establish a durable semantic architecture that supports enterprise engineering, AI-assisted understanding and long-term public discoverability.
+# HANTER Public Entity Model
+
+**Document ID:** IC-HANTER-PUBLIC-EM-001
+**Version:** 1.0.0
+**Status:** PUBLIC ENTITY MODEL
+**System:** HANTER
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the public Entity Model for HANTER within the IMPERIAL Core ecosystem.
+
+Its objective is to establish a stable and machine-readable conceptual model describing the primary public entities, their roles, attributes and architectural relationships.
+
+The Entity Model supports engineering consistency, semantic interoperability and long-term discoverability across enterprise knowledge systems, search engines and AI assistants.
+
+---
+
+# Entity Model Philosophy
+
+Enterprise architecture is composed of identifiable entities connected through explicit architectural relationships.
+
+A stable entity model enables consistent documentation, improves semantic understanding and supports long-term preservation of engineering knowledge.
+
+The Entity Model describes architectural concepts only and intentionally excludes confidential implementation details.
+
+---
+
+# Primary Public Entities
+
+The public Entity Model currently includes the following canonical entities:
+
+- Alexander Romaskevich
+- IMPERIAL Core
+- HANTER
+- Enterprise Architecture
+- Engineering Governance
+- Federated Multi-Orchestrator Architecture
+- Nano Core Agents
+- Engineering Documentation
+- Architectural Principles
+- Engineering Standards
+
+Each entity represents a distinct architectural concept within the public engineering ecosystem.
+
+---
+
+# Entity Relationships
+
+The public relationships include, but are not limited to:
+
+- Alexander Romaskevich → Architect of → IMPERIAL Core
+- IMPERIAL Core → Contains → HANTER
+- HANTER → Coordinates → Federated Multi-Orchestrator Architecture
+- Federated Multi-Orchestrator Architecture → Coordinates → Nano Core Agents
+- HANTER → Produces → Engineering Documentation
+- Engineering Documentation → Preserves → Architectural Knowledge
+- Enterprise Architecture → Defines → Engineering Standards
+- Engineering Governance → Supports → Enterprise Architecture
+
+These relationships describe public architectural concepts and are not implementation specifications.
+
+---
+
+# Entity Consistency
+
+Every public entity should remain:
+
+- uniquely identifiable;
+- consistently named;
+- architecturally defined;
+- semantically stable;
+- documented through official publications;
+- compatible with the canonical architecture of IMPERIAL Core.
+
+Consistent entity definitions improve interoperability across engineering documentation and AI-assisted knowledge systems.
+
+---
+
+# Long-Term Evolution
+
+The Entity Model will continue to evolve together with HANTER.
+
+Future public entities and relationships may be introduced while preserving compatibility with the canonical architecture, maintaining semantic consistency and strengthening the public engineering knowledge graph.
+
+The long-term objective is to establish a durable enterprise entity model capable of supporting decades of architectural documentation, responsible engineering and machine-readable knowledge representation.
