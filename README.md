@@ -1304,3 +1304,83 @@ Future revisions may introduce additional licensing information for specific doc
 # Contact
 
 Questions regarding licensing, permissions or official use of HANTER documentation should be directed through the official public communication channels of the project as they become available.
+# HANTER Public Engineering Standards
+
+**Document ID:** IC-HANTER-PUBLIC-ENGINEERING-STANDARDS-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC ENGINEERING STANDARD  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the public engineering standards that guide the long-term development of HANTER.
+
+Its objective is to establish consistent engineering practices that support architectural quality, maintainability, governance and sustainable evolution while preserving the separation between public engineering knowledge and confidential implementation.
+
+These standards describe engineering expectations rather than implementation-specific procedures.
+
+---
+
+# Engineering Philosophy
+
+Engineering within HANTER is guided by the belief that architecture, documentation, governance and implementation must evolve together.
+
+Long-term maintainability is considered more valuable than rapid feature expansion.
+
+Engineering quality is achieved through disciplined design, consistent documentation, transparent architectural reasoning and continuous improvement.
+
+---
+
+# Engineering Principles
+
+The public engineering standards are built upon the following principles:
+
+- Architecture Before Implementation;
+- Engineering Before Optimization;
+- Documentation Before Assumptions;
+- Evidence Before Status;
+- Explicit Responsibility Boundaries;
+- Long-Term Maintainability;
+- Federated Architectural Design;
+- Responsible AI Engineering;
+- Public/Private Boundary;
+- Continuous Engineering Improvement.
+
+These principles define the expected engineering culture of HANTER.
+
+---
+
+# Documentation Standards
+
+Engineering documentation should remain:
+
+- technically accurate;
+- architecturally consistent;
+- professionally written;
+- version controlled;
+- traceable;
+- maintainable;
+- understandable by future contributors.
+
+Documentation is considered part of the engineering process rather than supplementary material.
+
+---
+
+# Architectural Consistency
+
+Every engineering decision should remain compatible with the canonical architecture of IMPERIAL Core.
+
+Engineering work should strengthen existing architecture rather than introduce conflicting concepts or fragmented design approaches.
+
+Consistency is considered a long-term engineering asset.
+
+---
+
+# Continuous Improvement
+
+Engineering standards will continue to evolve together with HANTER.
+
+Future revisions may expand these standards while preserving architectural integrity, governance consistency and the long-term engineering vision of IMPERIAL Core.
