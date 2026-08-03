@@ -331,3 +331,100 @@ The repository emphasizes that public engineering documentation is not only inte
 By maintaining clear architectural values, HANTER-Public promotes transparency, professional engineering standards and responsible AI system design while protecting confidential implementation details, proprietary technologies and operational infrastructure.
 
 This commit further reinforces the repository as the official public architectural reference describing the engineering philosophy, governance model and enduring architectural values that shape the future development of HANTER.
+# HANTER Public Architecture
+
+**Document ID:** IC-HANTER-PUBLIC-ARCHITECTURE-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC ARCHITECTURAL OVERVIEW  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core  
+
+---
+
+## 1. Purpose
+
+This document provides the official public architectural overview of HANTER within the IMPERIAL Core ecosystem.
+
+Its purpose is to explain the role, architectural position, responsibility boundaries and long-term engineering direction of HANTER without disclosing confidential source code, private operational procedures, protected security mechanisms, internal deployment details or proprietary runtime infrastructure.
+
+This document describes architectural intent and publicly approved system concepts. It must not be interpreted as proof that every described capability is currently implemented, deployed or authorized for production use.
+
+---
+
+## 2. Architectural Authority
+
+HANTER is developed under the architectural authority of:
+
+**Alexander Romaskevich**  
+**Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core**  
+**Architect and final authority of IMPERIAL Core**
+
+The Architect defines the canonical architectural direction, approves material architectural changes and preserves consistency across the long-term development of IMPERIAL Core.
+
+HANTER remains subordinate to the Architect and does not replace the Architect’s final authority.
+
+---
+
+## 3. Architectural Role of HANTER
+
+HANTER is the governed AI command and coordination layer of IMPERIAL Core.
+
+Its long-term architectural role is to support:
+
+- structured mission coordination;
+- governed delegation of responsibilities;
+- coordination of Domain Orchestrators;
+- coordination of Functional Orchestrators;
+- controlled participation of Nano Core Agents;
+- separation of authority from technical capability;
+- evidence-based execution;
+- traceable system evolution;
+- long-term organizational scalability;
+- preservation of architectural consistency.
+
+HANTER is not defined as an unrestricted autonomous authority.
+
+It operates within explicit governance, authorization, security and audit boundaries established by IMPERIAL Core.
+
+---
+
+## 4. Federated Multi-Orchestrator Architecture
+
+HANTER follows a **Federated Multi-Orchestrator Architecture**.
+
+The architecture does not depend on one unrestricted global orchestrator controlling every organizational, business, technical and operational domain.
+
+Instead, coordination is distributed across multiple governed orchestration roles.
+
+These may include:
+
+- Domain Orchestrators responsible for defined business or operational domains;
+- Functional Orchestrators responsible for professional or technical capabilities;
+- organizational orchestrators aligned with different company structures;
+- specialized coordination layers for missions, teams and Runtime Domains;
+- dynamically scalable Nano Core Agents assigned to bounded responsibilities.
+
+Each orchestrator operates within an explicit authority scope, capability boundary and governance context.
+
+Federation enables IMPERIAL Core to support multiple organizational models, professional teams, business domains and future system structures without forcing all responsibilities into a single central execution authority.
+
+---
+
+## 5. Public Architectural Hierarchy
+
+The public architectural hierarchy can be represented as follows:
+
+```text
+Architect
+    |
+    v
+HANTER
+    |
+    v
+Federated Domain and Functional Orchestrators
+    |
+    v
+Nano Core Agents
+    |
+    v
+Governed Execution and Evidence
