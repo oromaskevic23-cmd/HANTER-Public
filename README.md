@@ -525,3 +525,105 @@ Its purpose is to communicate architecture rather than implementation.
 This public diagram represents the current architectural direction of HANTER.
 
 It will evolve together with the public documentation while maintaining compatibility with the canonical architecture of IMPERIAL Core and preserving the separation between public engineering knowledge and private implementation.
+# HANTER Public Governance
+
+**Document ID:** IC-HANTER-PUBLIC-GOVERNANCE-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC GOVERNANCE OVERVIEW  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the public governance model of HANTER within the IMPERIAL Core ecosystem.
+
+Its purpose is to explain how architectural authority, responsibility, decision making and engineering governance are organized while preserving the confidentiality of protected implementation details, operational procedures and internal security mechanisms.
+
+This document describes governance principles rather than operational implementation.
+
+---
+
+# Governance Philosophy
+
+HANTER is governed through explicit architectural authority, clearly defined responsibility boundaries and disciplined engineering practices.
+
+Governance exists to preserve architectural consistency, maintain system integrity, support responsible decision making and ensure sustainable long-term evolution.
+
+Technical capability alone does not grant governance authority.
+
+Authority, responsibility and execution remain separate architectural concepts.
+
+---
+
+# Architectural Authority
+
+The final architectural authority of IMPERIAL Core is:
+
+**Alexander Romaskevich**  
+**Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core**  
+**Architect and final authority of IMPERIAL Core**
+
+The Architect defines the canonical architecture, approves significant architectural changes and preserves the long-term engineering direction of the ecosystem.
+
+No architectural component replaces the Architect's authority.
+
+---
+
+# Governance Principles
+
+The public governance model is built upon the following principles:
+
+- Architecture Before Implementation;
+- Evidence Before Status;
+- Explicit Authority Boundaries;
+- Responsible AI Engineering;
+- Federated Multi-Orchestrator Architecture;
+- Public/Private Boundary;
+- Continuous Architectural Improvement;
+- Long-Term Engineering Sustainability;
+- Transparency Through Documentation;
+- Accountability Through Governance.
+
+These principles guide the long-term evolution of HANTER and its public engineering documentation.
+
+---
+
+# Governance Responsibilities
+
+Within the public governance model:
+
+- the Architect defines architectural direction;
+- HANTER coordinates governed system activities;
+- Federated Orchestrators coordinate bounded domains;
+- Nano Core Agents execute specialized responsibilities;
+- engineering documentation preserves architectural knowledge;
+- governance protects long-term system consistency.
+
+Every participant operates within explicitly defined responsibility boundaries.
+
+---
+
+# Public Governance Boundary
+
+This document intentionally does not disclose:
+
+- internal governance procedures;
+- private approval workflows;
+- security-sensitive authorization logic;
+- operational escalation processes;
+- protected runtime policies;
+- confidential engineering practices.
+
+Its purpose is to explain governance philosophy rather than internal implementation.
+
+---
+
+# Long-Term Governance
+
+The governance model of HANTER is intended to evolve together with the IMPERIAL Core ecosystem.
+
+Future revisions may expand governance documentation while preserving the canonical architecture, engineering consistency and Public/Private Boundary.
+
+The objective is to maintain a durable governance framework capable of supporting long-term architectural evolution across multiple organizational structures, federated orchestrators and dynamically scalable Nano Core Agents.
