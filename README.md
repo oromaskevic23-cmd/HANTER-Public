@@ -2098,3 +2098,69 @@ The architectural goals of HANTER will continue to evolve together with the IMPE
 Future revisions may introduce additional strategic objectives while preserving compatibility with the canonical architecture established by the Architect.
 
 The long-term objective is to maintain a sustainable enterprise architecture capable of supporting future engineering innovation through disciplined governance, professional documentation and continuous architectural improvement.
+# HANTER Public Architectural Constraints
+
+**Document ID:** IC-HANTER-PUBLIC-CONSTRAINTS-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC ARCHITECTURAL CONSTRAINTS  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the public architectural constraints that preserve the integrity, consistency and long-term sustainability of HANTER within the IMPERIAL Core ecosystem.
+
+Architectural constraints establish the engineering boundaries within which the system is expected to evolve. They reduce architectural drift, prevent uncontrolled design changes and support responsible enterprise engineering.
+
+This document describes public architectural constraints only and intentionally excludes protected implementation details.
+
+---
+
+# Architectural Philosophy
+
+Every mature enterprise architecture requires explicit constraints.
+
+Constraints are not limitations imposed on innovation. Instead, they provide stable engineering boundaries that allow innovation to occur without compromising architectural consistency, governance or maintainability.
+
+HANTER evolves through disciplined architectural refinement rather than unrestricted structural change.
+
+---
+
+# Core Architectural Constraints
+
+The public architecture of HANTER is governed by the following long-term constraints:
+
+- Architecture precedes implementation.
+- Governance precedes execution.
+- Responsibility must remain explicitly defined.
+- Authority must remain traceable.
+- Documentation must evolve together with architecture.
+- Public documentation must never expose protected implementation.
+- Enterprise scalability must not compromise architectural consistency.
+- Engineering decisions must support long-term maintainability.
+- Architectural evolution must remain compatible with the canonical IMPERIAL Core architecture.
+- Engineering quality has priority over implementation speed.
+
+These constraints provide a stable framework for sustainable architectural growth.
+
+---
+
+# Engineering Consistency
+
+Architectural constraints help ensure that engineering decisions remain compatible across documentation, governance, terminology and future architectural development.
+
+Every significant engineering activity should strengthen the overall architecture rather than introduce isolated or conflicting design approaches.
+
+Consistency is treated as a strategic engineering asset.
+
+---
+
+# Long-Term Sustainability
+
+The architectural constraints described in this document are intended to remain stable throughout the long-term evolution of HANTER.
+
+Future revisions may refine or extend these constraints while preserving compatibility with the canonical architecture of IMPERIAL Core and maintaining the Public/Private Boundary.
+
+The objective is to ensure that HANTER continues to evolve as a disciplined enterprise architecture supported by transparent documentation, responsible governance and sustainable engineering practices.
