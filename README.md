@@ -3948,3 +3948,93 @@ Continuous refinement is considered an essential characteristic of professional 
 The long-term objective of the Enterprise Architecture Practices is to establish a repeatable engineering culture capable of supporting decades of architectural excellence, responsible governance and sustainable enterprise AI development.
 
 These practices provide a stable engineering foundation that complements the architectural principles, governance framework and engineering standards published throughout the HANTER public documentation.
+# HANTER Public Enterprise Architecture Methodology
+
+**Document ID:** IC-HANTER-PUBLIC-EAMETH-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC ENTERPRISE ARCHITECTURE METHODOLOGY  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the Enterprise Architecture Methodology adopted by HANTER within the IMPERIAL Core ecosystem.
+
+Its objective is to describe the engineering methodology that guides architectural planning, governance, documentation and continuous enterprise evolution while preserving the Public/Private Boundary.
+
+The methodology establishes a repeatable architectural approach rather than implementation-specific development procedures.
+
+---
+
+# Methodology Philosophy
+
+Enterprise architecture should evolve through disciplined methodology instead of ad hoc engineering decisions.
+
+A consistent methodology improves architectural quality, governance maturity, engineering transparency and long-term maintainability while reducing architectural fragmentation.
+
+The methodology provides a stable engineering foundation for future architectural growth.
+
+---
+
+# Methodology Principles
+
+The Enterprise Architecture Methodology is based upon the following principles:
+
+- Architecture Before Implementation;
+- Evidence Before Status;
+- Documentation Before Assumptions;
+- Explicit Governance;
+- Long-Term Architectural Thinking;
+- Continuous Architectural Improvement;
+- Enterprise Scalability;
+- Responsible AI Engineering;
+- Public/Private Boundary;
+- Sustainable Engineering Practices.
+
+These principles define the methodological foundation of HANTER.
+
+---
+
+# Methodological Process
+
+The public methodology encourages a structured engineering process consisting of:
+
+1. Architectural Vision
+2. Strategic Analysis
+3. Enterprise Architecture Design
+4. Governance Alignment
+5. Engineering Documentation
+6. Architectural Review
+7. Continuous Refinement
+8. Long-Term Architectural Evolution
+
+Each stage contributes to the gradual maturation of the enterprise architecture.
+
+---
+
+# Methodology Integration
+
+The methodology integrates multiple engineering disciplines, including:
+
+- enterprise architecture;
+- governance;
+- engineering standards;
+- architectural principles;
+- documentation management;
+- engineering knowledge;
+- quality standards;
+- architectural evolution.
+
+These disciplines collectively establish a coherent engineering methodology for HANTER.
+
+---
+
+# Long-Term Methodology
+
+The Enterprise Architecture Methodology will continue to evolve together with HANTER and the IMPERIAL Core ecosystem.
+
+Future revisions may refine methodological guidance while preserving compatibility with the canonical architecture established by the Architect.
+
+The long-term objective is to maintain a disciplined enterprise methodology capable of supporting decades of architectural excellence, responsible governance and sustainable engineering evolution.
