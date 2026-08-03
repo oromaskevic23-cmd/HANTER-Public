@@ -7210,3 +7210,121 @@ It does not define confidential implementation names, protected internal identif
 The Canonical Terminology document will continue to evolve together with HANTER and the IMPERIAL Core ecosystem.
 
 Its objective is to preserve a stable engineering vocabulary that supports decades of architectural evolution, semantic consistency, machine-readable documentation and responsible enterprise engineering while remaining compatible with the canonical architecture established by the Architect.
+# HANTER Public Architecture Principles Catalog
+
+**Document ID:** IC-HANTER-PUBLIC-APC-001
+**Version:** 1.0.0
+**Status:** PUBLIC ARCHITECTURE PRINCIPLES CATALOG
+**System:** HANTER
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the official catalog of public architectural principles used throughout HANTER within the IMPERIAL Core ecosystem.
+
+Its objective is to provide a consolidated reference for the engineering principles that guide architectural decisions, governance, documentation and long-term enterprise evolution while preserving the Public/Private Boundary.
+
+The catalog serves as the authoritative public reference for architectural principles rather than implementation guidance.
+
+---
+
+# Catalog Philosophy
+
+Architectural principles establish stable engineering expectations.
+
+Unlike implementation practices, architectural principles are intended to remain relatively stable over long periods and provide a consistent foundation for engineering decisions, governance and documentation.
+
+Every principle should reinforce the canonical architecture rather than introduce conflicting interpretations.
+
+---
+
+# Core Architectural Principles
+
+The public architectural foundation includes the following core principles:
+
+- Architecture Before Implementation
+- Evidence Before Status
+- Explicit Governance
+- Public/Private Boundary
+- Federated Multi-Orchestrator Architecture
+- Responsible AI Engineering
+- Enterprise Scalability
+- Engineering Transparency
+- Long-Term Maintainability
+- Architectural Consistency
+- Documentation as an Engineering Asset
+- Semantic Stability
+- Canonical Terminology
+- Machine-Readable Documentation
+- Continuous Architectural Improvement
+
+These principles collectively define the public engineering philosophy of HANTER.
+
+---
+
+# Principle Characteristics
+
+Every architectural principle should remain:
+
+- technically meaningful;
+- architecturally justified;
+- consistently documented;
+- compatible with canonical terminology;
+- applicable across engineering disciplines;
+- understandable by both engineers and intelligent systems.
+
+Principles should remain stable even as implementation evolves.
+
+---
+
+# Engineering Application
+
+Architectural principles guide:
+
+- enterprise architecture;
+- governance;
+- engineering standards;
+- documentation;
+- semantic architecture;
+- knowledge management;
+- public engineering communication;
+- long-term architectural evolution.
+
+Their purpose is to improve decision quality rather than prescribe implementation details.
+
+---
+
+# Principle Governance
+
+New architectural principles should:
+
+- strengthen the existing architecture;
+- avoid duplication;
+- remain compatible with established terminology;
+- improve engineering consistency;
+- support long-term maintainability.
+
+Conflicting principles should be resolved through documented architectural governance rather than informal interpretation.
+
+---
+
+# Public Boundary
+
+This catalog documents public architectural principles only.
+
+It does not disclose:
+
+- confidential engineering policies;
+- protected implementation standards;
+- internal operational guidance;
+- proprietary engineering procedures.
+
+---
+
+# Long-Term Vision
+
+The Architecture Principles Catalog will continue to evolve together with HANTER and the IMPERIAL Core ecosystem.
+
+Its objective is to maintain a stable and authoritative catalog of engineering principles supporting decades of enterprise architecture, responsible AI engineering, semantic consistency and sustainable architectural evolution while preserving compatibility with the canonical architecture established by the Architect.
