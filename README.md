@@ -627,3 +627,87 @@ The governance model of HANTER is intended to evolve together with the IMPERIAL 
 Future revisions may expand governance documentation while preserving the canonical architecture, engineering consistency and Public/Private Boundary.
 
 The objective is to maintain a durable governance framework capable of supporting long-term architectural evolution across multiple organizational structures, federated orchestrators and dynamically scalable Nano Core Agents.
+# Security Policy
+
+**Document ID:** IC-HANTER-PUBLIC-SECURITY-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC SECURITY POLICY  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document describes the public security principles followed by the HANTER project.
+
+Its purpose is to explain the security philosophy, responsible disclosure process and engineering commitments while protecting confidential implementation details, operational procedures, security configurations and proprietary defensive mechanisms.
+
+This document intentionally focuses on public security governance rather than implementation-specific controls.
+
+---
+
+# Security Philosophy
+
+Security is considered a fundamental architectural responsibility rather than a feature added after implementation.
+
+HANTER is engineered with the objective of protecting architectural integrity, maintaining explicit responsibility boundaries and supporting responsible AI system development throughout the lifetime of the project.
+
+Security considerations are incorporated into architectural design, engineering documentation and governance decisions from the earliest stages of development.
+
+---
+
+# Public Security Principles
+
+The public security model is based upon the following principles:
+
+- Security by Design;
+- Architecture Before Implementation;
+- Deny by Default;
+- Explicit Authority Boundaries;
+- Responsible AI Engineering;
+- Evidence Before Status;
+- Public/Private Boundary;
+- Continuous Security Improvement;
+- Long-Term Engineering Sustainability;
+- Responsible Disclosure.
+
+These principles guide the public security direction of HANTER while preserving confidential implementation details.
+
+---
+
+# Responsible Disclosure
+
+Security researchers and members of the technical community are encouraged to report potential vulnerabilities responsibly.
+
+Reports should contain sufficient technical information to reproduce and evaluate the observed issue whenever possible.
+
+Public disclosure should allow reasonable time for evaluation and appropriate corrective action before sensitive technical details are broadly published.
+
+---
+
+# Protected Information
+
+For security reasons, this repository does not publish:
+
+- credentials or authentication secrets;
+- encryption keys;
+- internal infrastructure;
+- deployment environments;
+- runtime configuration;
+- operational procedures;
+- private repositories;
+- proprietary security mechanisms;
+- confidential implementation details.
+
+The absence of such information is an intentional architectural decision.
+
+---
+
+# Security Commitment
+
+The long-term objective of HANTER is to continuously strengthen its architectural security posture through disciplined engineering, transparent public documentation and responsible governance.
+
+Public security documentation will continue to evolve while preserving the separation between publicly available engineering knowledge and protected implementation.
+
+Security remains an ongoing engineering process rather than a one-time milestone.
