@@ -1227,3 +1227,80 @@ Information published through unofficial sources should not be considered author
 The Official Resources document will continue to evolve together with the public engineering ecosystem.
 
 Its objective is to provide a stable entry point for discovering official architectural documentation, engineering publications and public information related to HANTER.
+# HANTER Public Licensing and Usage Policy
+
+**Document ID:** IC-HANTER-PUBLIC-LICENSING-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC LICENSING POLICY  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the public licensing and usage principles for the HANTER-Public repository.
+
+Its objective is to clarify how the public engineering documentation may be accessed, referenced and used while protecting the intellectual property, architectural identity and long-term integrity of the HANTER project and the IMPERIAL Core ecosystem.
+
+This policy applies only to the publicly available documentation contained within this repository.
+
+---
+
+# Copyright
+
+Copyright © Alexander Romaskevich.
+
+All rights reserved unless explicitly stated otherwise within individual documents.
+
+The architectural concepts, engineering documentation and governance materials published in this repository remain part of the long-term intellectual property of the HANTER project.
+
+---
+
+# Permitted Use
+
+Visitors may:
+
+- read the public documentation;
+- reference publicly available architectural concepts;
+- cite this repository in research or educational work;
+- share links to official public documents;
+- study the engineering methodology described in the repository.
+
+These activities help promote transparency, technical discussion and architectural understanding.
+
+---
+
+# Restrictions
+
+Unless explicitly authorized by the copyright holder, this repository does not grant permission to:
+
+- claim authorship of the published architecture;
+- redistribute modified documentation as official HANTER material;
+- misrepresent unofficial work as part of the HANTER project;
+- use the HANTER name or identity in a misleading manner;
+- imply endorsement by the HANTER project where no such endorsement exists.
+
+---
+
+# Public and Private Boundary
+
+This repository intentionally documents only public engineering knowledge.
+
+Private source code, protected implementation details, internal infrastructure, confidential security mechanisms and proprietary operational procedures remain outside the scope of this repository.
+
+Nothing in this repository should be interpreted as permission to access or reproduce protected implementation.
+
+---
+
+# Future Licensing
+
+The licensing model may evolve as the HANTER project continues to mature.
+
+Future revisions may introduce additional licensing information for specific documentation, publications or publicly released engineering artifacts while preserving the architectural identity and integrity of the project.
+
+---
+
+# Contact
+
+Questions regarding licensing, permissions or official use of HANTER documentation should be directed through the official public communication channels of the project as they become available.
