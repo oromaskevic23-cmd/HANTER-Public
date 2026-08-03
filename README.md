@@ -3220,3 +3220,79 @@ The Enterprise Engineering Philosophy will continue to evolve together with HANT
 Future revisions may introduce additional engineering guidance, architectural practices and governance principles while preserving the long-term architectural vision established by the Architect.
 
 The objective is to maintain a professional enterprise engineering philosophy capable of supporting decades of architectural excellence, responsible AI engineering and sustainable enterprise-scale innovation.
+# HANTER Public Enterprise Architecture Culture
+
+**Document ID:** IC-HANTER-PUBLIC-EAC-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC ENTERPRISE ARCHITECTURE CULTURE  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document describes the Enterprise Architecture Culture that supports the long-term evolution of HANTER within the IMPERIAL Core ecosystem.
+
+Its objective is to explain the engineering culture that encourages architectural consistency, responsible governance, continuous learning and sustainable enterprise development while preserving the Public/Private Boundary.
+
+Architecture culture represents shared engineering values rather than implementation-specific processes.
+
+---
+
+# Architectural Culture Philosophy
+
+The long-term success of an enterprise architecture depends not only on technology but also on the engineering culture that guides its evolution.
+
+HANTER promotes a culture in which architectural thinking, disciplined documentation, transparent governance and professional engineering practices are considered fundamental engineering responsibilities.
+
+The objective is to create an environment where architecture evolves deliberately, consistently and responsibly.
+
+---
+
+# Cultural Principles
+
+The Enterprise Architecture Culture of HANTER is built upon the following principles:
+
+- architecture before implementation;
+- documentation before assumptions;
+- governance before execution;
+- engineering transparency;
+- continuous architectural learning;
+- responsible technical leadership;
+- professional engineering communication;
+- long-term architectural stewardship;
+- sustainable enterprise evolution;
+- respect for canonical architecture.
+
+These principles establish a common engineering culture across the public documentation.
+
+---
+
+# Engineering Collaboration
+
+Enterprise architecture is strengthened through collaboration based on technical reasoning, documented knowledge and constructive engineering discussion.
+
+Architectural ideas should be evaluated through engineering evidence, governance compatibility and long-term architectural impact.
+
+Professional collaboration contributes to stronger architectural decisions and more sustainable engineering outcomes.
+
+---
+
+# Continuous Architectural Learning
+
+Engineering knowledge continues to grow throughout the lifetime of HANTER.
+
+The public documentation is intended to support continuous learning by preserving architectural concepts, engineering standards, governance practices and long-term design rationale.
+
+Learning is viewed as a permanent component of enterprise engineering maturity.
+
+---
+
+# Long-Term Enterprise Culture
+
+The Enterprise Architecture Culture will continue to mature together with HANTER and the IMPERIAL Core ecosystem.
+
+Future revisions may expand the cultural guidance while preserving compatibility with the canonical architecture established by the Architect.
+
+The long-term objective is to cultivate an engineering culture capable of supporting decades of architectural excellence, responsible AI engineering and sustainable enterprise innovation.
