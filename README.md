@@ -4827,3 +4827,91 @@ The Entity Relationships model will continue to evolve together with HANTER.
 Future public entities and relationships may be introduced while preserving compatibility with the canonical architecture of IMPERIAL Core.
 
 The long-term objective is to establish a durable semantic relationship model supporting enterprise architecture, responsible engineering and long-term digital discoverability across the global engineering ecosystem.
+# HANTER Public Canonical Knowledge
+
+**Document ID:** IC-HANTER-PUBLIC-CK-001
+**Version:** 1.0.0
+**Status:** PUBLIC CANONICAL KNOWLEDGE
+**System:** HANTER
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the Canonical Knowledge of HANTER within the IMPERIAL Core ecosystem.
+
+Its objective is to establish the official public source of architectural knowledge that provides a stable, authoritative and machine-readable reference for engineers, researchers, enterprise architects, search engines and AI systems.
+
+Canonical Knowledge ensures that public engineering information remains consistent throughout the long-term evolution of HANTER.
+
+---
+
+# Canonical Knowledge Philosophy
+
+Enterprise engineering depends upon reliable knowledge.
+
+Canonical Knowledge represents engineering concepts that have been intentionally documented, publicly approved and maintained as part of the official architectural knowledge base.
+
+Canonical documentation provides stability while allowing continuous architectural evolution.
+
+---
+
+# Canonical Knowledge Domains
+
+The public Canonical Knowledge currently includes:
+
+- Enterprise Architecture;
+- Engineering Governance;
+- Architectural Principles;
+- Engineering Standards;
+- Design Principles;
+- Enterprise Engineering;
+- Architectural Documentation;
+- Semantic Architecture;
+- Entity Model;
+- Machine-Readable Architecture;
+- Digital Footprint;
+- Public Knowledge Graph.
+
+Together these domains represent the official public architectural knowledge of HANTER.
+
+---
+
+# Canonical Sources
+
+Official Canonical Knowledge is maintained through:
+
+- versioned engineering documentation;
+- stable document identifiers;
+- canonical terminology;
+- architectural governance;
+- documented engineering principles;
+- official public publications.
+
+Only official public engineering documents define Canonical Knowledge.
+
+---
+
+# Knowledge Integrity
+
+Canonical Knowledge should remain:
+
+- technically accurate;
+- architecturally consistent;
+- semantically stable;
+- professionally maintained;
+- version controlled;
+- publicly traceable.
+
+Knowledge integrity strengthens enterprise engineering quality and long-term architectural sustainability.
+
+---
+
+# Long-Term Vision
+
+The Canonical Knowledge base will continue to evolve together with HANTER.
+
+Future architectural publications may expand the official knowledge base while preserving compatibility with the canonical architecture of IMPERIAL Core.
+
+The long-term objective is to establish HANTER as a globally recognizable enterprise engineering knowledge system supported by authoritative documentation, transparent governance and responsible AI engineering.
