@@ -4292,3 +4292,89 @@ Consistent terminology improves interoperability between engineering documentati
 The canonical identity of HANTER is expected to remain stable throughout the long-term evolution of the project.
 
 Future engineering publications may expand the public identity while preserving compatibility with the canonical architecture of IMPERIAL Core and maintaining a consistent engineering presence across public technical resources.
+# HANTER Public Knowledge Graph
+
+**Document ID:** IC-HANTER-PUBLIC-PKG-001
+**Version:** 1.0.0
+**Status:** PUBLIC KNOWLEDGE GRAPH
+**System:** HANTER
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the public knowledge graph of HANTER within the IMPERIAL Core ecosystem.
+
+Its objective is to describe the primary public entities, their architectural relationships and the conceptual structure that supports engineering understanding, machine-readable interpretation and long-term digital discoverability.
+
+The Knowledge Graph complements the architectural documentation by providing a stable semantic representation of the public engineering ecosystem.
+
+---
+
+# Public Entities
+
+The primary public entities currently documented are:
+
+- Alexander Romaskevich
+- IMPERIAL Core
+- HANTER
+- Enterprise Architecture
+- Engineering Governance
+- Federated Multi-Orchestrator Architecture
+- Nano Core Agents
+- Engineering Documentation
+- Architectural Principles
+- Engineering Standards
+
+These entities form the core public engineering vocabulary of the project.
+
+---
+
+# Public Relationships
+
+The public architectural relationships include:
+
+- Alexander Romaskevich → Architect of → IMPERIAL Core
+- IMPERIAL Core → Includes → HANTER
+- HANTER → Coordinates → Federated Multi-Orchestrator Architecture
+- Federated Multi-Orchestrator Architecture → Coordinates → Nano Core Agents
+- HANTER → Documents → Enterprise Architecture
+- Enterprise Architecture → Defines → Engineering Standards
+- Engineering Standards → Support → Engineering Governance
+- Engineering Documentation → Preserves → Architectural Knowledge
+
+These relationships describe architectural concepts only and do not disclose implementation details.
+
+---
+
+# Knowledge Organization
+
+The public knowledge graph is organized around several engineering domains:
+
+- Architecture
+- Governance
+- Documentation
+- Engineering
+- Enterprise Design
+- AI Coordination
+- Terminology
+- Long-Term Evolution
+
+Each domain contributes to a coherent understanding of the HANTER architecture.
+
+---
+
+# Machine Readability
+
+Consistent terminology, stable document identifiers, structured documentation and explicit relationships improve machine interpretation by search engines, AI assistants and enterprise knowledge systems.
+
+The Knowledge Graph is intended to evolve together with the public engineering documentation.
+
+---
+
+# Long-Term Vision
+
+The long-term objective of the Public Knowledge Graph is to establish a durable semantic representation of HANTER and the IMPERIAL Core ecosystem.
+
+Future revisions may introduce additional entities and relationships while preserving compatibility with the canonical architecture, maintaining engineering consistency and strengthening the public digital presence of the project.
