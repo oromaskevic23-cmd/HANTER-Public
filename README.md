@@ -320,3 +320,14 @@ The engineering charter promotes a disciplined approach where architecture, docu
 The repository is intended to provide software engineers, enterprise architects, researchers and organizations with a trustworthy architectural reference describing the design philosophy behind HANTER while protecting confidential implementation details, operational procedures and proprietary technologies.
 
 This commit strengthens the long-term mission of HANTER-Public by defining the repository as a continuously evolving engineering knowledge platform dedicated to architectural excellence, responsible AI engineering and sustainable enterprise system development.
+Define the architectural values that guide the evolution of HANTER
+
+Continue strengthening the public engineering documentation by introducing the core architectural values that define the long-term evolution of HANTER and its role within the IMPERIAL Core ecosystem.
+
+This update explains that every architectural decision is expected to support clarity, responsibility, technical excellence and sustainable engineering. HANTER is designed as a system where governance, documentation and engineering quality evolve together, creating a durable architectural foundation capable of supporting future generations of technologies and organizational growth.
+
+The repository emphasizes that public engineering documentation is not only intended to describe the system but also to preserve architectural knowledge, communicate engineering intent and provide a consistent reference for developers, architects, researchers and organizations.
+
+By maintaining clear architectural values, HANTER-Public promotes transparency, professional engineering standards and responsible AI system design while protecting confidential implementation details, proprietary technologies and operational infrastructure.
+
+This commit further reinforces the repository as the official public architectural reference describing the engineering philosophy, governance model and enduring architectural values that shape the future development of HANTER.
