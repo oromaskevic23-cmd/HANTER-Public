@@ -1538,3 +1538,81 @@ Long-term traceability strengthens architectural consistency and reduces the lik
 Architectural Decision Records are expected to evolve together with HANTER.
 
 Future public ADRs may document major architectural milestones while preserving compatibility with the canonical architecture of IMPERIAL Core and maintaining the Public/Private Boundary.
+# HANTER Public Engineering Lifecycle
+
+**Document ID:** IC-HANTER-PUBLIC-LIFECYCLE-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC ENGINEERING LIFECYCLE  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document describes the public engineering lifecycle adopted by the HANTER project.
+
+Its objective is to explain how architectural ideas evolve into documented engineering concepts through a structured and governed lifecycle while preserving the distinction between public engineering knowledge and confidential implementation.
+
+The engineering lifecycle promotes consistency, traceability and long-term maintainability across all public documentation.
+
+---
+
+# Engineering Lifecycle Philosophy
+
+HANTER is developed through continuous architectural evolution rather than isolated implementation efforts.
+
+Each engineering stage is expected to improve the overall quality of the system while preserving architectural consistency and governance.
+
+Engineering maturity is achieved through disciplined progression rather than accelerated development.
+
+---
+
+# Public Engineering Lifecycle
+
+The public engineering lifecycle consists of the following stages:
+
+1. Vision
+2. Architectural Analysis
+3. Architectural Design
+4. Public Documentation
+5. Engineering Review
+6. Continuous Improvement
+7. Long-Term Maintenance
+
+Each stage contributes to the gradual evolution of HANTER while maintaining compatibility with the canonical architecture of IMPERIAL Core.
+
+---
+
+# Documentation Lifecycle
+
+Public engineering documentation evolves through:
+
+- initial publication;
+- architectural refinement;
+- terminology alignment;
+- engineering review;
+- consistency verification;
+- long-term maintenance.
+
+Documentation is treated as a living engineering asset that evolves together with the architecture.
+
+---
+
+# Architectural Continuity
+
+The lifecycle is intended to prevent fragmented engineering practices.
+
+Every new architectural concept should build upon existing knowledge, preserve compatibility with previously published documentation and support future architectural evolution.
+
+Architectural continuity is considered essential for enterprise-scale engineering.
+
+---
+
+# Long-Term Engineering
+
+The engineering lifecycle is designed to support many years of continuous architectural development.
+
+As HANTER evolves, additional lifecycle stages, engineering practices and documentation standards may be introduced while preserving the canonical engineering philosophy of IMPERIAL Core.
+
+The objective is to maintain a sustainable engineering process capable of supporting long-term architectural excellence.
