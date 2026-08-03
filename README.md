@@ -6134,3 +6134,134 @@ It only indicates that it is not part of the verified public engineering surface
 The Official Public Resources registry will evolve together with HANTER and the IMPERIAL Core ecosystem.
 
 Its objective is to maintain a trustworthy, stable and authoritative catalogue of official public resources while preserving engineering integrity, semantic consistency and the Public/Private Boundary.
+# HANTER Public Status Boundary
+
+**Document ID:** IC-HANTER-PUBLIC-STATUS-001
+**Version:** 1.0.0
+**Status:** PUBLIC STATUS BOUNDARY
+**System:** HANTER
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the official Public Status Boundary for HANTER within the IMPERIAL Core ecosystem.
+
+Its objective is to establish a clear distinction between architectural intent, engineering implementation, verification, deployment and production operation.
+
+Maintaining explicit status boundaries improves engineering transparency, documentation integrity and long-term public trust.
+
+---
+
+# Status Philosophy
+
+Enterprise engineering requires precise communication.
+
+Public documentation should accurately describe what is architecturally defined, what has been implemented, what has been verified and what remains under development.
+
+Different engineering states must never be presented as equivalent.
+
+---
+
+# Engineering Status Model
+
+The public engineering lifecycle distinguishes the following states:
+
+## Architectural
+
+The capability has been defined as part of the canonical architecture.
+
+Architectural definition alone does not imply implementation.
+
+---
+
+## Implemented
+
+Implementation artifacts exist.
+
+Implementation alone does not imply testing or operational readiness.
+
+---
+
+## Tested
+
+Implementation has been evaluated through defined testing procedures.
+
+Testing alone does not imply production authorization.
+
+---
+
+## Locally Verified
+
+Engineering validation has been completed within a bounded local environment.
+
+Local verification does not imply public deployment.
+
+---
+
+## Deployed
+
+The capability is operating within a defined external environment.
+
+Deployment does not automatically imply unrestricted production availability.
+
+---
+
+## Production Ready
+
+Production readiness requires explicit engineering authorization supported by documented evidence.
+
+Architectural documentation alone must never be interpreted as production readiness.
+
+---
+
+# Public Interpretation Rules
+
+Readers should not infer:
+
+- production deployment;
+- unrestricted operational capability;
+- commercial availability;
+- public service availability;
+- completed implementation;
+- external verification;
+
+unless these statements are explicitly supported by public evidence.
+
+---
+
+# Evidence Principles
+
+Public engineering claims should remain:
+
+- traceable;
+- verifiable;
+- architecturally consistent;
+- evidence-aware;
+- technically accurate;
+- semantically precise.
+
+Engineering credibility depends upon accurate status communication.
+
+---
+
+# Public and Private Boundary
+
+Public documentation intentionally focuses on:
+
+- architecture;
+- governance;
+- engineering standards;
+- terminology;
+- public engineering knowledge.
+
+Private engineering work, protected infrastructure and confidential implementation remain outside the scope of this repository.
+
+---
+
+# Long-Term Objective
+
+The Public Status Boundary will remain a permanent governance principle of HANTER.
+
+Its objective is to preserve engineering credibility by ensuring that architectural documentation, implementation status, testing results, deployment information and production authorization remain clearly distinguished throughout the long-term evolution of the IMPERIAL Core ecosystem.
