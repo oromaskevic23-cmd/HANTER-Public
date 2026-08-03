@@ -287,3 +287,14 @@ The public roadmap is intended to describe the progressive evolution of architec
 HANTER-Public is maintained as a permanent architectural reference that communicates the long-term direction of the project to software engineers, enterprise architects, researchers and organizations seeking to understand the engineering philosophy behind the system.
 
 This commit further reinforces the repository as the official public source describing the architectural evolution, engineering maturity and governance principles of HANTER while supporting transparent technical communication and sustainable enterprise software development.
+Strengthen the public architectural identity and document the commitment to responsible AI engineering
+
+Continue expanding the public engineering documentation by reinforcing the architectural identity of HANTER and its commitment to responsible AI engineering, transparent governance and sustainable enterprise architecture.
+
+This update explains that HANTER is engineered as a long-term architectural initiative where technical quality is achieved through disciplined planning, continuous documentation and clearly defined governance principles. Architectural decisions are intended to remain understandable, traceable and maintainable throughout the lifetime of the project.
+
+The repository emphasizes that responsible AI engineering requires more than software implementation. It requires architectural thinking, documentation discipline, governance, technical transparency and continuous refinement of engineering knowledge.
+
+HANTER-Public serves as the official public engineering repository describing the architectural direction, engineering philosophy and governance principles that shape the long-term evolution of HANTER within the IMPERIAL Core ecosystem.
+
+This commit further strengthens the repository as a reliable public reference for developers, enterprise architects, researchers and organizations interested in understanding the engineering methodology behind HANTER while preserving the confidentiality of protected implementation details and operational infrastructure.
