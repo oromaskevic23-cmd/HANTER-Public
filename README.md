@@ -190,3 +190,14 @@ The repository promotes a disciplined engineering culture where architecture, go
 HANTER-Public is maintained as a durable public engineering reference that enables developers, architects, researchers and organizations to understand the architectural direction of the project without exposing confidential technologies, protected operational workflows or internal implementation details.
 
 This commit reinforces the repository as a long-term source of architectural knowledge and establishes a stronger foundation for future public specifications, governance documents, engineering standards, architecture diagrams and technical publications.
+Introduce the Architect of IMPERIAL Core and establish project leadership documentation
+
+Extend the public engineering documentation by introducing the architectural leadership behind HANTER and documenting the role of the Architect within the IMPERIAL Core ecosystem.
+
+This update establishes a dedicated public reference describing the vision, responsibilities and long-term engineering direction provided by the Architect. It emphasizes that architectural governance, system consistency and strategic decision making originate from a single canonical architectural authority.
+
+The repository recognizes that HANTER is developed under a structured engineering process where architecture precedes implementation and long-term sustainability is considered before short-term functionality.
+
+The Architect defines the architectural vision, approves the long-term evolution of the ecosystem and maintains consistency across public documentation, engineering principles and system governance.
+
+This commit also prepares the repository for future public documentation covering the history of the project, architectural milestones, engineering methodology and the evolution of the IMPERIAL Core ecosystem.
