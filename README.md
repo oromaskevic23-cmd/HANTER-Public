@@ -1,45 +1,170 @@
 # HANTER-Public
-Public architecture, documentation and engineering overview of HANTER — the AI command center of IMPERIAL Core.
+
+**Public architecture, documentation and engineering overview of HANTER — the AI command center of IMPERIAL Core.**
+
 ---
-Add public architecture foundation for HANTER
 
-Establish the first public architectural foundation for the HANTER repository.
+## Overview
 
-This commit introduces the initial architecture layer describing the purpose, scope and engineering vision of HANTER within the IMPERIAL Core ecosystem.
+HANTER is a strategic AI command and coordination system within the IMPERIAL Core ecosystem.
 
-The repository is designed to document the public engineering perspective while maintaining a strict separation between public documentation and private implementation.
+It is designed to support governed AI operations, coordinate specialized organizational structures and enable controlled collaboration between federated orchestrators and Nano Core Agents.
 
-No confidential components, internal security mechanisms, operational procedures or proprietary technologies are disclosed.
+HANTER is not presented as a single unrestricted global orchestrator. Its architectural direction follows a federated Multi-Orchestrator Architecture in which responsibilities, authority boundaries and operational domains remain explicitly separated.
 
-This foundation prepares the repository for future architectural documentation, engineering standards, public specifications and long-term project evolution.
+This repository represents the public engineering and documentation layer of HANTER.
+
+It does not contain the private implementation, confidential operational procedures, protected security controls, credentials, deployment configurations or proprietary runtime infrastructure.
+
 ---
-Define public engineering principles and repository scope
 
-Introduce the first public engineering principles for the HANTER repository.
+## Architectural Role
 
-This update defines the engineering philosophy, repository scope and documentation strategy for the public edition of HANTER.
+Within the long-term IMPERIAL Core architecture, HANTER serves as a governed command and coordination layer operating under the authority of the Architect.
 
-The repository is intended to provide architectural transparency and long-term technical documentation while preserving the separation between public information and private implementation.
+Its public architectural responsibilities include:
 
-This commit establishes a stable engineering foundation for future architecture documents, technical standards, governance specifications and public project documentation.
+- coordinating federated domain and functional orchestrators;
+- supporting structured mission decomposition;
+- coordinating specialized Nano Core Agents;
+- maintaining clear authority and responsibility boundaries;
+- promoting evidence-based execution;
+- supporting long-term architectural consistency;
+- preserving separation between public documentation and private implementation.
+
+HANTER is designed as part of a larger enterprise architecture rather than as an isolated application.
+
 ---
-Introduce the public architecture vision and long-term documentation strategy
 
-Expand the public engineering foundation of the HANTER repository by defining its architectural vision and long-term documentation strategy.
+## Core Engineering Principles
 
-This update reinforces the purpose of HANTER-Public as the official public engineering reference for the HANTER project within the IMPERIAL Core ecosystem.
+### Architecture Before Implementation
 
-The repository is intended to provide high-quality architectural documentation, engineering standards and technical publications while maintaining a strict separation between publicly available information and private implementation.
+Architectural responsibilities, boundaries, contracts and governance rules must be defined before implementation decisions are treated as canonical.
 
-The public repository is designed for software engineers, architects, researchers, organizations and AI systems seeking to understand the architectural concepts, engineering philosophy and long-term evolution of HANTER without exposing confidential technologies, security mechanisms or operational infrastructure.
-Establish repository governance, documentation lifecycle and public engineering standards
+### Federated Coordination
 
-Strengthen the public engineering foundation of the HANTER repository by introducing the initial governance model, documentation lifecycle and repository quality standards.
+HANTER follows a federated Multi-Orchestrator Architecture. Domain and functional responsibilities are distributed across explicitly governed orchestration boundaries rather than concentrated in one unrestricted global orchestrator.
 
-This update defines the principles that guide the creation, review and publication of public engineering documentation while ensuring long-term consistency across the project.
+### Deny by Default
 
-The repository adopts an architecture-first philosophy where documentation represents the primary source of engineering knowledge before implementation details are introduced. Every public document is expected to follow a structured lifecycle from initial drafting through technical review and long-term maintenance.
+Capabilities, actions and external effects must not be assumed to be permitted. Authorization must be explicit, bounded and verifiable.
 
-The governance model promotes transparency, traceability and technical accuracy without exposing confidential implementation details, internal operational procedures or security-sensitive components.
+### Evidence Before Status
 
-This commit establishes a scalable documentation framework that supports future architecture specifications, engineering guidelines, governance documents, technical references and public project evolution while preserving the clear boundary between the public repository and the private HANTER infrastructure.
+Architectural, implementation, testing and operational claims must be supported by reproducible evidence. A design document is not implementation, a local test is not deployment and a prototype is not production readiness.
+
+### Public and Private Separation
+
+Public documentation must provide meaningful architectural transparency without exposing confidential implementation details, security-sensitive mechanisms or proprietary operational infrastructure.
+
+### Long-Term Maintainability
+
+HANTER is designed for continued evolution across many repositories, missions, organizational structures, orchestrators and Nano Core Agents.
+
+---
+
+## Public Repository Scope
+
+This repository may contain:
+
+- public architecture overviews;
+- engineering principles;
+- terminology and glossary documents;
+- public governance concepts;
+- non-sensitive technical specifications;
+- public roadmap information;
+- contribution and security policies;
+- documentation intended for developers, architects, researchers and organizations.
+
+This repository does not contain:
+
+- private source code;
+- production credentials or secrets;
+- internal deployment instructions;
+- proprietary runtime configuration;
+- confidential security procedures;
+- unrestricted operational controls;
+- private mission data;
+- protected Enterprise IMPERIAL Skills implementations.
+
+---
+
+## Governance Boundary
+
+HANTER operates within the governance model of IMPERIAL Core.
+
+The Architect and final authority of IMPERIAL Core is:
+
+**Alexander Romaskevich**  
+**Founder • Owner • CEO • Chief Systems Architect**
+
+Public documentation may describe architectural concepts and governance principles, but it does not grant operational authority, system access or permission to execute actions within private IMPERIAL Core environments.
+
+---
+
+## Current Status
+
+HANTER-Public is an evolving public engineering repository.
+
+The repository documents architectural direction and verified public information. It must not be interpreted as proof of unrestricted production deployment, global operational availability or complete implementation of every described capability.
+
+Status terminology is used carefully:
+
+- **Architectural** — defined as part of the intended system design;
+- **Implemented** — supported by identifiable implementation artifacts;
+- **Tested** — supported by reproducible test evidence;
+- **Deployed** — operating in an identified environment;
+- **Production-ready** — explicitly verified and authorized for production use.
+
+These states are not interchangeable.
+
+---
+
+## Documentation Roadmap
+
+Planned public documentation includes:
+
+- HANTER architecture overview;
+- federated orchestration model;
+- Nano Core Agents coordination model;
+- governance and authority boundaries;
+- public security principles;
+- engineering standards;
+- terminology registry;
+- public roadmap;
+- contribution guidelines;
+- responsible disclosure policy.
+
+Each document will be developed incrementally while preserving architectural consistency and the Public/Private Boundary.
+
+---
+
+## Relationship to IMPERIAL Core
+
+HANTER is a canonical component of IMPERIAL Core.
+
+The broader ecosystem includes multiple architectural components, organizational structures, professional teams and dynamically scalable Nano Core Agents designed for different business and operational domains.
+
+HANTER coordinates within this ecosystem but remains subordinate to the Architect and subject to the governance, approval, security and audit boundaries defined by IMPERIAL Core.
+
+---
+
+## Repository Purpose
+
+The purpose of HANTER-Public is to provide a clear, professional and durable public reference for the architectural direction of HANTER.
+
+It is intended to improve:
+
+- architectural transparency;
+- technical discoverability;
+- documentation quality;
+- terminology consistency;
+- public understanding;
+- long-term engineering traceability.
+
+The private HANTER repository remains the authoritative boundary for confidential implementation and protected operational development.
+
+---
+
+Copyright © Alexander Romaskevich. All rights reserved.
