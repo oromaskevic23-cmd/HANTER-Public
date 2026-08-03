@@ -221,4 +221,13 @@ This update explains that HANTER is designed as the enterprise AI command and co
 The repository emphasizes long-term engineering quality, disciplined documentation and architectural consistency as fundamental principles guiding future development. Public materials are intended to help software engineers, enterprise architects, researchers and organizations understand the architectural direction without exposing confidential technologies or operational infrastructure.
 
 This commit also strengthens the public identity of HANTER by positioning the repository as a durable engineering reference that will continue to evolve together with the IMPERIAL Core ecosystem through transparent documentation and carefully reviewed architectural publications.
+Introduce the architectural vision of the Founder and reinforce long-term project direction
+
+Continue expanding the public engineering documentation by describing the long-term architectural vision that guides the development of HANTER and the IMPERIAL Core ecosystem.
+
+This update recognizes that the project is built around a long-term architectural strategy focused on sustainable engineering, governed AI systems and continuous documentation rather than short-term software delivery. Every major architectural decision is intended to strengthen scalability, maintainability, technical consistency and future evolution.
+
+The repository documents that HANTER is developed under the leadership of **Alexander Romaskevich**, Founder, Owner, CEO and Chief Systems Architect of IMPERIAL Core, whose responsibility is to preserve the architectural integrity, engineering quality and strategic direction of the ecosystem.
+
+Public documentation exists to communicate architectural concepts, engineering standards and long-term system design while respecting the strict boundary between public knowledge and confidential implementation. As the repository evolves, it will continue to provide a transparent engineering reference that reflects the project's architectural maturity and commitment to enterprise-quality development.
 
