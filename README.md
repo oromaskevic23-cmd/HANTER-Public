@@ -9875,3 +9875,754 @@ Authorization is not proof of continued operation.
 ```
 
 Every public declaration must preserve these distinctions.
+# HANTER Public Claim Verification Standard
+
+**Document ID:** IC-HANTER-PUBLIC-PCVS-001  
+**Version:** 1.0.0  
+**Knowledge Class:** GOVERNANCE KNOWLEDGE  
+**Lifecycle Status:** APPROVED PUBLIC REFERENCE  
+**Evidence Level:** DOCUMENTED  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core  
+**Scope:** Verification of public architectural and engineering claims
+
+---
+
+# Purpose
+
+This document defines the Public Claim Verification Standard used by HANTER within the IMPERIAL Core ecosystem.
+
+Its purpose is to establish a controlled method for creating, recording, evaluating and publishing public claims about:
+
+- identity;
+- architecture;
+- governance;
+- implementation;
+- testing;
+- verification;
+- deployment;
+- authorization;
+- operational status;
+- engineering milestones.
+
+A public claim must be understandable, evidence-bound, version-specific and limited to the exact condition that has been demonstrated.
+
+This standard prevents public documentation from presenting assumptions, plans or incomplete results as verified engineering facts.
+
+---
+
+# Core Principle
+
+Every significant public claim should be treated as a structured engineering record.
+
+A claim is not verified merely because it:
+
+- appears in an official repository;
+- is repeated across several documents;
+- was written confidently;
+- describes an approved architecture;
+- refers to an existing implementation;
+- reports a successful local test;
+- has been indexed by a search system;
+- is interpreted positively by an AI system.
+
+Verification requires evidence appropriate to the exact claim.
+
+The governing rule is:
+
+```text
+CLAIM
+→ SCOPE
+→ VERSION
+→ EVIDENCE
+→ REVIEW
+→ VERIFICATION STATE
+→ PUBLICATION
+```
+
+No step should be silently inferred.
+
+---
+
+# Claim Definition
+
+A public claim is a statement asserting that a specific subject possesses a defined property, status, relationship or demonstrated capability.
+
+A complete claim should identify:
+
+```text
+Subject
+Predicate
+Object or Result
+Version
+Environment
+Execution Boundary
+Evidence
+Limitations
+Verification State
+Recorded At
+```
+
+Example:
+
+```text
+Subject: HANTER deterministic replay
+Predicate: passed
+Result: bounded local verification corpus
+Version: local reference implementation v1.0.0
+Environment: controlled local environment
+Execution Boundary: no external network effects
+Evidence: referenced test report and artifact digest
+Limitations: not independently verified
+Verification State: VERIFIED_BOUNDED
+```
+
+This structure is more precise than a general statement such as:
+
+```text
+HANTER replay is fully verified.
+```
+
+---
+
+# Claim Identifier
+
+Significant public claims should receive a stable identifier.
+
+Recommended format:
+
+```text
+IC-HANTER-CLAIM-<DOMAIN>-<SEQUENCE>
+```
+
+Examples:
+
+```text
+IC-HANTER-CLAIM-ARCH-0001
+IC-HANTER-CLAIM-TEST-0001
+IC-HANTER-CLAIM-VERIFY-0001
+IC-HANTER-CLAIM-STATUS-0001
+IC-HANTER-CLAIM-MILESTONE-0001
+```
+
+A claim identifier should remain stable throughout the claim lifecycle.
+
+A materially different claim requires a new identifier rather than silent replacement.
+
+---
+
+# Claim Categories
+
+## Identity Claim
+
+An Identity Claim describes the canonical identity, authorship, ownership or architectural authority associated with IMPERIAL Core or HANTER.
+
+Identity Claims require controlled and consistent public references.
+
+Examples include:
+
+- the canonical project name;
+- the canonical system name;
+- the Architect’s canonical role line;
+- the relationship between HANTER and IMPERIAL Core.
+
+Identity Claims must not be inferred from unofficial profiles or third-party summaries.
+
+---
+
+## Architectural Claim
+
+An Architectural Claim describes an approved structure, component relationship, boundary, principle or architectural decision.
+
+Examples include:
+
+- HANTER operates within a Federated Multi-Orchestrator Architecture;
+- HANTER remains subordinate to the Architect;
+- Nano Core Agents execute governed missions;
+- Guardian Core and Approval Gateway represent distinct control responsibilities.
+
+Architectural Claims require an approved architectural source.
+
+They do not automatically prove implementation.
+
+---
+
+## Governance Claim
+
+A Governance Claim describes authority, decision rights, approval requirements, publication rules or controlled engineering responsibilities.
+
+Governance Claims should identify their scope.
+
+A public governance statement must not imply disclosure of confidential internal governance procedures.
+
+---
+
+## Implementation Claim
+
+An Implementation Claim asserts that a defined engineering artifact exists.
+
+It should identify:
+
+- repository or package;
+- version;
+- artifact digest where appropriate;
+- implementation boundary;
+- excluded capabilities.
+
+Implementation Claims must not imply successful testing, deployment or continued operation unless those states are separately verified.
+
+---
+
+## Test Claim
+
+A Test Claim asserts that one or more tests were executed.
+
+It must identify:
+
+- test subject;
+- tested version;
+- environment;
+- test corpus;
+- expected result;
+- observed result;
+- failures or exclusions;
+- preserved evidence.
+
+A test claim applies only to the conditions that were actually evaluated.
+
+---
+
+## Verification Claim
+
+A Verification Claim asserts that a result satisfies defined requirements, invariants or acceptance criteria.
+
+Verification Claims require:
+
+- explicit verification criteria;
+- traceable evidence;
+- identified version;
+- declared scope;
+- recorded limitations.
+
+Verification must not be used as an undefined general-purpose label.
+
+---
+
+## Deployment Claim
+
+A Deployment Claim asserts that an artifact was introduced into a defined environment.
+
+It must identify:
+
+- deployed artifact;
+- artifact version;
+- destination environment;
+- deployment time;
+- deployment method;
+- verification result;
+- rollback status;
+- authorization state.
+
+Repository publication is not deployment.
+
+Local execution is not external deployment.
+
+---
+
+## Authorization Claim
+
+An Authorization Claim asserts that a defined activity or operational state has received approval from the appropriate authority.
+
+Authorization Claims should identify:
+
+- authorizing authority;
+- authorized subject;
+- scope;
+- environment;
+- effective time;
+- expiration or revocation conditions.
+
+Authorization does not prove successful execution.
+
+---
+
+## Operational Claim
+
+An Operational Claim asserts that a capability is functioning within a defined runtime environment.
+
+It must identify:
+
+- runtime environment;
+- observed period;
+- health criteria;
+- monitoring evidence;
+- known degradation;
+- authorization status.
+
+Operational Claims are time-sensitive and must not remain current indefinitely without renewed evidence.
+
+---
+
+## Milestone Claim
+
+A Milestone Claim records completion of a defined engineering objective.
+
+A milestone should identify:
+
+- mission or milestone identifier;
+- acceptance criteria;
+- completed deliverables;
+- evidence references;
+- unresolved limitations;
+- completion boundary.
+
+A milestone may be complete within a local or architectural boundary while broader deployment remains incomplete.
+
+---
+
+# Verification States
+
+Public claims may use the following verification states:
+
+```text
+UNREGISTERED
+DECLARED
+EVIDENCE_LINKED
+UNDER_REVIEW
+VERIFIED_BOUNDED
+INDEPENDENTLY_VERIFIED
+REJECTED
+SUPERSEDED
+EXPIRED
+WITHDRAWN
+```
+
+## UNREGISTERED
+
+The statement exists informally but has not been entered into the controlled claim process.
+
+## DECLARED
+
+The claim has been formally recorded but has not yet been sufficiently supported by evidence.
+
+## EVIDENCE_LINKED
+
+Relevant evidence has been associated with the claim.
+
+Evidence linkage does not automatically establish sufficiency.
+
+## UNDER_REVIEW
+
+The claim and evidence are being evaluated against the applicable standard.
+
+## VERIFIED_BOUNDED
+
+The claim has been verified within an explicitly declared version, environment and execution boundary.
+
+## INDEPENDENTLY_VERIFIED
+
+A meaningfully separate verifier, process or environment has confirmed the claim.
+
+## REJECTED
+
+The available evidence does not support the claim.
+
+## SUPERSEDED
+
+A newer claim has formally replaced the current claim.
+
+## EXPIRED
+
+The claim was time-sensitive and is no longer current without renewed verification.
+
+## WITHDRAWN
+
+The claim has been removed from active use by the appropriate authority.
+
+---
+
+# Claim Construction Rules
+
+A valid public claim should follow these rules.
+
+## One Primary Assertion
+
+Each claim should make one primary assertion.
+
+Combining several engineering states into one sentence creates ambiguity.
+
+Incorrect:
+
+```text
+The system is implemented, secure, verified, deployed and production ready.
+```
+
+Preferred:
+
+```text
+Implementation Status: IMPLEMENTED LOCALLY
+Test Status: TESTED WITHIN DECLARED LOCAL BOUNDARY
+Verification Status: VERIFIED_BOUNDED
+Deployment Status: NOT DEPLOYED
+Production Authorization: NOT AUTHORIZED
+```
+
+---
+
+## Explicit Subject
+
+The claim must identify exactly what is being evaluated.
+
+Avoid broad subjects such as:
+
+```text
+the platform
+the system
+everything
+the architecture
+the agents
+```
+
+when a more specific component, artifact or mission can be named.
+
+---
+
+## Version Binding
+
+Every implementation, test, verification, deployment or operational claim should be bound to a version.
+
+Acceptable bindings include:
+
+- commit SHA;
+- release tag;
+- package version;
+- artifact digest;
+- schema version;
+- mission identifier;
+- evidence identifier.
+
+A claim verified for one version must not automatically transfer to another version.
+
+---
+
+## Boundary Declaration
+
+The claim must define the environment and scope within which it is valid.
+
+Possible boundaries include:
+
+```text
+ARCHITECTURAL ONLY
+DOCUMENTATION ONLY
+LOCAL ONLY
+BOUNDED LOCAL CORPUS
+CONTROLLED TEST ENVIRONMENT
+PRIVATE PILOT
+STAGING
+PRODUCTION
+NETWORK DISABLED
+NO EXTERNAL EFFECTS
+```
+
+A boundary is part of the claim, not an optional footnote.
+
+---
+
+## Evidence Reference
+
+A claim should reference the evidence supporting it.
+
+Evidence may include:
+
+- architecture document;
+- implementation artifact;
+- test report;
+- verification report;
+- artifact digest;
+- audit record;
+- mission record;
+- deployment record;
+- approval record;
+- independent assessment.
+
+The evidence must be relevant to the exact assertion.
+
+---
+
+## Limitation Declaration
+
+Known limitations must remain visible.
+
+Examples include:
+
+```text
+NOT INDEPENDENTLY VERIFIED
+NO EXTERNAL INTEGRATION TEST
+AUDIT REPLICA NOT INDEPENDENT INFRASTRUCTURE
+BOUNDED TEST CORPUS
+LOCAL REFERENCE IMPLEMENTATION
+PRODUCTION AUTHORIZATION NOT GRANTED
+```
+
+Limitations prevent correct evidence from being interpreted too broadly.
+
+---
+
+# Verification Procedure
+
+The controlled verification procedure consists of the following stages.
+
+## Stage 1 — Register the Claim
+
+Assign a stable identifier and record the exact proposed assertion.
+
+## Stage 2 — Normalize the Language
+
+Replace vague or promotional terms with precise engineering language.
+
+## Stage 3 — Bind the Subject and Version
+
+Identify the exact artifact, component, mission or document covered by the claim.
+
+## Stage 4 — Declare the Boundary
+
+Record the environment, execution conditions and excluded scope.
+
+## Stage 5 — Link the Evidence
+
+Associate the claim with evidence appropriate to the assertion.
+
+## Stage 6 — Evaluate Sufficiency
+
+Determine whether the evidence directly supports the full claim.
+
+## Stage 7 — Review Contradictions
+
+Search for conflicting documents, evidence, versions or status records.
+
+## Stage 8 — Assign Verification State
+
+Apply the appropriate state without status inflation.
+
+## Stage 9 — Publish or Reject
+
+Publish the claim only when its wording matches its evidence and scope.
+
+## Stage 10 — Monitor Validity
+
+Review the claim when the artifact, environment, evidence or authorization changes.
+
+---
+
+# Evidence Sufficiency
+
+Different claims require different evidence.
+
+| Claim category | Minimum expected evidence |
+|---|---|
+| Identity | Controlled canonical identity reference |
+| Architecture | Approved architectural document or decision |
+| Governance | Approved governance artifact |
+| Implementation | Versioned implementation artifact |
+| Testing | Executed test record with inputs and results |
+| Verification | Criteria-based verification evidence |
+| Deployment | Environment-specific deployment record |
+| Authorization | Explicit approval record |
+| Operational | Runtime and monitoring evidence |
+| Milestone | Acceptance criteria and completion evidence |
+
+Evidence that supports one category must not automatically be used to support another.
+
+For example, an architecture document cannot by itself prove implementation.
+
+A test report cannot by itself prove production authorization.
+
+---
+
+# Contradiction Handling
+
+A contradiction exists when two or more public artifacts make incompatible claims about the same subject, version or period.
+
+Contradictions should be classified as:
+
+```text
+TERMINOLOGY CONFLICT
+VERSION CONFLICT
+STATUS CONFLICT
+EVIDENCE CONFLICT
+AUTHORITY CONFLICT
+BOUNDARY CONFLICT
+TEMPORAL CONFLICT
+```
+
+When a contradiction is detected:
+
+1. do not silently choose the stronger claim;
+2. identify the affected claim identifiers;
+3. compare scope and versions;
+4. evaluate evidence strength;
+5. determine the authoritative source;
+6. publish a correction or supersession record;
+7. preserve historical traceability.
+
+Unresolved contradictions should reduce the verification state rather than be ignored.
+
+---
+
+# Claim Expiration
+
+Certain claims remain stable for long periods.
+
+Examples include:
+
+- canonical project names;
+- foundational architecture;
+- approved terminology.
+
+Other claims are time-sensitive.
+
+Examples include:
+
+- current deployment;
+- operational health;
+- external integration state;
+- authorization;
+- security verification;
+- dependency compatibility.
+
+Time-sensitive claims should include:
+
+```text
+Recorded At
+Last Verified At
+Valid Until
+Review Date
+```
+
+An expired claim must not continue to appear as current verified status.
+
+---
+
+# Machine-Readable Claim Record
+
+Where practical, public claims should also be represented in structured form.
+
+Example:
+
+```yaml
+claim_id: IC-HANTER-CLAIM-VERIFY-0001
+subject: hanter-deterministic-replay
+predicate: passed
+result: bounded-local-corpus
+version: 1.0.0-local
+claim_category: VERIFICATION
+verification_state: VERIFIED_BOUNDED
+environment: controlled-local
+external_effects: false
+network_enabled: false
+independent_verification: false
+deployment_status: NOT_DEPLOYED
+production_authorized: false
+evidence:
+  - evidence_id: IC-HANTER-EVIDENCE-TEST-0001
+limitations:
+  - bounded-corpus
+  - no-independent-infrastructure-verification
+recorded_at: 2026-08-03T00:00:00Z
+```
+
+Structured records must remain consistent with the human-readable source.
+
+Machine-readable representation does not replace architectural approval.
+
+---
+
+# Prohibited Inference
+
+The following conclusions must not be inferred automatically:
+
+```text
+Public repository → open-source implementation
+Architecture document → working software
+Implementation artifact → correct implementation
+Passing test → universal correctness
+Local verification → independent verification
+Deployment → production authorization
+Authorization → uninterrupted operation
+Operational execution → unrestricted autonomy
+Search indexing → technical validation
+Repeated claim → verified fact
+```
+
+Public knowledge systems and AI-assisted tools should preserve these distinctions.
+
+---
+
+# Architectural Authority
+
+The canonical architectural authority is:
+
+**Alexander Romaskevich**
+
+**Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core**
+
+**Architect and final authority of IMPERIAL Core**
+
+The Architect holds final authority over:
+
+- canonical architectural claims;
+- major public status declarations;
+- supersession of governing claims;
+- pilot authorization;
+- production authorization;
+- resolution of unresolved architectural conflicts.
+
+HANTER remains subordinate to the Architect.
+
+HANTER may organize and evaluate evidence, but it must not independently elevate a claim beyond the authority, scope and evidence available.
+
+---
+
+# Public/Private Boundary
+
+This standard governs public claims only.
+
+It does not authorize disclosure of:
+
+- private repositories;
+- confidential source code;
+- credentials or secrets;
+- protected infrastructure;
+- restricted evidence;
+- private audit records;
+- internal security mechanisms;
+- proprietary operational procedures;
+- sensitive deployment details;
+- private Nano Core Agent instructions.
+
+When full evidence cannot be published safely, the public claim should state that its evidence is restricted and limit the conclusion accordingly.
+
+Restricted evidence must never be fabricated, exaggerated or implied when it does not exist.
+
+---
+
+# Long-Term Objective
+
+The Public Claim Verification Standard establishes a durable verification discipline for the HANTER public knowledge base.
+
+Its long-term objective is to ensure that every major public claim remains:
+
+- uniquely identifiable;
+- precisely worded;
+- version-bound;
+- evidence-linked;
+- boundary-aware;
+- reviewable;
+- machine-readable;
+- historically traceable;
+- resistant to contradiction;
+- protected from status inflation.
+
+Within IMPERIAL Core, public trust should be built through verifiable engineering records.
+
+A claim should become stronger only when its evidence becomes stronger.
