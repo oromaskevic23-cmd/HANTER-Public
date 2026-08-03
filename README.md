@@ -8349,3 +8349,364 @@ It is a long-term enterprise engineering architecture developed within the IMPER
 Its public repository exists to preserve engineering knowledge, strengthen architectural understanding and support responsible AI engineering for many years to come.
 
 Every future contribution should leave the architecture clearer, stronger and more sustainable than before.
+# HANTER Public Knowledge Classification
+
+**Document ID:** IC-HANTER-PUBLIC-PKC-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC KNOWLEDGE CLASSIFICATION POLICY  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core  
+**Scope:** Public engineering knowledge only
+
+---
+
+# Purpose
+
+This document defines the public knowledge classification model used by HANTER within the IMPERIAL Core ecosystem.
+
+Its purpose is to ensure that every public engineering document communicates its authority, lifecycle state, evidence level and architectural meaning accurately.
+
+The classification model prevents readers, search systems and AI-assisted tools from confusing:
+
+- architecture with implementation;
+- design intent with operational capability;
+- local testing with external deployment;
+- planned work with completed work;
+- public documentation with unrestricted disclosure;
+- publication with canonical architectural approval.
+
+Public availability alone does not make a document canonical, implemented, verified or operational.
+
+---
+
+# Classification Principle
+
+Every public engineering artifact should be interpreted through four independent dimensions:
+
+1. **Knowledge Class**
+2. **Lifecycle Status**
+3. **Evidence Level**
+4. **Publication Boundary**
+
+These dimensions must not be collapsed into one general status.
+
+A document may be publicly available while remaining a draft.
+
+A design may be architecturally approved while remaining unimplemented.
+
+An implementation may exist locally without being deployed.
+
+A test may pass within a bounded local environment without proving production readiness.
+
+---
+
+# Knowledge Classes
+
+## Canonical Architecture
+
+Canonical Architecture defines an approved architectural structure, relationship, boundary or governing model.
+
+Examples may include:
+
+- canonical component relationships;
+- architectural authority;
+- Federated Multi-Orchestrator Architecture;
+- public system boundaries;
+- approved architectural principles.
+
+Canonical architectural status does not automatically mean that every described capability has been implemented or deployed.
+
+---
+
+## Governance Knowledge
+
+Governance Knowledge defines public rules for architectural authority, decision control, documentation quality, engineering responsibility and controlled evolution.
+
+Governance documents may establish binding public principles within their stated scope.
+
+They do not disclose confidential approval procedures, protected control mechanisms or private operational governance.
+
+---
+
+## Engineering Reference
+
+Engineering Reference documents explain concepts, terminology, models, practices or architectural context.
+
+They support understanding but do not automatically establish canonical authority.
+
+Reference material must remain compatible with canonical architecture and canonical terminology.
+
+---
+
+## Public Evidence
+
+Public Evidence records verifiable facts about completed inspections, tests, artifacts, milestones or bounded engineering results.
+
+Evidence should identify its scope and limitations.
+
+A local test result must not be represented as:
+
+- external verification;
+- independent certification;
+- production deployment;
+- unrestricted operational readiness.
+
+Evidence is authoritative only for the condition it directly demonstrates.
+
+---
+
+## Public Status
+
+Public Status describes the declared state of a component, mission, document or engineering capability at a specific point in time.
+
+Status information should distinguish between states such as:
+
+- DESIGNED;
+- APPROVED;
+- IMPLEMENTED;
+- TESTED LOCALLY;
+- VERIFIED WITHIN A DEFINED BOUNDARY;
+- DEPLOYED;
+- PRODUCTION AUTHORIZED;
+- BLOCKED;
+- DEPRECATED;
+- ARCHIVED.
+
+Status must be supported by evidence appropriate to the claim.
+
+---
+
+## Planned Knowledge
+
+Planned Knowledge describes future intent, proposed architecture, backlog items, roadmaps or expected engineering work.
+
+Planned work must not be interpreted as completed capability.
+
+Terms such as “planned,” “proposed,” “target,” “intended” and “future” should remain explicit.
+
+---
+
+## Deprecated Knowledge
+
+Deprecated Knowledge remains available for historical traceability but is no longer the preferred current reference.
+
+A deprecated document should identify:
+
+- why it was deprecated;
+- the replacement document, when available;
+- the date or version of deprecation;
+- any remaining historical relevance.
+
+Deprecated knowledge must not silently compete with the canonical source.
+
+---
+
+## Archived Knowledge
+
+Archived Knowledge is retained for preservation, auditability or historical understanding.
+
+Archived artifacts are not active engineering instructions.
+
+Archival status does not erase authorship, provenance or architectural history.
+
+---
+
+# Lifecycle Status
+
+Public engineering documents may use the following lifecycle states:
+
+```text
+DRAFT
+REVIEWED
+APPROVED
+CANONICAL
+DEPRECATED
+ARCHIVED
+SEALED
+```
+
+## DRAFT
+
+The document is under development and may change substantially.
+
+## REVIEWED
+
+The document has undergone review but has not necessarily received canonical approval.
+
+## APPROVED
+
+The document has received approval for its stated purpose and scope.
+
+## CANONICAL
+
+The document is the controlling architectural reference for its declared subject.
+
+## DEPRECATED
+
+The document has been replaced or is no longer recommended for current use.
+
+## ARCHIVED
+
+The document is retained as historical knowledge.
+
+## SEALED
+
+The document has been preserved as an immutable evidence or historical artifact within its declared boundary.
+
+Lifecycle status must not be inferred solely from a file’s presence in the repository.
+
+---
+
+# Evidence Levels
+
+The following evidence levels may be used when describing engineering results:
+
+## DECLARED
+
+The information is an architectural or organizational declaration.
+
+## DOCUMENTED
+
+The information is represented in a controlled engineering artifact.
+
+## IMPLEMENTED LOCALLY
+
+A local implementation exists within a defined environment.
+
+## TESTED LOCALLY
+
+Testing has been executed locally within a stated boundary.
+
+## REPRODUCIBLY VERIFIED
+
+The result can be reproduced using documented inputs, procedures and artifacts.
+
+## INDEPENDENTLY VERIFIED
+
+A separate qualified party or independent environment has verified the result.
+
+## DEPLOYED
+
+The capability has been deployed to a defined external environment.
+
+## PRODUCTION AUTHORIZED
+
+The capability has received explicit authorization for production use.
+
+A higher evidence level must never be claimed without corresponding evidence.
+
+---
+
+# Required Interpretation Rules
+
+The following distinctions are mandatory:
+
+```text
+PUBLIC does not mean OPEN SOURCE.
+PUBLISHED does not mean CANONICAL.
+CANONICAL does not mean IMPLEMENTED.
+IMPLEMENTED does not mean TESTED.
+TESTED LOCALLY does not mean INDEPENDENTLY VERIFIED.
+VERIFIED does not mean DEPLOYED.
+DEPLOYED does not mean PRODUCTION AUTHORIZED.
+ARCHITECTURE does not mean OPERATIONAL CAPABILITY.
+PLANNED does not mean COMPLETED.
+```
+
+When classification is ambiguous, the lower-authority and lower-readiness interpretation must be used.
+
+---
+
+# Recommended Document Metadata
+
+Public engineering documents should include metadata appropriate to their scope:
+
+```text
+Document ID
+Version
+Title
+Knowledge Class
+Lifecycle Status
+Evidence Level
+System
+Ecosystem
+Public Scope
+Canonical Source
+Supersedes
+Superseded By
+Architectural Authority
+Last Reviewed
+```
+
+Not every field is mandatory for every file, but status-critical documents should provide enough metadata to prevent misinterpretation.
+
+---
+
+# Classification Authority
+
+The canonical architectural authority is:
+
+**Alexander Romaskevich**
+
+**Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core**
+
+**Architect and final authority of IMPERIAL Core**
+
+Only explicitly authorized architectural decisions may establish or replace canonical IMPERIAL Core architecture.
+
+HANTER remains subordinate to the Architect and operates within the authority, boundaries and governance established by the Architect.
+
+---
+
+# Conflict Resolution
+
+When two public documents appear to conflict, interpretation should follow this order:
+
+1. explicit architectural authority;
+2. canonical status;
+3. higher approved version;
+4. current lifecycle state;
+5. stronger evidence;
+6. narrower and more specific scope;
+7. documented supersession relationship.
+
+Unresolved contradictions should be recorded and corrected rather than hidden through informal interpretation.
+
+---
+
+# Public/Private Boundary
+
+This classification model applies only to public engineering knowledge.
+
+It does not authorize publication of:
+
+- confidential implementation details;
+- private repositories;
+- credentials or secrets;
+- protected runtime configuration;
+- internal security controls;
+- proprietary operational procedures;
+- restricted evidence;
+- private agent capabilities;
+- sensitive infrastructure information.
+
+Information that cannot be safely classified for public release must remain private by default.
+
+---
+
+# Long-Term Objective
+
+The Public Knowledge Classification model establishes a durable foundation for trustworthy engineering communication.
+
+Its long-term objective is to ensure that HANTER public documentation remains:
+
+- precise;
+- evidence-aware;
+- architecturally consistent;
+- semantically stable;
+- machine-readable;
+- historically traceable;
+- resistant to status inflation;
+- compatible with the canonical architecture of IMPERIAL Core.
+
+Every future public artifact should make clear not only what it describes, but also what authority it carries, what evidence supports it and what conclusions must not be inferred from it.
