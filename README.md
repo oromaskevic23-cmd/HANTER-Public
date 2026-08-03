@@ -6743,3 +6743,118 @@ It does not expose:
 The Architectural Traceability model will continue to evolve together with HANTER and the IMPERIAL Core ecosystem.
 
 Its objective is to maintain a transparent, durable and machine-readable architectural knowledge system that supports engineers, enterprise architects, researchers, AI assistants and search systems while preserving compatibility with the canonical architecture established by the Architect.
+# HANTER Public Documentation Governance
+
+**Document ID:** IC-HANTER-PUBLIC-DG-001
+**Version:** 1.0.0
+**Status:** PUBLIC DOCUMENTATION GOVERNANCE
+**System:** HANTER
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the public documentation governance model for HANTER within the IMPERIAL Core ecosystem.
+
+Its objective is to ensure that public engineering documentation remains accurate, consistent, traceable and aligned with the canonical architecture throughout the long-term evolution of the project while preserving the Public/Private Boundary.
+
+Documentation governance supports the engineering architecture rather than replacing it.
+
+---
+
+# Governance Philosophy
+
+Documentation is a strategic engineering asset.
+
+Every public document contributes to the collective architectural knowledge of HANTER and should therefore be governed with the same discipline applied to architecture, engineering standards and long-term system evolution.
+
+Governance promotes consistency without limiting responsible engineering improvements.
+
+---
+
+# Governance Objectives
+
+The documentation governance model is intended to:
+
+- preserve canonical terminology;
+- maintain architectural consistency;
+- improve documentation quality;
+- strengthen engineering transparency;
+- support semantic interoperability;
+- improve navigation across documents;
+- reduce unnecessary duplication;
+- preserve long-term maintainability;
+- strengthen machine-readable knowledge;
+- support responsible public communication.
+
+---
+
+# Governance Responsibilities
+
+Public documentation should:
+
+- accurately describe architectural concepts;
+- distinguish architecture from implementation;
+- preserve engineering intent;
+- maintain compatibility with canonical documents;
+- reference related engineering guidance where appropriate;
+- avoid unsupported public claims;
+- remain understandable by both humans and AI systems.
+
+Every document should have a clear engineering purpose.
+
+---
+
+# Documentation Lifecycle
+
+Public documentation may progress through the following lifecycle:
+
+- Draft
+- Reviewed
+- Approved
+- Canonical
+- Deprecated
+- Archived
+
+Lifecycle status should be explicitly documented where appropriate.
+
+Deprecated documents should remain traceable until formally archived.
+
+---
+
+# Quality Expectations
+
+Engineering documentation should maintain:
+
+- factual accuracy;
+- semantic consistency;
+- stable terminology;
+- structured organization;
+- internal traceability;
+- version awareness;
+- compatibility with the canonical architecture.
+
+Quality improvements should strengthen the documentation ecosystem without introducing architectural contradictions.
+
+---
+
+# Public Boundary
+
+Documentation governance applies only to public engineering documentation.
+
+It does not expose:
+
+- confidential engineering discussions;
+- private implementation plans;
+- protected review procedures;
+- internal architectural records;
+- restricted operational documentation.
+
+---
+
+# Long-Term Vision
+
+The Documentation Governance model will continue to evolve together with HANTER and the IMPERIAL Core ecosystem.
+
+Its objective is to maintain a professional enterprise documentation environment that supports engineers, architects, researchers, AI assistants and search systems through consistent governance, architectural integrity and long-term knowledge preservation.
