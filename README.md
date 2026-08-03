@@ -13,3 +13,12 @@ No confidential components, internal security mechanisms, operational procedures
 
 This foundation prepares the repository for future architectural documentation, engineering standards, public specifications and long-term project evolution.
 ---
+Define public engineering principles and repository scope
+
+Introduce the first public engineering principles for the HANTER repository.
+
+This update defines the engineering philosophy, repository scope and documentation strategy for the public edition of HANTER.
+
+The repository is intended to provide architectural transparency and long-term technical documentation while preserving the separation between public information and private implementation.
+
+This commit establishes a stable engineering foundation for future architecture documents, technical standards, governance specifications and public project documentation.
