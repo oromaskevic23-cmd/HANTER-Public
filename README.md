@@ -1857,3 +1857,71 @@ Engineering quality is expected to improve continuously throughout the lifetime 
 Future revisions of this document may introduce additional quality standards as the project and its public engineering documentation continue to evolve.
 
 The long-term objective is to establish HANTER as an example of disciplined enterprise engineering supported by durable architecture, responsible governance and high-quality technical documentation.
+# HANTER Public Architectural Vision
+
+**Document ID:** IC-HANTER-PUBLIC-VISION-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC ARCHITECTURAL VISION  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document describes the long-term architectural vision of HANTER as a canonical component of the IMPERIAL Core ecosystem.
+
+Its objective is to communicate the strategic engineering direction of the project, the principles guiding its evolution and the architectural ambitions that shape future development while preserving the Public/Private Boundary.
+
+The vision presented in this document represents architectural intent rather than implementation status.
+
+---
+
+# Vision Statement
+
+HANTER is envisioned as a governed AI command and coordination platform designed to support the long-term evolution of enterprise-scale AI systems through disciplined architecture, transparent engineering documentation and responsible governance.
+
+Its purpose is to provide a stable architectural foundation capable of supporting future organizational growth, expanding engineering capabilities and increasingly sophisticated AI coordination models.
+
+---
+
+# Long-Term Direction
+
+The architectural vision of HANTER is guided by several long-term objectives:
+
+- preserve architectural consistency;
+- support sustainable enterprise growth;
+- maintain explicit governance boundaries;
+- encourage responsible AI engineering;
+- improve engineering transparency;
+- strengthen technical documentation;
+- enable scalable architectural evolution;
+- protect long-term maintainability.
+
+These objectives influence every stage of architectural planning and public engineering documentation.
+
+---
+
+# Engineering Vision
+
+Engineering within HANTER is viewed as a continuous architectural discipline rather than a sequence of isolated implementation efforts.
+
+Architecture, governance, documentation and engineering practices evolve together to create a coherent and maintainable enterprise ecosystem capable of supporting long-term innovation.
+
+The project values stability, clarity and responsible evolution over short-term complexity.
+
+---
+
+# Public Engineering Commitment
+
+HANTER-Public exists to communicate this architectural vision through professional engineering documentation.
+
+Its mission is to provide developers, enterprise architects, researchers and organizations with a reliable public reference describing the architectural direction of HANTER while protecting confidential implementation details and proprietary engineering assets.
+
+---
+
+# Future Evolution
+
+The architectural vision will continue to evolve together with the IMPERIAL Core ecosystem.
+
+Future revisions may expand strategic objectives, architectural concepts and engineering guidance while preserving the canonical architecture, governance model and Public/Private Boundary established for HANTER.
