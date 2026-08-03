@@ -3056,3 +3056,84 @@ Knowledge evolves through disciplined engineering rather than isolated documenta
 The long-term objective is to establish HANTER-Public as a durable enterprise engineering knowledge platform.
 
 By preserving architectural knowledge through professional documentation, HANTER supports future architects, engineers, researchers and organizations while maintaining responsible governance, engineering transparency and sustainable architectural evolution.
+# HANTER Public Architectural Thinking
+
+**Document ID:** IC-HANTER-PUBLIC-THINKING-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC ARCHITECTURAL THINKING  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document describes the architectural thinking philosophy adopted throughout the HANTER project.
+
+Its objective is to explain how architectural reasoning supports engineering decisions, governance, documentation and long-term enterprise evolution while preserving the Public/Private Boundary.
+
+Architectural thinking is regarded as a continuous engineering discipline rather than a one-time design activity.
+
+---
+
+# Architectural Thinking Philosophy
+
+Every engineering decision begins with architecture.
+
+Rather than focusing exclusively on implementation, HANTER encourages understanding relationships, responsibility boundaries, governance, maintainability and long-term consequences before introducing new capabilities.
+
+Architectural thinking enables the system to evolve without sacrificing consistency or engineering quality.
+
+---
+
+# Engineering Mindset
+
+The engineering mindset promoted by HANTER emphasizes:
+
+- systems thinking;
+- architectural consistency;
+- explicit responsibility boundaries;
+- governance awareness;
+- documentation-first engineering;
+- sustainable scalability;
+- long-term maintainability;
+- responsible AI engineering;
+- continuous learning;
+- evidence-based architectural reasoning.
+
+These principles guide engineering decisions throughout the lifecycle of the project.
+
+---
+
+# Decision Perspective
+
+Architectural thinking requires evaluating decisions according to:
+
+- long-term impact;
+- architectural compatibility;
+- engineering quality;
+- governance alignment;
+- documentation implications;
+- maintainability;
+- enterprise scalability;
+- future architectural evolution.
+
+Implementation convenience should never become the primary architectural driver.
+
+---
+
+# Knowledge and Architecture
+
+Architectural thinking is strengthened through continuous documentation, engineering discussion and preservation of architectural knowledge.
+
+As the engineering knowledge base grows, future architectural decisions become more consistent, transparent and maintainable.
+
+Architecture and knowledge evolve together.
+
+---
+
+# Long-Term Vision
+
+The long-term objective of architectural thinking within HANTER is to establish a disciplined engineering culture capable of supporting decades of enterprise-scale architectural evolution.
+
+Future revisions may expand this philosophy while preserving compatibility with the canonical architecture of IMPERIAL Core and maintaining the long-term engineering vision established by the Architect.
