@@ -9243,3 +9243,635 @@ Its long-term objective is to ensure that every significant HANTER claim can be 
 HANTER public status must always follow the evidence.
 
 Evidence must never be rewritten to follow the desired status.
+# HANTER Public Status Assertion Policy
+
+**Document ID:** IC-HANTER-PUBLIC-PSAP-001  
+**Version:** 1.0.0  
+**Knowledge Class:** GOVERNANCE KNOWLEDGE  
+**Lifecycle Status:** APPROVED PUBLIC REFERENCE  
+**Evidence Level:** DOCUMENTED  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core  
+**Scope:** Public engineering status declarations
+
+---
+
+# Purpose
+
+This document defines the public status assertion policy used by HANTER within the IMPERIAL Core ecosystem.
+
+Its purpose is to ensure that every published engineering status is:
+
+- precise;
+- evidence-aligned;
+- explicitly bounded;
+- version-aware;
+- resistant to overstatement;
+- understandable by engineers, search systems and AI-assisted tools.
+
+A public status declaration must describe the demonstrated state of an artifact, component, mission or capability.
+
+It must not describe an expected, desired or assumed state as though it has already been achieved.
+
+---
+
+# Status Philosophy
+
+Status is an engineering conclusion.
+
+It is not a marketing phrase, an expression of confidence or a substitute for evidence.
+
+Every status declaration should answer five questions:
+
+1. What exactly is being evaluated?
+2. Which version or artifact is covered?
+3. Within which environment or boundary was it evaluated?
+4. What evidence supports the declaration?
+5. What conclusions remain unsupported?
+
+A status that does not answer these questions should be treated as incomplete.
+
+---
+
+# Independent Status Dimensions
+
+A complete engineering status should distinguish several independent dimensions.
+
+## Architecture Status
+
+Describes whether architecture has been defined and approved.
+
+Possible values include:
+
+```text
+NOT DEFINED
+DRAFT
+UNDER REVIEW
+APPROVED
+CANONICAL
+SUPERSEDED
+```
+
+Architecture status does not establish implementation status.
+
+---
+
+## Implementation Status
+
+Describes whether an engineering artifact exists.
+
+Possible values include:
+
+```text
+NOT IMPLEMENTED
+PARTIALLY IMPLEMENTED
+IMPLEMENTED LOCALLY
+IMPLEMENTED IN CONTROLLED ENVIRONMENT
+IMPLEMENTATION SUPERSEDED
+```
+
+Implementation status does not establish testing, deployment or production authorization.
+
+---
+
+## Test Status
+
+Describes whether testing has been executed.
+
+Possible values include:
+
+```text
+NOT TESTED
+TESTS DESIGNED
+TESTED LOCALLY
+TESTED IN CONTROLLED ENVIRONMENT
+TESTED AGAINST BOUNDED CORPUS
+TEST FAILED
+TEST BLOCKED
+```
+
+Test status must identify the evaluated environment and scope.
+
+---
+
+## Verification Status
+
+Describes whether requirements, contracts or invariants have been verified.
+
+Possible values include:
+
+```text
+NOT VERIFIED
+VERIFICATION PLANNED
+VERIFIED LOCALLY
+REPRODUCIBLY VERIFIED
+INDEPENDENTLY VERIFIED
+VERIFICATION FAILED
+VERIFICATION BLOCKED
+```
+
+Verification must remain limited to the criteria actually evaluated.
+
+---
+
+## Deployment Status
+
+Describes whether an artifact has been introduced into a defined external environment.
+
+Possible values include:
+
+```text
+NOT DEPLOYED
+DEPLOYMENT PLANNED
+DEPLOYED TO DEVELOPMENT
+DEPLOYED TO STAGING
+DEPLOYED TO PRIVATE PILOT
+DEPLOYED TO PRODUCTION
+DEPLOYMENT FAILED
+DEPLOYMENT ROLLED BACK
+```
+
+A local execution is not a deployment.
+
+A repository publication is not a runtime deployment.
+
+---
+
+## Authorization Status
+
+Describes whether execution has received the required governance approval.
+
+Possible values include:
+
+```text
+NOT AUTHORIZED
+LOCAL DEVELOPMENT AUTHORIZED
+CONTROLLED TEST AUTHORIZED
+PRIVATE PILOT AUTHORIZED
+PRODUCTION AUTHORIZED
+AUTHORIZATION SUSPENDED
+AUTHORIZATION REVOKED
+```
+
+Technical readiness does not automatically create authorization.
+
+---
+
+## Operational Status
+
+Describes whether a capability is operating within a defined authorized environment.
+
+Possible values include:
+
+```text
+NOT OPERATIONAL
+LOCALLY EXECUTABLE
+OPERATIONAL IN CONTROLLED ENVIRONMENT
+PILOT OPERATIONAL
+PRODUCTION OPERATIONAL
+DEGRADED
+SUSPENDED
+QUARANTINED
+RETIRED
+```
+
+Operational status must identify the environment in which operation has been demonstrated.
+
+---
+
+# Canonical Status Sequence
+
+The expected engineering progression is:
+
+```text
+PROPOSED
+→ ARCHITECTURALLY DEFINED
+→ APPROVED
+→ IMPLEMENTED
+→ TESTED
+→ VERIFIED
+→ DEPLOYED
+→ AUTHORIZED
+→ OPERATIONAL
+→ MONITORED
+→ RETIRED
+```
+
+This sequence describes distinct engineering gates.
+
+A later state must not be inferred merely because an earlier state has been achieved.
+
+For example:
+
+```text
+IMPLEMENTED
+```
+
+does not automatically mean:
+
+```text
+TESTED
+VERIFIED
+DEPLOYED
+AUTHORIZED
+OPERATIONAL
+```
+
+Each transition requires its own evidence and governance decision.
+
+---
+
+# Status Assertion Structure
+
+A public status assertion should use the following structure:
+
+```text
+Subject:
+Version:
+Architecture Status:
+Implementation Status:
+Test Status:
+Verification Status:
+Deployment Status:
+Authorization Status:
+Operational Status:
+Evidence References:
+Execution Boundary:
+Known Limitations:
+Recorded At:
+```
+
+Where appropriate, a shorter assertion may be used, but it must preserve the relevant distinctions.
+
+---
+
+# Example: Correct Local Status
+
+```text
+Subject: HANTER deterministic mission replay
+Version: local reference implementation v1.0.0
+Implementation Status: IMPLEMENTED LOCALLY
+Test Status: TESTED AGAINST BOUNDED LOCAL CORPUS
+Verification Status: VERIFIED WITHIN DECLARED LOCAL BOUNDARY
+Deployment Status: NOT DEPLOYED
+Authorization Status: LOCAL DEVELOPMENT AUTHORIZED
+Operational Status: NOT PRODUCTION OPERATIONAL
+Known Limitations: No independent infrastructure verification
+```
+
+This statement communicates a meaningful result without implying external deployment or production readiness.
+
+---
+
+# Example: Incorrect Status Inflation
+
+The following statement is not acceptable when supported only by local testing:
+
+```text
+HANTER is fully production ready and independently verified.
+```
+
+It combines several unsupported conclusions:
+
+- unrestricted completeness;
+- production readiness;
+- independent verification;
+- implied authorization;
+- implied operational deployment.
+
+A valid replacement should state the exact local result and its limitations.
+
+---
+
+# Allowed Status Qualifiers
+
+Status assertions may use qualifiers to define their scope more precisely.
+
+Preferred qualifiers include:
+
+```text
+LOCALLY
+WITHIN THE DECLARED BOUNDARY
+AGAINST THE IDENTIFIED CORPUS
+FOR THE REFERENCED VERSION
+IN THE CONTROLLED ENVIRONMENT
+SUBJECT TO THE DOCUMENTED LIMITATIONS
+NOT INDEPENDENTLY VERIFIED
+NO EXTERNAL EFFECTS
+NETWORK DISABLED
+PRIVATE PILOT ONLY
+```
+
+Qualifiers should narrow a claim rather than make it sound stronger.
+
+---
+
+# Prohibited Ambiguous Language
+
+The following terms should not be used without a documented definition and sufficient evidence:
+
+```text
+COMPLETE
+FULLY COMPLETE
+READY
+FULLY READY
+SECURE
+FULLY SECURE
+ENTERPRISE READY
+PRODUCTION READY
+UNBREAKABLE
+FAILURE PROOF
+AUTONOMOUS
+UNLIMITED
+GLOBAL
+VERIFIED
+CERTIFIED
+```
+
+These terms may conceal multiple engineering dimensions.
+
+When used, they must specify:
+
+- what is complete;
+- what is ready;
+- which security properties were evaluated;
+- who verified or certified the result;
+- which environment and version are covered;
+- which limitations remain.
+
+---
+
+# Negative Status Requirements
+
+Known incomplete conditions must be published when they materially affect interpretation.
+
+Examples include:
+
+```text
+NOT EXECUTED
+NOT DEPLOYED
+NOT INDEPENDENTLY VERIFIED
+NOT PRODUCTION AUTHORIZED
+EXTERNAL INTEGRATION NOT TESTED
+NETWORK EFFECTS DISABLED
+AUDIT REPLICA NOT INDEPENDENT INFRASTRUCTURE
+BLOCKED BY ENVIRONMENT
+PARTIAL IMPLEMENTATION
+```
+
+Negative status is not a failure of documentation.
+
+It is evidence of engineering precision.
+
+---
+
+# Status Transition Requirements
+
+A status may advance only when the transition is supported by appropriate evidence.
+
+## Proposed → Architecturally Defined
+
+Requires an identifiable architecture, specification or decision artifact.
+
+## Architecturally Defined → Approved
+
+Requires approval by the relevant architectural authority.
+
+## Approved → Implemented
+
+Requires a versioned implementation artifact.
+
+## Implemented → Tested
+
+Requires executed tests and preserved results.
+
+## Tested → Verified
+
+Requires comparison against explicit requirements, contracts or invariants.
+
+## Verified → Deployed
+
+Requires environment-specific deployment evidence.
+
+## Deployed → Authorized
+
+Requires explicit governance authorization.
+
+## Authorized → Operational
+
+Requires evidence of controlled execution within the authorized environment.
+
+No transition should be granted solely through optimistic interpretation.
+
+---
+
+# Status Downgrade
+
+A status may require downgrade when:
+
+- evidence becomes invalid;
+- an artifact changes materially;
+- a test no longer reproduces;
+- a dependency is revoked;
+- a contradiction is discovered;
+- an authorization expires;
+- a deployment is rolled back;
+- operational integrity is uncertain;
+- a security boundary is breached;
+- a canonical decision is superseded.
+
+Downgrades should be recorded explicitly.
+
+Historical status should remain traceable, but it must not continue to appear as the current state.
+
+---
+
+# Status Expiration
+
+Certain public statuses are time-sensitive.
+
+Examples include:
+
+- deployment status;
+- operational health;
+- authorization;
+- dependency compatibility;
+- security verification;
+- external integration status.
+
+Time-sensitive assertions should include:
+
+```text
+Recorded At
+Last Verified At
+Valid Until
+Review Required
+```
+
+An expired status should be treated as historical until it is verified again.
+
+---
+
+# Version Binding
+
+Every significant status declaration should be bound to a specific subject version.
+
+Valid bindings may include:
+
+- repository commit;
+- release tag;
+- package version;
+- artifact digest;
+- schema version;
+- mission identifier;
+- evidence identifier;
+- environment identifier.
+
+A status established for one version must not automatically transfer to a later version.
+
+Material changes require renewed evaluation.
+
+---
+
+# Evidence Binding
+
+Public status declarations should reference the evidence supporting them.
+
+Possible references include:
+
+```text
+Evidence ID
+Test Report
+Verification Report
+Commit Reference
+Release Digest
+Artifact Hash
+Audit Record
+Architecture Decision
+Mission Record
+Deployment Record
+Authorization Record
+```
+
+A status without a traceable evidence reference should default to:
+
+```text
+DECLARED / NOT VERIFIED
+```
+
+unless the supporting evidence is intentionally private and the public limitation is clearly stated.
+
+---
+
+# Conflict Resolution
+
+When public status declarations conflict, resolution should consider:
+
+1. the exact artifact version;
+2. the date of verification;
+3. the authority of the declaring source;
+4. the strength of supporting evidence;
+5. the execution environment;
+6. the stated scope;
+7. supersession relationships;
+8. current authorization state.
+
+The newest statement is not automatically the most accurate statement.
+
+Evidence and scope take precedence over recency alone.
+
+---
+
+# Machine-Readable Status
+
+Where practical, status should be represented in structured form.
+
+Example:
+
+```yaml
+subject: hanter-deterministic-replay
+version: 1.0.0-local
+architecture_status: CANONICAL
+implementation_status: IMPLEMENTED_LOCALLY
+test_status: TESTED_BOUNDED_LOCAL_CORPUS
+verification_status: VERIFIED_DECLARED_LOCAL_BOUNDARY
+deployment_status: NOT_DEPLOYED
+authorization_status: LOCAL_DEVELOPMENT_AUTHORIZED
+operational_status: NOT_PRODUCTION_OPERATIONAL
+independent_verification: false
+external_effects: false
+production_authorized: false
+```
+
+Structured status improves automated interpretation and reduces ambiguity.
+
+Machine-readable status must remain consistent with the human-readable declaration.
+
+---
+
+# Architectural Authority
+
+The canonical architectural authority is:
+
+**Alexander Romaskevich**
+
+**Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core**
+
+**Architect and final authority of IMPERIAL Core**
+
+The Architect holds final authority over canonical architectural status, major readiness declarations, private pilot authorization and production authorization within IMPERIAL Core.
+
+HANTER remains subordinate to the Architect.
+
+HANTER must not elevate its own status beyond the evidence and authorization available.
+
+---
+
+# Public/Private Boundary
+
+This policy governs public status communication.
+
+It does not require publication of:
+
+- confidential evidence;
+- private implementation;
+- protected runtime configuration;
+- internal audit records;
+- credentials;
+- security-sensitive deployment details;
+- restricted approval records;
+- proprietary operational information.
+
+When evidence must remain private, the public status should state that verification is bounded or that supporting evidence is restricted.
+
+Private evidence must never be invented or implied when it does not exist.
+
+---
+
+# Long-Term Objective
+
+The Public Status Assertion Policy establishes a durable language for communicating the actual engineering state of HANTER.
+
+Its long-term objective is to ensure that public status remains:
+
+- precise;
+- evidence-based;
+- version-bound;
+- environment-specific;
+- governance-controlled;
+- machine-readable;
+- historically traceable;
+- resistant to exaggeration.
+
+Within IMPERIAL Core:
+
+```text
+Architecture is not implementation.
+Implementation is not testing.
+Testing is not verification.
+Verification is not deployment.
+Deployment is not authorization.
+Authorization is not proof of continued operation.
+```
+
+Every public declaration must preserve these distinctions.
