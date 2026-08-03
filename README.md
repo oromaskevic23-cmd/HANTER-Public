@@ -10626,3 +10626,838 @@ Its long-term objective is to ensure that every major public claim remains:
 Within IMPERIAL Core, public trust should be built through verifiable engineering records.
 
 A claim should become stronger only when its evidence becomes stronger.
+# HANTER Public Evidence Registry Specification
+
+**Document ID:** IC-HANTER-PUBLIC-PERS-001  
+**Version:** 1.0.0  
+**Knowledge Class:** GOVERNANCE KNOWLEDGE  
+**Lifecycle Status:** APPROVED PUBLIC REFERENCE  
+**Evidence Level:** DOCUMENTED  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core  
+**Scope:** Public evidence registration, indexing and traceability
+
+---
+
+# Purpose
+
+This document defines the Public Evidence Registry Specification used by HANTER within the IMPERIAL Core ecosystem.
+
+Its purpose is to establish a consistent method for registering, identifying, classifying, reviewing and preserving public evidence associated with architectural and engineering claims.
+
+The registry connects:
+
+```text
+Claim
+→ Evidence
+→ Artifact
+→ Verification
+→ Status
+→ Decision
+```
+
+It enables engineers, reviewers, search systems and AI-assisted tools to determine:
+
+- which evidence supports a claim;
+- which artifact was evaluated;
+- which version was covered;
+- which environment was used;
+- which limitations remain;
+- whether the evidence is current;
+- whether the evidence has been superseded;
+- whether the evidence is suitable for public interpretation.
+
+The registry records evidence relationships.
+
+It does not automatically prove that every registered claim is correct.
+
+---
+
+# Registry Role
+
+The Public Evidence Registry serves as the controlled index of evidence that may be referenced by HANTER public documentation.
+
+It is intended to support:
+
+- evidence discovery;
+- claim traceability;
+- status verification;
+- version binding;
+- contradiction detection;
+- historical preservation;
+- machine-readable interpretation;
+- responsible public communication.
+
+The registry should reduce the risk of unsupported claims being repeated across multiple documents without a traceable evidentiary source.
+
+---
+
+# What the Registry Is
+
+The Public Evidence Registry is:
+
+- an evidence index;
+- a traceability mechanism;
+- a structured metadata model;
+- a public verification reference;
+- a historical record of evidence state;
+- a bridge between human-readable and machine-readable documentation.
+
+The registry may reference public evidence stored in:
+
+- repository files;
+- release records;
+- test reports;
+- verification reports;
+- architecture decisions;
+- mission completion records;
+- artifact manifests;
+- public audit summaries;
+- deployment records;
+- authorization records.
+
+---
+
+# What the Registry Is Not
+
+The Public Evidence Registry is not:
+
+- proof that every registered artifact is correct;
+- production authorization;
+- an unrestricted public audit ledger;
+- a replacement for source artifacts;
+- a secret-management system;
+- an internal security evidence store;
+- a substitute for independent verification;
+- a declaration that private evidence is publicly accessible.
+
+Registration means that an evidence record exists.
+
+Acceptance means that the evidence has been reviewed for a declared purpose and boundary.
+
+Neither state should be interpreted more broadly than its metadata permits.
+
+---
+
+# Registry Objects
+
+The registry recognizes several related engineering objects.
+
+## Claim
+
+A statement asserting a property, relationship, result or status.
+
+Each significant claim should have a stable claim identifier.
+
+---
+
+## Evidence Record
+
+A structured record describing evidence associated with one or more claims.
+
+An Evidence Record identifies the evidence type, source, version, boundary, integrity information and limitations.
+
+---
+
+## Artifact
+
+The actual document, package, report, source tree, test result or other engineering object represented by the evidence record.
+
+The registry entry is not the artifact itself unless the record explicitly embeds the complete public artifact.
+
+---
+
+## Verification Record
+
+A record describing how evidence was evaluated against requirements, invariants or acceptance criteria.
+
+---
+
+## Status Assertion
+
+A bounded statement describing the demonstrated engineering state of a subject.
+
+Status Assertions should reference the evidence records that support them.
+
+---
+
+## Decision Record
+
+A record of an architectural, governance, authorization or publication decision associated with the evidence.
+
+---
+
+## Supersession Record
+
+A relationship indicating that one claim, artifact or evidence record has been formally replaced by another.
+
+Superseded evidence may remain historically valid for the version and period it originally covered.
+
+---
+
+# Evidence Identifier
+
+Every registered evidence record should receive a stable identifier.
+
+Recommended format:
+
+```text
+IC-HANTER-EVIDENCE-<TYPE>-<SEQUENCE>
+```
+
+Examples:
+
+```text
+IC-HANTER-EVIDENCE-ARCH-0001
+IC-HANTER-EVIDENCE-IMPL-0001
+IC-HANTER-EVIDENCE-TEST-0001
+IC-HANTER-EVIDENCE-VERIFY-0001
+IC-HANTER-EVIDENCE-DEPLOY-0001
+IC-HANTER-EVIDENCE-AUTH-0001
+IC-HANTER-EVIDENCE-OPER-0001
+IC-HANTER-EVIDENCE-MILESTONE-0001
+IC-HANTER-EVIDENCE-HIST-0001
+```
+
+Evidence identifiers must not be reused.
+
+A materially different artifact or evaluation requires a new identifier.
+
+Correction of metadata may preserve the identifier when the underlying evidence remains unchanged and the correction is recorded transparently.
+
+---
+
+# Evidence Types
+
+## ARCH — Architectural Evidence
+
+Documents an architectural model, principle, boundary, relationship or approved decision.
+
+---
+
+## IMPL — Implementation Evidence
+
+Documents the existence of a versioned implementation artifact.
+
+---
+
+## TEST — Test Evidence
+
+Documents executed testing, test inputs, environment, expected behavior and observed results.
+
+---
+
+## VERIFY — Verification Evidence
+
+Documents evaluation against explicit requirements, contracts, invariants or acceptance criteria.
+
+---
+
+## DEPLOY — Deployment Evidence
+
+Documents deployment of a specific artifact to a defined environment.
+
+---
+
+## AUTH — Authorization Evidence
+
+Documents explicit authorization for a defined action, environment or operational state.
+
+---
+
+## OPER — Operational Evidence
+
+Documents observed execution or health within an authorized runtime environment.
+
+---
+
+## MILESTONE — Milestone Evidence
+
+Documents completion of defined mission or milestone acceptance criteria.
+
+---
+
+## HIST — Historical Evidence
+
+Preserves superseded, deprecated, archived or historical engineering records.
+
+---
+
+# Required Evidence Metadata
+
+A public evidence record should contain the following fields where applicable:
+
+```text
+Evidence ID
+Title
+Evidence Type
+Subject
+Related Claim IDs
+Artifact Name
+Artifact Version
+Artifact Digest
+Repository Reference
+Environment
+Execution Boundary
+Method
+Expected Result
+Observed Result
+Verification State
+Evidence Strength
+Limitations
+Created At
+Reviewed At
+Reviewer
+Supersedes
+Superseded By
+Expiration
+Publication Classification
+```
+
+Fields that do not apply may be omitted.
+
+Fields required to interpret status must not be omitted merely for convenience.
+
+---
+
+# Evidence Lifecycle
+
+Evidence records may use the following lifecycle states:
+
+```text
+DRAFT
+REGISTERED
+UNDER REVIEW
+ACCEPTED BOUNDED
+REJECTED
+SUPERSEDED
+EXPIRED
+WITHDRAWN
+ARCHIVED
+SEALED
+```
+
+## DRAFT
+
+The evidence record is being prepared and is not yet an active registry entry.
+
+## REGISTERED
+
+The record has received an identifier and has been entered into the registry.
+
+Registration does not establish verification.
+
+## UNDER REVIEW
+
+The evidence and its metadata are being evaluated.
+
+## ACCEPTED BOUNDED
+
+The evidence has been accepted for a specific claim, version, environment and declared boundary.
+
+This state must not be interpreted as unrestricted verification.
+
+## REJECTED
+
+The evidence is insufficient, invalid, contradictory or unsuitable for the proposed claim.
+
+## SUPERSEDED
+
+A newer evidence record has replaced the current record for active interpretation.
+
+## EXPIRED
+
+The evidence was time-sensitive and is no longer current without renewed evaluation.
+
+## WITHDRAWN
+
+The record has been removed from active use by the appropriate authority.
+
+## ARCHIVED
+
+The evidence is retained for historical traceability.
+
+## SEALED
+
+The evidence has been preserved under a declared integrity and immutability process.
+
+The `SEALED` state may be used only when the sealing procedure and resulting integrity evidence are documented.
+
+---
+
+# Evidence Strength
+
+The registry should record evidence strength independently from lifecycle state.
+
+Recommended levels are:
+
+```text
+E0 — UNVERIFIED CLAIM
+E1 — DOCUMENTED DECLARATION
+E2 — ARTIFACT EXISTS
+E3 — LOCALLY INSPECTED
+E4 — LOCALLY TESTED
+E5 — REPRODUCIBLY VERIFIED
+E6 — INDEPENDENTLY VERIFIED
+E7 — DEPLOYMENT VERIFIED
+E8 — PRODUCTION AUTHORIZED AND EVIDENCED
+```
+
+An evidence record may be registered while remaining at a low evidence level.
+
+Registry presence must never be presented as equivalent to E5, E6, E7 or E8.
+
+---
+
+# Evidence Relationships
+
+Evidence records should define explicit relationships where relevant.
+
+Supported relationship types include:
+
+```text
+SUPPORTS_CLAIM
+PARTIALLY_SUPPORTS_CLAIM
+CONTRADICTS_CLAIM
+VERIFIES_ARTIFACT
+TESTS_ARTIFACT
+DEPLOYS_ARTIFACT
+AUTHORIZES_SUBJECT
+SUPERSEDES_EVIDENCE
+DERIVED_FROM_EVIDENCE
+REPRODUCES_EVIDENCE
+INVALIDATES_EVIDENCE
+HISTORICALLY_REFERENCES
+```
+
+Relationships should remain directional.
+
+For example:
+
+```text
+Evidence A SUPPORTS_CLAIM Claim B
+```
+
+does not mean:
+
+```text
+Claim B proves Evidence A
+```
+
+---
+
+# Claim Coverage
+
+An evidence record must identify whether it supports:
+
+```text
+FULL CLAIM
+PARTIAL CLAIM
+SINGLE REQUIREMENT
+BOUNDED SCENARIO
+NEGATIVE RESULT
+HISTORICAL STATUS
+```
+
+Partial evidence must not be presented as complete evidence.
+
+Evidence proving one requirement does not automatically prove all requirements associated with the subject.
+
+---
+
+# Artifact Binding
+
+Evidence should be bound to the exact artifact it evaluates.
+
+Acceptable artifact bindings include:
+
+- commit SHA;
+- release tag;
+- package version;
+- content digest;
+- archive digest;
+- schema version;
+- document version;
+- mission identifier;
+- build identifier.
+
+A filename alone may be insufficient when the file can change.
+
+A status established for one artifact digest must not be silently inherited by a modified artifact.
+
+---
+
+# Digest Requirements
+
+Where cryptographic digests are published, the record should identify:
+
+```text
+Algorithm
+Canonicalization Method
+Artifact Scope
+Digest Value
+Generation Procedure
+Generation Time
+```
+
+Example:
+
+```yaml
+artifact_digest:
+  algorithm: SHA-256
+  scope: complete-release-archive
+  canonicalization: raw-binary
+  value: "<digest>"
+```
+
+A digest proves identity only relative to the exact bytes and declared procedure.
+
+It does not independently prove correctness, safety or authorization.
+
+---
+
+# Environment Binding
+
+Evidence involving implementation, testing, verification, deployment or operation should identify the environment.
+
+Possible environment values include:
+
+```text
+DOCUMENTATION ONLY
+LOCAL DEVELOPMENT
+CONTROLLED LOCAL TEST
+ISOLATED RUNTIME
+PRIVATE STAGING
+PRIVATE PILOT
+PRODUCTION
+EXTERNAL INDEPENDENT ENVIRONMENT
+```
+
+Environment metadata should include relevant restrictions such as:
+
+```text
+NETWORK DISABLED
+NO EXTERNAL EFFECTS
+NO SECRETS
+LOCAL FIXTURES ONLY
+BOUNDED TEST CORPUS
+SIMULATED EXECUTION
+```
+
+These restrictions are material to evidence interpretation.
+
+---
+
+# Limitation Requirements
+
+Every evidence record should disclose known limitations that affect interpretation.
+
+Examples include:
+
+```text
+NOT INDEPENDENTLY VERIFIED
+LOCAL REFERENCE IMPLEMENTATION
+BOUNDED TEST CORPUS
+NO EXTERNAL INTEGRATION
+SIMULATED EXECUTION
+NETWORK DISABLED
+PRODUCTION AUTHORIZATION NOT GRANTED
+AUDIT REPLICA NOT INDEPENDENT INFRASTRUCTURE
+DEPENDENCY NOT AVAILABLE
+ENVIRONMENTAL BLOCKER
+```
+
+A limitation is not optional when its omission would cause a reasonable reader or automated system to overestimate the result.
+
+---
+
+# Duplicate Evidence
+
+Multiple records may describe the same artifact only when they represent distinct:
+
+- evaluation methods;
+- environments;
+- versions;
+- verification authorities;
+- execution periods;
+- claims;
+- evidence strengths.
+
+Unnecessary duplication should be avoided.
+
+When duplicate records are discovered, the registry should identify:
+
+```text
+PRIMARY RECORD
+DUPLICATE RECORD
+MERGED RECORD
+SUPERSEDED RECORD
+```
+
+Evidence volume must not be mistaken for evidence strength.
+
+---
+
+# Contradictory Evidence
+
+When evidence records conflict, the registry must not silently discard the weaker or inconvenient result.
+
+The conflict should identify:
+
+- affected evidence IDs;
+- affected claims;
+- artifact versions;
+- environment differences;
+- method differences;
+- temporal differences;
+- unresolved conclusions.
+
+Possible conflict outcomes include:
+
+```text
+RESOLVED BY VERSION DIFFERENCE
+RESOLVED BY SCOPE DIFFERENCE
+RESOLVED BY STRONGER EVIDENCE
+REQUIRES RE-VERIFICATION
+CLAIM DOWNGRADED
+CLAIM REJECTED
+UNRESOLVED
+```
+
+An unresolved conflict should reduce confidence in the related public claim.
+
+---
+
+# Evidence Expiration
+
+Evidence should expire when its continued validity depends on changing conditions.
+
+Examples include:
+
+- operational health;
+- deployment state;
+- authorization;
+- external integration compatibility;
+- dependency versions;
+- infrastructure configuration;
+- security verification.
+
+Stable historical evidence may not require expiration.
+
+Time-sensitive records should include:
+
+```text
+Last Verified At
+Valid Until
+Review Interval
+Expiration Condition
+```
+
+Expired evidence may remain historically accurate while no longer supporting current status.
+
+---
+
+# Redaction and Restricted Evidence
+
+Some evidence may exist but remain unsuitable for public disclosure.
+
+A public registry entry may describe restricted evidence using metadata such as:
+
+```text
+Evidence Availability: RESTRICTED
+Public Summary Available: TRUE
+Independent Verification: FALSE
+Disclosure Reason: SECURITY BOUNDARY
+```
+
+Redaction must not alter the meaning of the public conclusion.
+
+The public record should never imply that restricted evidence exists when it does not.
+
+Protected information must remain private by default.
+
+---
+
+# Machine-Readable Registry Record
+
+Where practical, each evidence record should have a structured representation.
+
+Example:
+
+```yaml
+evidence_id: IC-HANTER-EVIDENCE-TEST-0001
+title: Deterministic replay bounded local test
+evidence_type: TEST
+lifecycle_status: ACCEPTED_BOUNDED
+evidence_strength: E4_LOCALLY_TESTED
+
+subject:
+  name: hanter-deterministic-replay
+  version: 1.0.0-local
+
+related_claims:
+  - IC-HANTER-CLAIM-VERIFY-0001
+
+artifact:
+  reference: local-reference-package
+  digest_algorithm: SHA-256
+  digest: "<digest>"
+
+environment:
+  type: CONTROLLED_LOCAL_TEST
+  network_enabled: false
+  external_effects: false
+  corpus: BOUNDED_LOCAL_CORPUS
+
+result:
+  expected: deterministic replay produces matching bounded outputs
+  observed: PASS
+  verification_state: VERIFIED_BOUNDED
+
+limitations:
+  - not-independently-verified
+  - not-deployed
+  - not-production-authorized
+
+publication:
+  classification: PUBLIC_SUMMARY
+  restricted_supporting_artifacts: true
+```
+
+Machine-readable metadata must remain consistent with the human-readable evidence source.
+
+---
+
+# Registry Acceptance Criteria
+
+An evidence record may enter `ACCEPTED BOUNDED` only when:
+
+1. the subject is explicitly identified;
+2. the version or artifact is bound;
+3. the evidence source exists;
+4. the evaluation method is stated;
+5. the environment is declared;
+6. the result is recorded;
+7. limitations are visible;
+8. related claims are identified;
+9. contradictions have been reviewed;
+10. the publication boundary has been evaluated.
+
+Failure to satisfy these criteria should keep the record in:
+
+```text
+DRAFT
+REGISTERED
+UNDER REVIEW
+```
+
+or move it to:
+
+```text
+REJECTED
+```
+
+---
+
+# Review Triggers
+
+Evidence records should be reviewed when:
+
+- the artifact changes;
+- a new version is released;
+- a claim is revised;
+- a contradiction is discovered;
+- the environment changes;
+- a verification method changes;
+- an authorization expires;
+- a dependency is revoked;
+- a deployment is rolled back;
+- a public correction is required;
+- stronger independent evidence becomes available.
+
+Review must determine whether the evidence remains current, becomes historical or requires supersession.
+
+---
+
+# Registry Integrity
+
+The public registry should preserve:
+
+- stable identifiers;
+- version history;
+- recorded corrections;
+- explicit supersession;
+- non-destructive historical traceability;
+- consistent metadata;
+- human-readable accessibility;
+- machine-readable compatibility.
+
+Corrections should not erase the existence of a previously published claim or evidence record when historical accountability is materially important.
+
+---
+
+# Architectural Authority
+
+The canonical architectural authority is:
+
+**Alexander Romaskevich**
+
+**Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core**
+
+**Architect and final authority of IMPERIAL Core**
+
+The Architect holds final authority over:
+
+- canonical architectural evidence;
+- acceptance of evidence for major status transitions;
+- resolution of unresolved architectural contradictions;
+- pilot authorization evidence;
+- production authorization evidence;
+- public release of sensitive evidence summaries.
+
+HANTER remains subordinate to the Architect.
+
+HANTER may register, organize and evaluate evidence, but it must not grant itself authority beyond the evidence and approval available.
+
+---
+
+# Public/Private Boundary
+
+This specification applies to public evidence registration.
+
+It does not authorize disclosure of:
+
+- confidential source code;
+- credentials or secrets;
+- private repository contents;
+- protected runtime configuration;
+- restricted audit records;
+- internal security controls;
+- private Nano Core Agent instructions;
+- sensitive infrastructure information;
+- proprietary operational procedures.
+
+When evidence cannot be published safely, the public registry should disclose the limitation without weakening the private security boundary.
+
+---
+
+# Long-Term Objective
+
+The Public Evidence Registry Specification establishes a durable evidence index for the HANTER public engineering knowledge base.
+
+Its long-term objective is to ensure that public evidence remains:
+
+- uniquely identifiable;
+- version-bound;
+- claim-linked;
+- integrity-aware;
+- boundary-specific;
+- limitation-aware;
+- machine-readable;
+- historically traceable;
+- resistant to duplication;
+- resistant to status inflation.
+
+Within IMPERIAL Core, a public claim should never become stronger merely because it has been repeated.
+
+It should become stronger only when the registry links it to stronger, relevant and appropriately governed evidence.
