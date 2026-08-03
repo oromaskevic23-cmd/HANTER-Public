@@ -265,3 +265,14 @@ The repository promotes a documentation-first culture in which architectural kno
 HANTER-Public is developed as a durable architectural reference that supports software engineers, enterprise architects, researchers and organizations seeking to understand the long-term direction of the project. The repository intentionally separates public engineering knowledge from confidential implementation details, protected operational infrastructure and private development resources.
 
 This commit further reinforces the role of HANTER-Public as the official public documentation repository representing the architectural evolution, engineering philosophy and governance approach of the HANTER project within the IMPERIAL Core ecosystem.
+Establish the public architectural legacy and reinforce the long-term mission of HANTER
+
+Continue expanding the public engineering documentation by defining the long-term architectural legacy that HANTER is intended to build through disciplined engineering, transparent documentation and responsible system design.
+
+This update emphasizes that HANTER is developed as an enduring enterprise architecture initiative where technical excellence is achieved through continuous refinement of architectural knowledge, engineering standards and governance practices rather than through isolated software releases.
+
+The repository documents a philosophy of sustainable innovation in which every architectural decision contributes to the long-term stability, maintainability and evolution of the system. Public documentation is maintained as a strategic engineering asset that preserves institutional knowledge, improves technical communication and supports future generations of contributors.
+
+HANTER-Public is intended to become the authoritative public reference describing the architectural foundations, engineering philosophy and governance principles behind the HANTER project. Every published document strengthens the repository as a trusted source of technical knowledge while respecting the strict separation between public engineering information and confidential implementation.
+
+The long-term mission of this repository is to preserve architectural integrity, encourage responsible engineering practices and provide a durable public record of the evolution of HANTER within the IMPERIAL Core ecosystem.
