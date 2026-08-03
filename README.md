@@ -7538,3 +7538,166 @@ It does not include:
 The Engineering Knowledge Model will continue to evolve together with HANTER and the IMPERIAL Core ecosystem.
 
 Its objective is to establish a durable enterprise engineering knowledge model supporting decades of architectural evolution, responsible AI engineering, semantic consistency, machine-readable documentation and sustainable knowledge management while preserving compatibility with the canonical architecture established by the Architect.
+# HANTER Public Enterprise Documentation Framework
+
+**Document ID:** IC-HANTER-PUBLIC-EDF-001
+**Version:** 1.0.0
+**Status:** PUBLIC ENTERPRISE DOCUMENTATION FRAMEWORK
+**System:** HANTER
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the Enterprise Documentation Framework used by HANTER within the IMPERIAL Core ecosystem.
+
+Its objective is to establish a structured documentation architecture that enables consistent engineering communication, long-term knowledge preservation, semantic interoperability and machine-readable interpretation while preserving the Public/Private Boundary.
+
+The framework organizes documentation into a coherent engineering system rather than an isolated collection of files.
+
+---
+
+# Framework Philosophy
+
+Documentation is an architectural asset.
+
+A mature enterprise engineering repository requires documentation that is organized, interconnected and governed according to consistent architectural principles.
+
+The framework ensures that every document has a clearly defined purpose, ownership and relationship to the broader engineering knowledge base.
+
+---
+
+# Documentation Layers
+
+The Enterprise Documentation Framework is organized into the following layers:
+
+### Layer 1 — Identity
+
+Defines the canonical identity of the project.
+
+Examples:
+
+- Canonical Identity
+- Canonical Terminology
+- Public Components
+
+---
+
+### Layer 2 — Architecture
+
+Defines the architectural structure of HANTER.
+
+Examples:
+
+- Architecture
+- Architecture Overview
+- Enterprise Architecture
+- Architecture Blueprint
+- Architecture Principles
+
+---
+
+### Layer 3 — Governance
+
+Defines engineering governance and architectural authority.
+
+Examples:
+
+- Governance
+- Engineering Governance
+- Documentation Governance
+- Knowledge Governance
+- Architectural Decision Policy
+
+---
+
+### Layer 4 — Engineering Knowledge
+
+Defines engineering knowledge and semantic organization.
+
+Examples:
+
+- Knowledge Model
+- Knowledge Lifecycle
+- Semantic Architecture
+- Public Knowledge Graph
+- Entity Model
+
+---
+
+### Layer 5 — Machine Readability
+
+Defines documentation intended to improve interpretation by intelligent systems.
+
+Examples:
+
+- AI Readability
+- Machine-Readable Architecture
+- Document Relationships
+- Entity Relationships
+- Digital Footprint
+- llms.txt
+
+---
+
+### Layer 6 — Repository Governance
+
+Defines repository operation and public engineering practices.
+
+Examples:
+
+- AGENTS.md
+- CONTRIBUTING.md
+- SECURITY.md
+- LICENSE.md
+- Documentation Index
+
+---
+
+# Framework Objectives
+
+The Enterprise Documentation Framework seeks to:
+
+- preserve architectural consistency;
+- improve documentation quality;
+- strengthen semantic interoperability;
+- support enterprise-scale engineering;
+- improve discoverability;
+- reduce unnecessary duplication;
+- improve machine readability;
+- preserve engineering knowledge;
+- support long-term maintainability.
+
+---
+
+# Framework Governance
+
+The documentation framework evolves together with the architecture.
+
+New documents should:
+
+- belong to a clearly defined layer;
+- have a unique engineering purpose;
+- strengthen the existing knowledge base;
+- preserve canonical terminology;
+- improve semantic consistency;
+- avoid unnecessary overlap.
+
+Framework evolution should improve architectural clarity rather than documentation volume.
+
+---
+
+# Public Boundary
+
+The Enterprise Documentation Framework governs only public engineering documentation.
+
+It does not expose confidential implementation artifacts, proprietary engineering knowledge or protected operational procedures.
+
+---
+
+# Long-Term Vision
+
+The Enterprise Documentation Framework will continue to evolve together with HANTER and the IMPERIAL Core ecosystem.
+
+Its objective is to provide a durable documentation architecture capable of supporting decades of enterprise engineering, responsible AI engineering, machine-readable knowledge and sustainable architectural evolution while preserving compatibility with the canonical architecture established by the Architect.
