@@ -803,3 +803,81 @@ Healthy disagreement is welcomed when supported by technical arguments and condu
 The objective of public collaboration is to strengthen HANTER as a professional engineering knowledge base.
 
 Every accepted contribution should improve architectural transparency, documentation quality and long-term maintainability while preserving the canonical architecture and governance principles of IMPERIAL Core.
+# HANTER Public Roadmap
+
+**Document ID:** IC-HANTER-PUBLIC-ROADMAP-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC DEVELOPMENT ROADMAP  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This roadmap describes the long-term public development direction of HANTER.
+
+Its objective is to communicate the architectural priorities and engineering evolution of the project while preserving the separation between publicly available information and confidential implementation.
+
+The roadmap represents architectural intentions and publicly approved engineering objectives. It should not be interpreted as a guarantee of implementation dates or production deployment.
+
+---
+
+# Vision
+
+HANTER is developed as a long-term enterprise AI command and coordination system within the IMPERIAL Core ecosystem.
+
+The project evolves through disciplined architecture, transparent documentation and responsible engineering rather than short-term feature expansion.
+
+Every roadmap milestone is intended to strengthen architectural consistency, governance, scalability and engineering quality.
+
+---
+
+# Public Development Priorities
+
+The long-term public roadmap includes continuous development of:
+
+- architectural documentation;
+- governance documentation;
+- engineering standards;
+- public security guidance;
+- architecture diagrams;
+- terminology and glossary;
+- public component registry;
+- verified engineering milestones;
+- public technical specifications;
+- developer documentation;
+- engineering best practices;
+- long-term architectural publications.
+
+These priorities are expected to evolve together with the public engineering repository.
+
+---
+
+# Engineering Strategy
+
+Development follows an Architecture Before Implementation approach.
+
+Major architectural concepts are documented before implementation details become part of the canonical system.
+
+Public documentation evolves incrementally through reviewed engineering publications that improve architectural understanding while preserving the Public/Private Boundary.
+
+---
+
+# Long-Term Evolution
+
+HANTER is designed to support many years of architectural evolution.
+
+Future public releases may expand documentation covering governance, orchestration, engineering methodology, AI coordination, security principles and enterprise architecture.
+
+The objective is to establish HANTER-Public as the official long-term engineering knowledge base describing the architectural evolution of HANTER within the IMPERIAL Core ecosystem.
+
+---
+
+# Roadmap Commitment
+
+The roadmap represents the intended engineering direction of HANTER.
+
+Implementation priorities may evolve as architecture matures, engineering knowledge expands and new public documentation becomes available.
+
+Architectural consistency, responsible governance and long-term maintainability remain the primary objectives throughout every stage of development.
