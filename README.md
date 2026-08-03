@@ -2809,3 +2809,83 @@ Every future addition should strengthen the existing architecture while preservi
 The long-term objective of the Architectural Framework is to establish HANTER-Public as a comprehensive enterprise engineering knowledge base.
 
 By organizing architectural knowledge into a structured framework, the repository supports sustainable engineering, responsible governance and long-term architectural excellence while maintaining a clear distinction between public engineering documentation and protected implementation.
+# HANTER Public Engineering Governance
+
+**Document ID:** IC-HANTER-PUBLIC-ENGINEERING-GOVERNANCE-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC ENGINEERING GOVERNANCE  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the engineering governance model that supports the public architectural development of HANTER.
+
+Its objective is to explain how engineering activities are guided through architectural principles, governance policies, documentation standards and long-term engineering objectives while preserving the Public/Private Boundary.
+
+Engineering governance provides the discipline required for sustainable enterprise architecture rather than implementation-specific management.
+
+---
+
+# Engineering Governance Philosophy
+
+Engineering governance exists to ensure that architecture, documentation and engineering practices evolve together.
+
+The purpose of governance is not to restrict innovation but to preserve architectural consistency, technical quality and long-term maintainability across the entire HANTER ecosystem.
+
+Every engineering activity should contribute to strengthening the canonical architecture of IMPERIAL Core.
+
+---
+
+# Governance Objectives
+
+Engineering governance supports the following objectives:
+
+- preserve architectural integrity;
+- maintain engineering consistency;
+- improve documentation quality;
+- encourage responsible engineering;
+- strengthen governance transparency;
+- support enterprise scalability;
+- reduce architectural fragmentation;
+- improve long-term maintainability;
+- enable sustainable architectural evolution.
+
+These objectives guide the public engineering direction of HANTER.
+
+---
+
+# Governance Through Documentation
+
+Public engineering documentation represents one of the primary governance mechanisms of HANTER.
+
+Architectural principles, engineering standards, terminology, design guidance and governance policies together establish a shared engineering understanding that supports consistent architectural development.
+
+Documentation preserves institutional engineering knowledge and improves long-term traceability.
+
+---
+
+# Engineering Responsibilities
+
+Engineering governance encourages:
+
+- disciplined architectural thinking;
+- transparent engineering communication;
+- structured documentation;
+- consistent terminology;
+- responsible architectural evolution;
+- continuous quality improvement.
+
+Engineering work should reinforce existing architectural foundations rather than replace them.
+
+---
+
+# Long-Term Engineering Governance
+
+The engineering governance model will continue to evolve together with HANTER and the IMPERIAL Core ecosystem.
+
+Future revisions may introduce additional engineering standards, governance practices and architectural guidance while preserving compatibility with the canonical architecture established by the Architect.
+
+The long-term objective is to maintain a mature enterprise engineering governance model supporting decades of sustainable architectural evolution, responsible AI engineering and professional technical documentation.
