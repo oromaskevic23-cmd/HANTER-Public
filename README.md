@@ -5561,3 +5561,170 @@ Avoid creating repetitive documentation with no unique engineering purpose.
 # Long-Term Objective
 
 Help maintain HANTER-Public as a professional enterprise engineering repository that is understandable by engineers, enterprise architects, researchers, AI assistants and search systems while preserving architectural integrity, factual accuracy and long-term maintainability.
+# HANTER Public Documentation Index
+
+**Document ID:** IC-HANTER-PUBLIC-INDEX-001
+**Version:** 1.0.0
+**Status:** PUBLIC DOCUMENTATION INDEX
+**System:** HANTER
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document serves as the primary navigation entry point for the public engineering documentation of HANTER.
+
+Its objective is to organize the repository into a coherent enterprise knowledge system that is easy to navigate for engineers, enterprise architects, researchers, AI assistants and search engines.
+
+The Documentation Index does not replace the individual documents. Instead, it provides a structured overview of the complete public documentation ecosystem.
+
+---
+
+# Start Here
+
+New readers are encouraged to begin with the following documents:
+
+1. README.md
+2. ARCHITECTURE.md
+3. GOVERNANCE.md
+4. ROADMAP.md
+5. GLOSSARY.md
+
+These documents introduce the architecture, governance model, terminology and long-term direction of HANTER.
+
+---
+
+# Core Architecture
+
+The core architectural documentation includes:
+
+- ARCHITECTURE.md
+- ARCHITECTURE-OVERVIEW.md
+- ARCHITECTURAL-FRAMEWORK.md
+- ARCHITECTURAL-FOUNDATIONS.md
+- ARCHITECTURAL-PRINCIPLES.md
+- ARCHITECTURAL-GOALS.md
+- ARCHITECTURAL-CONSTRAINTS.md
+- ARCHITECTURAL-EVOLUTION.md
+- ARCHITECTURAL-VISION.md
+- ARCHITECTURAL-CONSISTENCY.md
+
+These documents describe the long-term architectural foundation of HANTER.
+
+---
+
+# Enterprise Architecture
+
+Enterprise engineering documentation includes:
+
+- ENTERPRISE-ARCHITECTURE.md
+- ENTERPRISE-ARCHITECTURE-BLUEPRINT.md
+- ENTERPRISE-ARCHITECTURE-REFERENCE-MODEL.md
+- ENTERPRISE-ARCHITECTURE-REFERENCE-GUIDE.md
+- ENTERPRISE-ARCHITECTURE-METHODOLOGY.md
+- ENTERPRISE-ARCHITECTURE-LIFECYCLE.md
+- ENTERPRISE-ARCHITECTURE-STRATEGY.md
+- ENTERPRISE-ARCHITECTURE-MATURITY.md
+- ENTERPRISE-ARCHITECTURE-CULTURE.md
+- ENTERPRISE-ARCHITECTURE-PRACTICES.md
+
+Together these documents describe the enterprise engineering perspective of HANTER.
+
+---
+
+# Governance
+
+Governance documentation includes:
+
+- GOVERNANCE.md
+- ARCHITECTURAL-GOVERNANCE-MODEL.md
+- ENGINEERING-GOVERNANCE.md
+- ENTERPRISE-GOVERNANCE-FRAMEWORK.md
+- ENTERPRISE-ARCHITECTURE-GOVERNANCE-STANDARDS.md
+- ENTERPRISE-ARCHITECTURE-GOVERNANCE-LIFECYCLE.md
+
+These documents describe architectural authority, governance and engineering responsibility.
+
+---
+
+# Engineering Standards
+
+Engineering documentation includes:
+
+- ENGINEERING-STANDARDS.md
+- QUALITY-STANDARDS.md
+- DESIGN-PRINCIPLES.md
+- ENGINEERING-LIFECYCLE.md
+- ARCHITECTURAL-DECISIONS.md
+- ARCHITECTURAL-DECISION-PRINCIPLES.md
+- ENGINEERING-KNOWLEDGE.md
+- ENTERPRISE-ENGINEERING-PHILOSOPHY.md
+- ARCHITECTURAL-THINKING.md
+
+These documents establish the engineering methodology and long-term development philosophy.
+
+---
+
+# Knowledge and Semantics
+
+Semantic documentation includes:
+
+- CANONICAL-IDENTITY.md
+- CANONICAL-KNOWLEDGE.md
+- PUBLIC-KNOWLEDGE-GRAPH.md
+- ENTITY-MODEL.md
+- ENTITY-RELATIONSHIPS.md
+- SEMANTIC-ARCHITECTURE.md
+- MACHINE-READABLE-ARCHITECTURE.md
+- DOCUMENT-RELATIONSHIPS.md
+- DIGITAL-FOOTPRINT.md
+- AI-READABILITY.md
+
+Together these documents establish the semantic and machine-readable engineering knowledge base.
+
+---
+
+# Project Information
+
+Repository information includes:
+
+- ROADMAP.md
+- PUBLIC-COMPONENTS.md
+- MILESTONES.md
+- RESOURCES.md
+- GLOSSARY.md
+
+These documents describe the public evolution of the project.
+
+---
+
+# Repository Policies
+
+Repository policies include:
+
+- SECURITY.md
+- CONTRIBUTING.md
+- LICENSE.md
+- AGENTS.md
+- llms.txt
+
+These documents define repository governance, contribution guidance, licensing and AI interpretation.
+
+---
+
+# Public Status Boundary
+
+This repository documents the public engineering architecture of HANTER.
+
+Architecture, implementation, testing, deployment and production readiness remain separate engineering states.
+
+Readers should not interpret architectural documentation as evidence of production deployment or unrestricted operational capability.
+
+---
+
+# Long-Term Objective
+
+The Documentation Index will continue to evolve together with HANTER.
+
+Its objective is to provide a stable navigation framework connecting all public engineering documentation into a coherent enterprise knowledge system that remains understandable for both human readers and intelligent information systems.
