@@ -168,3 +168,14 @@ The private HANTER repository remains the authoritative boundary for confidentia
 ---
 
 Copyright © Alexander Romaskevich. All rights reserved.
+Introduce the architectural philosophy and long-term engineering mission
+
+Expand the public documentation by introducing the architectural philosophy that guides the long-term evolution of HANTER.
+
+This update explains that HANTER is engineered as a durable enterprise platform rather than a short-term software project. Every architectural decision is expected to support scalability, maintainability, governance and technical consistency across future generations of the ecosystem.
+
+The repository emphasizes that architecture precedes implementation, documentation evolves together with engineering, and every public artifact contributes to a coherent technical knowledge base.
+
+The public engineering mission of HANTER is to provide developers, architects, researchers and organizations with a reliable reference that demonstrates engineering discipline, architectural transparency and long-term system thinking without exposing confidential implementation details or protected operational infrastructure.
+
+This commit strengthens the identity of HANTER-Public as the official public engineering reference for the HANTER project and prepares the repository for future architectural specifications, engineering documentation and public technical publications.
