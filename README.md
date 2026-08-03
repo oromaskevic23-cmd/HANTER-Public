@@ -979,3 +979,93 @@ The architectural principle separating publicly documented engineering knowledge
 This glossary represents the official public terminology of HANTER.
 
 Future revisions may introduce additional definitions while preserving consistency with the canonical architecture of IMPERIAL Core and maintaining compatibility across all public engineering documentation.
+# HANTER Public Component Registry
+
+**Document ID:** IC-HANTER-PUBLIC-COMPONENTS-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC COMPONENT REGISTRY  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document establishes the official public registry of architectural components described within the HANTER documentation.
+
+Its objective is to provide a structured overview of the publicly documented components while preserving the separation between architectural transparency and confidential implementation.
+
+The registry identifies the architectural purpose of each public component without exposing protected implementation details, runtime configuration or proprietary engineering mechanisms.
+
+---
+
+# Public Components
+
+## Architect
+
+The Architect provides the canonical architectural direction for IMPERIAL Core and remains the final architectural authority responsible for long-term system evolution.
+
+---
+
+## HANTER
+
+HANTER serves as the governed AI command and coordination layer of the IMPERIAL Core ecosystem.
+
+Its responsibilities include coordinating federated orchestration, structured missions and governed AI operations.
+
+---
+
+## Federated Multi-Orchestrator Architecture
+
+The architectural coordination model used by HANTER.
+
+Responsibilities are distributed across multiple governed orchestrators rather than concentrated within a single unrestricted orchestration authority.
+
+---
+
+## Domain Orchestrators
+
+Coordinate specific business, operational or organizational domains while remaining within explicitly defined governance boundaries.
+
+---
+
+## Functional Orchestrators
+
+Coordinate specialized professional and technical responsibilities across the engineering ecosystem.
+
+---
+
+## Nano Core Agents
+
+Specialized AI participants responsible for executing bounded engineering, analytical, documentation and operational tasks.
+
+Their responsibilities remain governed by architectural authority, approval requirements and execution boundaries.
+
+---
+
+## Public Engineering Documentation
+
+The public documentation published within this repository serves as the official architectural reference describing the engineering direction of HANTER.
+
+---
+
+# Registry Principles
+
+The Public Component Registry is intended to:
+
+- identify publicly documented architectural components;
+- improve terminology consistency;
+- support architectural understanding;
+- provide stable public references;
+- preserve compatibility across documentation;
+- maintain the Public/Private Boundary.
+
+Publication within this registry does not imply unrestricted implementation, deployment or operational availability.
+
+---
+
+# Registry Evolution
+
+The Public Component Registry will continue to expand as additional public architectural documentation becomes available.
+
+Every new public component will be documented according to the canonical architecture of IMPERIAL Core while preserving architectural consistency, engineering quality and long-term maintainability.
