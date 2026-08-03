@@ -4038,3 +4038,81 @@ The Enterprise Architecture Methodology will continue to evolve together with HA
 Future revisions may refine methodological guidance while preserving compatibility with the canonical architecture established by the Architect.
 
 The long-term objective is to maintain a disciplined enterprise methodology capable of supporting decades of architectural excellence, responsible governance and sustainable engineering evolution.
+# HANTER Public Enterprise Architecture Governance Standards
+
+**Document ID:** IC-HANTER-PUBLIC-EAGS-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC ENTERPRISE ARCHITECTURE GOVERNANCE STANDARDS  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the Enterprise Architecture Governance Standards adopted by HANTER within the IMPERIAL Core ecosystem.
+
+Its objective is to establish consistent governance expectations supporting architectural integrity, engineering discipline and sustainable enterprise evolution while preserving the Public/Private Boundary.
+
+These standards describe governance expectations rather than implementation-specific operational procedures.
+
+---
+
+# Governance Standards Philosophy
+
+Enterprise governance standards establish a common engineering foundation for architectural consistency.
+
+Rather than controlling individual implementation details, governance standards define the principles that guide architectural quality, engineering responsibility and long-term sustainability.
+
+Governance standards contribute to a predictable and coherent enterprise engineering environment.
+
+---
+
+# Governance Standards
+
+The public governance standards encourage:
+
+- preservation of canonical architecture;
+- explicit responsibility boundaries;
+- transparent engineering governance;
+- consistent architectural terminology;
+- disciplined engineering documentation;
+- evidence-based architectural decisions;
+- continuous governance improvement;
+- long-term engineering sustainability;
+- enterprise architectural consistency;
+- responsible AI engineering.
+
+These standards define the expected governance culture throughout HANTER.
+
+---
+
+# Engineering Governance
+
+Engineering governance should support:
+
+- architectural quality;
+- documentation quality;
+- governance transparency;
+- engineering traceability;
+- architectural maintainability;
+- enterprise scalability;
+- sustainable engineering practices.
+
+Engineering governance exists to strengthen architecture rather than restrict innovation.
+
+---
+
+# Continuous Governance Development
+
+Governance standards are expected to evolve continuously together with the architecture.
+
+Future revisions may expand governance guidance while preserving compatibility with the canonical architecture of IMPERIAL Core and maintaining engineering consistency across all public documentation.
+
+---
+
+# Long-Term Governance Vision
+
+The long-term objective of the Enterprise Architecture Governance Standards is to establish a durable governance foundation capable of supporting decades of responsible engineering, transparent architectural leadership and sustainable enterprise architecture.
+
+These governance standards complement the broader architectural framework, engineering methodology and governance documentation published throughout the HANTER public engineering repository.
