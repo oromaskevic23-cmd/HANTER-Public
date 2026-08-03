@@ -2328,3 +2328,85 @@ The governance model will continue to mature together with HANTER and the IMPERI
 Future revisions may introduce additional governance guidance, engineering standards and architectural practices while preserving compatibility with the canonical architecture established by the Architect.
 
 The long-term objective is to maintain a stable governance framework capable of supporting decades of sustainable architectural evolution through disciplined engineering, transparent documentation and responsible enterprise governance.
+# HANTER Public Enterprise Governance Framework
+
+**Document ID:** IC-HANTER-PUBLIC-EGF-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC ENTERPRISE GOVERNANCE FRAMEWORK  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the public Enterprise Governance Framework adopted by HANTER within the IMPERIAL Core ecosystem.
+
+Its objective is to describe the governance foundation that enables long-term architectural consistency, engineering discipline and responsible enterprise evolution while preserving the separation between public architectural knowledge and protected implementation.
+
+The framework establishes stable governance principles rather than implementation-specific procedures.
+
+---
+
+# Enterprise Governance Vision
+
+Enterprise governance provides the structural foundation that enables HANTER to evolve through disciplined engineering instead of uncontrolled growth.
+
+Its purpose is to preserve architectural quality, ensure consistent engineering practices and maintain alignment between architectural vision, documentation and long-term system evolution.
+
+Governance is viewed as a continuous engineering capability supporting sustainable enterprise architecture.
+
+---
+
+# Governance Framework Objectives
+
+The Enterprise Governance Framework is designed to:
+
+- preserve canonical architectural integrity;
+- support transparent engineering governance;
+- establish stable responsibility boundaries;
+- improve engineering consistency;
+- strengthen documentation quality;
+- encourage accountable architectural decisions;
+- support enterprise scalability;
+- preserve long-term maintainability;
+- enable continuous architectural evolution.
+
+These objectives guide the public governance direction of HANTER.
+
+---
+
+# Governance Framework Components
+
+The public governance framework consists of several complementary engineering elements:
+
+- Architectural Vision;
+- Governance Principles;
+- Engineering Standards;
+- Architectural Principles;
+- Design Principles;
+- Quality Standards;
+- Documentation Standards;
+- Architectural Decision Principles;
+- Enterprise Architecture;
+- Public Engineering Documentation.
+
+Together these elements establish a coherent governance foundation supporting the long-term development of HANTER.
+
+---
+
+# Governance Through Engineering
+
+Engineering governance is achieved through documented architectural principles, consistent terminology, structured documentation and transparent architectural communication.
+
+Public documentation provides a durable engineering reference that supports understanding, collaboration and responsible architectural evolution without exposing protected implementation details.
+
+---
+
+# Long-Term Enterprise Framework
+
+The Enterprise Governance Framework is intended to remain stable while continuously evolving together with HANTER and the IMPERIAL Core ecosystem.
+
+Future revisions may expand governance guidance, engineering practices and architectural documentation while preserving compatibility with the canonical architecture established by the Architect.
+
+The long-term objective is to maintain an enterprise governance framework capable of supporting decades of sustainable architectural growth, professional engineering practice and responsible AI system development.
