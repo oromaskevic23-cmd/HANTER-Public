@@ -3786,3 +3786,85 @@ Architectural evolution should remain deliberate, documented and consistent.
 The long-term objective of the Enterprise Architecture Blueprint is to provide a durable architectural foundation capable of supporting decades of responsible engineering, transparent governance, enterprise-scale AI coordination and sustainable architectural development.
 
 The blueprint serves as one of the primary public engineering references describing the architectural direction of HANTER within the IMPERIAL Core ecosystem.
+# HANTER Public Enterprise Architecture Reference Guide
+
+**Document ID:** IC-HANTER-PUBLIC-EARG-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC ENTERPRISE ARCHITECTURE REFERENCE GUIDE  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document provides the official Enterprise Architecture Reference Guide for HANTER within the IMPERIAL Core ecosystem.
+
+Its objective is to help readers understand how the public architectural documentation is organized, how the engineering documents relate to one another and how the architectural knowledge base should be interpreted while preserving the Public/Private Boundary.
+
+The Reference Guide serves as a navigation layer for the public enterprise architecture rather than an implementation specification.
+
+---
+
+# Reference Guide Philosophy
+
+Enterprise architecture is most valuable when its documentation is organized, consistent and easy to navigate.
+
+The Reference Guide helps readers understand the relationships between architectural vision, governance, engineering standards, documentation and long-term architectural evolution.
+
+The guide promotes architectural clarity without exposing confidential implementation details.
+
+---
+
+# Documentation Navigation
+
+The public engineering documentation is organized into several major categories:
+
+- Architectural Vision;
+- Enterprise Architecture;
+- Governance Documentation;
+- Engineering Standards;
+- Architectural Principles;
+- Design Principles;
+- Security Documentation;
+- Documentation Standards;
+- Engineering Knowledge;
+- Quality Standards;
+- Roadmaps;
+- Architectural Evolution.
+
+Each category contributes to the overall enterprise architecture knowledge base.
+
+---
+
+# Engineering Relationships
+
+Readers are encouraged to understand the documentation as a connected engineering system rather than isolated documents.
+
+Architectural vision establishes direction.
+
+Governance preserves consistency.
+
+Engineering standards define expectations.
+
+Documentation preserves knowledge.
+
+Architectural principles guide engineering decisions.
+
+Together these elements create a coherent enterprise architecture.
+
+---
+
+# Continuous Documentation
+
+The Reference Guide will continue to evolve as additional public engineering documents become available.
+
+Future architectural publications should integrate naturally into the existing documentation structure while preserving terminology consistency, architectural compatibility and engineering quality.
+
+---
+
+# Long-Term Objective
+
+The long-term objective of the Enterprise Architecture Reference Guide is to provide a stable navigation framework for the HANTER public engineering documentation.
+
+By organizing architectural knowledge into a structured reference system, the repository supports developers, enterprise architects, researchers and organizations seeking to understand the long-term engineering direction of HANTER while preserving compatibility with the canonical architecture of IMPERIAL Core.
