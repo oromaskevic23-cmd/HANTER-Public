@@ -7701,3 +7701,164 @@ It does not expose confidential implementation artifacts, proprietary engineerin
 The Enterprise Documentation Framework will continue to evolve together with HANTER and the IMPERIAL Core ecosystem.
 
 Its objective is to provide a durable documentation architecture capable of supporting decades of enterprise engineering, responsible AI engineering, machine-readable knowledge and sustainable architectural evolution while preserving compatibility with the canonical architecture established by the Architect.
+# HANTER Public Architecture Governance Framework
+
+**Document ID:** IC-HANTER-PUBLIC-PAGF-001
+**Version:** 1.0.0
+**Status:** PUBLIC ARCHITECTURE GOVERNANCE FRAMEWORK
+**System:** HANTER
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the Public Architecture Governance Framework for HANTER within the IMPERIAL Core ecosystem.
+
+Its objective is to establish the governance structure that preserves architectural consistency, engineering quality, documentation integrity and responsible long-term evolution while maintaining the Public/Private Boundary.
+
+The framework governs public architectural knowledge rather than confidential implementation activities.
+
+---
+
+# Governance Philosophy
+
+Enterprise architecture requires disciplined governance.
+
+Governance provides stability without preventing innovation.
+
+Every architectural change should improve the long-term quality, consistency and sustainability of the engineering ecosystem.
+
+The governance framework exists to protect the canonical architecture while enabling controlled architectural evolution.
+
+---
+
+# Governance Objectives
+
+The framework seeks to:
+
+- preserve canonical architecture;
+- protect engineering consistency;
+- strengthen architectural integrity;
+- improve documentation quality;
+- preserve semantic stability;
+- support enterprise scalability;
+- improve traceability;
+- strengthen machine readability;
+- improve public engineering transparency;
+- preserve long-term architectural sustainability.
+
+---
+
+# Governance Layers
+
+The Public Architecture Governance Framework is organized into the following governance layers.
+
+## Architectural Authority
+
+The Architect defines the canonical architectural direction.
+
+Major architectural changes require architectural approval.
+
+---
+
+## Architecture Governance
+
+Architectural governance preserves:
+
+- architecture;
+- engineering principles;
+- governance consistency;
+- canonical terminology;
+- enterprise documentation.
+
+---
+
+## Documentation Governance
+
+Documentation governance ensures that public documentation remains:
+
+- accurate;
+- internally consistent;
+- traceable;
+- semantically stable;
+- architecturally aligned.
+
+---
+
+## Knowledge Governance
+
+Knowledge governance preserves:
+
+- engineering knowledge;
+- semantic relationships;
+- architectural intent;
+- machine-readable consistency;
+- long-term knowledge quality.
+
+---
+
+## Repository Governance
+
+Repository governance supports:
+
+- contribution quality;
+- documentation structure;
+- engineering navigation;
+- public communication;
+- repository consistency.
+
+---
+
+# Governance Principles
+
+The framework is guided by:
+
+- Architecture Before Implementation;
+- Evidence Before Status;
+- Explicit Architectural Authority;
+- Responsible AI Engineering;
+- Federated Multi-Orchestrator Architecture;
+- Long-Term Maintainability;
+- Semantic Consistency;
+- Public/Private Boundary.
+
+These principles remain applicable throughout the long-term evolution of HANTER.
+
+---
+
+# Governance Responsibilities
+
+Public governance is responsible for preserving:
+
+- canonical project names;
+- architectural relationships;
+- engineering terminology;
+- documentation quality;
+- semantic interoperability;
+- architectural integrity;
+- public engineering trust.
+
+Governance should strengthen architecture rather than increase unnecessary administrative complexity.
+
+---
+
+# Public Boundary
+
+The Public Architecture Governance Framework applies exclusively to the public engineering repository.
+
+It does not expose:
+
+- confidential governance processes;
+- private engineering reviews;
+- protected implementation procedures;
+- internal operational controls;
+- proprietary engineering policies.
+
+---
+
+# Long-Term Vision
+
+The Public Architecture Governance Framework will continue to evolve together with HANTER and the IMPERIAL Core ecosystem.
+
+Its objective is to provide a durable governance structure capable of supporting decades of enterprise architecture, responsible engineering, semantic consistency, transparent public documentation and sustainable architectural evolution while preserving compatibility with the canonical architecture established by the Architect.
