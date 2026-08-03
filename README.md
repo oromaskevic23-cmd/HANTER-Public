@@ -4378,3 +4378,94 @@ The Knowledge Graph is intended to evolve together with the public engineering d
 The long-term objective of the Public Knowledge Graph is to establish a durable semantic representation of HANTER and the IMPERIAL Core ecosystem.
 
 Future revisions may introduce additional entities and relationships while preserving compatibility with the canonical architecture, maintaining engineering consistency and strengthening the public digital presence of the project.
+# HANTER Public Semantic Architecture
+
+**Document ID:** IC-HANTER-PUBLIC-SA-001
+**Version:** 1.0.0
+**Status:** PUBLIC SEMANTIC ARCHITECTURE
+**System:** HANTER
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the public semantic architecture of HANTER within the IMPERIAL Core ecosystem.
+
+Its objective is to establish a consistent semantic model that enables engineers, researchers, enterprise knowledge systems, search engines and AI assistants to interpret the architectural concepts published throughout the HANTER documentation.
+
+Semantic consistency improves architectural understanding, documentation quality and long-term digital discoverability.
+
+---
+
+# Semantic Philosophy
+
+Architecture is not only composed of software components.
+
+It is also composed of concepts, terminology, relationships, responsibilities and engineering knowledge.
+
+The semantic architecture of HANTER provides a stable conceptual layer that allows these elements to remain consistent across all public engineering documentation.
+
+---
+
+# Semantic Domains
+
+The public semantic architecture includes the following conceptual domains:
+
+- Enterprise Architecture
+- Engineering Governance
+- Architectural Principles
+- Engineering Standards
+- Documentation
+- Architectural Knowledge
+- AI Coordination
+- Organizational Structure
+- Long-Term Evolution
+- Responsible AI Engineering
+
+Each semantic domain contributes to the overall architectural understanding of HANTER.
+
+---
+
+# Semantic Relationships
+
+The semantic architecture establishes explicit relationships between engineering concepts.
+
+Examples include:
+
+- Architecture defines Governance.
+- Governance supports Engineering.
+- Engineering produces Documentation.
+- Documentation preserves Knowledge.
+- Knowledge improves Architecture.
+- HANTER coordinates AI systems.
+- IMPERIAL Core provides the enterprise architectural ecosystem.
+
+These relationships provide a stable conceptual structure without exposing implementation details.
+
+---
+
+# Semantic Consistency
+
+All public engineering documents are expected to use consistent terminology and architectural concepts.
+
+Semantic consistency improves:
+
+- engineering communication;
+- documentation quality;
+- architectural traceability;
+- enterprise knowledge management;
+- AI interpretation;
+- search engine understanding.
+
+Consistency remains a long-term architectural objective.
+
+---
+
+# Long-Term Semantic Evolution
+
+The semantic architecture of HANTER will continue to evolve together with the public engineering documentation.
+
+Future revisions may introduce additional concepts, semantic domains and engineering relationships while preserving compatibility with the canonical architecture of IMPERIAL Core.
+
+The long-term objective is to establish a durable semantic architecture that supports enterprise engineering, AI-assisted understanding and long-term public discoverability.
