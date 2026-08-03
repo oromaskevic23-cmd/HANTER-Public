@@ -3620,3 +3620,88 @@ The Enterprise Architecture Governance Lifecycle will continue to evolve togethe
 Future revisions may expand governance guidance, architectural practices and engineering policies while preserving the architectural philosophy established by the Architect.
 
 The long-term objective is to maintain a durable governance lifecycle capable of supporting decades of enterprise architecture, responsible AI engineering, transparent documentation and sustainable engineering excellence.
+# HANTER Public Enterprise Architecture Reference Model
+
+**Document ID:** IC-HANTER-PUBLIC-EARM-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC ENTERPRISE ARCHITECTURE REFERENCE MODEL  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the public Enterprise Architecture Reference Model for HANTER within the IMPERIAL Core ecosystem.
+
+Its objective is to provide a stable conceptual reference that describes the primary architectural domains, engineering relationships and governance structure supporting the long-term evolution of HANTER while preserving the Public/Private Boundary.
+
+The Reference Model describes architectural organization rather than implementation details.
+
+---
+
+# Reference Model Philosophy
+
+A reference model establishes a common architectural language for the engineering ecosystem.
+
+Rather than prescribing implementation, it provides a stable conceptual framework that enables consistent architectural reasoning, engineering communication and governance across future development.
+
+The Reference Model serves as a durable foundation for architectural planning and documentation.
+
+---
+
+# Reference Architecture Domains
+
+The public Enterprise Architecture Reference Model is organized around the following architectural domains:
+
+- Architectural Vision;
+- Enterprise Governance;
+- Enterprise Architecture;
+- Engineering Standards;
+- Architectural Principles;
+- Design Principles;
+- Security Principles;
+- Documentation Standards;
+- Quality Management;
+- Engineering Knowledge;
+- Continuous Architectural Evolution.
+
+Together these domains represent the public architectural structure of HANTER.
+
+---
+
+# Engineering Relationships
+
+Each architectural domain supports and reinforces the others.
+
+Engineering standards strengthen architecture.
+
+Architecture guides governance.
+
+Governance supports documentation.
+
+Documentation preserves engineering knowledge.
+
+Engineering knowledge improves future architectural decisions.
+
+These relationships create a sustainable enterprise engineering ecosystem.
+
+---
+
+# Architectural Stability
+
+The Reference Model is intended to remain significantly more stable than individual engineering documents.
+
+Future architectural publications may extend the model while preserving compatibility with the canonical architecture of IMPERIAL Core.
+
+Architectural stability enables continuous enterprise evolution without unnecessary structural redesign.
+
+---
+
+# Long-Term Reference
+
+The Enterprise Architecture Reference Model will continue to evolve together with HANTER.
+
+Future revisions may introduce additional architectural domains and engineering guidance while preserving the long-term architectural vision established by the Architect.
+
+The objective is to maintain a durable enterprise reference model capable of supporting decades of responsible engineering, transparent governance and sustainable architectural development.
