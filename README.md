@@ -7862,3 +7862,124 @@ It does not expose:
 The Public Architecture Governance Framework will continue to evolve together with HANTER and the IMPERIAL Core ecosystem.
 
 Its objective is to provide a durable governance structure capable of supporting decades of enterprise architecture, responsible engineering, semantic consistency, transparent public documentation and sustainable architectural evolution while preserving compatibility with the canonical architecture established by the Architect.
+# HANTER Public Machine-Readable Knowledge Model
+
+**Document ID:** IC-HANTER-PUBLIC-MRKM-001
+**Version:** 1.0.0
+**Status:** PUBLIC MACHINE-READABLE KNOWLEDGE MODEL
+**System:** HANTER
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the public Machine-Readable Knowledge Model for HANTER within the IMPERIAL Core ecosystem.
+
+Its objective is to provide a structured semantic representation of the public engineering knowledge base that can be interpreted consistently by engineers, enterprise knowledge systems, AI assistants and search engines while preserving the Public/Private Boundary.
+
+The model describes public engineering knowledge rather than implementation-specific data.
+
+---
+
+# Engineering Knowledge Philosophy
+
+Modern engineering repositories are consumed by both people and intelligent systems.
+
+Public documentation should therefore remain understandable, semantically consistent and structured in a way that supports reliable automated interpretation without sacrificing architectural precision.
+
+Machine readability complements human readability rather than replacing it.
+
+---
+
+# Canonical Knowledge Structure
+
+The public engineering knowledge model is organized around the following canonical domains:
+
+- Identity
+- Architecture
+- Governance
+- Engineering
+- Documentation
+- Knowledge
+- Semantics
+- Machine Readability
+- Public Resources
+- Long-Term Evolution
+
+Each domain represents a stable engineering concept within the public knowledge ecosystem.
+
+---
+
+# Knowledge Relationships
+
+The Machine-Readable Knowledge Model establishes explicit relationships between public engineering domains.
+
+Examples include:
+
+- Identity establishes Architecture.
+- Architecture defines Governance.
+- Governance supports Engineering.
+- Engineering produces Documentation.
+- Documentation preserves Knowledge.
+- Knowledge strengthens Semantic Architecture.
+- Semantic Architecture improves Machine Readability.
+- Machine Readability improves Public Discoverability.
+
+These relationships describe conceptual dependencies rather than operational workflows.
+
+---
+
+# Machine Interpretation Principles
+
+Machine-readable engineering knowledge should provide:
+
+- stable identifiers;
+- canonical terminology;
+- explicit entity relationships;
+- structured document hierarchy;
+- semantic consistency;
+- traceable engineering concepts;
+- version awareness;
+- clear status boundaries.
+
+These principles improve interoperability across documentation systems and AI-assisted analysis.
+
+---
+
+# Quality Expectations
+
+The Machine-Readable Knowledge Model should remain:
+
+- architecturally accurate;
+- semantically stable;
+- internally consistent;
+- professionally documented;
+- compatible with canonical terminology;
+- understandable by both engineers and intelligent systems.
+
+Quality improvements should increase clarity without introducing unsupported claims.
+
+---
+
+# Public Boundary
+
+This model describes only public engineering knowledge.
+
+It intentionally excludes:
+
+- confidential implementation details;
+- protected runtime information;
+- private engineering artifacts;
+- operational procedures;
+- proprietary infrastructure.
+
+Machine-readable public documentation must preserve the Public/Private Boundary at all times.
+
+---
+
+# Long-Term Vision
+
+The Machine-Readable Knowledge Model will continue to evolve together with HANTER and the IMPERIAL Core ecosystem.
+
+Its objective is to establish a durable semantic foundation supporting enterprise architecture, engineering governance, AI-assisted interpretation, search discoverability and long-term knowledge preservation while remaining compatible with the canonical architecture established by the Architect.
