@@ -711,3 +711,95 @@ The long-term objective of HANTER is to continuously strengthen its architectura
 Public security documentation will continue to evolve while preserving the separation between publicly available engineering knowledge and protected implementation.
 
 Security remains an ongoing engineering process rather than a one-time milestone.
+# Contributing to HANTER
+
+**Document ID:** IC-HANTER-PUBLIC-CONTRIBUTING-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC CONTRIBUTION GUIDELINES  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document defines the public contribution principles for the HANTER project.
+
+Its objective is to establish a consistent engineering process for proposing improvements, reporting issues and contributing public documentation while preserving the architectural integrity of HANTER and the IMPERIAL Core ecosystem.
+
+Public contributions are welcomed when they improve documentation quality, technical clarity and architectural understanding without compromising the Public/Private Boundary.
+
+---
+
+# Engineering Philosophy
+
+HANTER follows an architecture-first engineering methodology.
+
+Contributions are expected to strengthen architectural consistency rather than introduce isolated implementation changes.
+
+Every proposal should respect the long-term engineering vision of the project and remain compatible with the canonical architecture of IMPERIAL Core.
+
+Quality, clarity and maintainability are valued above implementation speed.
+
+---
+
+# Contribution Principles
+
+Contributors are encouraged to:
+
+- improve architectural documentation;
+- correct factual inaccuracies;
+- clarify engineering terminology;
+- improve readability and consistency;
+- suggest public documentation enhancements;
+- report documentation issues;
+- propose improvements through respectful technical discussion.
+
+Every contribution should improve the long-term quality of the repository.
+
+---
+
+# Contribution Boundaries
+
+This public repository is not intended for:
+
+- publishing confidential implementation details;
+- sharing credentials or secrets;
+- exposing internal infrastructure;
+- disclosing protected security mechanisms;
+- publishing proprietary runtime components;
+- revealing private engineering workflows.
+
+Contributions that violate these principles may be declined.
+
+---
+
+# Architectural Review
+
+Significant architectural proposals should provide:
+
+- a clear engineering rationale;
+- expected architectural impact;
+- compatibility with the existing architecture;
+- long-term maintainability considerations;
+- documentation updates where appropriate.
+
+Architectural consistency takes priority over feature expansion.
+
+---
+
+# Respectful Collaboration
+
+HANTER encourages professional, respectful and constructive collaboration.
+
+Technical discussions should focus on engineering quality, architectural reasoning and objective analysis.
+
+Healthy disagreement is welcomed when supported by technical arguments and conducted respectfully.
+
+---
+
+# Long-Term Vision
+
+The objective of public collaboration is to strengthen HANTER as a professional engineering knowledge base.
+
+Every accepted contribution should improve architectural transparency, documentation quality and long-term maintainability while preserving the canonical architecture and governance principles of IMPERIAL Core.
