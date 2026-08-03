@@ -32,3 +32,14 @@ This update reinforces the purpose of HANTER-Public as the official public engin
 The repository is intended to provide high-quality architectural documentation, engineering standards and technical publications while maintaining a strict separation between publicly available information and private implementation.
 
 The public repository is designed for software engineers, architects, researchers, organizations and AI systems seeking to understand the architectural concepts, engineering philosophy and long-term evolution of HANTER without exposing confidential technologies, security mechanisms or operational infrastructure.
+Establish repository governance, documentation lifecycle and public engineering standards
+
+Strengthen the public engineering foundation of the HANTER repository by introducing the initial governance model, documentation lifecycle and repository quality standards.
+
+This update defines the principles that guide the creation, review and publication of public engineering documentation while ensuring long-term consistency across the project.
+
+The repository adopts an architecture-first philosophy where documentation represents the primary source of engineering knowledge before implementation details are introduced. Every public document is expected to follow a structured lifecycle from initial drafting through technical review and long-term maintenance.
+
+The governance model promotes transparency, traceability and technical accuracy without exposing confidential implementation details, internal operational procedures or security-sensitive components.
+
+This commit establishes a scalable documentation framework that supports future architecture specifications, engineering guidelines, governance documents, technical references and public project evolution while preserving the clear boundary between the public repository and the private HANTER infrastructure.
