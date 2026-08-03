@@ -230,4 +230,14 @@ This update recognizes that the project is built around a long-term architectura
 The repository documents that HANTER is developed under the leadership of **Alexander Romaskevich**, Founder, Owner, CEO and Chief Systems Architect of IMPERIAL Core, whose responsibility is to preserve the architectural integrity, engineering quality and strategic direction of the ecosystem.
 
 Public documentation exists to communicate architectural concepts, engineering standards and long-term system design while respecting the strict boundary between public knowledge and confidential implementation. As the repository evolves, it will continue to provide a transparent engineering reference that reflects the project's architectural maturity and commitment to enterprise-quality development.
+Strengthen the public engineering identity and establish the long-term architectural commitment
 
+Continue expanding the public engineering repository by documenting the long-term commitment behind the HANTER project and reinforcing its architectural identity.
+
+This update emphasizes that HANTER is developed as a continuously evolving enterprise engineering initiative where architectural quality, governance and technical consistency remain fundamental priorities throughout the entire lifecycle of the project.
+
+The repository promotes responsible engineering practices based on documented architectural decisions, transparent technical communication and disciplined documentation management. Public engineering artifacts are intended to improve understanding of the project's direction while maintaining a strict separation between publicly available information and protected implementation.
+
+The long-term objective of HANTER-Public is to become a trusted architectural reference describing the evolution of HANTER through verified documentation, engineering standards, governance principles and carefully reviewed technical publications.
+
+Every contribution to this repository is expected to strengthen the overall quality, consistency and long-term maintainability of the public engineering knowledge base while respecting the architectural boundaries established by IMPERIAL Core.
