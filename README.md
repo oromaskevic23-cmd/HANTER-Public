@@ -2642,3 +2642,88 @@ The architectural foundations described in this document are intended to remain 
 Future revisions may extend these foundations while preserving compatibility with the canonical architecture of IMPERIAL Core.
 
 The long-term objective is to provide a stable architectural platform capable of supporting decades of responsible engineering, transparent governance and sustainable enterprise-scale development.
+# HANTER Public Architectural Overview
+
+**Document ID:** IC-HANTER-PUBLIC-OVERVIEW-001  
+**Version:** 1.0.0  
+**Status:** PUBLIC ARCHITECTURAL OVERVIEW  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core
+
+---
+
+# Purpose
+
+This document provides a high-level architectural overview of HANTER as a canonical component of the IMPERIAL Core ecosystem.
+
+Its purpose is to summarize the architectural structure, engineering philosophy and governance direction of the project in a single public reference while preserving the Public/Private Boundary and protecting confidential implementation details.
+
+This overview serves as an entry point for readers who wish to understand the overall architecture before exploring individual engineering documents.
+
+---
+
+# Architectural Summary
+
+HANTER is a governed AI command and coordination platform designed to support enterprise-scale AI systems through disciplined architecture, transparent documentation and responsible governance.
+
+Rather than operating as an unrestricted autonomous system, HANTER coordinates architectural responsibilities through a Federated Multi-Orchestrator Architecture with clearly defined authority boundaries and long-term engineering principles.
+
+The architecture is intended to support sustainable evolution across multiple organizational structures, professional engineering disciplines and future AI capabilities.
+
+---
+
+# Engineering Foundation
+
+The public architecture of HANTER is built upon several fundamental engineering concepts:
+
+- Architecture Before Implementation;
+- Federated Multi-Orchestrator Architecture;
+- Explicit Governance;
+- Responsible AI Engineering;
+- Evidence Before Status;
+- Engineering Transparency;
+- Public/Private Boundary;
+- Continuous Architectural Improvement;
+- Long-Term Maintainability;
+- Enterprise Scalability.
+
+Together these concepts establish the engineering identity of HANTER.
+
+---
+
+# Documentation Structure
+
+The public engineering repository contains documentation describing:
+
+- architecture;
+- governance;
+- security;
+- engineering standards;
+- design principles;
+- quality standards;
+- architectural evolution;
+- enterprise architecture;
+- public terminology;
+- engineering policies.
+
+Each document contributes to a consistent architectural knowledge base describing the long-term evolution of HANTER.
+
+---
+
+# Architectural Direction
+
+The architectural direction of HANTER is defined by long-term engineering sustainability rather than short-term implementation goals.
+
+Future architectural growth is expected to occur through documented engineering decisions, disciplined governance and continuous refinement of the public engineering knowledge base.
+
+The objective is to preserve architectural consistency while enabling sustainable innovation across the IMPERIAL Core ecosystem.
+
+---
+
+# Long-Term Vision
+
+HANTER-Public is intended to become the authoritative public engineering reference describing the architectural evolution of HANTER.
+
+As additional documentation becomes available, this overview will continue to evolve while preserving compatibility with the canonical architecture established by the Architect.
+
+The long-term objective is to maintain a professional enterprise architecture reference supporting developers, enterprise architects, researchers and organizations interested in the engineering direction of HANTER.
