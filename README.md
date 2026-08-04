@@ -14292,3 +14292,555 @@ jobs:
           echo "Documentation structure verified."
           echo "Canonical terminology verified."
           echo "Public engineering boundary preserved."
+#!/usr/bin/env python3
+"""
+Validate the HANTER public claims and evidence registries.
+
+This validator performs deterministic local checks without network access and
+without modifying repository content.
+
+Validation scope:
+- required files and directories;
+- valid JSON syntax;
+- stable and unique identifiers;
+- claim-to-evidence relationships;
+- canonical identity and authority metadata;
+- Public/Private Boundary controls;
+- prohibited status inflation;
+- registry statistics consistency.
+
+This script validates public repository metadata only. It does not establish
+runtime verification, deployment, production readiness or external indexing.
+"""
+
+from __future__ import annotations
+
+import json
+import re
+import sys
+from dataclasses import dataclass
+from pathlib import Path
+from typing import Any
+
+
+REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
+
+CLAIMS_INDEX = REPOSITORY_ROOT / "registry/public-claims/index.json"
+EVIDENCE_INDEX = REPOSITORY_ROOT / "registry/public-evidence/index.json"
+CLAIM_SCHEMA = REPOSITORY_ROOT / "schemas/public-claim-record.schema.json"
+EVIDENCE_SCHEMA = REPOSITORY_ROOT / "schemas/public-evidence-record.schema.json"
+
+CLAIM_ID_PATTERN = re.compile(
+    r"^IC-HANTER-CLAIM-"
+    r"(IDENTITY|ARCH|GOV|IMPL|TEST|VERIFY|DEPLOY|AUTH|OPER|MILESTONE|STATUS)-"
+    r"[0-9]{4,}$"
+)
+
+EVIDENCE_ID_PATTERN = re.compile(
+    r"^IC-HANTER-EVIDENCE-"
+    r"(ARCH|IMPL|TEST|VERIFY|DEPLOY|AUTH|OPER|MILESTONE|HIST|GOV|IDENTITY)-"
+    r"[0-9]{4,}$"
+)
+
+CANONICAL_ARCHITECT = "Alexander Romaskevich"
+CANONICAL_ROLE_LINE = (
+    "Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core"
+)
+
+PROHIBITED_STATUS_PHRASES = (
+    "fully production ready",
+    "globally operational",
+    "independently certified",
+    "unrestricted autonomous authority",
+    "failure proof",
+    "unbreakable",
+)
+
+
+@dataclass(frozen=True)
+class ValidationIssue:
+    """One deterministic validation error."""
+
+    location: str
+    message: str
+
+    def render(self) -> str:
+        return f"{self.location}: {self.message}"
+
+
+def load_json(path: Path, issues: list[ValidationIssue]) -> Any | None:
+    """Load one JSON file and record a deterministic error on failure."""
+
+    if not path.is_file():
+        issues.append(
+            ValidationIssue(str(path.relative_to(REPOSITORY_ROOT)), "file missing")
+        )
+        return None
+
+    try:
+        with path.open("r", encoding="utf-8") as handle:
+            return json.load(handle)
+    except json.JSONDecodeError as exc:
+        issues.append(
+            ValidationIssue(
+                str(path.relative_to(REPOSITORY_ROOT)),
+                f"invalid JSON at line {exc.lineno}, column {exc.colno}: {exc.msg}",
+            )
+        )
+    except OSError as exc:
+        issues.append(
+            ValidationIssue(
+                str(path.relative_to(REPOSITORY_ROOT)),
+                f"cannot read file: {exc}",
+            )
+        )
+
+    return None
+
+
+def require_mapping(
+    value: Any,
+    location: str,
+    issues: list[ValidationIssue],
+) -> dict[str, Any] | None:
+    if not isinstance(value, dict):
+        issues.append(ValidationIssue(location, "expected JSON object"))
+        return None
+    return value
+
+
+def require_list(
+    value: Any,
+    location: str,
+    issues: list[ValidationIssue],
+) -> list[Any] | None:
+    if not isinstance(value, list):
+        issues.append(ValidationIssue(location, "expected JSON array"))
+        return None
+    return value
+
+
+def validate_required_files(issues: list[ValidationIssue]) -> None:
+    required_paths = (
+        CLAIMS_INDEX,
+        EVIDENCE_INDEX,
+        CLAIM_SCHEMA,
+        EVIDENCE_SCHEMA,
+    )
+
+    for path in required_paths:
+        if not path.is_file():
+            issues.append(
+                ValidationIssue(
+                    str(path.relative_to(REPOSITORY_ROOT)),
+                    "required public engineering artifact is missing",
+                )
+            )
+
+
+def validate_owner(
+    document: dict[str, Any],
+    location: str,
+    issues: list[ValidationIssue],
+) -> None:
+    owner = document.get("owner")
+
+    if not isinstance(owner, dict):
+        issues.append(ValidationIssue(f"{location}.owner", "owner object missing"))
+        return
+
+    if owner.get("name") != CANONICAL_ARCHITECT:
+        issues.append(
+            ValidationIssue(
+                f"{location}.owner.name",
+                f"must equal {CANONICAL_ARCHITECT!r}",
+            )
+        )
+
+    if owner.get("role") != CANONICAL_ROLE_LINE:
+        issues.append(
+            ValidationIssue(
+                f"{location}.owner.role",
+                f"must equal canonical role line {CANONICAL_ROLE_LINE!r}",
+            )
+        )
+
+
+def validate_governance(
+    document: dict[str, Any],
+    location: str,
+    issues: list[ValidationIssue],
+) -> None:
+    governance = document.get("governance")
+
+    if not isinstance(governance, dict):
+        issues.append(
+            ValidationIssue(f"{location}.governance", "governance object missing")
+        )
+        return
+
+    if governance.get("architect_final_authority") is not True:
+        issues.append(
+            ValidationIssue(
+                f"{location}.governance.architect_final_authority",
+                "must be true",
+            )
+        )
+
+    if governance.get("public_private_boundary") != "ENFORCED":
+        issues.append(
+            ValidationIssue(
+                f"{location}.governance.public_private_boundary",
+                "must equal 'ENFORCED'",
+            )
+        )
+
+    if governance.get("deny_by_default") is not True:
+        issues.append(
+            ValidationIssue(
+                f"{location}.governance.deny_by_default",
+                "must be true",
+            )
+        )
+
+
+def validate_claim_registry(
+    document: Any,
+    issues: list[ValidationIssue],
+) -> set[str]:
+    root = require_mapping(document, "registry/public-claims/index.json", issues)
+
+    if root is None:
+        return set()
+
+    validate_owner(root, "claims_registry", issues)
+    validate_governance(root, "claims_registry", issues)
+
+    if root.get("registry_id") != "IC-HANTER-PUBLIC-CLAIMS-REGISTRY":
+        issues.append(
+            ValidationIssue(
+                "claims_registry.registry_id",
+                "unexpected canonical registry identifier",
+            )
+        )
+
+    claims = require_list(root.get("claims"), "claims_registry.claims", issues)
+
+    if claims is None:
+        return set()
+
+    claim_ids: set[str] = set()
+
+    for index, raw_claim in enumerate(claims):
+        location = f"claims_registry.claims[{index}]"
+        claim = require_mapping(raw_claim, location, issues)
+
+        if claim is None:
+            continue
+
+        claim_id = claim.get("claim_id")
+
+        if not isinstance(claim_id, str) or not CLAIM_ID_PATTERN.fullmatch(claim_id):
+            issues.append(
+                ValidationIssue(
+                    f"{location}.claim_id",
+                    "invalid public claim identifier",
+                )
+            )
+            continue
+
+        if claim_id in claim_ids:
+            issues.append(
+                ValidationIssue(
+                    f"{location}.claim_id",
+                    f"duplicate claim identifier {claim_id}",
+                )
+            )
+
+        claim_ids.add(claim_id)
+
+        if not isinstance(claim.get("title"), str) or not claim["title"].strip():
+            issues.append(
+                ValidationIssue(f"{location}.title", "non-empty title required")
+            )
+
+        if claim.get("status") != "ACTIVE":
+            issues.append(
+                ValidationIssue(
+                    f"{location}.status",
+                    "current registry entries must explicitly use ACTIVE",
+                )
+            )
+
+        if claim.get("evidence_status") not in {
+            "REGISTERED",
+            "EVIDENCE_LINKED",
+            "UNDER_REVIEW",
+            "VERIFIED_BOUNDED",
+            "INDEPENDENTLY_VERIFIED",
+        }:
+            issues.append(
+                ValidationIssue(
+                    f"{location}.evidence_status",
+                    "unsupported evidence status",
+                )
+            )
+
+    return claim_ids
+
+
+def validate_evidence_registry(
+    document: Any,
+    claim_ids: set[str],
+    issues: list[ValidationIssue],
+) -> set[str]:
+    root = require_mapping(document, "registry/public-evidence/index.json", issues)
+
+    if root is None:
+        return set()
+
+    validate_owner(root, "evidence_registry", issues)
+    validate_governance(root, "evidence_registry", issues)
+
+    if root.get("registry_id") != "IC-HANTER-PUBLIC-EVIDENCE-REGISTRY":
+        issues.append(
+            ValidationIssue(
+                "evidence_registry.registry_id",
+                "unexpected canonical registry identifier",
+            )
+        )
+
+    evidence_entries = require_list(
+        root.get("evidence"),
+        "evidence_registry.evidence",
+        issues,
+    )
+
+    if evidence_entries is None:
+        return set()
+
+    evidence_ids: set[str] = set()
+    supported_claims: set[str] = set()
+
+    for index, raw_evidence in enumerate(evidence_entries):
+        location = f"evidence_registry.evidence[{index}]"
+        evidence = require_mapping(raw_evidence, location, issues)
+
+        if evidence is None:
+            continue
+
+        evidence_id = evidence.get("evidence_id")
+        claim_id = evidence.get("claim_id")
+
+        if not isinstance(evidence_id, str) or not EVIDENCE_ID_PATTERN.fullmatch(
+            evidence_id
+        ):
+            issues.append(
+                ValidationIssue(
+                    f"{location}.evidence_id",
+                    "invalid public evidence identifier",
+                )
+            )
+        elif evidence_id in evidence_ids:
+            issues.append(
+                ValidationIssue(
+                    f"{location}.evidence_id",
+                    f"duplicate evidence identifier {evidence_id}",
+                )
+            )
+        else:
+            evidence_ids.add(evidence_id)
+
+        if not isinstance(claim_id, str) or claim_id not in claim_ids:
+            issues.append(
+                ValidationIssue(
+                    f"{location}.claim_id",
+                    f"unknown claim reference {claim_id!r}",
+                )
+            )
+        else:
+            supported_claims.add(claim_id)
+
+        if evidence.get("classification") != "PUBLIC":
+            issues.append(
+                ValidationIssue(
+                    f"{location}.classification",
+                    "registry index entries must use PUBLIC classification",
+                )
+            )
+
+        if evidence.get("verification_level") == "INDEPENDENTLY_VERIFIED":
+            issues.append(
+                ValidationIssue(
+                    f"{location}.verification_level",
+                    "independent verification requires separately registered evidence",
+                )
+            )
+
+    statistics = root.get("registry_statistics")
+
+    if isinstance(statistics, dict):
+        if statistics.get("registered_evidence") != len(evidence_entries):
+            issues.append(
+                ValidationIssue(
+                    "evidence_registry.registry_statistics.registered_evidence",
+                    "does not match evidence entry count",
+                )
+            )
+
+        if statistics.get("claims_supported") != len(supported_claims):
+            issues.append(
+                ValidationIssue(
+                    "evidence_registry.registry_statistics.claims_supported",
+                    "does not match unique supported claim count",
+                )
+            )
+    else:
+        issues.append(
+            ValidationIssue(
+                "evidence_registry.registry_statistics",
+                "statistics object missing",
+            )
+        )
+
+    return evidence_ids
+
+
+def validate_evidence_records(
+    registered_evidence_ids: set[str],
+    claim_ids: set[str],
+    issues: list[ValidationIssue],
+) -> None:
+    directory = REPOSITORY_ROOT / "registry/public-evidence"
+
+    for path in sorted(directory.glob("*.json")):
+        if path.name == "index.json":
+            continue
+
+        relative = str(path.relative_to(REPOSITORY_ROOT))
+        document = load_json(path, issues)
+        record = require_mapping(document, relative, issues)
+
+        if record is None:
+            continue
+
+        evidence_id = record.get("evidence_id")
+
+        if evidence_id not in registered_evidence_ids:
+            issues.append(
+                ValidationIssue(
+                    f"{relative}.evidence_id",
+                    "record is not listed in the public evidence index",
+                )
+            )
+
+        governance = record.get("governance")
+
+        if not isinstance(governance, dict):
+            issues.append(
+                ValidationIssue(
+                    f"{relative}.governance",
+                    "governance object missing",
+                )
+            )
+        else:
+            if governance.get("architectural_authority") != CANONICAL_ARCHITECT:
+                issues.append(
+                    ValidationIssue(
+                        f"{relative}.governance.architectural_authority",
+                        "canonical Architect identity mismatch",
+                    )
+                )
+
+            if governance.get("authority_role_line") != CANONICAL_ROLE_LINE:
+                issues.append(
+                    ValidationIssue(
+                        f"{relative}.governance.authority_role_line",
+                        "canonical role line mismatch",
+                    )
+                )
+
+            if governance.get("hanter_subordinate_to_architect") is not True:
+                issues.append(
+                    ValidationIssue(
+                        f"{relative}.governance.hanter_subordinate_to_architect",
+                        "must be true",
+                    )
+                )
+
+        related_claims = record.get("related_claims", [])
+
+        if isinstance(related_claims, list):
+            for index, relationship in enumerate(related_claims):
+                if not isinstance(relationship, dict):
+                    issues.append(
+                        ValidationIssue(
+                            f"{relative}.related_claims[{index}]",
+                            "expected object",
+                        )
+                    )
+                    continue
+
+                claim_id = relationship.get("claim_id")
+
+                if claim_id not in claim_ids:
+                    issues.append(
+                        ValidationIssue(
+                            f"{relative}.related_claims[{index}].claim_id",
+                            f"unknown claim reference {claim_id!r}",
+                        )
+                    )
+
+        serialized = json.dumps(record, ensure_ascii=False).lower()
+
+        for phrase in PROHIBITED_STATUS_PHRASES:
+            if phrase in serialized:
+                issues.append(
+                    ValidationIssue(
+                        relative,
+                        f"unsupported status phrase detected: {phrase!r}",
+                    )
+                )
+
+
+def main() -> int:
+    issues: list[ValidationIssue] = []
+
+    validate_required_files(issues)
+
+    claims_document = load_json(CLAIMS_INDEX, issues)
+    evidence_document = load_json(EVIDENCE_INDEX, issues)
+
+    claim_ids = validate_claim_registry(claims_document, issues)
+    evidence_ids = validate_evidence_registry(
+        evidence_document,
+        claim_ids,
+        issues,
+    )
+
+    validate_evidence_records(evidence_ids, claim_ids, issues)
+
+    if issues:
+        print("PUBLIC REGISTRY VALIDATION: FAIL")
+        print(f"issues: {len(issues)}")
+
+        for issue in sorted(
+            issues,
+            key=lambda item: (item.location, item.message),
+        ):
+            print(f"- {issue.render()}")
+
+        return 1
+
+    print("PUBLIC REGISTRY VALIDATION: PASS")
+    print(f"claims_registered: {len(claim_ids)}")
+    print(f"evidence_registered: {len(evidence_ids)}")
+    print("public_private_boundary: ENFORCED")
+    print("production_readiness_claimed: FALSE")
+    print("external_deployment_verified: FALSE")
+
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
