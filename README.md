@@ -14022,3 +14022,68 @@ It should become stronger only when the registry links it to stronger, relevant 
   ],
   "last_updated": "2026-08-04T00:00:00Z"
 }
+{
+  "registry_version": "1.0.0",
+  "registry_id": "IC-HANTER-PUBLIC-EVIDENCE-REGISTRY",
+  "title": "HANTER Public Evidence Registry",
+  "description": "Canonical machine-readable registry of public engineering evidence supporting HANTTER claims within the IMPERIAL Core ecosystem.",
+  "classification": "PUBLIC",
+  "status": "ACTIVE",
+  "owner": {
+    "name": "Alexander Romaskevich",
+    "role": "Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core"
+  },
+  "governance": {
+    "architect_final_authority": true,
+    "evidence_before_status": true,
+    "public_private_boundary": "ENFORCED",
+    "deny_by_default": true
+  },
+  "supported_claim_registry": "../public-claims/index.json",
+  "supported_schema": "../../schemas/public-evidence-record.schema.json",
+  "evidence": [
+    {
+      "evidence_id": "IC-HANTER-EVIDENCE-ARCH-0001",
+      "claim_id": "IC-HANTER-CLAIM-ARCH-0001",
+      "title": "Federated Multi-Orchestrator Architecture documentation",
+      "status": "REGISTERED",
+      "classification": "PUBLIC",
+      "verification_level": "OWNED_PUBLIC_SOURCE",
+      "lifecycle": "ACTIVE"
+    },
+    {
+      "evidence_id": "IC-HANTER-EVIDENCE-GOV-0001",
+      "claim_id": "IC-HANTER-CLAIM-GOV-0001",
+      "title": "Public / Private Boundary documentation",
+      "status": "REGISTERED",
+      "classification": "PUBLIC",
+      "verification_level": "OWNED_PUBLIC_SOURCE",
+      "lifecycle": "ACTIVE"
+    },
+    {
+      "evidence_id": "IC-HANTER-EVIDENCE-VERIFY-0001",
+      "claim_id": "IC-HANTER-CLAIM-VERIFY-0001",
+      "title": "Evidence Before Status policy",
+      "status": "REGISTERED",
+      "classification": "PUBLIC",
+      "verification_level": "OWNED_PUBLIC_SOURCE",
+      "lifecycle": "ACTIVE"
+    },
+    {
+      "evidence_id": "IC-HANTER-EVIDENCE-IDENTITY-0001",
+      "claim_id": "IC-HANTER-CLAIM-IDENTITY-0001",
+      "title": "Canonical project identity",
+      "status": "REGISTERED",
+      "classification": "PUBLIC",
+      "verification_level": "OWNED_PUBLIC_SOURCE",
+      "lifecycle": "ACTIVE"
+    }
+  ],
+  "registry_statistics": {
+    "claims_supported": 4,
+    "registered_evidence": 4,
+    "independently_verified": 0,
+    "production_authorized": 0
+  },
+  "last_updated": "2026-08-04T00:00:00Z"
+}
