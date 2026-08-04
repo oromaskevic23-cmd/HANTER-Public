@@ -14176,3 +14176,59 @@ It should become stronger only when the registry links it to stronger, relevant 
   },
   "recorded_at": "2026-08-04T00:00:00Z"
 }
+name: Validate Public Claims and Evidence
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  validate-public-registry:
+    name: Validate public registries
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install AJV CLI
+        run: npm install -g ajv-cli
+
+      - name: Validate Public Claim Registry
+        run: |
+          test -f registry/public-claims/index.json
+
+      - name: Validate Public Evidence Registry
+        run: |
+          test -f registry/public-evidence/index.json
+
+      - name: Validate Claim Record Schema
+        run: |
+          ajv validate \
+            -s schemas/public-claim-record.schema.json \
+            -d registry/public-claims/*.json
+
+      - name: Validate Evidence Record Schema
+        run: |
+          ajv validate \
+            -s schemas/public-evidence-record.schema.json \
+            -d registry/public-evidence/*.json
+
+      - name: Verify registry consistency
+        run: |
+          echo "Checking canonical public registries..."
+          test -f registry/public-claims/index.json
+          test -f registry/public-evidence/index.json
+          echo "PASS"
+
+      - name: Public Boundary Reminder
+        run: |
+          echo "Validation covers public documentation only."
+          echo "No statement about deployment, runtime or production readiness."
