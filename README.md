@@ -15527,3 +15527,229 @@ Architect
 ---
 
 End of Machine Readable Public Index
+# DIGITAL IDENTITY AND SEARCH DISCOVERABILITY
+
+Version: 1.0.0
+
+Classification: PUBLIC
+
+---
+
+# Purpose
+
+This document defines the public digital identity strategy for
+Alexander Romaskevich, IMPERIAL Core and HANTER.
+
+Its purpose is to improve consistency across public engineering
+artifacts while preserving the Public / Private Boundary.
+
+This document is descriptive.
+
+It is not evidence of deployment, production readiness or
+independent verification.
+
+---
+
+# Canonical Person
+
+Alexander Romaskevich
+
+Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core
+
+Architect and final authority of IMPERIAL Core
+
+Architect of HANTER
+
+---
+
+# Canonical Project Names
+
+IMPERIAL Core
+
+HANTER
+
+Nano Core Agents
+
+Legion
+
+ORION
+
+AGY
+
+CRYPTO IMPERIAL Ecosystem
+
+Capital Core
+
+---
+
+# Identity Objectives
+
+The public identity should consistently associate:
+
+Alexander Romaskevich
+
+↓
+
+IMPERIAL Core
+
+↓
+
+HANTER
+
+↓
+
+Public Engineering Documentation
+
+↓
+
+Enterprise Architecture
+
+↓
+
+AI Governance
+
+↓
+
+Machine Readable Knowledge
+
+---
+
+# Public Engineering Signals
+
+Public engineering signals include:
+
+• architecture documentation
+
+• governance documentation
+
+• semantic documentation
+
+• engineering specifications
+
+• public registries
+
+• public evidence
+
+• canonical terminology
+
+• machine-readable metadata
+
+• architecture diagrams
+
+• deterministic documentation
+
+---
+
+# Search Consistency
+
+The same canonical identity should be used across:
+
+GitHub Profile
+
+Public Website
+
+Repository Documentation
+
+Architecture Documents
+
+Technical Articles
+
+Engineering Specifications
+
+Machine-readable Metadata
+
+Schema.org Entities
+
+Public Evidence Registry
+
+Public Claim Registry
+
+---
+
+# Canonical Identity Block
+
+Alexander Romaskevich
+
+Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core
+
+Architect and final authority of IMPERIAL Core
+
+Architect of HANTER
+
+---
+
+# Canonical Search Phrases
+
+Alexander Romaskevich
+
+Александр Ромаскевич
+
+Alexander Nikolaevich Romaskevich
+
+Александр Николаевич Ромаскевич
+
+Alexander Romaskevich IMPERIAL Core
+
+Alexander Romaskevich HANTER
+
+IMPERIAL Core
+
+HANTER
+
+Enterprise Architecture
+
+Chief Systems Architect
+
+Federated Multi-Orchestrator Architecture
+
+Evidence Before Status
+
+Architecture Before Implementation
+
+---
+
+# Public / Private Boundary
+
+This document describes only public engineering information.
+
+It does not disclose:
+
+• private implementation
+
+• credentials
+
+• infrastructure
+
+• runtime configuration
+
+• production systems
+
+• internal repositories
+
+• confidential engineering assets
+
+---
+
+# Status Integrity
+
+This repository does not claim:
+
+production readiness
+
+global deployment
+
+runtime verification
+
+independent certification
+
+external operational authority
+
+Every public statement should remain bounded by available evidence.
+
+Evidence Before Status.
+
+Architecture Before Implementation.
+
+---
+
+End of document.
