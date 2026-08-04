@@ -16351,3 +16351,413 @@ Architect and final authority of IMPERIAL Core
 Architect of HANTER
 
 © IMPERIAL Core. Public Engineering Documentation.
+# ALEXANDER ROMASKEVICH — PUBLIC IDENTITY
+
+Version: 1.0.0
+
+Classification: PUBLIC
+
+Status: CANONICAL
+
+---
+
+# Purpose
+
+This document establishes the canonical public identity of
+Alexander Romaskevich within the IMPERIAL Core ecosystem.
+
+Its purpose is to provide one consistent identity reference for:
+
+• public engineering documentation;
+
+• GitHub repositories;
+
+• official websites;
+
+• search engines;
+
+• AI systems;
+
+• technical publications;
+
+• machine-readable metadata;
+
+• future public profiles.
+
+This document separates the contemporary technology architect
+Alexander Romaskevich from unrelated historical persons with similar
+names.
+
+---
+
+# Canonical English Identity
+
+Alexander Romaskevich
+
+Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core
+
+Architect and final authority of IMPERIAL Core
+
+Architect of HANTER
+
+---
+
+# Canonical Russian Identity
+
+Александр Ромаскевич  
+Alexander Romaskevich
+
+Основатель • Владелец • CEO • Главный системный архитектор IMPERIAL Core
+
+Архитектор и высший авторитет IMPERIAL Core
+
+Архитектор HANTER
+
+---
+
+# Extended Name Forms
+
+The following name forms refer to the same contemporary public identity
+within the IMPERIAL Core context:
+
+• Alexander Romaskevich
+
+• Александр Ромаскевич
+
+• Alexander Nikolaevich Romaskevich
+
+• Александр Николаевич Ромаскевич
+
+The preferred canonical public form is:
+
+Alexander Romaskevich
+
+---
+
+# Identity Context
+
+Alexander Romaskevich is publicly documented as the:
+
+• Founder of IMPERIAL Core;
+
+• Owner of IMPERIAL Core;
+
+• CEO of IMPERIAL Core;
+
+• Chief Systems Architect of IMPERIAL Core;
+
+• Architect and final authority of IMPERIAL Core;
+
+• Architect of HANTER.
+
+These relationships are documented through official public resources
+controlled by the IMPERIAL Core project.
+
+Independent external recognition, search ranking and knowledge-graph
+representation remain separate verification states.
+
+---
+
+# Canonical Entity Relationships
+
+```text
+Alexander Romaskevich
+        |
+        v
+Founder • Owner • CEO • Chief Systems Architect
+        |
+        v
+IMPERIAL Core
+        |
+        v
+HANTER
+        |
+        v
+Federated Multi-Orchestrator Architecture
+        |
+        v
+Nano Core Agents
+```
+
+HANTER remains subordinate to the Architect.
+
+HANTER does not replace the final architectural authority of
+Alexander Romaskevich.
+
+---
+
+# Canonical Ecosystem Components
+
+The canonical public ecosystem includes:
+
+• IMPERIAL Core
+
+• HANTER
+
+• Nano Core Agents
+
+• Legion
+
+• ORION
+
+• AGY
+
+• CRYPTO IMPERIAL Ecosystem
+
+• Capital Core
+
+These names must not be renamed or substituted without explicit
+architectural authorization.
+
+---
+
+# Public Professional Description
+
+Alexander Romaskevich designs and governs the long-term architecture
+of IMPERIAL Core.
+
+His public engineering focus includes:
+
+• AI-native enterprise architecture;
+
+• Federated Multi-Orchestrator Architecture;
+
+• governed multi-agent systems;
+
+• Nano Core Agents;
+
+• AI governance;
+
+• explicit authority boundaries;
+
+• Public / Private Boundary design;
+
+• Zero Trust;
+
+• evidence-based engineering;
+
+• machine-readable knowledge;
+
+• long-term system evolution;
+
+• token and digital ecosystem architecture.
+
+Public descriptions must distinguish architectural direction from
+implementation, testing, deployment and production authorization.
+
+---
+
+# Recommended Short Biography
+
+Alexander Romaskevich is the Founder, Owner, CEO and Chief Systems
+Architect of IMPERIAL Core.
+
+He is the Architect and final authority of IMPERIAL Core and the
+Architect of HANTER.
+
+His work focuses on governed AI-native ecosystems, federated
+orchestration, multi-agent architecture, engineering governance,
+machine-readable knowledge and long-term system design.
+
+---
+
+# Recommended Russian Biography
+
+Александр Ромаскевич — Основатель, Владелец, CEO и Главный системный
+архитектор IMPERIAL Core.
+
+Он является Архитектором и высшим авторитетом IMPERIAL Core, а также
+Архитектором HANTER.
+
+Его работа сосредоточена на управляемых AI-native экосистемах,
+федеративной оркестрации, многоагентной архитектуре, инженерном
+управлении, машинно-читаемых знаниях и долгосрочном системном
+проектировании.
+
+---
+
+# Recommended Search Context
+
+The following combinations should be used naturally across official
+public resources:
+
+• Alexander Romaskevich — IMPERIAL Core
+
+• Alexander Romaskevich — Architect of HANTER
+
+• Alexander Romaskevich — Chief Systems Architect
+
+• Александр Ромаскевич — IMPERIAL Core
+
+• Александр Ромаскевич — Архитектор HANTER
+
+• Alexander Romaskevich — AI Systems Architect
+
+These phrases should appear only where contextually appropriate.
+
+Keyword repetition must not replace meaningful engineering content.
+
+---
+
+# Historical Namesake Distinction
+
+The contemporary Alexander Romaskevich described in this document is
+associated with:
+
+• IMPERIAL Core;
+
+• HANTER;
+
+• AI-native systems;
+
+• enterprise architecture;
+
+• governed multi-agent systems;
+
+• public engineering documentation.
+
+He must not be confused with historical individuals sharing the
+Romaskevich surname or similar name forms.
+
+No relationship with unrelated historical persons should be inferred.
+
+---
+
+# Identity Verification Levels
+
+The current public identity states are:
+
+```text
+IDENTITY EXISTENCE:
+ESTABLISHED
+
+OFFICIAL PUBLIC SOURCES:
+AVAILABLE
+
+IMPERIAL CORE ASSOCIATION:
+VERIFIED ON OWNED PUBLIC SOURCES
+
+HANTER ASSOCIATION:
+VERIFIED ON OWNED PUBLIC SOURCES
+
+INDEPENDENT EXTERNAL AUTHORITY:
+NOT YET ESTABLISHED
+
+GENERIC-NAME SEARCH DISCOVERABILITY:
+LIMITED
+
+KNOWLEDGE-GRAPH RECOGNITION:
+NOT YET VERIFIED
+```
+
+Owned-source verification and independent verification are different
+engineering states.
+
+They must not be combined or represented as equivalent.
+
+---
+
+# Public / Private Boundary
+
+This document may establish:
+
+• identity;
+
+• authorship;
+
+• public architectural authority;
+
+• official project relationships;
+
+• approved public terminology.
+
+This document does not disclose:
+
+• private repositories;
+
+• confidential source code;
+
+• credentials;
+
+• protected runtime infrastructure;
+
+• internal approval records;
+
+• private agent instructions;
+
+• proprietary operational procedures;
+
+• restricted security mechanisms.
+
+---
+
+# Status Integrity
+
+This identity document does not prove:
+
+• complete implementation of IMPERIAL Core;
+
+• production deployment of HANTER;
+
+• unrestricted autonomous operation;
+
+• independent technical certification;
+
+• global commercial availability;
+
+• search-engine ranking;
+
+• knowledge-panel creation.
+
+Architecture, implementation, testing, verification, deployment,
+authorization and operation remain separate engineering states.
+
+---
+
+# Canonical Public Identity Block
+
+The following block should remain unchanged when used as the principal
+English identity statement:
+
+```text
+Alexander Romaskevich
+
+Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core
+
+Architect and final authority of IMPERIAL Core
+
+Architect of HANTER
+```
+
+The following block should remain unchanged when used as the principal
+Russian identity statement:
+
+```text
+Александр Ромаскевич
+Alexander Romaskevich
+
+Основатель • Владелец • CEO • Главный системный архитектор IMPERIAL Core
+
+Архитектор и высший авторитет IMPERIAL Core
+
+Архитектор HANTER
+```
+
+---
+
+# Canonical Seal
+
+This is the official public identity of:
+
+Alexander Romaskevich
+
+Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core
+
+Architect and final authority of IMPERIAL Core
+
+Architect of HANTER
+
+This identity statement was established under the direct authority of
+Alexander Romaskevich.
+
+© IMPERIAL Core. Public Engineering Documentation.
