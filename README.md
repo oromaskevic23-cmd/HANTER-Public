@@ -15292,3 +15292,65 @@ jobs:
     }
   ]
 }
+# IMPERIAL Core Architect
+# Public crawling policy
+# Classification: PUBLIC
+
+User-agent: *
+
+Allow: /
+
+Disallow: /.git/
+Disallow: /.github/
+Disallow: /private/
+Disallow: /internal/
+Disallow: /draft/
+Disallow: /tmp/
+Disallow: /sandbox/
+Disallow: /runtime/
+Disallow: /evidence/private/
+Disallow: /secrets/
+
+Sitemap: https://imperial-core-architect.oromaskevic23.chatgpt.site/sitemap.xml
+
+# Canonical public boundary:
+# - Public architecture
+# - Public governance
+# - Public engineering documentation
+#
+# Not represented:
+# - Private implementation
+# - Runtime systems
+# - Production infrastructure
+# - Internal repositories
+# - Credentials
+# - Sensitive evidence
+
+# Architecture Before Implementation
+# Evidence Before Status
+# Public/Private Boundary Preserved
+public/sitemap.xml
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <url>
+        <loc>https://imperial-core-architect.oromaskevic23.chatgpt.site/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://github.com/oromaskevic23-cmd</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://github.com/oromaskevic23-cmd/HANTER-Public</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+</urlset>
