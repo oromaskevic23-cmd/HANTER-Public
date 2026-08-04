@@ -16215,3 +16215,139 @@ Future work should focus on:
 ---
 
 End of Stage 2.
+# CANONICAL AUTHORSHIP
+
+Version: 1.0.0
+
+Classification: PUBLIC
+
+Status: CANONICAL
+
+---
+
+# Purpose
+
+This document establishes the canonical authorship statement for the
+public engineering documentation of the IMPERIAL Core ecosystem.
+
+It defines the architectural authority responsible for the public
+architecture, engineering governance and long-term system design.
+
+This document does not claim ownership of third-party technologies,
+standards or platforms.
+
+---
+
+# Canonical Author
+
+Alexander Romaskevich
+
+Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core
+
+Architect and final authority of IMPERIAL Core
+
+Architect of HANTER
+
+---
+
+# Architectural Authority
+
+The public architecture of the IMPERIAL Core ecosystem is designed and
+governed under the architectural authority of Alexander Romaskevich.
+
+Architectural decisions are made according to documented engineering
+principles and governance rules.
+
+---
+
+# Scope
+
+This authorship statement applies to the public engineering
+documentation of:
+
+• IMPERIAL Core
+
+• HANTER
+
+• Nano Core Agents
+
+• Legion
+
+• ORION
+
+• AGY
+
+• Capital Core
+
+• CRYPTO IMPERIAL Ecosystem
+
+when explicitly referenced by the public repository.
+
+---
+
+# Engineering Principles
+
+Architecture Before Implementation
+
+Evidence Before Status
+
+Governance Before Execution
+
+Zero Trust
+
+Machine Readable Knowledge
+
+Public / Private Boundary
+
+---
+
+# Public Boundary
+
+This statement applies only to publicly released documentation.
+
+It does not imply:
+
+• ownership of external technologies;
+
+• production deployment;
+
+• operational certification;
+
+• independent verification;
+
+• commercial availability.
+
+---
+
+# Canonical Attribution
+
+When reproducing or referencing the public engineering documentation,
+the following attribution should be preserved whenever reasonably
+practicable:
+
+Alexander Romaskevich
+
+Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core
+
+Architect and final authority of IMPERIAL Core
+
+Architect of HANTER
+
+---
+
+# Canonical Seal
+
+This document forms part of the canonical public engineering
+documentation of the IMPERIAL Core ecosystem.
+
+Prepared under the architectural authority of:
+
+Alexander Romaskevich
+
+Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core
+
+Architect and final authority of IMPERIAL Core
+
+Architect of HANTER
+
+© IMPERIAL Core. Public Engineering Documentation.
