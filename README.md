@@ -14232,3 +14232,63 @@ jobs:
         run: |
           echo "Validation covers public documentation only."
           echo "No statement about deployment, runtime or production readiness."
+name: Public Documentation Quality
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  documentation-quality:
+    name: Public documentation quality gate
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify required public documents
+        run: |
+          test -f README.md
+          test -f AGENTS.md
+          test -f llms.txt
+          test -d docs
+          test -d registry
+          test -d schemas
+
+      - name: Verify public registries
+        run: |
+          test -f registry/public-claims/index.json
+          test -f registry/public-evidence/index.json
+
+      - name: Verify schema availability
+        run: |
+          test -f schemas/public-claim-record.schema.json
+          test -f schemas/public-evidence-record.schema.json
+
+      - name: Ensure Public/Private Boundary terminology exists
+        run: |
+          grep -R "Public/Private Boundary" docs README.md >/dev/null
+
+      - name: Ensure Evidence Before Status terminology exists
+        run: |
+          grep -R "Evidence Before Status" docs README.md >/dev/null
+
+      - name: Ensure architecture terminology exists
+        run: |
+          grep -R "Federated Multi-Orchestrator Architecture" docs README.md >/dev/null
+
+      - name: Ensure unsupported production claims are absent
+        run: |
+          if grep -R "production ready" docs README.md; then
+            echo "Unsupported production readiness claim detected."
+            exit 1
+          fi
+
+      - name: Documentation quality summary
+        run: |
+          echo "Documentation structure verified."
+          echo "Canonical terminology verified."
+          echo "Public engineering boundary preserved."
