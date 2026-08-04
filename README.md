@@ -15753,3 +15753,205 @@ Architecture Before Implementation.
 ---
 
 End of document.
+# PUBLIC ENGINEERING MATURITY
+
+Version: 1.0.0
+
+Classification: PUBLIC
+
+Status: ACTIVE
+
+---
+
+# Purpose
+
+This document defines the public engineering maturity model used by
+HANTER and the IMPERIAL Core ecosystem.
+
+Its purpose is to distinguish architectural progress from implementation,
+verification, deployment and operational maturity.
+
+This document is informational.
+
+It does not authorize deployment or production operation.
+
+---
+
+# Engineering Maturity Levels
+
+## Level 0
+
+Concept
+
+Initial ideas and research.
+
+No architectural approval.
+
+---
+
+## Level 1
+
+Architecture
+
+Canonical architecture exists.
+
+Engineering principles are documented.
+
+Public terminology is defined.
+
+Architecture boundaries are established.
+
+---
+
+## Level 2
+
+Engineering
+
+Specifications.
+
+Governance.
+
+Schemas.
+
+Contracts.
+
+Evidence model.
+
+Machine-readable documentation.
+
+---
+
+## Level 3
+
+Implementation
+
+Controlled implementation.
+
+Internal engineering artifacts.
+
+Private repositories.
+
+No production claim.
+
+---
+
+## Level 4
+
+Testing
+
+Verification activities.
+
+Validation procedures.
+
+Controlled testing.
+
+Evidence collection.
+
+No production authorization.
+
+---
+
+## Level 5
+
+Operational Readiness
+
+Deployment planning.
+
+Operational procedures.
+
+Recovery planning.
+
+Security review.
+
+Still not equivalent to production.
+
+---
+
+## Level 6
+
+Production Authorization
+
+Requires explicit authorization.
+
+Requires evidence.
+
+Requires governance approval.
+
+Requires operational acceptance.
+
+Public documentation alone never grants this level.
+
+---
+
+# Engineering Principles
+
+Architecture Before Implementation
+
+Evidence Before Status
+
+Governance Before Execution
+
+Zero Trust
+
+Public / Private Boundary
+
+Deterministic Documentation
+
+Machine Readable Knowledge
+
+---
+
+# Public Repository Scope
+
+The public repository documents:
+
+• architecture
+
+• governance
+
+• engineering
+
+• terminology
+
+• specifications
+
+• documentation
+
+• evidence structures
+
+The repository does not claim:
+
+• production deployment
+
+• unrestricted operation
+
+• independent certification
+
+• global availability
+
+• commercial release
+
+---
+
+# Public Engineering Integrity
+
+Engineering maturity shall never be inferred from repository size,
+number of documents or number of commits.
+
+Every maturity statement must remain supported by available evidence.
+
+---
+
+# Canonical Authority
+
+Alexander Romaskevich
+
+Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core
+
+Architect and final authority of IMPERIAL Core
+
+Architect of HANTER
+
+---
+
+End of document.
