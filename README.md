@@ -15354,3 +15354,176 @@ public/sitemap.xml
     </url>
 
 </urlset>
+# IMPERIAL Core — Machine Readable Public Knowledge Index
+
+Version: 1.0.0
+
+Classification: PUBLIC
+
+---
+
+# Canonical Identity
+
+Alexander Romaskevich
+
+Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core
+
+Architect and final authority of IMPERIAL Core
+
+Architect of HANTER
+
+---
+
+# Ecosystem
+
+IMPERIAL Core
+
+HANTER
+
+Nano Core Agents
+
+Legion
+
+ORION
+
+AGY
+
+CRYPTO IMPERIAL Ecosystem
+
+Capital Core
+
+---
+
+# Public Engineering Principles
+
+Architecture Before Implementation
+
+Evidence Before Status
+
+Public / Private Boundary
+
+Zero Trust
+
+Governance Before Execution
+
+Deterministic Documentation
+
+Machine Readable Knowledge
+
+Canonical Terminology
+
+Traceable Architecture
+
+Engineering Transparency
+
+---
+
+# Architecture
+
+Federated Multi-Orchestrator Architecture
+
+Governed AI-native Enterprise Architecture
+
+Enterprise Documentation
+
+Knowledge Graph
+
+Machine Readable Engineering
+
+Semantic Architecture
+
+Evidence Registry
+
+Public Claim Registry
+
+Public Evidence Registry
+
+Architecture Governance
+
+Engineering Governance
+
+Documentation Governance
+
+---
+
+# Public Statements
+
+The public repository documents architecture, governance and engineering.
+
+It does not claim:
+
+- production readiness;
+
+- runtime deployment;
+
+- unrestricted autonomous operation;
+
+- independent certification;
+
+- external operational verification.
+
+---
+
+# Public Repository Purpose
+
+The repository exists to document the public architecture of HANTER and the IMPERIAL Core ecosystem.
+
+Private implementation remains outside the public repository.
+
+---
+
+# Search Keywords
+
+Alexander Romaskevich
+
+Александр Ромаскевич
+
+Alexander Nikolaevich Romaskevich
+
+Александр Николаевич Ромаскевич
+
+IMPERIAL Core
+
+HANTER
+
+Nano Core Agents
+
+Enterprise Architecture
+
+AI Governance
+
+Federated Multi-Orchestrator Architecture
+
+Machine Readable Architecture
+
+Evidence Before Status
+
+Architecture Before Implementation
+
+Public Documentation
+
+Engineering Documentation
+
+Governance
+
+Semantic Knowledge
+
+Knowledge Graph
+
+Zero Trust
+
+System Architecture
+
+Chief Systems Architect
+
+Founder
+
+Owner
+
+CEO
+
+Architect
+
+---
+
+End of Machine Readable Public Index
