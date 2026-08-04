@@ -14087,3 +14087,92 @@ It should become stronger only when the registry links it to stronger, relevant 
   },
   "last_updated": "2026-08-04T00:00:00Z"
 }
+{
+  "schema_version": "1.0.0",
+  "evidence_id": "IC-HANTER-EVIDENCE-VERIFY-0001",
+  "title": "Evidence Before Status governance policy",
+  "description": "Public evidence record describing the governance principle that public statements concerning HANTER must remain bounded by available evidence and explicitly distinguish architecture, implementation, testing, verification, deployment and production authorization.",
+  "evidence_type": "VERIFY",
+  "lifecycle_status": "ACCEPTED_BOUNDED",
+  "evidence_strength": "E2_ARTIFACT_EXISTS",
+  "subject": {
+    "name": "Evidence Before Status",
+    "kind": "DOCUMENT",
+    "system": "HANTER",
+    "ecosystem": "IMPERIAL Core",
+    "canonical_component": "HANTER",
+    "version": "1.0.0"
+  },
+  "artifact": {
+    "name": "Evidence Before Status documentation",
+    "artifact_type": "ARCHITECTURE_DOCUMENT",
+    "version": "1.0.0",
+    "availability": "PUBLIC"
+  },
+  "environment": {
+    "environment_type": "DOCUMENTATION_ONLY",
+    "execution_boundary": "Public documentation boundary",
+    "network_enabled": false,
+    "external_effects": false,
+    "secrets_used": false,
+    "simulated_execution": false
+  },
+  "method": {
+    "method_type": "DOCUMENT_REVIEW",
+    "procedure": "Architectural documentation review against public governance requirements.",
+    "reproducible": true,
+    "verification_criteria": [
+      "Explicit separation of architecture and implementation",
+      "Explicit separation of testing and production",
+      "Public/Private Boundary preserved"
+    ]
+  },
+  "result": {
+    "observed_result": "PASS",
+    "summary": "Governance policy is publicly documented and registered."
+  },
+  "related_claims": [
+    {
+      "claim_id": "IC-HANTER-CLAIM-VERIFY-0001",
+      "relationship": "SUPPORTS_CLAIM",
+      "coverage": "FULL_CLAIM"
+    }
+  ],
+  "requirements": [
+    {
+      "requirement_id": "REQ-EVIDENCE-001",
+      "description": "Public claims must distinguish evidence from assumptions.",
+      "result": "SATISFIED"
+    }
+  ],
+  "limitations": [
+    {
+      "code": "OWNED_PUBLIC_SOURCE_ONLY",
+      "description": "Current evidence is based on publicly controlled project documentation.",
+      "material": true
+    }
+  ],
+  "integrity": {
+    "digests": [],
+    "sealed": false
+  },
+  "review": {
+    "decision": "ACCEPT",
+    "independent": false,
+    "reviewer": "Alexander Romaskevich",
+    "reviewed_at": "2026-08-04T00:00:00Z"
+  },
+  "publication": {
+    "classification": "PUBLIC",
+    "public_private_boundary_reviewed": true,
+    "supporting_artifact_availability": "PUBLIC",
+    "redactions_present": false
+  },
+  "governance": {
+    "architectural_authority": "Alexander Romaskevich",
+    "authority_role_line": "Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core",
+    "hanter_subordinate_to_architect": true,
+    "production_authorized": false
+  },
+  "recorded_at": "2026-08-04T00:00:00Z"
+}
