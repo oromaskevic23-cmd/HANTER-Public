@@ -17827,3 +17827,669 @@ Prepared, governed and approved under the architectural authority of:
 This is Alexander Romaskevich.
 
 © IMPERIAL Core. Public Engineering Documentation.
+# CANONICAL SOURCE HIERARCHY
+
+**Document ID:** IC-HANTER-PUBLIC-CSH-001  
+**Version:** 1.0.0  
+**Classification:** PUBLIC  
+**Lifecycle Status:** CANONICAL  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core  
+
+---
+
+# Purpose
+
+This document defines the canonical source hierarchy for the public engineering documentation of HANTER within the IMPERIAL Core ecosystem.
+
+Its purpose is to establish which public source controls interpretation when multiple documents, schemas, registries, summaries or historical records address the same architectural subject.
+
+The hierarchy prevents:
+
+- contradictory definitions;
+- silent architectural drift;
+- accidental renaming;
+- duplicate authority;
+- status inflation;
+- outdated documents overriding current canonical sources;
+- machine-readable artifacts redefining approved human-readable architecture.
+
+This hierarchy governs public documentation only.
+
+It does not expose or replace private engineering authority, protected implementation records or internal operational controls.
+
+---
+
+# Canonical Architectural Authority
+
+The final architectural authority is:
+
+**Alexander Romaskevich**
+
+**Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core**
+
+**Architect and final authority of IMPERIAL Core**
+
+**Architect of HANTER**
+
+No public document, registry, schema, automated workflow, AI system or search-engine interpretation may replace the Architect’s final authority.
+
+HANTER remains subordinate to the Architect.
+
+---
+
+# Core Rule
+
+When public sources conflict, the stronger canonical source must control interpretation.
+
+The default order is:
+
+```text
+Architectural Authority
+→ Canonical Architecture
+→ Canonical Governance
+→ Canonical Identity and Terminology
+→ Normative Specifications and Schemas
+→ Approved Registries
+→ Evidence Records
+→ Public Status Records
+→ Informative Documentation
+→ Historical and Archived Material
+```
+
+A lower-level source must not redefine a higher-level source.
+
+---
+
+# Hierarchy Level 1 — Architectural Authority
+
+Level 1 represents the final source of architectural authority.
+
+Canonical authority:
+
+```text
+Alexander Romaskevich
+Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core
+Architect and final authority of IMPERIAL Core
+Architect of HANTER
+```
+
+Level 1 governs:
+
+- canonical architecture;
+- component naming;
+- architectural boundaries;
+- governance authority;
+- approval of major public status changes;
+- supersession of canonical documents;
+- interpretation of unresolved contradictions;
+- authorization of future public architecture changes.
+
+No automated mechanism may independently grant Level 1 authority.
+
+---
+
+# Hierarchy Level 2 — Canonical Architecture
+
+Level 2 defines the controlling public architectural model.
+
+This level includes documents that explicitly define:
+
+- the role of IMPERIAL Core;
+- the role of HANTER;
+- the role of Nano Core Agents;
+- the Federated Multi-Orchestrator Architecture;
+- domain and functional orchestration;
+- architectural component relationships;
+- long-term architectural constraints;
+- Public / Private Boundary;
+- authority relationships.
+
+Representative canonical sources may include:
+
+- `docs/HANTER-PUBLIC-ARCHITECTURE.md`
+- `docs/REPOSITORY-ARCHITECTURE-OVERVIEW.md`
+- `docs/ARCHITECTURE-PRINCIPLES-CATALOG.md`
+- `docs/ARCHITECTURAL-INTEGRITY.md`
+- `docs/ARCHITECTURAL-EVOLUTION-POLICY.md`
+
+Where several architectural documents exist, the most specific canonical document for the subject controls interpretation.
+
+A general overview must not override a more specific approved architecture source.
+
+---
+
+# Hierarchy Level 3 — Canonical Governance
+
+Level 3 defines the public governance rules controlling architecture, documentation, claims, evidence and status.
+
+Representative canonical sources include:
+
+- `docs/PUBLIC-ARCHITECTURE-GOVERNANCE-FRAMEWORK.md`
+- `docs/ARCHITECTURAL-DECISION-POLICY.md`
+- `docs/DOCUMENTATION-GOVERNANCE.md`
+- `docs/KNOWLEDGE-GOVERNANCE.md`
+- `docs/PUBLIC-ENGINEERING-CHARTER.md`
+- `docs/PUBLIC-STATUS-ASSERTION-POLICY.md`
+- `docs/PUBLIC-CLAIM-VERIFICATION-STANDARD.md`
+- `docs/PUBLIC-EVIDENCE-REGISTRY-SPECIFICATION.md`
+
+Governance sources control:
+
+- public decision rules;
+- lifecycle states;
+- evidence requirements;
+- claim validation;
+- status transitions;
+- contradiction resolution;
+- document approval;
+- deprecation;
+- archival;
+- Public / Private Boundary enforcement.
+
+Governance documents must remain compatible with Level 2 architecture.
+
+---
+
+# Hierarchy Level 4 — Canonical Identity and Terminology
+
+Level 4 controls public identity, authorship, role descriptions and canonical terminology.
+
+Representative canonical sources include:
+
+- `docs/CANONICAL-AUTHORSHIP.md`
+- `docs/ALEXANDER-ROMASKEVICH-PUBLIC-IDENTITY.md`
+- `docs/AI-RECOGNITION-AND-SEMANTIC-IDENTITY.md`
+- `docs/CANONICAL-TERMINOLOGY.md`
+
+This level governs:
+
+- canonical person name;
+- canonical role line;
+- authorship;
+- public architectural authority;
+- official component names;
+- approved terminology;
+- historical namesake distinction;
+- AI and search interpretation guidance.
+
+The following names are canonical:
+
+```text
+IMPERIAL Core
+HANTER
+Nano Core Agents
+Legion
+ORION
+AGY
+CRYPTO IMPERIAL Ecosystem
+Capital Core
+```
+
+These names must not be renamed, substituted or normalized into different branding without explicit authorization from the Architect.
+
+---
+
+# Hierarchy Level 5 — Normative Specifications and Schemas
+
+Level 5 defines machine-verifiable public contracts and structured formats.
+
+Representative sources include:
+
+- `schemas/public-claim-record.schema.json`
+- `schemas/public-evidence-record.schema.json`
+- other explicitly approved normative schemas;
+- normative manifest specifications;
+- controlled interface definitions.
+
+Normative specifications may define:
+
+- required fields;
+- permitted values;
+- identifier formats;
+- lifecycle states;
+- status dimensions;
+- evidence relationships;
+- validation constraints;
+- governance metadata;
+- publication boundaries.
+
+A schema may validate structure.
+
+A schema must not independently redefine the meaning of canonical architecture, authority or terminology.
+
+When a schema conflicts with a canonical architecture or governance document, the conflict must be corrected through governed revision.
+
+---
+
+# Hierarchy Level 6 — Approved Registries
+
+Level 6 contains controlled indexes of public claims, evidence, entities and relationships.
+
+Representative sources include:
+
+- `registry/public-claims/index.json`
+- `registry/public-evidence/index.json`
+
+Registries may establish:
+
+- registered identifiers;
+- active entries;
+- claim-to-evidence links;
+- lifecycle state;
+- evidence availability;
+- version references;
+- supersession relationships.
+
+Registry presence means that an entry is recorded.
+
+Registry presence does not automatically mean:
+
+- independently verified;
+- deployed;
+- production authorized;
+- operational;
+- complete;
+- externally certified.
+
+The meaning of each registry state is controlled by the relevant governance and evidence standards.
+
+---
+
+# Hierarchy Level 7 — Evidence Records
+
+Level 7 contains public evidence records supporting defined claims.
+
+Representative sources include:
+
+- `registry/public-evidence/IC-HANTER-EVIDENCE-VERIFY-0001.json`
+- future approved evidence records;
+- public verification reports;
+- public test summaries;
+- public milestone evidence.
+
+Evidence records control only the exact subject, version, environment and boundary they declare.
+
+Evidence must not be generalized beyond:
+
+- the identified artifact;
+- the stated version;
+- the evaluated environment;
+- the declared method;
+- the documented result;
+- the stated limitations.
+
+A bounded local result must not be interpreted as independent production verification.
+
+---
+
+# Hierarchy Level 8 — Public Status Records
+
+Level 8 describes the current or historical public status of documents, components, missions or engineering capabilities.
+
+Representative sources include:
+
+- `docs/PUBLIC-STATUS-BOUNDARY.md`
+- `docs/PUBLIC-ENGINEERING-MATURITY.md`
+- `docs/HANTER-PUBLIC-STAGE-2-COMPLETION-REPORT.md`
+- approved milestone records;
+- approved release summaries.
+
+Status records must remain:
+
+- version-bound;
+- evidence-linked;
+- time-aware;
+- environment-specific;
+- governance-controlled;
+- limitation-aware.
+
+A status record cannot override architecture, governance, schemas or stronger evidence.
+
+A newer date alone does not make a source more authoritative.
+
+---
+
+# Hierarchy Level 9 — Informative Documentation
+
+Level 9 contains explanatory, educational, navigational and summary materials.
+
+Examples include:
+
+- architecture overviews;
+- documentation maps;
+- FAQs;
+- public introductions;
+- machine-readable indexes;
+- search-discoverability guidance;
+- repository navigation documents;
+- explanatory technical articles.
+
+Representative sources include:
+
+- `docs/PUBLIC-DOCUMENTATION-MAP.md`
+- `public/llms-full-index.md`
+- `docs/DIGITAL-IDENTITY-AND-SEARCH-DISCOVERABILITY.md`
+- `README.md`
+- `llms.txt`
+
+Informative documents may summarize canonical information.
+
+They must not silently introduce new canonical architecture or governance rules.
+
+When an informative document conflicts with a canonical source, the canonical source controls.
+
+---
+
+# Hierarchy Level 10 — Historical, Deprecated and Archived Sources
+
+Level 10 contains material preserved for traceability, auditability and historical understanding.
+
+Possible lifecycle states include:
+
+```text
+DEPRECATED
+ARCHIVED
+SEALED
+HISTORICAL
+SUPERSEDED
+```
+
+Historical sources may document:
+
+- earlier architecture;
+- superseded decisions;
+- previous status;
+- completed stages;
+- migration history;
+- retired terminology;
+- previous public interpretations.
+
+Historical preservation does not make a source current.
+
+A historical document must not override an active canonical source.
+
+Where possible, historical material should identify:
+
+- current lifecycle state;
+- superseding source;
+- effective date;
+- reason for supersession;
+- remaining historical relevance.
+
+---
+
+# Subject-Specific Authority
+
+The source hierarchy must also consider subject specificity.
+
+When two sources have the same lifecycle status and authority level, interpretation should prefer:
+
+1. the source explicitly designated as canonical;
+2. the source with the narrower subject scope;
+3. the source covering the exact artifact or version;
+4. the source with stronger evidence;
+5. the source with explicit supersession metadata;
+6. the source approved by the Architect;
+7. the newer approved version.
+
+Recency alone is insufficient.
+
+Specificity and authority take precedence over publication date.
+
+---
+
+# Human-Readable and Machine-Readable Sources
+
+Human-readable and machine-readable sources serve different purposes.
+
+Human-readable canonical documents define:
+
+- meaning;
+- intent;
+- governance;
+- architecture;
+- interpretation;
+- limitations.
+
+Machine-readable sources define:
+
+- structure;
+- identifiers;
+- relationships;
+- validation constraints;
+- automated interpretation metadata.
+
+The relationship is:
+
+```text
+Canonical Human-Readable Meaning
+→ Normative Machine-Readable Representation
+→ Automated Validation
+```
+
+Not:
+
+```text
+Automated Validation
+→ Independent Architectural Authority
+```
+
+Machine-readable artifacts must remain semantically aligned with canonical human-readable sources.
+
+---
+
+# Conflict Categories
+
+A source conflict may be classified as:
+
+```text
+AUTHORITY CONFLICT
+ARCHITECTURE CONFLICT
+TERMINOLOGY CONFLICT
+VERSION CONFLICT
+STATUS CONFLICT
+EVIDENCE CONFLICT
+BOUNDARY CONFLICT
+TEMPORAL CONFLICT
+SCHEMA CONFLICT
+SUPERSESSION CONFLICT
+```
+
+Each conflict should be recorded rather than hidden.
+
+---
+
+# Conflict Resolution Procedure
+
+When a conflict is detected:
+
+1. identify all affected sources;
+2. identify the exact subject;
+3. determine each source’s hierarchy level;
+4. determine lifecycle state;
+5. determine version and approval state;
+6. identify evidence strength;
+7. identify supersession relationships;
+8. apply subject specificity;
+9. escalate unresolved architectural conflicts to the Architect;
+10. correct or deprecate the losing source;
+11. preserve historical traceability;
+12. update machine-readable representations.
+
+Until resolved, the lower-authority or broader claim must not override the higher-authority source.
+
+---
+
+# Supersession Rules
+
+A source may be superseded only through explicit governance.
+
+A supersession record should identify:
+
+```text
+Superseded Source
+Replacement Source
+Effective Date
+Reason
+Scope
+Approving Authority
+Migration Guidance
+```
+
+Supersession must not silently erase historical information.
+
+The superseded source should remain available when preservation is necessary, but it must be clearly marked as non-current.
+
+---
+
+# Canonical Source Declaration
+
+A document should use the `CANONICAL` lifecycle state only when:
+
+- its subject is clearly defined;
+- its authority is established;
+- it does not duplicate an existing canonical source without purpose;
+- contradictions have been reviewed;
+- terminology is consistent;
+- the Public / Private Boundary has been evaluated;
+- the Architect has approved its canonical role.
+
+Publication alone does not establish canonical status.
+
+---
+
+# README Authority
+
+`README.md` serves as the public entry point and navigation surface.
+
+It may summarize:
+
+- identity;
+- architecture;
+- governance;
+- status;
+- repository purpose;
+- public limitations.
+
+It must not become the sole canonical source for every subject.
+
+Detailed canonical definitions should reside in dedicated documents.
+
+When `README.md` conflicts with a dedicated canonical document, the dedicated canonical document controls.
+
+---
+
+# Search and AI Interpretation
+
+Search systems and AI-assisted tools should interpret the repository using the same hierarchy.
+
+Preferred interpretation order:
+
+```text
+Canonical Identity
+→ Canonical Architecture
+→ Canonical Governance
+→ Normative Specifications
+→ Registries
+→ Evidence
+→ Status
+→ Informative Summaries
+→ Historical Material
+```
+
+Repeated text does not increase authority.
+
+A claim repeated across many informative files does not override one specific canonical source.
+
+---
+
+# Public / Private Boundary
+
+This hierarchy governs public sources only.
+
+It does not authorize access to or publication of:
+
+- private repositories;
+- confidential source code;
+- credentials;
+- protected runtime infrastructure;
+- internal approval records;
+- private Nano Core Agent instructions;
+- restricted audit evidence;
+- internal security controls;
+- proprietary operational procedures.
+
+Private material may have separate internal authority structures that are outside the scope of this document.
+
+---
+
+# Status Integrity
+
+This hierarchy does not establish that HANTER is:
+
+- fully implemented;
+- externally deployed;
+- independently verified;
+- production authorized;
+- globally operational;
+- commercially available;
+- unrestrictedly autonomous.
+
+It establishes only the order in which public sources should be interpreted.
+
+---
+
+# Maintenance Rule
+
+The canonical source hierarchy should be reviewed when:
+
+- a new canonical document is introduced;
+- a source is superseded;
+- terminology changes;
+- a schema version changes;
+- registry structure changes;
+- contradictions are discovered;
+- public status advances;
+- private information is incorrectly exposed;
+- a new documentation domain is approved.
+
+Hierarchy changes require explicit documentation.
+
+---
+
+# Long-Term Objective
+
+The Canonical Source Hierarchy ensures that the HANTER public repository remains:
+
+- internally consistent;
+- governable;
+- traceable;
+- resistant to contradiction;
+- resistant to status inflation;
+- understandable by humans;
+- interpretable by AI systems;
+- compatible with machine-readable validation;
+- aligned with the canonical architecture of IMPERIAL Core.
+
+The repository must have many useful documents but only one controlling source for each canonical subject.
+
+---
+
+# Canonical Seal
+
+This document forms part of the official public engineering documentation of the IMPERIAL Core ecosystem.
+
+Prepared, governed and approved under the architectural authority of:
+
+**Alexander Romaskevich**
+
+**Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core**
+
+**Architect and final authority of IMPERIAL Core**
+
+**Architect of HANTER**
+
+This is Alexander Romaskevich.
+
+© IMPERIAL Core. Public Engineering Documentation.
