@@ -13962,3 +13962,63 @@ It should become stronger only when the registry links it to stronger, relevant 
     }
   ]
 }
+{
+  "registry_version": "1.0.0",
+  "registry_id": "IC-HANTER-PUBLIC-CLAIMS-REGISTRY",
+  "title": "HANTER Public Claims Registry",
+  "description": "Canonical registry of publicly declared architectural, governance and engineering claims for HANTER within the IMPERIAL Core ecosystem.",
+  "classification": "PUBLIC",
+  "status": "ACTIVE",
+  "owner": {
+    "name": "Alexander Romaskevich",
+    "role": "Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core"
+  },
+  "governance": {
+    "architect_final_authority": true,
+    "public_private_boundary": "ENFORCED",
+    "evidence_required": true,
+    "deny_by_default": true
+  },
+  "claim_categories": [
+    "IDENTITY",
+    "ARCHITECTURE",
+    "GOVERNANCE",
+    "IMPLEMENTATION",
+    "TESTING",
+    "VERIFICATION",
+    "DEPLOYMENT",
+    "AUTHORIZATION",
+    "OPERATIONS"
+  ],
+  "claims": [
+    {
+      "claim_id": "IC-HANTER-CLAIM-IDENTITY-0001",
+      "title": "Canonical project identity",
+      "status": "ACTIVE",
+      "evidence_status": "REGISTERED",
+      "strength": "OWNED_PUBLIC_SOURCE"
+    },
+    {
+      "claim_id": "IC-HANTER-CLAIM-ARCH-0001",
+      "title": "Federated Multi-Orchestrator Architecture",
+      "status": "ACTIVE",
+      "evidence_status": "REGISTERED",
+      "strength": "OWNED_PUBLIC_SOURCE"
+    },
+    {
+      "claim_id": "IC-HANTER-CLAIM-GOV-0001",
+      "title": "Public / Private Boundary",
+      "status": "ACTIVE",
+      "evidence_status": "REGISTERED",
+      "strength": "OWNED_PUBLIC_SOURCE"
+    },
+    {
+      "claim_id": "IC-HANTER-CLAIM-VERIFY-0001",
+      "title": "Evidence Before Status",
+      "status": "ACTIVE",
+      "evidence_status": "REGISTERED",
+      "strength": "OWNED_PUBLIC_SOURCE"
+    }
+  ],
+  "last_updated": "2026-08-04T00:00:00Z"
+}
