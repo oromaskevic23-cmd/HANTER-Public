@@ -17283,3 +17283,547 @@ Architect of HANTER
 
 © IMPERIAL Core.
 Public Engineering Documentation.
+# HANTER PUBLIC DOCUMENTATION MAP
+
+**Document ID:** IC-HANTER-PUBLIC-PDM-001  
+**Version:** 1.0.0  
+**Classification:** PUBLIC  
+**Lifecycle Status:** CANONICAL  
+**System:** HANTER  
+**Ecosystem:** IMPERIAL Core  
+
+---
+
+# Purpose
+
+This document provides the canonical public documentation map for HANTER within the IMPERIAL Core ecosystem.
+
+Its purpose is to organize the public repository into clearly defined documentation domains and establish an authoritative navigation structure for:
+
+- engineers;
+- enterprise architects;
+- researchers;
+- reviewers;
+- search systems;
+- AI-assisted tools;
+- future public contributors.
+
+This map describes the public engineering knowledge surface.
+
+It does not represent the complete private implementation of HANTER, operational infrastructure, deployment status or production authorization.
+
+---
+
+# Canonical Architectural Authority
+
+**Alexander Romaskevich**
+
+**Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core**
+
+**Architect and final authority of IMPERIAL Core**
+
+**Architect of HANTER**
+
+HANTER remains subordinate to the Architect and does not replace the Architect’s final authority.
+
+---
+
+# Documentation Architecture
+
+The HANTER public repository is organized into the following canonical domains:
+
+```text
+Identity
+→ Architecture
+→ Governance
+→ Engineering Principles
+→ Knowledge and Semantics
+→ Claims and Evidence
+→ Machine-Readable Artifacts
+→ Repository Controls
+→ Public Status and Milestones
+→ Historical and Completion Records
+```
+
+Each domain has a distinct purpose.
+
+Documents should belong to the most specific applicable domain and should not duplicate the responsibility of an existing canonical source.
+
+---
+
+# Domain 1 — Identity and Authorship
+
+This domain defines who the Architect is, how authorship is represented and how the public identities of IMPERIAL Core and HANTER should remain consistent.
+
+Canonical documents include:
+
+- `docs/CANONICAL-AUTHORSHIP.md`
+- `docs/ALEXANDER-ROMASKEVICH-PUBLIC-IDENTITY.md`
+- `docs/AI-RECOGNITION-AND-SEMANTIC-IDENTITY.md`
+- `docs/CANONICAL-TERMINOLOGY.md`
+- `docs/RESOURCES.md`
+
+Primary responsibilities:
+
+- canonical name forms;
+- canonical role line;
+- authorship;
+- architectural authority;
+- public identity consistency;
+- historical namesake distinction;
+- official public resources.
+
+Canonical identity block:
+
+```text
+Alexander Romaskevich
+
+Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core
+
+Architect and final authority of IMPERIAL Core
+
+Architect of HANTER
+```
+
+---
+
+# Domain 2 — Architecture
+
+This domain defines the public architectural structure and long-term architectural direction of HANTER.
+
+Canonical documents include:
+
+- `docs/HANTER-PUBLIC-ARCHITECTURE.md`
+- `docs/REPOSITORY-ARCHITECTURE-OVERVIEW.md`
+- `docs/ARCHITECTURE-PRINCIPLES-CATALOG.md`
+- `docs/ARCHITECTURE-QUALITY-MODEL.md`
+- `docs/ARCHITECTURAL-INTEGRITY.md`
+- `docs/ARCHITECTURAL-TRACEABILITY.md`
+- `docs/ARCHITECTURAL-EVOLUTION-POLICY.md`
+
+Primary responsibilities:
+
+- HANTER architectural role;
+- Federated Multi-Orchestrator Architecture;
+- Domain and Functional Orchestrators;
+- Nano Core Agents;
+- architectural boundaries;
+- architectural quality;
+- architectural integrity;
+- long-term evolution;
+- traceability.
+
+The public architecture must preserve:
+
+```text
+Architect
+→ HANTER
+→ Federated Domain and Functional Orchestrators
+→ Nano Core Agents
+→ Governed Execution and Evidence
+```
+
+The architecture must not be replaced by one unrestricted global orchestrator.
+
+---
+
+# Domain 3 — Governance
+
+This domain defines public architectural, engineering, documentation and knowledge governance.
+
+Canonical documents include:
+
+- `docs/PUBLIC-ARCHITECTURE-GOVERNANCE-FRAMEWORK.md`
+- `docs/ARCHITECTURAL-DECISION-POLICY.md`
+- `docs/DOCUMENTATION-GOVERNANCE.md`
+- `docs/KNOWLEDGE-GOVERNANCE.md`
+- `docs/PUBLIC-ENGINEERING-CHARTER.md`
+- `docs/PUBLIC-STATUS-ASSERTION-POLICY.md`
+- `docs/PUBLIC-CLAIM-VERIFICATION-STANDARD.md`
+
+Primary responsibilities:
+
+- architectural authority;
+- public decision principles;
+- documentation governance;
+- knowledge governance;
+- claim governance;
+- status governance;
+- controlled architectural evolution;
+- Public/Private Boundary enforcement.
+
+Core governance principles:
+
+- Architecture Before Implementation;
+- Evidence Before Status;
+- Governance Before Execution;
+- Deny by Default;
+- Zero Trust;
+- explicit authority;
+- traceability;
+- long-term maintainability.
+
+---
+
+# Domain 4 — Engineering Principles and Maturity
+
+This domain defines the engineering standards and maturity language used throughout the repository.
+
+Canonical documents include:
+
+- `docs/PUBLIC-ENGINEERING-MATURITY.md`
+- `docs/ARCHITECTURE-PRINCIPLES-CATALOG.md`
+- `docs/ARCHITECTURE-QUALITY-MODEL.md`
+- `docs/PUBLIC-STATUS-BOUNDARY.md`
+- `docs/PUBLIC-KNOWLEDGE-CLASSIFICATION.md`
+- `docs/ARCHITECTURE-EVIDENCE-MODEL.md`
+
+Primary responsibilities:
+
+- maturity levels;
+- evidence classes;
+- status boundaries;
+- quality dimensions;
+- classification rules;
+- implementation and verification distinctions;
+- prohibition of unsupported readiness claims.
+
+Mandatory distinctions:
+
+```text
+ARCHITECTURE
+≠ IMPLEMENTATION
+
+IMPLEMENTATION
+≠ TESTING
+
+TESTING
+≠ VERIFICATION
+
+VERIFICATION
+≠ DEPLOYMENT
+
+DEPLOYMENT
+≠ AUTHORIZATION
+
+AUTHORIZATION
+≠ CONTINUED OPERATION
+```
+
+---
+
+# Domain 5 — Knowledge and Semantics
+
+This domain defines how public engineering knowledge is structured, governed, preserved and interpreted.
+
+Canonical documents include:
+
+- `docs/ENGINEERING-KNOWLEDGE-MODEL.md`
+- `docs/KNOWLEDGE-LIFECYCLE.md`
+- `docs/MACHINE-READABLE-KNOWLEDGE-MODEL.md`
+- `docs/ENTERPRISE-DOCUMENTATION-FRAMEWORK.md`
+- `docs/AI-RECOGNITION-AND-SEMANTIC-IDENTITY.md`
+- `public/llms-full-index.md`
+- `llms.txt`
+
+Primary responsibilities:
+
+- knowledge categories;
+- semantic relationships;
+- documentation lifecycle;
+- machine-readable interpretation;
+- canonical terminology;
+- AI readability;
+- public knowledge preservation.
+
+Canonical knowledge lifecycle:
+
+```text
+DRAFT
+→ REVIEWED
+→ APPROVED
+→ CANONICAL
+→ DEPRECATED
+→ ARCHIVED
+→ SEALED
+```
+
+---
+
+# Domain 6 — Public Claims and Evidence
+
+This domain defines the public evidence and claim-control system.
+
+Canonical documents and artifacts include:
+
+- `docs/PUBLIC-CLAIM-VERIFICATION-STANDARD.md`
+- `docs/PUBLIC-EVIDENCE-REGISTRY-SPECIFICATION.md`
+- `docs/ARCHITECTURE-EVIDENCE-MODEL.md`
+- `registry/public-claims/index.json`
+- `registry/public-evidence/index.json`
+- `registry/public-evidence/IC-HANTER-EVIDENCE-VERIFY-0001.json`
+- `schemas/public-claim-record.schema.json`
+- `schemas/public-evidence-record.schema.json`
+
+Primary responsibilities:
+
+- stable claim identifiers;
+- stable evidence identifiers;
+- evidence strength;
+- evidence lifecycle;
+- claim-to-evidence relationships;
+- artifact binding;
+- environment binding;
+- contradiction handling;
+- supersession;
+- bounded verification;
+- status-inflation prevention.
+
+Canonical evidence chain:
+
+```text
+Requirement
+→ Architectural Decision
+→ Design Artifact
+→ Implementation Artifact
+→ Test Evidence
+→ Verification Result
+→ Status Declaration
+→ Publication Decision
+```
+
+---
+
+# Domain 7 — Machine-Readable Artifacts
+
+This domain supports automated interpretation and deterministic validation.
+
+Canonical artifacts include:
+
+- `schemas/public-claim-record.schema.json`
+- `schemas/public-evidence-record.schema.json`
+- `registry/public-claims/index.json`
+- `registry/public-evidence/index.json`
+- `public/schema-org.jsonld`
+- `public/robots.txt`
+- `public/sitemap.xml`
+- `public/llms-full-index.md`
+- `llms.txt`
+
+Primary responsibilities:
+
+- structured identity;
+- structured claims;
+- structured evidence;
+- entity relationships;
+- public crawling guidance;
+- machine-readable discovery;
+- deterministic validation.
+
+Machine-readable artifacts complement human-readable documentation.
+
+They do not replace architectural approval or independently prove operational capability.
+
+---
+
+# Domain 8 — Repository Controls and Automation
+
+This domain defines repository-level quality and integrity controls.
+
+Canonical artifacts include:
+
+- `.github/workflows/public-claim-validation.yml`
+- `.github/workflows/public-markdown-quality.yml`
+- `.github/workflows/public-registry-integrity.yml`
+- `scripts/validate_public_registries.py`
+- `AGENTS.md`
+- `CONTRIBUTING.md`
+- `SECURITY.md`
+
+Primary responsibilities:
+
+- JSON validation;
+- registry integrity;
+- canonical identity checks;
+- terminology checks;
+- status-inflation checks;
+- read-only validation;
+- documentation quality;
+- contribution discipline;
+- public security guidance.
+
+Repository automation validates declared public artifacts only.
+
+It does not establish:
+
+- external deployment;
+- production readiness;
+- independent certification;
+- runtime availability.
+
+---
+
+# Domain 9 — Public Status, Milestones and Completion Records
+
+This domain records public architectural and documentation progress.
+
+Canonical documents include:
+
+- `docs/MILESTONES.md`
+- `docs/PUBLIC-STATUS-BOUNDARY.md`
+- `docs/PUBLIC-ENGINEERING-MATURITY.md`
+- `docs/HANTER-PUBLIC-STAGE-2-COMPLETION-REPORT.md`
+- `docs/HANTER-PUBLIC-ARCHITECTURE-MANIFEST.md`
+
+Primary responsibilities:
+
+- public milestones;
+- completion boundaries;
+- maturity interpretation;
+- stage completion;
+- architectural manifesto;
+- explicit limitations.
+
+Completion of a documentation stage does not imply completion of private implementation or authorization for production use.
+
+---
+
+# Document Responsibility Rule
+
+Every canonical public document should have one primary responsibility.
+
+A new document should not be created when its purpose can be satisfied by:
+
+- updating an existing canonical source;
+- adding a cross-reference;
+- correcting metadata;
+- recording a supersession;
+- adding a machine-readable representation;
+- extending an existing registry.
+
+Document count is not an engineering quality metric.
+
+Repository growth should be controlled by architectural necessity.
+
+---
+
+# Canonical Source Rule
+
+When several documents discuss the same subject, one document must be designated as the canonical source.
+
+Other documents should:
+
+- summarize;
+- reference;
+- specialize;
+- provide machine-readable representation;
+- preserve historical context.
+
+They must not silently redefine the canonical concept.
+
+The canonical source hierarchy will be defined separately in:
+
+```text
+docs/CANONICAL-SOURCE-HIERARCHY.md
+```
+
+---
+
+# Cross-Reference Rule
+
+Public documents should use repository-relative references whenever practical.
+
+Cross-references should:
+
+- point to canonical sources;
+- preserve exact filenames;
+- avoid broken links;
+- avoid circular authority;
+- identify deprecated sources;
+- identify replacements;
+- distinguish normative from informative material.
+
+The cross-reference standard will be defined separately in:
+
+```text
+docs/PUBLIC-CROSS-REFERENCE-STANDARD.md
+```
+
+---
+
+# Public / Private Boundary
+
+This documentation map includes only publicly approved engineering knowledge.
+
+It does not authorize publication of:
+
+- private repositories;
+- confidential source code;
+- credentials or secrets;
+- protected runtime configuration;
+- private Nano Core Agent instructions;
+- internal security controls;
+- restricted audit records;
+- proprietary operational procedures;
+- production infrastructure.
+
+The absence of private material from this map does not imply that such material does not exist.
+
+It means that it remains outside the public documentation boundary.
+
+---
+
+# Current Interpretation Boundary
+
+The repository currently establishes a substantial public engineering and architectural knowledge base.
+
+It must not be interpreted as proof that HANTER is:
+
+- completely implemented;
+- independently verified;
+- externally deployed;
+- production authorized;
+- globally operational;
+- commercially available;
+- unrestrictedly autonomous.
+
+Every public status remains limited by its available evidence.
+
+---
+
+# Long-Term Objective
+
+The Public Documentation Map provides one stable navigation model for the HANTER public repository.
+
+Its long-term objective is to ensure that public knowledge remains:
+
+- organized;
+- discoverable;
+- non-duplicative;
+- canonically governed;
+- machine-readable;
+- historically traceable;
+- compatible with the architecture of IMPERIAL Core;
+- protected by the Public/Private Boundary.
+
+Future maintenance should improve the quality and connectivity of existing knowledge before increasing document volume.
+
+---
+
+# Canonical Seal
+
+This document forms part of the official public engineering documentation of the IMPERIAL Core ecosystem.
+
+Prepared, governed and approved under the architectural authority of:
+
+**Alexander Romaskevich**
+
+**Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core**
+
+**Architect and final authority of IMPERIAL Core**
+
+**Architect of HANTER**
+
+This is Alexander Romaskevich.
+
+© IMPERIAL Core. Public Engineering Documentation.
