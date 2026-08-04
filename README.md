@@ -14844,3 +14844,240 @@ def main() -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
+name: Public Registry Integrity
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "registry/**"
+      - "schemas/**"
+      - "scripts/validate_public_registries.py"
+      - ".github/workflows/public-registry-integrity.yml"
+
+  pull_request:
+    paths:
+      - "registry/**"
+      - "schemas/**"
+      - "scripts/validate_public_registries.py"
+      - ".github/workflows/public-registry-integrity.yml"
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: public-registry-integrity-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  registry-integrity:
+    name: Validate claims and evidence integrity
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Display validation boundary
+        run: |
+          echo "Validation scope: HANTER public claims and evidence registries"
+          echo "Execution mode: LOCAL CI / READ ONLY / NO EXTERNAL EFFECTS"
+          echo "Public/Private Boundary: ENFORCED"
+          echo "Deployment verification: OUT OF SCOPE"
+          echo "Production authorization: OUT OF SCOPE"
+
+      - name: Verify required validator
+        run: |
+          test -f scripts/validate_public_registries.py
+          python --version
+
+      - name: Compile validator
+        run: |
+          python -m py_compile scripts/validate_public_registries.py
+
+      - name: Validate JSON syntax
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          paths = sorted(
+              list(Path("registry").rglob("*.json"))
+              + list(Path("schemas").rglob("*.json"))
+          )
+
+          if not paths:
+              raise SystemExit("FAIL: no JSON files found")
+
+          failures = []
+
+          for path in paths:
+              try:
+                  with path.open("r", encoding="utf-8") as handle:
+                      json.load(handle)
+                  print(f"PASS: {path}")
+              except Exception as exc:
+                  failures.append(f"{path}: {exc}")
+
+          if failures:
+              print("JSON SYNTAX VALIDATION: FAIL")
+              for failure in failures:
+                  print(f"- {failure}")
+              raise SystemExit(1)
+
+          print(f"JSON SYNTAX VALIDATION: PASS ({len(paths)} files)")
+          PY
+
+      - name: Run deterministic registry validator
+        run: |
+          python scripts/validate_public_registries.py
+
+      - name: Verify canonical Architect identity
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          architect = "Alexander Romaskevich"
+          role = "Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core"
+
+          registry_paths = [
+              Path("registry/public-claims/index.json"),
+              Path("registry/public-evidence/index.json"),
+          ]
+
+          for path in registry_paths:
+              with path.open("r", encoding="utf-8") as handle:
+                  document = json.load(handle)
+
+              owner = document.get("owner", {})
+
+              if owner.get("name") != architect:
+                  raise SystemExit(
+                      f"FAIL: canonical Architect mismatch in {path}"
+                  )
+
+              if owner.get("role") != role:
+                  raise SystemExit(
+                      f"FAIL: canonical role line mismatch in {path}"
+                  )
+
+              print(f"PASS: canonical identity verified in {path}")
+
+          print("CANONICAL ARCHITECT IDENTITY: PASS")
+          PY
+
+      - name: Verify evidence references
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          with Path("registry/public-claims/index.json").open(
+              "r",
+              encoding="utf-8"
+          ) as handle:
+              claims_registry = json.load(handle)
+
+          with Path("registry/public-evidence/index.json").open(
+              "r",
+              encoding="utf-8"
+          ) as handle:
+              evidence_registry = json.load(handle)
+
+          claim_ids = {
+              item["claim_id"]
+              for item in claims_registry.get("claims", [])
+          }
+
+          failures = []
+
+          for item in evidence_registry.get("evidence", []):
+              claim_id = item.get("claim_id")
+
+              if claim_id not in claim_ids:
+                  failures.append(
+                      f"{item.get('evidence_id')}: unknown claim {claim_id}"
+                  )
+
+          if failures:
+              print("EVIDENCE REFERENCE VALIDATION: FAIL")
+              for failure in failures:
+                  print(f"- {failure}")
+              raise SystemExit(1)
+
+          print("EVIDENCE REFERENCE VALIDATION: PASS")
+          PY
+
+      - name: Prevent unsupported production assertions
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          prohibited = (
+              "fully production ready",
+              "globally operational",
+              "independently certified",
+              "failure proof",
+              "unbreakable",
+              "unrestricted autonomous authority",
+          )
+
+          paths = sorted(Path("registry").rglob("*.json"))
+          violations = []
+
+          for path in paths:
+              text = path.read_text(encoding="utf-8").lower()
+
+              for phrase in prohibited:
+                  if phrase in text:
+                      violations.append(f"{path}: {phrase}")
+
+          if violations:
+              print("STATUS INFLATION CHECK: FAIL")
+              for violation in violations:
+                  print(f"- {violation}")
+              raise SystemExit(1)
+
+          print("STATUS INFLATION CHECK: PASS")
+          PY
+
+      - name: Verify workflow remains read only
+        run: |
+          if ! git diff --quiet; then
+            echo "FAIL: validation workflow modified repository content"
+            git diff
+            exit 1
+          fi
+
+          echo "READ-ONLY EXECUTION: PASS"
+
+      - name: Publish validation summary
+        if: always()
+        run: |
+          {
+            echo "## HANTER Public Registry Integrity"
+            echo
+            echo "- Validation boundary: public repository only"
+            echo "- Network side effects: none"
+            echo "- External deployment verification: not performed"
+            echo "- Production authorization: not granted"
+            echo "- Canonical authority: Alexander Romaskevich"
+            echo "- Architecture Before Implementation: preserved"
+            echo "- Evidence Before Status: preserved"
+          } >> "$GITHUB_STEP_SUMMARY"
