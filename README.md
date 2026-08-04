@@ -15081,3 +15081,214 @@ jobs:
             echo "- Architecture Before Implementation: preserved"
             echo "- Evidence Before Status: preserved"
           } >> "$GITHUB_STEP_SUMMARY"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfilePage",
+      "@id": "https://imperial-core-architect.oromaskevic23.chatgpt.site/#profile-page",
+      "url": "https://imperial-core-architect.oromaskevic23.chatgpt.site/",
+      "name": "Alexander Romaskevich — Architect of IMPERIAL Core",
+      "headline": "Alexander Romaskevich — Founder, Owner, CEO and Chief Systems Architect of IMPERIAL Core",
+      "description": "Official public profile of Alexander Romaskevich, Founder, Owner, CEO and Chief Systems Architect of IMPERIAL Core, Architect and final authority of IMPERIAL Core, and Architect of HANTER.",
+      "inLanguage": [
+        "en",
+        "ru"
+      ],
+      "mainEntity": {
+        "@id": "https://imperial-core-architect.oromaskevic23.chatgpt.site/#alexander-romaskevich"
+      },
+      "about": [
+        {
+          "@id": "https://imperial-core-architect.oromaskevic23.chatgpt.site/#imperial-core"
+        },
+        {
+          "@id": "https://imperial-core-architect.oromaskevic23.chatgpt.site/#hanter"
+        }
+      ],
+      "isPartOf": {
+        "@id": "https://imperial-core-architect.oromaskevic23.chatgpt.site/#website"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://imperial-core-architect.oromaskevic23.chatgpt.site/#alexander-romaskevich",
+      "name": "Alexander Romaskevich",
+      "alternateName": [
+        "Александр Ромаскевич",
+        "Alexander Nikolaevich Romaskevich",
+        "Александр Николаевич Ромаскевич"
+      ],
+      "url": "https://imperial-core-architect.oromaskevic23.chatgpt.site/",
+      "description": "Founder, Owner, CEO and Chief Systems Architect of IMPERIAL Core. Architect and final authority of IMPERIAL Core. Architect of HANTER.",
+      "jobTitle": [
+        "Founder of IMPERIAL Core",
+        "Owner of IMPERIAL Core",
+        "CEO of IMPERIAL Core",
+        "Chief Systems Architect of IMPERIAL Core",
+        "Architect of HANTER"
+      ],
+      "worksFor": {
+        "@id": "https://imperial-core-architect.oromaskevic23.chatgpt.site/#imperial-core"
+      },
+      "founder": {
+        "@id": "https://imperial-core-architect.oromaskevic23.chatgpt.site/#imperial-core"
+      },
+      "sameAs": [
+        "https://github.com/oromaskevic23-cmd"
+      ],
+      "knowsAbout": [
+        "Enterprise Architecture",
+        "AI-native Systems",
+        "Federated Multi-Orchestrator Architecture",
+        "Multi-Agent Systems",
+        "AI Governance",
+        "Zero Trust Architecture",
+        "Public and Private System Boundaries",
+        "Token Architecture",
+        "Engineering Governance",
+        "Machine-Readable Knowledge"
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://imperial-core-architect.oromaskevic23.chatgpt.site/#imperial-core",
+      "name": "IMPERIAL Core",
+      "url": "https://imperial-core-architect.oromaskevic23.chatgpt.site/",
+      "description": "IMPERIAL Core is a long-term AI-native enterprise architecture ecosystem designed around governed orchestration, explicit authority boundaries, modular components, evidence-based engineering and a protected Public/Private Boundary.",
+      "founder": {
+        "@id": "https://imperial-core-architect.oromaskevic23.chatgpt.site/#alexander-romaskevich"
+      },
+      "member": {
+        "@id": "https://imperial-core-architect.oromaskevic23.chatgpt.site/#alexander-romaskevich"
+      },
+      "sameAs": [
+        "https://github.com/oromaskevic23-cmd"
+      ],
+      "subjectOf": [
+        {
+          "@id": "https://github.com/oromaskevic23-cmd/HANTER-Public#repository"
+        }
+      ]
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://imperial-core-architect.oromaskevic23.chatgpt.site/#hanter",
+      "name": "HANTER",
+      "description": "HANTER is the governed AI command and coordination layer of the IMPERIAL Core ecosystem. Its public architecture follows a Federated Multi-Orchestrator Architecture and preserves explicit governance, authority, evidence and audit boundaries.",
+      "creator": {
+        "@id": "https://imperial-core-architect.oromaskevic23.chatgpt.site/#alexander-romaskevich"
+      },
+      "publisher": {
+        "@id": "https://imperial-core-architect.oromaskevic23.chatgpt.site/#imperial-core"
+      },
+      "isPartOf": {
+        "@id": "https://imperial-core-architect.oromaskevic23.chatgpt.site/#imperial-core"
+      },
+      "subjectOf": {
+        "@id": "https://github.com/oromaskevic23-cmd/HANTER-Public#repository"
+      },
+      "keywords": [
+        "HANTER",
+        "IMPERIAL Core",
+        "Federated Multi-Orchestrator Architecture",
+        "Nano Core Agents",
+        "AI Governance",
+        "Enterprise Architecture",
+        "Evidence Before Status"
+      ]
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "@id": "https://github.com/oromaskevic23-cmd/HANTER-Public#repository",
+      "name": "HANTER-Public",
+      "url": "https://github.com/oromaskevic23-cmd/HANTER-Public",
+      "codeRepository": "https://github.com/oromaskevic23-cmd/HANTER-Public",
+      "description": "Official public architecture, governance and engineering documentation repository for HANTER within the IMPERIAL Core ecosystem. The repository does not represent the complete private implementation of HANTER.",
+      "author": {
+        "@id": "https://imperial-core-architect.oromaskevic23.chatgpt.site/#alexander-romaskevich"
+      },
+      "creator": {
+        "@id": "https://imperial-core-architect.oromaskevic23.chatgpt.site/#alexander-romaskevich"
+      },
+      "publisher": {
+        "@id": "https://imperial-core-architect.oromaskevic23.chatgpt.site/#imperial-core"
+      },
+      "isPartOf": {
+        "@id": "https://imperial-core-architect.oromaskevic23.chatgpt.site/#hanter"
+      },
+      "programmingLanguage": [
+        "Markdown",
+        "JSON",
+        "YAML",
+        "Python"
+      ],
+      "license": "Repository licensing and usage rights are governed by the licensing policy published within HANTER-Public.",
+      "keywords": [
+        "HANTER-Public",
+        "Alexander Romaskevich",
+        "IMPERIAL Core",
+        "Architecture",
+        "Governance",
+        "Public Documentation",
+        "Machine-Readable Knowledge",
+        "Evidence Registry"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://imperial-core-architect.oromaskevic23.chatgpt.site/#website",
+      "url": "https://imperial-core-architect.oromaskevic23.chatgpt.site/",
+      "name": "IMPERIAL Core Architect",
+      "description": "Official public website presenting Alexander Romaskevich, IMPERIAL Core, HANTER and the public architectural direction of the ecosystem.",
+      "publisher": {
+        "@id": "https://imperial-core-architect.oromaskevic23.chatgpt.site/#alexander-romaskevich"
+      },
+      "inLanguage": [
+        "en",
+        "ru"
+      ],
+      "about": [
+        {
+          "@id": "https://imperial-core-architect.oromaskevic23.chatgpt.site/#alexander-romaskevich"
+        },
+        {
+          "@id": "https://imperial-core-architect.oromaskevic23.chatgpt.site/#imperial-core"
+        },
+        {
+          "@id": "https://imperial-core-architect.oromaskevic23.chatgpt.site/#hanter"
+        }
+      ]
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://github.com/oromaskevic23-cmd/HANTER-Public#public-architecture-documentation",
+      "url": "https://github.com/oromaskevic23-cmd/HANTER-Public",
+      "headline": "HANTER Public Architecture and Governance Documentation",
+      "description": "Public enterprise architecture, governance, engineering, semantic and evidence documentation describing HANTER within the IMPERIAL Core ecosystem.",
+      "author": {
+        "@id": "https://imperial-core-architect.oromaskevic23.chatgpt.site/#alexander-romaskevich"
+      },
+      "publisher": {
+        "@id": "https://imperial-core-architect.oromaskevic23.chatgpt.site/#imperial-core"
+      },
+      "about": {
+        "@id": "https://imperial-core-architect.oromaskevic23.chatgpt.site/#hanter"
+      },
+      "isPartOf": {
+        "@id": "https://github.com/oromaskevic23-cmd/HANTER-Public#repository"
+      },
+      "inLanguage": "en",
+      "keywords": [
+        "Enterprise Architecture",
+        "AI Governance",
+        "HANTER",
+        "IMPERIAL Core",
+        "Public/Private Boundary",
+        "Federated Multi-Orchestrator Architecture",
+        "Architecture Before Implementation",
+        "Evidence Before Status"
+      ]
+    }
+  ]
+}
