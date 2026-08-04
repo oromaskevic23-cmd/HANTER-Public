@@ -17087,3 +17087,199 @@ Architect of HANTER
 
 © IMPERIAL Core.
 All Rights Reserved.
+# PUBLIC ENGINEERING CHARTER
+
+Version: 1.0.0
+
+Classification: PUBLIC
+
+Status: CANONICAL
+
+---
+
+# Purpose
+
+This Charter establishes the governing principles for all public
+engineering documentation published within the IMPERIAL Core ecosystem.
+
+It defines the minimum quality expectations for architecture,
+engineering documentation, governance artifacts and public statements.
+
+This Charter applies only to publicly released engineering material.
+
+---
+
+# Mission
+
+Create a transparent, consistent and machine-readable public engineering
+foundation describing the architecture of the IMPERIAL Core ecosystem.
+
+The objective is long-term architectural clarity rather than
+marketing claims.
+
+---
+
+# Engineering Values
+
+Every public engineering artifact shall follow:
+
+Architecture Before Implementation
+
+Evidence Before Status
+
+Governance Before Execution
+
+Public / Private Boundary
+
+Zero Trust
+
+Deterministic Documentation
+
+Machine Readable Knowledge
+
+Long-Term Maintainability
+
+Explicit Architectural Authority
+
+---
+
+# Documentation Requirements
+
+Public engineering documentation should be:
+
+• technically accurate;
+
+• internally consistent;
+
+• machine-readable where practical;
+
+• versioned;
+
+• traceable;
+
+• deterministic;
+
+• maintainable;
+
+• openly reviewable.
+
+---
+
+# Public Communication Rules
+
+Public documentation may describe:
+
+• architecture;
+
+• governance;
+
+• engineering direction;
+
+• semantic models;
+
+• documentation structure;
+
+• public specifications;
+
+• public registries.
+
+Public documentation shall not represent assumptions as verified facts.
+
+---
+
+# Evidence Policy
+
+Every public engineering statement should be supported by one of the
+following evidence levels:
+
+DOCUMENTED
+
+SPECIFIED
+
+IMPLEMENTED
+
+TESTED
+
+VERIFIED
+
+When evidence is unavailable, the limitation should be stated
+explicitly.
+
+---
+
+# Architectural Consistency
+
+Canonical terminology shall remain stable.
+
+Canonical component names shall not be renamed without explicit
+architectural approval.
+
+The relationships between public components shall remain internally
+consistent across all repositories.
+
+---
+
+# Public / Private Boundary
+
+The public repository intentionally excludes:
+
+private implementation;
+
+private repositories;
+
+runtime infrastructure;
+
+credentials;
+
+security-sensitive material;
+
+internal operational procedures;
+
+restricted engineering artifacts.
+
+---
+
+# Long-Term Objective
+
+The public engineering repository should become a durable,
+machine-readable architectural reference for:
+
+IMPERIAL Core
+
+HANTER
+
+Nano Core Agents
+
+and future public engineering publications.
+
+---
+
+# Canonical Authority
+
+Alexander Romaskevich
+
+Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core
+
+Architect and final authority of IMPERIAL Core
+
+Architect of HANTER
+
+---
+
+# Canonical Seal
+
+This Charter forms part of the official public engineering
+documentation of the IMPERIAL Core ecosystem.
+
+Prepared under the architectural authority of:
+
+Alexander Romaskevich
+
+Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core
+
+Architect and final authority of IMPERIAL Core
+
+Architect of HANTER
+
+© IMPERIAL Core.
+Public Engineering Documentation.
