@@ -1,3 +1,7 @@
+> **Evidence and architecture status — 24 October 2026.** HANTER is the intended mission coordination and Architect interface component, **not a single universal runtime orchestrator**. This repository currently contains design/policy documents only, with **no checked-in runnable coordinator or verified CI**. Any production-readiness descriptions below are design objectives until supported by source and independently observed tests. [Enterprise evidence register](https://github.com/oromaskevic23-cmd/IMPERIAL-Core-US-HoldCo-Founder-Control-Blueprint/blob/main/docs/ENTERPRISE_PORTFOLIO_AUDIT.md).
+
+---
+
 
 # HANTER-Public
 
