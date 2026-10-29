@@ -41,6 +41,6 @@ Start non-confidential collaboration through the [founder profile](https://githu
 
 **Build software. Verify everything.**
 
-## Verified Browser Integration Reference
+## Browser integration — evidence boundary
 
-HANTER now has a [bounded Playwright MCP browser integration](https://github.com/oromaskevic23-cmd/HANTER/tree/main/engineering/browser) with [verified ephemeral installation and Chromium isolation smoke](https://github.com/oromaskevic23-cmd/HANTER/actions/runs/40905007109). This public architecture repository remains documentation-only. The browser does not carry an authenticated GitHub session, continuously run, or grant independent NCA execution rights. No monitoring is scheduled.
+A bounded Playwright MCP browser-integration experiment was reported in a restricted engineering repository. The underlying source and CI run are not publicly accessible, so they are not claimed as independently verified public evidence. This public architecture repository remains documentation-only. Browser automation alone does not establish authenticated GitHub sessions, continuous execution, or independent NCA authority. No monitoring is scheduled.
