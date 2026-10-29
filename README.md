@@ -36,3 +36,7 @@ Start non-confidential collaboration through the [founder profile](https://githu
 **Authorship: Alexander Romaskevich — RomaskevicH.** Third-party rights, existing notices and licenses remain unchanged. Public visibility does not grant an additional license. No private source or private test logs are imported here.
 
 **Build software. Verify everything.**
+
+## Verified Browser Integration Reference
+
+HANTER now has a [bounded Playwright MCP browser integration](https://github.com/oromaskevic23-cmd/HANTER/tree/main/engineering/browser) with [verified ephemeral installation and Chromium isolation smoke](https://github.com/oromaskevic23-cmd/HANTER/actions/runs/40905007109). This public architecture repository remains documentation-only. The browser does not carry an authenticated GitHub session, continuously run, or grant independent NCA execution rights. No monitoring is scheduled.
