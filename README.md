@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/hanter-enterprise-banner.webp" alt="HANTER — Chief Executive Orchestrator, Nano Core Agents and IMPERIAL Core" width="100%" />
+  <img src="assets/hanter-banner-original-20261029.jpg" alt="HANTER — Chief Executive Orchestrator, Nano Core Agents and IMPERIAL Core" width="100%" />
 </p>
 
 # HANTER — Public Architecture
