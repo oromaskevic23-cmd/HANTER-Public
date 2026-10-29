@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/hanter-enterprise-banner.webp" alt="HANTER — Chief Executive Orchestrator, Nano Core Agents and IMPERIAL Core" width="100%" />
+</p>
+
 # HANTER — Public Architecture
 
 Public mission-coordination and Architect-interface design. Domain orchestrators retain bounded responsibilities.
