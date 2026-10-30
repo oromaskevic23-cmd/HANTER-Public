@@ -61,3 +61,7 @@ jobs:
         env:
           HANTER_LOCAL_LLM_PROBE: I_ACCEPT_LOCAL_INFERENCE
         run: python3 -m hanter_pilot.ollama_local
+      - name: Execute genuine NCA LLM proposal under three signed test authorities
+        env:
+          HANTER_LOCAL_LLM_PROBE: I_ACCEPT_LOCAL_INFERENCE
+        run: python3 -m hanter_pilot.governed_model_demo
