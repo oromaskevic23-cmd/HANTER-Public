@@ -9,7 +9,7 @@
 
 Public mission-coordination and Architect-interface design. Domain orchestrators retain bounded responsibilities.
 
-**Status: SPECIFIED — public design documents; no runnable implementation in this repository.**  
+**Status: SPECIFIED architecture plus an offline executable local hashing pilot on the development branch; not a deployed service.**  
 Evidence checkpoint: **25 October 2026**.
 
 ## Founder and architectural authority
@@ -19,6 +19,12 @@ Founder • Owner • CEO of IMPERIAL Core
 Architect / Final Architectural Decision Authority
 
 **HANTER — AI Command Center / Chief Systems** operates under the founder's architectural decisions. This role does not imply a single unrestricted global orchestrator.
+
+## Offline engineering pilot — executable reference (not production)
+
+[HANTER → federated orchestrator → NCA handoff pilot](hanter_pilot/README.md) provides a reproducible, **read-only local file-hashing task** under a short-lived HMAC test permit, scoped federation route, SQLite replay claim, in-process QA and local hash-chained evidence. It does not activate production NCA, provide a real AI Passport, connect to a model, establish a secure sandbox or run continuously.
+
+Run: `python3 -m unittest discover -s tests -p 'test_hanter_pilot.py' -v` and `python3 -m hanter_pilot.pilot`. The CI workflow verifies the scoped pilot on pull requests. Older public documentation remains applicable to the architecture; a tested local demo is **not** proof of a deployed autonomous command center.
 
 ## Public technical evidence
 
