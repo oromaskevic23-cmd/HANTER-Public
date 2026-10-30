@@ -1,13 +1,9 @@
 name: HANTER offline authorized NCA handoff pilot
 
 on:
+  push:
+    branches: [main]
   pull_request:
-    paths:
-      - "hanter_pilot/**"
-      - "tests/test_hanter_pilot.py"
-      - "tests/test_passport_v2.py"
-      - ".github/workflows/hanter-offline-pilot.yml"
-      - "README.md"
   workflow_dispatch:
 
 permissions:
@@ -16,7 +12,7 @@ permissions:
 jobs:
   offline-pilot:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 8
     steps:
       - name: Check out only source
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
@@ -24,8 +20,12 @@ jobs:
           persist-credentials: false
       - name: Check Python interpreter
         run: python3 --version
+      - name: Compile Python source before executing tests
+        run: python3 -m compileall -q hanter_pilot tests
       - name: Install pinned verification library for offline CI
         run: python3 -m pip install --disable-pip-version-check -r hanter_pilot/requirements-pilot.txt
+      - name: Verify installed dependency health
+        run: python3 -m pip check
       - name: Run offline authenticated handoff tests
         run: python3 -m unittest discover -s tests -p 'test_*.py' -v
       - name: Execute one synthetic local NCA task

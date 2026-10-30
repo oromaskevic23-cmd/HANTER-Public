@@ -9,8 +9,8 @@
 
 Public mission-coordination and Architect-interface design. Domain orchestrators retain bounded responsibilities.
 
-**Status: SPECIFIED architecture plus an offline executable local hashing pilot on the development branch; not a deployed service.**  
-Evidence checkpoint: **25 October 2026**.
+**Status: SPECIFIED architecture plus TESTED offline executable reference on main; no deployed autonomous service.**  
+Evidence checkpoint: **31 October 2026** (linked test executions apply only to the stated commit revisions).
 
 ## Founder and architectural authority
 
@@ -24,7 +24,7 @@ Architect / Final Architectural Decision Authority
 
 [HANTER → federated orchestrator → NCA handoff pilot](hanter_pilot/README.md) provides a reproducible, **read-only local file-hashing task** under a short-lived HMAC test permit, scoped federation route, SQLite replay claim, in-process QA and local hash-chained evidence. It does not activate production NCA, provide a real AI Passport, connect to a model, establish a secure sandbox or run continuously.
 
-Run: `python3 -m unittest discover -s tests -p 'test_hanter_pilot.py' -v` and `python3 -m hanter_pilot.pilot`. The CI workflow verifies the scoped pilot on pull requests. Older public documentation remains applicable to the architecture; a tested local demo is **not** proof of a deployed autonomous command center.
+Run: `python3 -m unittest discover -s tests -p 'test_hanter_pilot.py' -v` and `python3 -m hanter_pilot.pilot`. The CI workflow verifies the scoped pilot on pull requests and on pushes to main; the Ollama inference workflow remains manual-only. Older public documentation remains applicable to the architecture; a tested local demo is **not** proof of a deployed autonomous command center.
 
 ## Signed sandbox workflow — AI Passport × Guardian Core × Approval Gateway
 
@@ -43,7 +43,11 @@ The [hardening and evidence register](hanter_pilot/HARDENING_EVIDENCE.md) descri
 
 ## Public technical evidence
 
-The public default-branch tree contains documentation. Source embedded in a README is not a separately runnable, verified implementation. No public runtime CI result is asserted.
+The public main branch includes executable offline Python reference code and reproducible GitHub Actions evidence. These checks cover synthetic tasks, signed test permits, local model proposals and a disposable Docker worker; they do **not** establish a 24/7 production runtime, independently deployed approval services or billion-agent capacity.
+
+## CI and change-control policy
+
+The [CI and Release Gate](governance/CI_RELEASE_GATE.md) records the mandatory pre-merge checks, their scope and code-ownership boundaries. Every pull request and every push to main must run the HANTER offline test suite and a disposable read-only Docker task. Results apply **only to the tested commit SHA**. Historical failed checks are retained as truthful evidence and must not be erased by force-pushing published history. The real-model Ollama evidence workflow is **manual-only**, not continuous monitoring. CODEOWNERS entries alone do not enforce required approval without a configured GitHub branch ruleset.
 
 ## Architecture and governance
 

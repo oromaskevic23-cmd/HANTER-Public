@@ -5,3 +5,9 @@
 /.github/workflows/enterprise-founder-authorship.yml @oromaskevic23-cmd
 /LICENSE* @oromaskevic23-cmd
 /NOTICE* @oromaskevic23-cmd
+# HANTER execution, cryptographic trust, and CI review ownership.
+/hanter_pilot/ @oromaskevic23-cmd
+/tests/ @oromaskevic23-cmd
+/.github/workflows/hanter-offline-pilot.yml @oromaskevic23-cmd
+/.github/workflows/hanter-one-time-local-llm.yml @oromaskevic23-cmd
+/governance/CI_RELEASE_GATE.md @oromaskevic23-cmd
