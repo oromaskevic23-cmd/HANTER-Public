@@ -1,0 +1,3 @@
+# Offline Ed25519 verification dependency. Exact version is pinned for reproducibility.
+# Transitive dependency and artifact hash lock are required before production use.
+cryptography==50.0.2

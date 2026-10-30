@@ -9,7 +9,7 @@
 
 Public mission-coordination and Architect-interface design. Domain orchestrators retain bounded responsibilities.
 
-**Status: SPECIFIED — public design documents; no runnable implementation in this repository.**  
+**Status: SPECIFIED architecture plus an offline executable local hashing pilot on the development branch; not a deployed service.**  
 Evidence checkpoint: **25 October 2026**.
 
 ## Founder and architectural authority
@@ -19,6 +19,27 @@ Founder • Owner • CEO of IMPERIAL Core
 Architect / Final Architectural Decision Authority
 
 **HANTER — AI Command Center / Chief Systems** operates under the founder's architectural decisions. This role does not imply a single unrestricted global orchestrator.
+
+## Offline engineering pilot — executable reference (not production)
+
+[HANTER → federated orchestrator → NCA handoff pilot](hanter_pilot/README.md) provides a reproducible, **read-only local file-hashing task** under a short-lived HMAC test permit, scoped federation route, SQLite replay claim, in-process QA and local hash-chained evidence. It does not activate production NCA, provide a real AI Passport, connect to a model, establish a secure sandbox or run continuously.
+
+Run: `python3 -m unittest discover -s tests -p 'test_hanter_pilot.py' -v` and `python3 -m hanter_pilot.pilot`. The CI workflow verifies the scoped pilot on pull requests. Older public documentation remains applicable to the architecture; a tested local demo is **not** proof of a deployed autonomous command center.
+
+## Signed sandbox workflow — AI Passport × Guardian Core × Approval Gateway
+
+The [Ed25519 signed-authority reference](hanter_pilot/ED25519_PASSPORT.md) extends the offline pilot with separate, cryptographically verified demo documents for AI Passport, Guardian and Approval, plus simulated revocation and Owner Kill Switch enforcement. Its [executable demo](hanter_pilot/signed_demo.py) uses temporary local keys and performs one genuine read-only NCA task with QA and a local evidence chain.
+
+These are **non-production local fixtures** and do not constitute actual deployed AI Passport issuance, live Guardian Core / Approval Gateway, independent external QA, trusted Owner approval, autonomous LLM inference or 24/7 server-side availability. No real execution authority is granted by GitHub code or CI results.
+
+## Verified engineering checkpoint — local NCA, isolation and governed LLM
+
+The [hardening and evidence register](hanter_pilot/HARDENING_EVIDENCE.md) describes an **encrypted owner-only local test-key vault**, a **real network-disabled, read-only Docker NCA worker**, and a **real CPU inference pilot** with third-party SmolLM2 under ephemeral Ed25519 test Passport, Guardian and Approval signatures. Model output is a non-executable proposal and is recorded in a local SQLite evidence chain.
+
+- [109/109 unit tests and real Docker job — GitHub Actions](https://github.com/oromaskevic23-cmd/HANTER-Public/actions/runs/41142099183).
+- [One genuine signed-authority NCA → Ollama call — GitHub Actions](https://github.com/oromaskevic23-cmd/HANTER-Public/actions/runs/41142037544).
+- Actual Ollama smoke tests are **manual-only after the verified initial run**; no GitHub scheduled monitoring.
+- These experiments run on **disposable GitHub Actions infrastructure**, not an IMPERIAL Core 24/7 production server. No real Owner-signed production AI Passport, authenticated Guardian Core / Approval Gateway service, externally anchored Audit Ledger, independently operated QA or autonomous revenue process is claimed.
 
 ## Public technical evidence
 

@@ -1,0 +1,42 @@
+name: HANTER offline authorized NCA handoff pilot
+
+on:
+  pull_request:
+    paths:
+      - "hanter_pilot/**"
+      - "tests/test_hanter_pilot.py"
+      - "tests/test_passport_v2.py"
+      - ".github/workflows/hanter-offline-pilot.yml"
+      - "README.md"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  offline-pilot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out only source
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Check Python interpreter
+        run: python3 --version
+      - name: Install pinned verification library for offline CI
+        run: python3 -m pip install --disable-pip-version-check -r hanter_pilot/requirements-pilot.txt
+      - name: Run offline authenticated handoff tests
+        run: python3 -m unittest discover -s tests -p 'test_*.py' -v
+      - name: Execute one synthetic local NCA task
+        run: python3 -m hanter_pilot.pilot
+      - name: Execute three-role signed AI Passport sandbox demonstration
+        run: python3 -m hanter_pilot.signed_demo
+      - name: Prove encrypted test-key vault lifecycle
+        run: python3 -m hanter_pilot.key_vault
+      - name: Check isolated Docker runtime and pull public Python runner
+        run: |
+          docker info --format '{{.ServerVersion}}'
+          docker pull python:3.12-slim
+      - name: Execute actual no-network read-only Docker NCA worker
+        run: python3 -m hanter_pilot.isolated_worker
