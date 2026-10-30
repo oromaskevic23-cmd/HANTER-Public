@@ -26,6 +26,12 @@ Architect / Final Architectural Decision Authority
 
 Run: `python3 -m unittest discover -s tests -p 'test_hanter_pilot.py' -v` and `python3 -m hanter_pilot.pilot`. The CI workflow verifies the scoped pilot on pull requests. Older public documentation remains applicable to the architecture; a tested local demo is **not** proof of a deployed autonomous command center.
 
+## Signed sandbox workflow — AI Passport × Guardian Core × Approval Gateway
+
+The [Ed25519 signed-authority reference](hanter_pilot/ED25519_PASSPORT.md) extends the offline pilot with separate, cryptographically verified demo documents for AI Passport, Guardian and Approval, plus simulated revocation and Owner Kill Switch enforcement. Its [executable demo](hanter_pilot/signed_demo.py) uses temporary local keys and performs one genuine read-only NCA task with QA and a local evidence chain.
+
+These are **non-production local fixtures** and do not constitute actual deployed AI Passport issuance, live Guardian Core / Approval Gateway, independent external QA, trusted Owner approval, autonomous LLM inference or 24/7 server-side availability. No real execution authority is granted by GitHub code or CI results.
+
 ## Public technical evidence
 
 The public default-branch tree contains documentation. Source embedded in a README is not a separately runnable, verified implementation. No public runtime CI result is asserted.
