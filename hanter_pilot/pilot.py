@@ -70,7 +70,10 @@ def _validate(permit: dict, secret: bytes, routes: set[tuple[str, str, str]], no
         raise Denied("BAD_SIGNATURE")
     if not isinstance(secret, bytes) or len(secret) < 32:
         raise Denied("BAD_TRUST_KEY")
-    digest = hmac.new(secret, canonical(payload), hashlib.sha256).hexdigest()
+    try:
+        digest = hmac.new(secret, canonical(payload), hashlib.sha256).hexdigest()
+    except (TypeError, ValueError, OverflowError):
+        raise Denied("BAD_SCHEMA") from None
     if not hmac.compare_digest(digest, mac):
         raise Denied("BAD_SIGNATURE")
     for field in ("tenant", "orchestrator", "agent", "job_id", "path", "action"):
