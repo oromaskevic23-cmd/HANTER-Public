@@ -171,7 +171,8 @@ class SignedPassportGatesTest(unittest.TestCase):
             passport_overrides={"external_effects": True}))
 
     def test_arbitrary_command_denied(self):
-        self.deny("POLICY_HOLD", self.docs(
+        # Exact skill/action schema rejects this before the policy layer.
+        self.deny("BAD_DOCUMENT_SCHEMA", self.docs(
             passport_overrides={"action": "RUN_SHELL"}))
 
     def test_passport_revoked_denied(self):
