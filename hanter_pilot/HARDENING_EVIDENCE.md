@@ -35,7 +35,7 @@ Docker uses \`--pull=never\` during worker execution. If Docker is missing, poli
 
 ## Actual local model probe (optional, never automatic on a server)
 
-The [Ollama one-time evidence workflow](../.github/workflows/hanter-one-time-local-llm.yml) is a limited experiment on an ephemeral standard GitHub-hosted public runner. It verifies the Ollama release archive SHA-256 before extraction and runs an explicitly allowlisted small, third-party CPU model. It is only triggered when this workflow file is introduced/modified by an in-repository pull request, or manually dispatched; it is **not** a background monitor or 24/7 service.
+The [Ollama one-time evidence workflow](../.github/workflows/hanter-one-time-local-llm.yml) is a limited experiment on an ephemeral standard GitHub-hosted public runner. It verifies the Ollama release archive SHA-256 before extraction and runs an explicitly allowlisted small, third-party CPU model. The initial one-time pull-request run was verified at [GitHub Actions run #41142037544](https://github.com/oromaskevic23-cmd/HANTER-Public/actions/runs/41142037544). Subsequent execution is **manual-only** via workflow_dispatch; it is not a background monitor or 24/7 service.
 
 To test on an authorized local machine with Ollama running **only on 127.0.0.1** and the approved model already available:
 
@@ -44,6 +44,16 @@ To test on an authorized local machine with Ollama running **only on 127.0.0.1**
 The adapter sends **synthetic prompt text only**, disables streaming and unloads the model after response. It disables proxies and redirects, checks JSON response shape and refuses a different model. No model output is treated as a trusted order, executable code, approval or quality proof. This is not VELION model training or deployment: it uses an explicitly identified **third-party SmolLM2** checkpoint for connectivity evidence.
 
 For actual production, HANTER must use a separately protected inference service, measure quality on independently authored tasks, and explicitly bind any model call to an approved Enterprise Skill and signed task envelope.
+
+## Governed model proposal — verified synthetic integration
+
+The [signed proposal gate](governed_model.py) now accepts a narrowly scoped **LLM_PROPOSAL** capability. It binds the exact prompt SHA-256 into the signed Passport resource field, requires separate Guardian and Approval decisions signed over that Passport, checks tenant/orchestrator/NCA, revocations, zero cost and the Owner Kill Switch, then reserves the task in the SQLite replay guard *before* contacting loopback-only Ollama. The generated response is recorded only as an **untrusted proposal**, not as an executable order.
+
+- [Verified one-time signed-LLM execution](https://github.com/oromaskevic23-cmd/HANTER-Public/actions/runs/41142037544): real SmolLM2 inference, 264-character response in governed run, Ed25519 test Passport and two distinct test decision signatures, local audit-chain check.
+- [Verified unit tests and Docker isolation](https://github.com/oromaskevic23-cmd/HANTER-Public/actions/runs/41142099183): 109/109 test cases plus actual no-network Docker execution.
+- These represent a **disposable CI reference**, not a persistent NCA runtime or real independent Guardian Core/Approval Gateway/Owner signing authority.
+- Actual worker isolation and actual model inference were verified as separate stages. The Ollama process is not run inside the no-network Docker container, and the model has **no execution/tool privileges**.
+- Replay guard is local SQLite only; future deployments require authenticated services, durable distributed leases, signed independent audit anchors and production-ready key custody.
 
 ## Next security gates — NOT met by unit tests
 
