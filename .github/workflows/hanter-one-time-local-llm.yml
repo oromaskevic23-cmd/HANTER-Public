@@ -1,0 +1,63 @@
+name: HANTER one-time CPU LLM inference evidence
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/hanter-one-time-local-llm.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: hanter-local-model-smoke
+  cancel-in-progress: false
+
+jobs:
+  local-model-evidence:
+    if: github.event_name == 'workflow_dispatch' || (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      OLLAMA_HOST: "127.0.0.1:11434"
+      OLLAMA_NO_CLOUD: "1"
+      OLLAMA_MODELS: "/tmp/hanter-local-ollama-models"
+    steps:
+      - name: Checkout source without credentials
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Install checksum-verified Ollama release on disposable runner
+        shell: bash
+        run: |
+          set -euo pipefail
+          if ! command -v zstd >/dev/null 2>&1; then
+            sudo apt-get update -qq
+            sudo apt-get install -y -qq zstd
+          fi
+          curl --proto '=https' --tlsv1.2 -fL --retry 2 --connect-timeout 15 --max-time 480 \
+            'https://github.com/ollama/ollama/releases/download/v0.40.11/ollama-linux-amd64.tar.zst' \
+            --output "$RUNNER_TEMP/ollama-v0.40.11.tar.zst"
+          echo "7bedab90dd122661be78798e9f0edf37fccf0cccf2699d2c58ea1a3afdc04b6d  $RUNNER_TEMP/ollama-v0.40.11.tar.zst" | sha256sum --check
+          mkdir -p "$RUNNER_TEMP/ollama-install"
+          tar --zstd -xf "$RUNNER_TEMP/ollama-v0.40.11.tar.zst" -C "$RUNNER_TEMP/ollama-install"
+          test -x "$RUNNER_TEMP/ollama-install/bin/ollama"
+          "$RUNNER_TEMP/ollama-install/bin/ollama" --version
+      - name: Start loopback-only server and download compact public model
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$OLLAMA_MODELS"
+          "$RUNNER_TEMP/ollama-install/bin/ollama" serve > "$RUNNER_TEMP/ollama-local.log" 2>&1 &
+          for i in $(seq 1 60); do
+            if curl --noproxy '*' -fsS 'http://127.0.0.1:11434/api/tags' > /dev/null; then
+              break
+            fi
+            sleep 1
+          done
+          curl --noproxy '*' -fsS 'http://127.0.0.1:11434/api/tags' >/dev/null
+          timeout 240 "$RUNNER_TEMP/ollama-install/bin/ollama" pull smollm2:135m-instruct-q4_K_M
+      - name: Verify one genuine local inference (proposal-only)
+        env:
+          HANTER_LOCAL_LLM_PROBE: I_ACCEPT_LOCAL_INFERENCE
+        run: python3 -m hanter_pilot.ollama_local
