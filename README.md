@@ -56,7 +56,7 @@ Preserve the Federated Multi-Orchestrator Architecture, multiple organizational 
 ## Documentation and continuity
 
 - [Current ecosystem architecture](https://github.com/oromaskevic23-cmd/Capital--Core-Public/blob/main/ARCHITECTURE.md).
-- [Founder identity — EN / UK / RU](https://github.com/oromaskevic23-cmd/Capital--Core-Public/blob/main/docs/FOUNDER_IDENTITY.md).
+- [Founder identity and architectural authority](https://github.com/oromaskevic23-cmd/oromaskevic23-cmd#founder-introduction).
 - [Public portfolio and status definitions](https://github.com/oromaskevic23-cmd/Capital--Core-Public/blob/main/docs/PORTFOLIO.md).
 - [Verified milestones](https://github.com/oromaskevic23-cmd/Capital--Core-Public/blob/main/docs/EVIDENCE.md) and [engineering roadmap](https://github.com/oromaskevic23-cmd/Capital--Core-Public/blob/main/ROADMAP.md).
 - [Historical public specification notes](https://github.com/oromaskevic23-cmd/HANTER-Public/blob/49e71d21a8588991af39354e9d765366e4d06e51/README.md) — retained in Git history; earlier role wording is superseded and design narratives do not establish runtime operation.
