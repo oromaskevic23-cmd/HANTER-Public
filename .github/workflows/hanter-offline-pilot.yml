@@ -32,3 +32,11 @@ jobs:
         run: python3 -m hanter_pilot.pilot
       - name: Execute three-role signed AI Passport sandbox demonstration
         run: python3 -m hanter_pilot.signed_demo
+      - name: Prove encrypted test-key vault lifecycle
+        run: python3 -m hanter_pilot.key_vault
+      - name: Check isolated Docker runtime and pull public Python runner
+        run: |
+          docker info --format '{{.ServerVersion}}'
+          docker pull python:3.12-slim
+      - name: Execute actual no-network read-only Docker NCA worker
+        run: python3 -m hanter_pilot.isolated_worker
