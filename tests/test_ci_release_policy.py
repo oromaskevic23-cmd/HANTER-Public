@@ -22,6 +22,22 @@ class CIReleasePolicyTest(unittest.TestCase):
         for auto_trigger in ("  push:", "  pull_request:", "  schedule:"):
             self.assertNotIn(auto_trigger, workflow)
 
+    def test_founder_reference_uses_english_profile_without_language_menu(self):
+        """Keep language selection on official sites, never inside HANTER GitHub docs."""
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        self.assertIn(
+            "[Founder identity and architectural authority]"
+            "(https://github.com/oromaskevic23-cmd/oromaskevic23-cmd#founder-introduction)",
+            readme,
+        )
+        self.assertNotIn("FOUNDER_IDENTITY.md", readme)
+        # Check rendered-facing documentation, not this Python test file itself.
+        for doc in ROOT.rglob("*.md"):
+            if ".git" not in doc.parts:
+                text = doc.read_text(encoding="utf-8")
+                self.assertNotRegex(text, r"\\bEN\\s*/\\s*UK\\s*/\\s*RU\\b")
+                self.assertNotIn("docs/LANGUAGE_ACCESS.md", text)
+
     def test_separate_owner_review_scope_is_documented(self):
         owners = (ROOT / ".github/CODEOWNERS").read_text()
         self.assertIn("/hanter_pilot/ @oromaskevic23-cmd", owners)
