@@ -91,7 +91,8 @@ def _check_schema(payload: dict, kind: str, now: int) -> None:
             if not _text(payload[name]):
                 raise Denied("BAD_DOCUMENT_SCHEMA")
         if (type(payload["skills"]) is not list
-                or payload["skills"] != [ACTION]
+                or payload["action"] not in (ACTION, "LLM_PROPOSAL")
+                or payload["skills"] != [payload["action"]]
                 or type(payload["cost_cents"]) is not int
                 or type(payload["external_effects"]) is not bool):
             raise Denied("BAD_DOCUMENT_SCHEMA")
