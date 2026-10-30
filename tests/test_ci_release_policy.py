@@ -35,7 +35,7 @@ class CIReleasePolicyTest(unittest.TestCase):
         for doc in ROOT.rglob("*.md"):
             if ".git" not in doc.parts:
                 text = doc.read_text(encoding="utf-8")
-                self.assertNotRegex(text, r"\\bEN\\s*/\\s*UK\\s*/\\s*RU\\b")
+                self.assertNotRegex(text, r"\bEN\s*/\s*UK\s*/\s*RU\b")
                 self.assertNotIn("docs/LANGUAGE_ACCESS.md", text)
 
     def test_separate_owner_review_scope_is_documented(self):
