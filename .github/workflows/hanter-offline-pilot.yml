@@ -30,3 +30,5 @@ jobs:
         run: python3 -m unittest discover -s tests -p 'test_*.py' -v
       - name: Execute one synthetic local NCA task
         run: python3 -m hanter_pilot.pilot
+      - name: Execute three-role signed AI Passport sandbox demonstration
+        run: python3 -m hanter_pilot.signed_demo
