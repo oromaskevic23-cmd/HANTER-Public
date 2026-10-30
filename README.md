@@ -4,6 +4,9 @@
 
 # HANTER — Public Architecture
 
+**Project creator / founding architect:** Alexander Nikolaevich Romaskevich (RomaskevicH). [Authorship](AUTHORS.md) · [License inventory](governance/LICENSE_INVENTORY.md).
+
+
 Public mission-coordination and Architect-interface design. Domain orchestrators retain bounded responsibilities.
 
 **Status: SPECIFIED — public design documents; no runnable implementation in this repository.**  
