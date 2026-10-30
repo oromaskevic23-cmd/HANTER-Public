@@ -5,6 +5,7 @@ on:
     paths:
       - "hanter_pilot/**"
       - "tests/test_hanter_pilot.py"
+      - "tests/test_passport_v2.py"
       - ".github/workflows/hanter-offline-pilot.yml"
       - "README.md"
   workflow_dispatch:
@@ -23,7 +24,9 @@ jobs:
           persist-credentials: false
       - name: Check Python interpreter
         run: python3 --version
+      - name: Install pinned verification library for offline CI
+        run: python3 -m pip install --disable-pip-version-check -r hanter_pilot/requirements-pilot.txt
       - name: Run offline authenticated handoff tests
-        run: python3 -m unittest discover -s tests -p 'test_hanter_pilot.py' -v
+        run: python3 -m unittest discover -s tests -p 'test_*.py' -v
       - name: Execute one synthetic local NCA task
         run: python3 -m hanter_pilot.pilot
