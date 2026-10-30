@@ -143,6 +143,12 @@ class HANTERFederatedPilotTests(unittest.TestCase):
             con.execute("UPDATE audit SET artifact='tampered' WHERE state='QA_PASSED'")
         self.assertFalse(verify_audit(self.db))
 
+    def test_nonserializable_permit_body_fails_closed(self):
+        p = self.request()
+        p["payload"]["path"] = b"not valid JSON"
+        self.denied("BAD_SCHEMA", p)
+        self.assertFalse(self.db.exists())
+
     def test_bad_schema_rejected_before_replay_claim(self):
         p = self.request()
         p["payload"]["extra"] = "unapproved"
