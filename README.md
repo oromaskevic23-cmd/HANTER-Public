@@ -32,6 +32,15 @@ The [Ed25519 signed-authority reference](hanter_pilot/ED25519_PASSPORT.md) exten
 
 These are **non-production local fixtures** and do not constitute actual deployed AI Passport issuance, live Guardian Core / Approval Gateway, independent external QA, trusted Owner approval, autonomous LLM inference or 24/7 server-side availability. No real execution authority is granted by GitHub code or CI results.
 
+## Verified engineering checkpoint — local NCA, isolation and governed LLM
+
+The [hardening and evidence register](hanter_pilot/HARDENING_EVIDENCE.md) describes an **encrypted owner-only local test-key vault**, a **real network-disabled, read-only Docker NCA worker**, and a **real CPU inference pilot** with third-party SmolLM2 under ephemeral Ed25519 test Passport, Guardian and Approval signatures. Model output is a non-executable proposal and is recorded in a local SQLite evidence chain.
+
+- [109/109 unit tests and real Docker job — GitHub Actions](https://github.com/oromaskevic23-cmd/HANTER-Public/actions/runs/41142099183).
+- [One genuine signed-authority NCA → Ollama call — GitHub Actions](https://github.com/oromaskevic23-cmd/HANTER-Public/actions/runs/41142037544).
+- Actual Ollama smoke tests are **manual-only after the verified initial run**; no GitHub scheduled monitoring.
+- These experiments run on **disposable GitHub Actions infrastructure**, not an IMPERIAL Core 24/7 production server. No real Owner-signed production AI Passport, authenticated Guardian Core / Approval Gateway service, externally anchored Audit Ledger, independently operated QA or autonomous revenue process is claimed.
+
 ## Public technical evidence
 
 The public default-branch tree contains documentation. Source embedded in a README is not a separately runnable, verified implementation. No public runtime CI result is asserted.
