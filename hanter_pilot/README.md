@@ -27,6 +27,16 @@ The command uses a disposable temporary workspace with a randomly generated test
 
 Permit tampering and bad MAC; expired, future, and excessive TTL; incorrect tenant, orchestrator, or NCA; attempted spending or external side effects; arbitrary command action; directory traversal, absolute paths, backslashes and symlinks; missing and oversized files; replay after failure; QA rejection; and audit event editing.
 
+## Ed25519 passport and separate signed decisions (sandbox-only)
+
+The [Ed25519 AI Passport demonstration](ED25519_PASSPORT.md) adds a three-role, real-cryptographic-signature reference using **ephemeral test keys** for AI Passport, Guardian Core decision and Approval Gateway decision, all bound to a specific read-only NCA mission. It includes revocation snapshots, disabled-issuer rejection, stale-revocation failure and Owner Kill Switch tests. No actual external authority, runtime service, HSM, private server, owner signature or production permission exists.
+
+    python3 -m pip install -r hanter_pilot/requirements-pilot.txt
+    python3 -m unittest discover -s tests -p 'test_*.py' -v
+    python3 -m hanter_pilot.signed_demo
+
+The older HMAC worker is still a local demonstration and is intentionally not described as a production AI Passport.
+
 ## Production blockers: mandatory before any real runtime
 
 - Replace local HMAC demo permits with externally verifiable, signed and revocable AI Passport capabilities, trusted issuer and protected key custody.
