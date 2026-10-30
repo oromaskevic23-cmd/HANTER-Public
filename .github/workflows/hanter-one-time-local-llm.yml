@@ -1,9 +1,6 @@
 name: HANTER one-time CPU LLM inference evidence
 
 on:
-  pull_request:
-    paths:
-      - ".github/workflows/hanter-one-time-local-llm.yml"
   workflow_dispatch:
 
 permissions:
@@ -15,7 +12,6 @@ concurrency:
 
 jobs:
   local-model-evidence:
-    if: github.event_name == 'workflow_dispatch' || (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository)
     runs-on: ubuntu-latest
     timeout-minutes: 15
     env:
