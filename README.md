@@ -72,3 +72,10 @@ Start non-confidential collaboration through the [founder profile](https://githu
 ## Browser integration — evidence boundary
 
 A bounded Playwright MCP browser-integration experiment was reported in a restricted engineering repository. The underlying source and CI run are not publicly accessible, so they are not claimed as independently verified public evidence. This public architecture repository remains documentation-only. Browser automation alone does not establish authenticated GitHub sessions, continuous execution, or independent NCA authority. No monitoring is scheduled.
+
+
+---
+
+### Canonical founder and public project identity
+
+This public repository is part of the [IMPERIAL Core source portfolio maintained by Alexander Nikolaevich Romaskevich (RomaskevicH)](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/projects/), Founder, Owner and CEO of IMPERIAL Core and its final architectural decision authority. See the [canonical public project registry](https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/projects/) and original commit/contributor history for evidence and provenance. This reference does **not** imply exclusive rights in third-party models, libraries, trademarks or other contributors' work, or certify live production status. Project-specific licensing and security restrictions remain unchanged.
