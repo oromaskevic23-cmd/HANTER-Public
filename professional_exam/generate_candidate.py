@@ -17,13 +17,13 @@ from professional_exam.governance import (
 )
 from hanter_pilot.pilot import Denied
 
-OLLAMA_MODEL="qwen2.5-coder:0.5b"  # Third-party weights; not a VELION-trained foundation model
+OLLAMA_MODEL="qwen2.5-coder:1.5b"  # Third-party weights; not a VELION-trained foundation model
 OLLAMA_URL="http://127.0.0.1:11434/api/generate"
-TASK_SPEC=("Implement one JavaScript ES module. Export a named function "
+TASK_SPEC=("TRAINING ITERATION 2: A previous implementation omitted the named export and got the bounds wrong. Correct both mistakes. Implement exactly one JavaScript ES module. Use the literal syntax: export function clamp(value, lower, upper) { ... }. Export a named function "
            "clamp(value, lower, upper). Requirements: all three arguments "
            "must be finite primitive JavaScript numbers; otherwise throw TypeError. "
            "If lower > upper, throw RangeError. Return value constrained to the "
-           "inclusive interval [lower, upper]. No side effects, no imports, no "
+           "inclusive interval [lower, upper]. Examples: clamp(10,0,5) is 5, " "clamp(-3,0,5) is 0, clamp(3,0,5) is 3, and clamp(5,5,5) is 5. " "Check all inputs using Number.isFinite (no coercion). No side effects, no imports, no "
            "other exports. Output only JavaScript source, without markdown.")
 MAX_BYTES=16384
 
@@ -35,7 +35,7 @@ def canonical(obj):
 
 def fetch_candidate(prompt:str)->tuple[str,dict]:
     body=canonical({"model":OLLAMA_MODEL,"prompt":prompt,"stream":False,
-                    "keep_alive":0,"options":{"temperature":0,"num_predict":480}})
+                    "keep_alive":0,"options":{"temperature":0,"num_predict":640}})
     request=urllib.request.Request(OLLAMA_URL,data=body,method="POST",headers={
         "Content-Type":"application/json","Accept":"application/json"})
     opener=urllib.request.build_opener(urllib.request.ProxyHandler({}),NoRedirect()).open
@@ -63,7 +63,7 @@ def main():
     if os.environ.get("IMPERIAL_OWNER_KILL_SWITCH","1")!="0":
         raise Denied("OWNER_KILL_SWITCH")
     model_root=Path(os.environ.get("OLLAMA_MODELS",""))
-    manifest=model_root/"manifests/registry.ollama.ai/library/qwen2.5-coder/0.5b"
+    manifest=model_root/"manifests/registry.ollama.ai/library/qwen2.5-coder/1.5b"
     if not manifest.is_file(): raise Denied("OLLAMA_MANIFEST_MISSING")
     model_digest=hashlib.sha256(manifest.read_bytes()).hexdigest()
     prompt_sha=hashlib.sha256(TASK_SPEC.encode()).hexdigest()
@@ -73,7 +73,7 @@ def main():
              capability="plan:software",data_class="PUBLIC_SYNTHETIC",
              input_sha256=prompt_sha,mode="MAX"),
         (ModelDescriptor(
-            model_id="Qwen2.5Coder.0.5B",provider_id="Ollama.Local",
+            model_id="Qwen2.5Coder.1.5B",provider_id="Ollama.Local",
             capabilities=("plan:software",),
             allowed_data_classes=("PUBLIC_SYNTHETIC",),
             verified_digest=model_digest,local=True,healthy=True,
@@ -83,7 +83,7 @@ def main():
         kill_switch=False,synthetic_approval=True,
     )
     if (plan["stage"]!="ROUTE_PLAN_ONLY" or plan["execution_authorized"] is not False
-        or plan["model_id"]!="Qwen2.5Coder.0.5B"):
+        or plan["model_id"]!="Qwen2.5Coder.1.5B"):
         raise Denied("VELION_ROUTE_FAILED")
     t=int(time.time())
     signed=issue_test_only(prompt_sha,now=t)

@@ -58,7 +58,7 @@ jobs:
           mkdir -p "$RUNNER_TEMP/ollama"
           tar --zstd -xf "$RUNNER_TEMP/ollama-v0.40.11.tar.zst" -C "$RUNNER_TEMP/ollama"
           echo "$RUNNER_TEMP/ollama/bin" >> "$GITHUB_PATH"
-      - name: Start loopback model worker and pull public Qwen2.5 Coder
+      - name: Start loopback model worker and pull public Qwen2.5 Coder 1.5B
         shell: bash
         run: |
           set -euo pipefail
@@ -69,7 +69,7 @@ jobs:
             sleep 1
           done
           curl --noproxy '*' -fsS 'http://127.0.0.1:11434/api/tags' >/dev/null
-          timeout 420 "$RUNNER_TEMP/ollama/bin/ollama" pull qwen2.5-coder:0.5b
+          timeout 420 "$RUNNER_TEMP/ollama/bin/ollama" pull qwen2.5-coder:1.5b
       - name: Execute one signed scoped NCA with real VELION-routed local inference
         run: python3 -m professional_exam.generate_candidate
       - name: Preserve candidate and signed sandbox provenance

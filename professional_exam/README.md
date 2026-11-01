@@ -27,3 +27,7 @@ Neither GitHub OIDC nor ephemeral test signing establishes real Owner Approval G
 CRYPTO IMPERIAL Ecosystem Boundary, Zero Trust, Public/Private Boundary, Guardian Core, Approval Gateway, ProofGraph, Audit Ledger, IntentLock, Enterprise Skills and Owner Kill Switch are mandatory. IMPERIUM remains a long-term architectural digital currency intended for worldwide AI agents, not an established market fact.
 
 **Expected output:** actual model-generated code hash, independent 24-case QA verdict, with non-production scope stated. Do not claim PASS if the independent job fails or has not completed.
+
+## Training attempt 2 — remediation without grade inflation
+
+Attempt 1 on [GitHub Actions run 41254823947](https://github.com/oromaskevic23-cmd/HANTER-Public/actions/runs/41254823947) used a real local Qwen2.5-Coder 0.5B inference. The model emitted code without the required named export and reversed clamp bounds. Second-job independent QA correctly failed. Candidate SHA-256: `6205f413b25908cec16f11b3a4a1ff61fcd258a7872cf72d0a12eab8a2c7ad48`. **Do not count this as a passed professional exam.** Attempt 2 uses a more capable locally downloaded 1.5B model and explicitly documented examples in the *training prompt*, while the 24-case independent oracle remains unchanged. No secret exam tests are shared with the model. Production status stays blocked.

@@ -11,7 +11,7 @@ const sha=createHash('sha256').update(bytes).digest('hex');
 assert.equal(sha,evidence.candidate_sha256,'CANDIDATE_HASH_MISMATCH');
 assert.equal(evidence.schema,'imperial.nca.professional.exam.v1');
 assert.equal(evidence.agent_id,'IMPERIAL-JOHNNY-WALKER-001');
-assert.equal(evidence.model,'qwen2.5-coder:0.5b');
+assert.equal(evidence.model,'qwen2.5-coder:1.5b');
 assert.equal(evidence.real_local_llm_inference,true);
 assert.equal(evidence.signed_exam_gate.cryptography,'ED25519_EPHEMERAL_TEST');
 assert.equal(evidence.signed_exam_gate.signed_role_count,3);
