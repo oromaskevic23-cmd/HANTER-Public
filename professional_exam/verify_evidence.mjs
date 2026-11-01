@@ -1,0 +1,25 @@
+/** Validate exact artifact hashes before untrusted code enters isolated QA. */
+import {readFileSync,writeFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+import assert from 'node:assert/strict';
+import {join} from 'node:path';
+const dir=process.argv[2];
+assert(typeof dir==='string'&&dir.length>0,'EVIDENCE_DIR_REQUIRED');
+const bytes=readFileSync(join(dir,'candidate.mjs'));
+const evidence=JSON.parse(readFileSync(join(dir,'evidence.json'),'utf8'));
+const sha=createHash('sha256').update(bytes).digest('hex');
+assert.equal(sha,evidence.candidate_sha256,'CANDIDATE_HASH_MISMATCH');
+assert.equal(evidence.schema,'imperial.nca.professional.exam.v1');
+assert.equal(evidence.agent_id,'IMPERIAL-JOHNNY-WALKER-001');
+assert.equal(evidence.model,'qwen2.5-coder:0.5b');
+assert.equal(evidence.real_local_llm_inference,true);
+assert.equal(evidence.signed_exam_gate.cryptography,'ED25519_EPHEMERAL_TEST');
+assert.equal(evidence.signed_exam_gate.signed_role_count,3);
+assert.equal(evidence.signed_exam_gate.real_owner_authorized,false);
+assert.equal(evidence.velion_plan.stage,'ROUTE_PLAN_ONLY');
+assert.equal(evidence.velion_plan.mode,'MAX');
+assert.equal(evidence.production_authorized,false);
+assert.equal(evidence.owner_cryptographic_approval,false);
+assert.equal(evidence.external_effects,0);
+assert.match(sha,/^[0-9a-f]{64}$/);
+console.log(JSON.stringify({status:'ARTIFACT_SHA256_VERIFIED',agent:evidence.agent_id,sha256:sha,production:false}));

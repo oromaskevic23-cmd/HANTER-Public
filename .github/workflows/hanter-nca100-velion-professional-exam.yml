@@ -1,0 +1,129 @@
+name: HANTER x VELION - first real professional NCA exam
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'professional_exam/**'
+      - '.github/workflows/hanter-nca100-velion-professional-exam.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+concurrency:
+  group: hanter-nca100-first-exam
+  cancel-in-progress: false
+jobs:
+  signed-worker-real-model:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      OLLAMA_HOST: "127.0.0.1:11434"
+      OLLAMA_NO_CLOUD: "1"
+      OLLAMA_MODELS: ${{ github.workspace }}/.imperial-qwen-cache
+      HANTER_CI_EXAM_OPT_IN: CI_SANDBOX_ONLY
+      IMPERIAL_OWNER_KILL_SWITCH: "0"  # Only inside short-lived synthetic CI, never production
+      PYTHONPATH: .:velion/src
+    steps:
+      - name: Checkout HANTER source without credentials
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Checkout VELION modular planner, independent source
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          repository: oromaskevic23-cmd/VELION-LLM-Public
+          path: velion
+          persist-credentials: false
+      - name: Install pinned local signing library
+        run: |
+          python3 -m pip install --disable-pip-version-check -r hanter_pilot/requirements-pilot.txt
+          python3 -m pip check
+      - name: Verify signed permit denial tests and VELION model routing
+        run: |
+          python3 -m unittest discover -s professional_exam -p 'test_*.py' -v
+          PYTHONPATH=velion/src python3 -m unittest discover -s velion/tests -p 'test_velion_fabric_v2.py' -v
+      - name: Install checksum-verified local Ollama
+        shell: bash
+        run: |
+          set -euo pipefail
+          if ! command -v zstd >/dev/null 2>&1; then
+            sudo apt-get update -qq
+            sudo apt-get install -y -qq zstd
+          fi
+          curl --proto '=https' --tlsv1.2 -fL --retry 2 --connect-timeout 15 --max-time 480 \
+            'https://github.com/ollama/ollama/releases/download/v0.40.11/ollama-linux-amd64.tar.zst' \
+            -o "$RUNNER_TEMP/ollama-v0.40.11.tar.zst"
+          echo "7bedab90dd122661be78798e9f0edf37fccf0cccf2699d2c58ea1a3afdc04b6d  $RUNNER_TEMP/ollama-v0.40.11.tar.zst" | sha256sum -c -
+          mkdir -p "$RUNNER_TEMP/ollama"
+          tar --zstd -xf "$RUNNER_TEMP/ollama-v0.40.11.tar.zst" -C "$RUNNER_TEMP/ollama"
+          echo "$RUNNER_TEMP/ollama/bin" >> "$GITHUB_PATH"
+      - name: Start loopback model worker and pull public Qwen2.5 Coder
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$OLLAMA_MODELS"
+          "$RUNNER_TEMP/ollama/bin/ollama" serve > "$RUNNER_TEMP/hanter-ollama.log" 2>&1 &
+          for i in $(seq 1 50); do
+            if curl --noproxy '*' -fsS 'http://127.0.0.1:11434/api/tags' >/dev/null; then break; fi
+            sleep 1
+          done
+          curl --noproxy '*' -fsS 'http://127.0.0.1:11434/api/tags' >/dev/null
+          timeout 420 "$RUNNER_TEMP/ollama/bin/ollama" pull qwen2.5-coder:0.5b
+      - name: Execute one signed scoped NCA with real VELION-routed local inference
+        run: python3 -m professional_exam.generate_candidate
+      - name: Preserve candidate and signed sandbox provenance
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: hanter-nca100-real-model-candidate
+          path: ${{ runner.temp }}/nca-professional-exam/
+          retention-days: 14
+          if-no-files-found: error
+
+  independent-exam-qa:
+    needs: signed-worker-real-model
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Download worker output only (no secrets or issuer signing keys)
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.1.8
+        with:
+          name: hanter-nca100-real-model-candidate
+          path: ${{ runner.temp }}/nca-qa
+      - name: Validate SHA-256 binding and deny production authorization
+        run: node professional_exam/verify_evidence.mjs "$RUNNER_TEMP/nca-qa"
+      - name: Isolated independent professional exam - 24 hidden checks
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/sandbox" "$RUNNER_TEMP/nca-qa-proof"
+          cp "$RUNNER_TEMP/nca-qa/candidate.mjs" "$RUNNER_TEMP/sandbox/candidate.mjs"
+          cp professional_exam/exam_oracle.test.mjs "$RUNNER_TEMP/sandbox/exam_oracle.test.mjs"
+          chmod -R a+rX "$RUNNER_TEMP/sandbox"
+          IMAGE='node@sha256:fe4f6d74e20370acb04ad889077d14d0f64a9c8ea6a42bc60cddf1e844699914'
+          docker pull "$IMAGE"
+          set +e
+          timeout 70 docker run --rm --network none --read-only \
+            --cap-drop ALL --security-opt no-new-privileges \
+            --pids-limit 64 --memory 256m --cpus 1 \
+            --user 65534:65534 \
+            -v "$RUNNER_TEMP/sandbox:/work:ro" -w /work \
+            "$IMAGE" node --test --test-reporter tap exam_oracle.test.mjs \
+            > "$RUNNER_TEMP/nca-qa-proof/qa.tap" 2>&1
+          STATUS=$?
+          set -e
+          cat "$RUNNER_TEMP/nca-qa-proof/qa.tap"
+          echo "$STATUS" > "$RUNNER_TEMP/nca-qa-proof/exit-code.txt"
+          test "$STATUS" -eq 0
+      - name: Upload independent QA verdict and failing case trace if any
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: hanter-nca100-independent-qa
+          path: ${{ runner.temp }}/nca-qa-proof/
+          retention-days: 14
+          if-no-files-found: ignore
