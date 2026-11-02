@@ -18,7 +18,7 @@ Evidence checkpoint: **31 October 2026** (linked test executions apply only to t
 Founder • Owner • CEO of IMPERIAL Core  
 Architect / Final Architectural Decision Authority
 
-**HANTER — AI Command Center / Chief Systems** operates under the founder's architectural decisions. This role does not imply a single unrestricted global orchestrator.
+**HANTER — AI Command Center** operates under the founder's architectural decisions. This role does not imply a single unrestricted global orchestrator.
 
 ## Offline engineering pilot — executable reference (not production)
 
