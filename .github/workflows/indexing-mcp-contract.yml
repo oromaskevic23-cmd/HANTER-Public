@@ -1,0 +1,75 @@
+name: HANTER — Indexing MCP pinned integration contract
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/indexing-mcp-contract.yml'
+      - 'docs/SEARCH_INDEXING_MCP_HANDOFF.md'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/indexing-mcp-contract.yml'
+      - 'docs/SEARCH_INDEXING_MCP_HANDOFF.md'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  local-pinned-mcp-contract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: Checkout HANTER reviewed source
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Checkout reviewed IMPERIAL Plugins revision
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          repository: oromaskevic23-cmd/IMPERIAL-Plugins
+          ref: bcfdb994652df797c8909f19d94c8e9c1d43adbe
+          path: integration/imperial-plugins
+          persist-credentials: false
+      - name: Verify HANTER to local MCP stdio call contract
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          import subprocess
+          import sys
+
+          root = Path("integration/imperial-plugins").resolve()
+          launcher = root / "tools/search_indexing_mcp.py"
+          messages = [
+              {"jsonrpc": "2.0", "id": 1, "method": "initialize",
+               "params": {"protocolVersion": "2025-11-25",
+                          "capabilities": {},
+                          "clientInfo": {"name": "hanter-ci", "version": "0.1"}}},
+              {"jsonrpc": "2.0", "id": 2, "method": "tools/list",
+               "params": {}},
+              {"jsonrpc": "2.0", "id": 3, "method": "tools/call",
+               "params": {"name": "imperial.indexing_status", "arguments": {}}},
+              {"jsonrpc": "2.0", "id": 4, "method": "tools/call",
+               "params": {"name": "imperial.search_console_plan", "arguments": {}}},
+          ]
+          request = "".join(json.dumps(m) + chr(10) for m in messages)
+          result = subprocess.run(
+              [sys.executable, str(launcher)],
+              cwd=root, input=request, capture_output=True, text=True,
+              timeout=15, check=True,
+          )
+          if result.stderr:
+              raise RuntimeError("MCP wrote diagnostics to reserved stderr")
+          responses = [json.loads(line) for line in result.stdout.splitlines()]
+          assert [r["id"] for r in responses] == [1, 2, 3, 4]
+          assert len(responses[1]["result"]["tools"]) == 4
+          status = json.loads(responses[2]["result"]["content"][0]["text"])
+          plan = json.loads(responses[3]["result"]["content"][0]["text"])
+          assert status["project_count"] == 23
+          assert status["google"]["url_indexed"] == "UNVERIFIED"
+          assert plan["submission_status"] == "NOT_VERIFIED"
+          assert len(plan["properties"]) == 2
+          print("PASS: HANTER source-level pinned MCP stdio integration")
+          print("BOUNDARY: no NCA dispatched, no Google OAuth, no sitemap submitted")
+          PY
