@@ -60,6 +60,10 @@ This is **integration contract evidence**, not a live signed NCA handoff. To bec
 - OAuth connection to actual Google Search Console properties in a **private** runtime (Google Contacts is insufficient).
 - An owner-approved `sitemaps.submit` flow with a provider-issued receipt, followed by independently inspected Google indexing results.
 
+## Signed Owner / independent QA cryptographic verification
+
+The additional [Ed25519 signed approval contract](GSC_SIGNED_APPROVAL_HANDOFF.md) was tested against a pinned IMPERIAL-Plugins `SubmissionGate`. The source verifies separate approved signers and a domain- and operation-bound permit using independently pinned public keys. This does not imply production Owner enrollment, actual OAuth, live NCA execution or a submitted sitemap. [Passing cross-repo proof](https://github.com/oromaskevic23-cmd/HANTER-Public/actions/runs/41731805301).
+
 ## Google Search Console evidence tiers
 
 | Tier | Meaning | Current state |
