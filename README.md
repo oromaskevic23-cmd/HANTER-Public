@@ -20,6 +20,10 @@ Architect / Final Architectural Decision Authority
 
 **HANTER — AI Command Center** operates under the founder's architectural decisions. This role does not imply a single unrestricted global orchestrator.
 
+## IMPERIAL Search Indexing MCP — pinned public integration test (2026-11-03)
+
+HANTER now includes an [executed cross-repository MCP stdio contract](docs/SEARCH_INDEXING_MCP_HANDOFF.md) and a [GitHub Actions workflow](.github/workflows/indexing-mcp-contract.yml) that checks out **IMPERIAL-Plugins at an immutable SHA**, launches its real MCP subprocess and verifies public project discovery and Google Search Console submission disclaimers. It is an **evidence-backed, source-level integration**, not an autonomous HANTER worker, a Search Console OAuth connection or a Google indexing success. The production path must still pass Owner Ed25519 / AI Passport, Enterprise Skills, Guardian Core, Approval Gateway, independent QA and Audit Ledger.
+
 ## Offline engineering pilot — executable reference (not production)
 
 [HANTER → federated orchestrator → NCA handoff pilot](hanter_pilot/README.md) provides a reproducible, **read-only local file-hashing task** under a short-lived HMAC test permit, scoped federation route, SQLite replay claim, in-process QA and local hash-chained evidence. It does not activate production NCA, provide a real AI Passport, connect to a model, establish a secure sandbox or run continuously.
