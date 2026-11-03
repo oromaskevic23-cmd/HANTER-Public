@@ -64,6 +64,8 @@ class SignedSubmissionProofs:
     def __init__(self, *, owner: TrustRoot, qa: TrustRoot,
                  proof_records: dict[str, dict], revoked_ids: frozenset[str],
                  revocations_as_of: int, now: int | None = None):
+        if not isinstance(owner, TrustRoot) or not isinstance(qa, TrustRoot):
+            raise ProofDenied("PINNED_TRUST_ROOT_INVALID")
         owner.validate()
         qa.validate()
         if (owner.role != "owner" or qa.role != "qa"
@@ -145,11 +147,19 @@ class SignedSubmissionProofs:
             return False
         return True
 
+    def _pair(self, intent: bytes) -> bool:
+        try:
+            data = json.loads(intent)
+            return (type(data) is dict and
+                    self.independent(data["owner_proof_ref"], data["qa_proof_ref"]))
+        except (ValueError, UnicodeError, KeyError, TypeError):
+            return False
+
     def owner(self, intent: bytes, proof_ref: str) -> bool:
-        return self._check("owner", intent, proof_ref)
+        return self._pair(intent) and self._check("owner", intent, proof_ref)
 
     def qa(self, intent: bytes, proof_ref: str) -> bool:
-        return self._check("qa", intent, proof_ref)
+        return self._pair(intent) and self._check("qa", intent, proof_ref)
 
     def independent(self, owner_ref: str, qa_ref: str) -> bool:
         """Identity separation checks are in addition to distinct keys."""
