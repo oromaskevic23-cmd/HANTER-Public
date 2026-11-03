@@ -12,7 +12,7 @@ HANTER now contains a domain-separated Ed25519 approval **verifier** for Google 
 - [Real cross-repository integration test](../tools/gsc_signed_submit_contract.py): verified signatures flow into `SubmissionGate` in IMPERIAL-Plugins with synthetic Google responses, without contacting Google or disclosing Owner keys
 - [CI gate](../.github/workflows/gsc-signed-approval-contract.yml): Python 3.11/3.12, immutable Plugin commit and synthetic provider test
 
-**Evidence:** https://github.com/oromaskevic23-cmd/HANTER-Public/actions/runs/41731058389 — both Python versions passed 12/12 cryptographic tests and the HANTER→Plugins integration test.
+**Latest pinned-plugin cross-repository evidence:** https://github.com/oromaskevic23-cmd/HANTER-Public/actions/runs/41731805301 (IMPERIAL-Plugins immutable revision `6c94513b64812a6a27d78b238fb1afa3105c25a5`, Python 3.11/3.12, Ed25519 and simulated Google PUT all PASS). **Original test run:** https://github.com/oromaskevic23-cmd/HANTER-Public/actions/runs/41731058389 — both Python versions passed 12/12 cryptographic tests and the HANTER→Plugins integration test.
 
 ## Canonical authority model
 
