@@ -28,7 +28,7 @@ This preserves the canonical **Federated Multi-Orchestrator Architecture**, rath
 ## Reviewed source dependency
 
 - Remote source: https://github.com/oromaskevic23-cmd/IMPERIAL-Plugins
-- **Immutable integration reference:** `bcfdb994652df797c8909f19d94c8e9c1d43adbe`
+- **Immutable integration reference:** `faacf224d462cc84abac5c3f8f47d744bd71cf13`
 - MCP local launcher: `tools/search_indexing_mcp.py`
 - MCP server: `src/imperial_plugins/indexing_mcp.py`
 - Google-only adapter source: `src/imperial_plugins/search_console_read.py`
@@ -46,6 +46,7 @@ The added `.github/workflows/indexing-mcp-contract.yml`:
 4. Exchanges JSON-RPC `initialize`, `tools/list` and two `tools/call` requests, then parses the actual response.
 5. Requires exactly four available read-only tools, 23 public technical projects, both Search Console property plans, and explicit `UNVERIFIED` Google indexing status.
 6. Fails the build on protocol errors, changed public project list count or any assertion that a Google submission was performed.
+7. Verifies that the newer default-deny `SubmissionGate` cannot initiate an external Google write without actual Owner permission. No trusted issuer, real Google OAuth token, approved write intent or provider request exists in the test. The new gate remains protected by independent QA, owner approval verification, private property permission checks and a persistent local replay/incident journal.
 
 This is **integration contract evidence**, not a live signed NCA handoff. To become a production HANTER execution path, the following remain necessary:
 
