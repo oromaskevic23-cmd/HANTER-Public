@@ -48,6 +48,8 @@ The added `.github/workflows/indexing-mcp-contract.yml`:
 6. Fails the build on protocol errors, changed public project list count or any assertion that a Google submission was performed.
 7. Verifies that the newer default-deny `SubmissionGate` cannot initiate an external Google write without actual Owner permission. No trusted issuer, real Google OAuth token, approved write intent or provider request exists in the test. The new gate remains protected by independent QA, owner approval verification, private property permission checks and a persistent local replay/incident journal.
 
+**Latest pinned test result (2026-11-04):** HANTER GitHub Actions PASS. The workflow launches the locally pinned MCP process and separately proves that the new Google sitemap SubmissionGate refuses to proceed while Owner Kill Switch is active. Both checks run without Google credentials or external sitemap PUT.
+
 This is **integration contract evidence**, not a live signed NCA handoff. To become a production HANTER execution path, the following remain necessary:
 
 - Real Owner Ed25519 enrollment and protected key custody.
