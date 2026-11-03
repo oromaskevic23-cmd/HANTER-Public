@@ -37,7 +37,7 @@ jobs:
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           repository: oromaskevic23-cmd/IMPERIAL-Plugins
-          ref: 4a3ad344d1675e6b664a109d406d8245f93b2e0a
+          ref: 6c94513b64812a6a27d78b238fb1afa3105c25a5
           path: integration/plugins
           persist-credentials: false
       - name: Python
