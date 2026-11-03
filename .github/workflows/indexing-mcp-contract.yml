@@ -28,7 +28,7 @@ jobs:
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           repository: oromaskevic23-cmd/IMPERIAL-Plugins
-          ref: bcfdb994652df797c8909f19d94c8e9c1d43adbe
+          ref: faacf224d462cc84abac5c3f8f47d744bd71cf13
           path: integration/imperial-plugins
           persist-credentials: false
       - name: Verify HANTER to local MCP stdio call contract
@@ -72,4 +72,25 @@ jobs:
           assert len(plan["properties"]) == 2
           print("PASS: HANTER source-level pinned MCP stdio integration")
           print("BOUNDARY: no NCA dispatched, no Google OAuth, no sitemap submitted")
+          PY
+      - name: Verify write operation denied without private Owner authority
+        run: |
+          PYTHONPATH=integration/imperial-plugins/src python3 - <<'PY'
+          from pathlib import Path
+          from tempfile import TemporaryDirectory
+          from imperial_plugins.search_console_read import GoogleAccessError
+          from imperial_plugins.search_console_submit import SitemapIntent, SubmissionGate
+          intent = SitemapIntent("founder", "hanter-ci-operation-01",
+                                 "owner-proof-missing", "qa-proof-missing",
+                                 "policy-v001", 900, 1100)
+          with TemporaryDirectory() as root:
+              gate = SubmissionGate(Path(root) / "private-submission-test.db")
+              try:
+                  gate.submit(intent, None, now=1000)
+              except GoogleAccessError as error:
+                  assert str(error) == "OWNER_KILL_SWITCH"
+              else:
+                  raise AssertionError("UNAUTHORIZED_GOOGLE_WRITE")
+          print("PASS: HANTER integration cannot bypass Owner Kill Switch")
+          print("BOUNDARY: no actual Google request was made")
           PY
