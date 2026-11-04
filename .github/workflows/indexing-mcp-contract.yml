@@ -28,7 +28,7 @@ jobs:
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           repository: oromaskevic23-cmd/IMPERIAL-Plugins
-          ref: faacf224d462cc84abac5c3f8f47d744bd71cf13
+          ref: 6c23d839b85bf7ddc80aa9f1df7b2a4ed8328c60
           path: integration/imperial-plugins
           persist-credentials: false
       - name: Verify HANTER to local MCP stdio call contract
