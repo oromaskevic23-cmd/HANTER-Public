@@ -28,7 +28,7 @@ This preserves the canonical **Federated Multi-Orchestrator Architecture**, rath
 ## Reviewed source dependency
 
 - Remote source: https://github.com/oromaskevic23-cmd/IMPERIAL-Plugins
-- **Immutable integration reference:** `faacf224d462cc84abac5c3f8f47d744bd71cf13`
+- **Immutable integration reference:** `6c23d839b85bf7ddc80aa9f1df7b2a4ed8328c60`
 - MCP local launcher: `tools/search_indexing_mcp.py`
 - MCP server: `src/imperial_plugins/indexing_mcp.py`
 - Google-only adapter source: `src/imperial_plugins/search_console_read.py`
@@ -83,3 +83,15 @@ FREE_ONLY; Zero Trust, deny by default, explicit public/private boundary, retain
 **Reproduce:** open the workflow file and run via GitHub Actions `workflow_dispatch`, or inspect the run for the exact commit. No owner keys are required for the public integration test.
 
 Architecture → Implementation → Evidence.
+
+## 2026-11-04 verified discoverability upgrade
+
+HANTER's immutable MCP dependency is now the reviewed IMPERIAL-Plugins revision `6c23d839b85bf7ddc80aa9f1df7b2a4ed8328c60`. New public, non-privileged verification capabilities include:
+
+- Authenticated owner reconciliation: **32 owner repositories**, split **25 public / 7 private**; public API and independently reviewed metadata verify **23 public technology projects** plus two other public repositories. Private names are **not** emitted into public CI.
+- Public-only fail-closed GitHub API guard: rejects unforeseen project visibility drift rather than silently publishing new project names.
+- Correct Googlebot scope of `robots.txt`: the effective file is at the **host root**. The measured host-root URL returned HTTP 404, so nested GitHub Pages project-path robots files do not govern crawler behavior.
+- Bounded **14-case SEO-NCA practice examiner**, with a 90% minimum, zero critical safety violations, and explicit non-certification: no real model training, independent QA, passport, commercial permissions or Google indexing is granted.
+- Evidence: [Founder source/HTTP audit](https://github.com/oromaskevic23-cmd/oromaskevic23-cmd/actions/runs/41750707801) and [Public inventory, root robots and SEO-NCA tests](https://github.com/oromaskevic23-cmd/IMPERIAL-Plugins/actions/runs/41751283283).
+
+This source-level contract **does not** deploy a HANTER worker or connect real Search Console OAuth. Privileged Google writes still require explicit Owner and independent QA approval under Guardian Core / Approval Gateway / Audit Ledger, and verified external provider receipts.
