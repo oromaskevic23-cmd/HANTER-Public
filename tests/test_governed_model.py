@@ -143,6 +143,21 @@ class GovernedModelTests(unittest.TestCase):
         p, g, _ = self.documents()
         self.denied("BAD_DOCUMENT", (p, g, None))
 
+    def test_shared_guardian_approval_key_denied_before_inference(self):
+        self.keys["approval"] = self.keys["guardian"]
+        self.trust.keys["approval"]["approval-key"] = (
+            "approval-test-issuer", self.keys["guardian"].public_key())
+        self.denied("ROLE_KEY_REUSE")
+        self.assertFalse(self.db.exists())
+
+    def test_shared_guardian_approval_issuer_denied_before_inference(self):
+        self.trust.keys["approval"]["approval-key"] = (
+            "guardian-test-issuer", self.keys["approval"].public_key())
+        self.denied("ROLE_ISSUER_REUSE", self.documents(approval_overrides={
+            "iss": "guardian-test-issuer",
+        }))
+        self.assertFalse(self.db.exists())
+
     def test_kill_switch_denied_before_network(self):
         self.denied("OWNER_KILL_SWITCH", revocations=RevocationSnapshot(
             as_of=self.now, kill_switch=True))

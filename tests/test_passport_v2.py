@@ -250,6 +250,40 @@ class SignedPassportGatesTest(unittest.TestCase):
         p, g, a = self.documents
         self.deny("BAD_DOCUMENT_SCHEMA", (p, g, g))
 
+    def test_each_role_requires_a_distinct_signing_key(self):
+        for first, second in (("passport", "guardian"),
+                              ("passport", "approval"),
+                              ("guardian", "approval")):
+            with self.subTest(first=first, second=second):
+                original = self.private[second]
+                self.private[second] = self.private[first]
+                self.trust.keys[second][self.kid[second]] = (
+                    self.issuer[second], self.private[first].public_key())
+                try:
+                    self.deny("ROLE_KEY_REUSE", self.docs())
+                finally:
+                    self.ledger.unlink(missing_ok=True)
+                    self.private[second] = original
+                    self.trust.keys[second][self.kid[second]] = (
+                        self.issuer[second], original.public_key())
+
+    def test_each_role_requires_a_distinct_issuer(self):
+        for first, second in (("passport", "guardian"),
+                              ("passport", "approval"),
+                              ("guardian", "approval")):
+            with self.subTest(first=first, second=second):
+                original = self.issuer[second]
+                self.issuer[second] = self.issuer[first]
+                self.trust.keys[second][self.kid[second]] = (
+                    self.issuer[first], self.private[second].public_key())
+                try:
+                    self.deny("ROLE_ISSUER_REUSE", self.docs())
+                finally:
+                    self.ledger.unlink(missing_ok=True)
+                    self.issuer[second] = original
+                    self.trust.keys[second][self.kid[second]] = (
+                        original, self.private[second].public_key())
+
     def test_missing_approval_denied(self):
         p, g, a = self.documents
         self.deny("BAD_DOCUMENT", (p, g, None))

@@ -132,6 +132,22 @@ def _verify(document: dict, *, kind: str, trust: TrustConfig,
     return payload
 
 
+def _require_distinct_authorities(trust: TrustConfig, *payloads: dict) -> None:
+    """Reject aliasing between already verified Passport, Guardian and Approval.
+
+    Distinct issuers and public keys are necessary, but do not establish that
+    the signers are operated independently. Trust remains a local lab fixture.
+    """
+    if len({p["iss"] for p in payloads}) != len(payloads):
+        raise Denied("ROLE_ISSUER_REUSE")
+    public_keys = {
+        trust.keys[p["kind"]][p["kid"]][1].public_bytes_raw()
+        for p in payloads
+    }
+    if len(public_keys) != len(payloads):
+        raise Denied("ROLE_KEY_REUSE")
+
+
 def execute_signed_demo(
     passport: dict,
     guardian_decision: dict,
@@ -172,6 +188,7 @@ def execute_signed_demo(
                 revocations=revocations, now=now)
     if g["passport_sha256"] != fingerprint or a["passport_sha256"] != fingerprint:
         raise Denied("DECISION_TASK_MISMATCH")
+    _require_distinct_authorities(trust, p, g, a)
     # The underlying v1 demo worker still uses HMAC; this is not a remotely
     # authenticated or externally deployed production execution channel.
     local_permit = issue_demo_permit(
