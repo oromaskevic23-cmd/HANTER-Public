@@ -5,6 +5,7 @@ import secrets
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 from cryptography.hazmat.primitives import serialization
 from cryptography.hazmat.primitives.asymmetric.ed25519 import Ed25519PrivateKey
 
@@ -110,6 +111,35 @@ class OwnerRootProofTests(unittest.TestCase):
         for value in ("", None,"a"*64,[],"!"*86):
             with self.subTest(value=value),self.assertRaises(Denied):
                 self.gate.verify(claim,value,now=NOW+1)
+
+    def test_challenge_expiring_during_database_wait_is_not_consumed(self):
+        claim = self.gate.issue_challenge(now=NOW)
+        proof = signature(self.key, claim)
+        with patch("hanter_pilot.owner_root_proof.time.time", side_effect=(NOW+299, NOW+300)):
+            with self.assertRaisesRegex(Denied, "OWNER_PROOF_EXPIRED"):
+                self.gate.verify(claim, proof)
+        self.assertTrue(self.gate.verify(claim, proof, now=NOW+1)["signature_verified"])
+
+    def test_clock_rollback_during_database_wait_is_denied(self):
+        claim = self.gate.issue_challenge(now=NOW)
+        proof = signature(self.key, claim)
+        with patch("hanter_pilot.owner_root_proof.time.time", side_effect=(NOW+2, NOW+1)):
+            with self.assertRaisesRegex(Denied, "OWNER_PROOF_CLOCK_ROLLBACK"):
+                self.gate.verify(claim, proof)
+        self.assertTrue(self.gate.verify(claim, proof, now=NOW+1)["signature_verified"])
+
+    def test_noncanonical_signature_encoding_is_rejected_without_consuming(self):
+        alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_"
+        claim = self.gate.issue_challenge(now=NOW)
+        proof = signature(self.key, claim)
+        index = alphabet.index(proof[-1])
+        self.assertEqual(index % 16, 0)
+        alternate = proof[:-1] + alphabet[index + 1]
+        self.assertEqual(base64.urlsafe_b64decode(proof + "=="),
+                         base64.urlsafe_b64decode(alternate + "=="))
+        with self.assertRaisesRegex(Denied, "OWNER_PROOF_SIGNATURE_INVALID"):
+            self.gate.verify(claim, alternate, now=NOW+1)
+        self.assertTrue(self.gate.verify(claim, proof, now=NOW+1)["signature_verified"])
 
     def test_root_pin_is_mandatory(self):
         with self.assertRaises(Denied):

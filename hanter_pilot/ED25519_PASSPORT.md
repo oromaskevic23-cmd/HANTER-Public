@@ -10,7 +10,7 @@ The experimental gateway validates three independently signed documents **before
 2. **Guardian Core decision candidate** — separately signed, test-only allow decision, cryptographically bound to the exact Passport payload digest.
 3. **Approval Gateway decision candidate** — another separately signed, test-only allow decision, also bound to the exact Passport payload digest.
 
-The verifier does not trust claims from the task itself to select issuer keys. It selects independently supplied, role-separated public keys from a local trust fixture. The exact document schema, issue time, not-before, expiry (maximum five minutes), matching task digest, role identity, NCA routing, and resource scope are checked before the read-only worker is called.
+The verifier does not trust claims from the task itself to select issuer keys. It selects separately configured public keys from a local trust fixture. For both the read-only worker and governed model proposal, it rejects a repeated issuer or repeated Ed25519 public key across the three roles, even when key identifiers differ, and rejects noncanonical signature encodings. Distinct keys and issuer names are necessary but do **not** prove that the signers are operationally independent. The exact document schema, issue time, not-before, expiry (maximum five minutes), matching task digest, role identity, NCA routing, and resource scope are checked before the worker or model is called.
 
 ## Revocation and emergency control
 

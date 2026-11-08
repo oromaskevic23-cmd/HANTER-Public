@@ -126,8 +126,9 @@ class OwnerRootProofGate:
         try:
             raw = base64.b64decode(signature_b64url + "==",
                                    altchars=b"-_", validate=True)
-            if len(raw) != 64:
-                raise ValueError("invalid Ed25519 signature length")
+            if (len(raw) != 64 or
+                    base64.urlsafe_b64encode(raw).decode("ascii").rstrip("=") != signature_b64url):
+                raise ValueError("invalid or noncanonical Ed25519 signature")
             Ed25519PublicKey.from_public_bytes(self.pinned_public_key).verify(
                 raw, DOMAIN + canonical(payload))
         except (InvalidSignature, ValueError, TypeError, OverflowError) as exc:
@@ -135,6 +136,13 @@ class OwnerRootProofGate:
         digest = hashlib.sha256(DOMAIN + canonical(payload)).hexdigest()
         with self._db() as con:
             con.execute("BEGIN IMMEDIATE")
+            # Signature verification and a waited-for write lock can outlive
+            # the challenge; never consume it using the earlier timestamp.
+            consumed_at = int(time.time()) if now is None else now
+            if type(consumed_at) is not int or consumed_at < stamp:
+                raise Denied("OWNER_PROOF_CLOCK_ROLLBACK")
+            if consumed_at >= payload["expires_at"]:
+                raise Denied("OWNER_PROOF_EXPIRED")
             row = con.execute(
                 "SELECT challenge_sha256, issued_at, expires_at, consumed_at "
                 "FROM challenges WHERE nonce_hex=?", (payload["nonce_hex"],)
@@ -147,7 +155,7 @@ class OwnerRootProofGate:
             updated = con.execute(
                 "UPDATE challenges SET consumed_at=? "
                 "WHERE nonce_hex=? AND consumed_at IS NULL",
-                (stamp, payload["nonce_hex"])
+                (consumed_at, payload["nonce_hex"])
             )
             if updated.rowcount != 1:
                 raise Denied("OWNER_CHALLENGE_REPLAY")

@@ -124,12 +124,29 @@ def _verify(document: dict, *, kind: str, trust: TrustConfig,
     try:
         raw = base64.b64decode(signature + "=" * (-len(signature) % 4),
                                altchars=b"-_", validate=True)
-        if len(raw) != 64:
-            raise ValueError("signature must be exactly 64 bytes")
+        if (len(raw) != 64 or
+                base64.urlsafe_b64encode(raw).decode("ascii").rstrip("=") != signature):
+            raise ValueError("signature must use canonical 64-byte base64url")
         entry[1].verify(raw, DOMAIN + canonical(payload))
     except (InvalidSignature, ValueError, TypeError, OverflowError):
         raise Denied("INVALID_SIGNATURE") from None
     return payload
+
+
+def _require_distinct_authorities(trust: TrustConfig, *payloads: dict) -> None:
+    """Reject aliasing between already verified Passport, Guardian and Approval.
+
+    Distinct issuers and public keys are necessary, but do not establish that
+    the signers are operated independently. Trust remains a local lab fixture.
+    """
+    if len({p["iss"] for p in payloads}) != len(payloads):
+        raise Denied("ROLE_ISSUER_REUSE")
+    public_keys = {
+        trust.keys[p["kind"]][p["kid"]][1].public_bytes_raw()
+        for p in payloads
+    }
+    if len(public_keys) != len(payloads):
+        raise Denied("ROLE_KEY_REUSE")
 
 
 def execute_signed_demo(
@@ -172,6 +189,7 @@ def execute_signed_demo(
                 revocations=revocations, now=now)
     if g["passport_sha256"] != fingerprint or a["passport_sha256"] != fingerprint:
         raise Denied("DECISION_TASK_MISMATCH")
+    _require_distinct_authorities(trust, p, g, a)
     # The underlying v1 demo worker still uses HMAC; this is not a remotely
     # authenticated or externally deployed production execution channel.
     local_permit = issue_demo_permit(

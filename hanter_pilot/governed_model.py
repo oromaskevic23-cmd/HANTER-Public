@@ -13,7 +13,7 @@ from pathlib import Path
 from .ollama_local import model_proposal
 from .passport_v2 import (
     AUDIENCE, DOMAIN, MAX_REVOCATION_AGE,
-    RevocationSnapshot, TrustConfig, _verify,
+    RevocationSnapshot, TrustConfig, _require_distinct_authorities, _verify,
 )
 from .pilot import Denied, _append, _connect, canonical
 
@@ -59,6 +59,7 @@ def execute_governed_model(
                 revocations=revocations, now=now)
     if g["passport_sha256"] != fingerprint or a["passport_sha256"] != fingerprint:
         raise Denied("DECISION_TASK_MISMATCH")
+    _require_distinct_authorities(trust, p, g, a)
 
     # Local demonstration only: SQLite is not a distributed durable queue.
     tenant, job = p["tenant"], p["job_id"]
