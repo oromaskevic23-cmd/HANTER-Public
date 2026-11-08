@@ -37,6 +37,24 @@ The [Ed25519 AI Passport demonstration](ED25519_PASSPORT.md) adds a three-role, 
 
 The older HMAC worker is still a local demonstration and is intentionally not described as a production AI Passport.
 
+## Owner-authorized local stop handoff
+
+`local_stop_handoff.py` verifies an Owner Ed25519 signature over a short-lived,
+allowlisted local-node stop, then adds a distinct HANTER signature to the same
+detached payload. A receiver can independently verify both signatures and the
+exact node, tenant, federated orchestrator, worker, reason and nonce. The local
+caller must supply trusted keys, routes and revocation state. HANTER does not
+create or enroll the Owner key and cannot co-sign a forged Owner authorization.
+
+```sh
+python3 -m unittest discover -s tests -p 'test_local_stop_handoff.py' -v
+```
+
+This co-signer returns an envelope only: it is not a remote channel, a running
+command service or a production authorization. Repository tests use ephemeral
+keys. Protected key custody, signed fresh revocation, authenticated transport,
+process supervision and independent deployment evidence remain required.
+
 ## Production blockers: mandatory before any real runtime
 
 - Replace local HMAC demo permits with externally verifiable, signed and revocable AI Passport capabilities, trusted issuer and protected key custody.
