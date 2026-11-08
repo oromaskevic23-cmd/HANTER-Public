@@ -12,6 +12,12 @@ Date: 2 November 2026. This is a working *offline cryptographic proof of possess
 
 The verifier requires a trusted Ed25519 public key injected separately from the untrusted request, verifies a five-minute signed challenge with purpose, tenant, key ID and nonce, and consumes that challenge atomically in local SQLite. Key substitution, changed purpose/tenant, stale challenge, replay and any production/external-effects claims are rejected.
 
+The verifier checks canonical base64url signatures and reads the current clock
+again after acquiring the database write lock. It rejects a challenge that
+expires during verification or lock contention and denies a backward clock;
+the rejected challenge is not consumed. The injectable `now` argument is for
+deterministic local tests, not an authenticated production time source.
+
 The only signature supplied by this repository is one produced **inside tests** using temporary synthetic keys. There is no Owner private signing key here, no on-chain or commercial authority and no state transition that can authorize a real worker.
 
 The returned receipt states OFFLINE_PINNED_KEY_POSSESSION_VERIFIED and explicitly sets externally_attested_owner_identity=false, real_ai_passport_issued=false and production_authorized=false. It establishes that the signer controls **the private key corresponding to a separately pinned public key**, nothing about the actual human identity of that signer.

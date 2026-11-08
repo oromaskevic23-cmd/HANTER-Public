@@ -124,8 +124,9 @@ def _verify(document: dict, *, kind: str, trust: TrustConfig,
     try:
         raw = base64.b64decode(signature + "=" * (-len(signature) % 4),
                                altchars=b"-_", validate=True)
-        if len(raw) != 64:
-            raise ValueError("signature must be exactly 64 bytes")
+        if (len(raw) != 64 or
+                base64.urlsafe_b64encode(raw).decode("ascii").rstrip("=") != signature):
+            raise ValueError("signature must use canonical 64-byte base64url")
         entry[1].verify(raw, DOMAIN + canonical(payload))
     except (InvalidSignature, ValueError, TypeError, OverflowError):
         raise Denied("INVALID_SIGNATURE") from None

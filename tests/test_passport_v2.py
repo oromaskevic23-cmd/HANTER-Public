@@ -1,6 +1,7 @@
 """Adversarial unit checks for the offline Ed25519 reference trust chain."""
 
 import hashlib
+import base64
 import secrets
 import tempfile
 import unittest
@@ -141,6 +142,17 @@ class SignedPassportGatesTest(unittest.TestCase):
         p, g, a = self.documents
         self.deny("INVALID_SIGNATURE",
                   ({**p, "signature": "not-base64@"}, g, a))
+
+    def test_noncanonical_signature_encoding_is_denied(self):
+        alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_"
+        p, g, a = self.documents
+        sig = p["signature"]
+        index = alphabet.index(sig[-1])
+        self.assertEqual(index % 16, 0)
+        alternate = sig[:-1] + alphabet[index + 1]
+        self.assertEqual(base64.urlsafe_b64decode(sig + "=="),
+                         base64.urlsafe_b64decode(alternate + "=="))
+        self.deny("INVALID_SIGNATURE", ({**p, "signature": alternate}, g, a))
 
     def test_wrong_audience_denied(self):
         self.deny("WRONG_AUDIENCE", self.docs(
