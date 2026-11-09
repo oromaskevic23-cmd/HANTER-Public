@@ -1,6 +1,6 @@
 # HANTER - Owner Ed25519 Root Proof Gate
 
-Original work: Alexander Nikolaevich Romaskevich (RomaskevicH), Founder, Owner, CEO and Chief Systems Architect of IMPERIAL Core.
+Original work: Alexander Nikolaevich Romaskevich (RomaskevicH), Founder, Owner, CEO of IMPERIAL Core.
 
 Date: 2 November 2026. This is a working *offline cryptographic proof of possession* module, not a production Owner identity enrollment or NCA activation.
 
