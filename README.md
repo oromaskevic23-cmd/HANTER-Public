@@ -1,6 +1,8 @@
 <p align="center">
-  <img src="assets/hanter-banner-original-20261029.jpg" alt="HANTER — Chief Executive Orchestrator, Nano Core Agents and IMPERIAL Core" width="100%" />
+  <img src="assets/hanter-banner-diamond-20261116.jpg" alt="HANTER AI Command Center and IMPERIAL Core concept artwork" width="100%" />
 </p>
+
+*Concept artwork: image labels and the QR code are illustrative and are not verified operational claims. The architecture is federated; HANTER is the AI Command Center.*
 
 # HANTER — Public Architecture
 
